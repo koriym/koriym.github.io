@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>BEAR.Package 1.10 - BEAR Blog</title>
+  <meta name="author" content="Akihito Koriyama">
+
+  
+  <meta name="description" content="BEAR.Package 1.10をリリースします。 新しいインジェクターにより開発時のパフォーマンスが大幅に改善し、コンパイラはより最適化されたautoload.phpやpreload.phpを出力します。
+最新の Ray.Aop/Di/ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="BEAR Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6074569-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">BEAR Blog</a></h1>
+  
+    <h2>Because everything is a resource.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="koriym.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">BEAR.Package 1.10</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2020-07-06T03:00:00+09:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2020</span></span> <span class='time'>3:00 am</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://koriym.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>BEAR.Package 1.10をリリースします。</p>
+
+<p>新しいインジェクターにより開発時のパフォーマンスが大幅に改善し、コンパイラはより最適化された<code>autoload.php</code>や<code>preload.php</code>を出力します。
+最新の Ray.Aop/Di/Compilerはオンデマンドコンパイルの耐障害性が向上しました。新しいスケルトンも用意しました。</p>
+
+<h2>後方互換性</h2>
+
+<p>マイナーバージョンアップなので後方互換性は維持されます。@deprecatedとマークされたクラスも引き続き使用可能で将来の廃止も予定にありません。</p>
+
+<h2>BEAR.Injector</h2>
+
+<p>インジェクターが改善され開発時に高速になりました。特に連続してインジェクターを使うテストで顕著です。</p>
+
+<p>シンプルになりました。ルートオブジェクトを取得する<code>Bootstrap</code>、アプリケーションが扱う任意の依存を取得する<code>AppInjector</code>
+が統合されBEAR.Injector (<code>BEAR\Package\Injector</code>)になりました。</p>
+
+<p>最適化され開発時にはコンパイルを行わないRay.Di Injector、プロダクションの時には従来と同じくPHPスクリプトをコンパイルする<code>ScriptInjector</code>とコンテキストに応じたインジェクターが用意されます。
+インジェクターはシングルトンで管理され、リクエストが異なる場合も再利用され高速です。開発時のパフォーマンスが大幅にアップします。</p>
+
+<p>複数のアプリケーションや複数のコンテキストのインジェクターは同一メモリ空間で共存できます。"admin"アプリで保存した記事を"client"アプリで確認するテストが連続して行えます。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$appInjecot</span> <span class="o">=</span> <span class="nx">Injector</span><span class="o">::</span><span class="na">getInstance</span><span class="p">(</span><span class="s1">&#39;app&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$htmlInjector</span> <span class="o">=</span>  <span class="nx">Injector</span><span class="o">::</span><span class="na">getInstance</span><span class="p">(</span><span class="s1">&#39;html-app&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>リクエストの度にDIコンテナの再初期化を行ません。リクエストを連続して行うユニットテストのパフォーマンスが大幅に向上します。各インスタンスはシングルトン管理されるので、連続したテストでDB接続が枯渇することもありません。</p>
+
+<p>従来の<code>Bootstrap</code>、<code>AppInjector</code> から新しいインジェクターに移行するガイドを用意しています。</p>
+
+<p><a href="http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.htm">http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.html</a></p>
+
+<h2>コンパイラ</h2>
+
+<p>コンパイラが改善され、<code>autoload.php</code>、<code>preload</code>がより正確に出力されオブジェクトグラフの描画出力(<code>module.dot</code>)も行われます。</p>
+
+<p>ファイルの上書きに気が付くように<code>(overwritten)</code>の表示が行われるようになりました。複数コンテキストのコンパイルを行うときにはファイルの対比が必要です。</p>
+
+<h2>prodキャッシュの変更</h2>
+
+<p><code>prod</code>コンテキストのキャッシュを従来の<code>apc + file</code>のチェーンキャッシュから、<code>PhpFileCache</code>に変更しました。速度はやや劣りますが、取り扱いが簡単になります
+。<code>PhpFileCache</code>はファイルとして保存されるキャッシュなので<code>/tmp/</code>を消せばキャッシュを消すことができます。(<code>opcache.validate_timestamps</code>=0の場合）
+一方PHPスクリプトなのでOPCodeにキャッシュされ、(<code>opcache.validate_timestamps</code>=1にした）プロダクションでファイルアクセスを無しにすることができます。</p>
+
+<h2>キャッシュクリア</h2>
+
+<p>新しいインジェクターでは、以前までの<code>src</code>のタイムスタンプをキャッシュキーに含める方法は廃止されました。これは元々、コンパイル環境とプロダクション環境が同一なことを前提として、APCのクリアもwebサーバーの再起動無しに行う、tmp削除の権限のないユーザーなどの理由で設置されたものですが、prodキャッシュの変更の変更によりより単純に開発時は<code>tmp/</code>を消去するというのがキャッシュクリアの方法になります。</p>
+
+<h2>BEAR.Resource</h2>
+
+<p><a href="https://github.com/bearsunday/BEAR.Resource/releases/tag/1.14.3">BEAR.Resource 1.14.3</a> 以降、<code>ResourceObject</code>で<code>declare(strict_types=1);</code>を宣言してもstring以外もタイプできます。
+ <code>php
+ public function onGet(int $num = 0)
+  {
+</code></p>
+
+<h2>BEAR.Skeletonの変更</h2>
+
+<p>新しいBEAR.PakcageのInjectorに対応したスケルトンを用意しました。加えてQAやテストのテンプレートを強化しました。</p>
+
+<h3>新しいテストスイート</h3>
+
+<p>新しいスケルトンは従来のリソースCRUDテストのテンプレートに加えて、ハイパーメディアとHTTPテストのテンプレートを付加しています。ハイパーメディアテストにはリンクを辿ったテストを記述することでユーザーのワークフローを表すことができます。</p>
+
+<p>ハイパーメディアのテストを継承したHTTPテストはハイパーメディアのテストを継承することでほとんど記述をする必要がありません。PHPビルトインサーバーがテスト実行中にのみ立ち上げられられます。そのテストの結果はログフォルダに<code>curl</code>のリクエストとレスポンスとして記録されます。この記録は実際に<code>HttpResourceCleint</code>で実行されたもので、複雑なクエリーやレスポンスの確認を仕様書以上に具体的なものとして確認することができます。クライアントサイドとサーバーサイドエンジニアのコミニケーションロスを減らす事ができるかもしれません。</p>
+
+<h3>QAの変更</h3>
+
+<ul>
+<li>従来のbootstrapスクリプトからBootstrapクラスに変更しました。</li>
+<li><code>phpmd.xml</code>をより厳しい値をデフォルトとして設定しました。</li>
+<li><code>php-cs-fixer</code>を外し<a href="https://github.com/doctrine/coding-standard">doctrine/conding-standard</a>をベースとしてsquizlabs/php_codesniffer(phpcs)のみにしました。<a href="https://www.php-fig.org/psr/psr-12/">PSR12</a>が適用されます。</li>
+<li>phpstan / psalmをより厳しいデフォルトにしました。</li>
+<li><a href="https://github.com/krakjoe/pcov">pcov</a>を使ったcoverageレポートを出力する<code>composer pcov</code>をcomposer.jsonに追加しました。</li>
+<li>静的解析を行う<code>composer qa</code>を追加しました。</li>
+</ul>
+
+
+<p>新しいphpcsのルールは単にシンタックスだけでなく、if文内の変数アサインや、ループ中のcount実行などコーディングスタンダードが避けるべきと考えるプラクティスもエラーとしてレポートします。</p>
+
+<h2>array shapes記法</h2>
+
+<p>Index.phpのサンプルを以下のように変更しました。</p>
+
+<ul>
+<li>strict_types=1に</li>
+<li>bodyの配列を方を表すarray shapes記法(Object-like arrays)に。</li>
+<li>return typeを<code>static</code>に</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&lt;?</span><span class="nx">php</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">declare</span><span class="p">(</span><span class="nx">strict_types</span><span class="o">=</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">namespace</span> <span class="nx">BEAR\Skeleton\Resource\Page</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">use</span> <span class="nx">BEAR\Resource\ResourceObject</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Index</span> <span class="k">extends</span> <span class="nx">ResourceObject</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="sd">/** @var array{greeting: string} */</span>
+</span><span class='line'>    <span class="k">public</span> <span class="nv">$body</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="sd">/** @return static */</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">function</span> <span class="nf">onGet</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span> <span class="o">=</span> <span class="s1">&#39;BEAR.Sunday&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">body</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>            <span class="s1">&#39;greeting&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Hello &#39;</span> <span class="o">.</span> <span class="nv">$name</span><span class="p">,</span>
+</span><span class='line'>        <span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">return</span> <span class="nv">$this</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>return staticはphp8で採用予定です。従来の<code>ResourceObject</code>リターンタイプより正確です。</p>
+
+<ul>
+<li><a href="https://wiki.php.net/rfc/static_return_type">https://wiki.php.net/rfc/static_return_type</a></li>
+</ul>
+
+
+<p>array-shapeはネイティブのPHPは理解しませんが、qaツール(phpstan/psalm)は理解し、配列キーのアクセスを検査し間違っていればエラーとして報告します。PhpStorm + <a href="https://plugins.jetbrains.com/plugin/9927-deep-assoc-completion">deep-assoc-completion
+klesun
+</a>では配列キーの補完もされます。</p>
+
+<p>既存のプロジェクトに新しい記法や新しいQA設定値を適用するかしないかは完全にユーザーの自由です。QAツールとBEAR.Packageに密結合はありません。コーディングルールだけなど、部分的に適用することもできます。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Akihito Koriyama</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2020-07-06T03:00:00+09:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2020</span></span> <span class='time'>3:00 am</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10/" data-via="koriym" data-counturl="http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+  
+  <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button"
+     data-hatena-bookmark-layout="standard"
+     data-hatena-bookmark-url="http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10/">
+    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif"
+         alt="このエントリーをはてなブックマークに追加" width="20" height="20"
+         style="border: none">
+  </a>
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2019/12/30/the-power-of-rest/" title="Previous Post: RESTの力、RESTの制約">&laquo; RESTの力、RESTの制約</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2020/07/06/bear-package-1-dot-10/">BEAR.Package 1.10</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2019/12/30/the-power-of-rest/">RESTの力、RESTの制約</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/03/18/phpnw17/">PHPNW17</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/11/10/re-code-reading/">Re: BEAR.Sundayをコードリーディングしたのでメモ程度にアウトプットする</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/07/28/an-interface-as-an-api/">An Interface as an API</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/koriym">@koriym</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'koriym',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus googleplus-hidden">
+  <h1>
+    <a href="https://plus.google.com/102811656239290261200?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2020 - Akihito Koriyama -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'koriym';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10/';
+        var disqus_url = 'http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script>
+    (function(w,d){
+        var c,e=d.createDocumentFragment(),f=d.getElementsByTagName("script")[0],
+                a=function(a,b){if(!d.getElementById(b)){c=d.createElement("script");
+                    c.src=a;c.id=b||null;c.async=true;e.appendChild(c);}};
+                a("//b.st-hatena.com/js/bookmark_button_wo_al.js");
+                f.parentNode.insertBefore(e,f);
+            })(this,document);
+</script>
+
+
+</body>
+</html>

@@ -4,7 +4,7 @@
   <title><![CDATA[BEAR Blog]]></title>
   <link href="http://koriym.github.io/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2019-12-30T00:39:32+09:00</updated>
+  <updated>2020-07-06T03:48:18+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -12,6 +12,168 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[BEAR.Package 1.10]]></title>
+    <link href="http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10/"/>
+    <updated>2020-07-06T03:00:00+09:00</updated>
+    <id>http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10</id>
+    <content type="html"><![CDATA[<p>BEAR.Package 1.10をリリースします。</p>
+
+<p>新しいインジェクターにより開発時のパフォーマンスが大幅に改善し、コンパイラはより最適化された<code>autoload.php</code>や<code>preload.php</code>を出力します。
+最新の Ray.Aop/Di/Compilerはオンデマンドコンパイルの耐障害性が向上しました。新しいスケルトンも用意しました。</p>
+
+<h2>後方互換性</h2>
+
+<p>マイナーバージョンアップなので後方互換性は維持されます。@deprecatedとマークされたクラスも引き続き使用可能で将来の廃止も予定にありません。</p>
+
+<h2>BEAR.Injector</h2>
+
+<p>インジェクターが改善され開発時に高速になりました。特に連続してインジェクターを使うテストで顕著です。</p>
+
+<p>シンプルになりました。ルートオブジェクトを取得する<code>Bootstrap</code>、アプリケーションが扱う任意の依存を取得する<code>AppInjector</code>
+が統合されBEAR.Injector (<code>BEAR\Package\Injector</code>)になりました。</p>
+
+<p>最適化され開発時にはコンパイルを行わないRay.Di Injector、プロダクションの時には従来と同じくPHPスクリプトをコンパイルする<code>ScriptInjector</code>とコンテキストに応じたインジェクターが用意されます。
+インジェクターはシングルトンで管理され、リクエストが異なる場合も再利用され高速です。開発時のパフォーマンスが大幅にアップします。</p>
+
+<p>複数のアプリケーションや複数のコンテキストのインジェクターは同一メモリ空間で共存できます。"admin"アプリで保存した記事を"client"アプリで確認するテストが連続して行えます。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$appInjecot</span> <span class="o">=</span> <span class="nx">Injector</span><span class="o">::</span><span class="na">getInstance</span><span class="p">(</span><span class="s1">&#39;app&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$htmlInjector</span> <span class="o">=</span>  <span class="nx">Injector</span><span class="o">::</span><span class="na">getInstance</span><span class="p">(</span><span class="s1">&#39;html-app&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>リクエストの度にDIコンテナの再初期化を行ません。リクエストを連続して行うユニットテストのパフォーマンスが大幅に向上します。各インスタンスはシングルトン管理されるので、連続したテストでDB接続が枯渇することもありません。</p>
+
+<p>従来の<code>Bootstrap</code>、<code>AppInjector</code> から新しいインジェクターに移行するガイドを用意しています。</p>
+
+<p><a href="http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.htm">http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.html</a></p>
+
+<h2>コンパイラ</h2>
+
+<p>コンパイラが改善され、<code>autoload.php</code>、<code>preload</code>がより正確に出力されオブジェクトグラフの描画出力(<code>module.dot</code>)も行われます。</p>
+
+<p>ファイルの上書きに気が付くように<code>(overwritten)</code>の表示が行われるようになりました。複数コンテキストのコンパイルを行うときにはファイルの対比が必要です。</p>
+
+<h2>prodキャッシュの変更</h2>
+
+<p><code>prod</code>コンテキストのキャッシュを従来の<code>apc + file</code>のチェーンキャッシュから、<code>PhpFileCache</code>に変更しました。速度はやや劣りますが、取り扱いが簡単になります
+。<code>PhpFileCache</code>はファイルとして保存されるキャッシュなので<code>/tmp/</code>を消せばキャッシュを消すことができます。(<code>opcache.validate_timestamps</code>=0の場合）
+一方PHPスクリプトなのでOPCodeにキャッシュされ、(<code>opcache.validate_timestamps</code>=1にした）プロダクションでファイルアクセスを無しにすることができます。</p>
+
+<h2>キャッシュクリア</h2>
+
+<p>新しいインジェクターでは、以前までの<code>src</code>のタイムスタンプをキャッシュキーに含める方法は廃止されました。これは元々、コンパイル環境とプロダクション環境が同一なことを前提として、APCのクリアもwebサーバーの再起動無しに行う、tmp削除の権限のないユーザーなどの理由で設置されたものですが、prodキャッシュの変更の変更によりより単純に開発時は<code>tmp/</code>を消去するというのがキャッシュクリアの方法になります。</p>
+
+<h2>BEAR.Resource</h2>
+
+<p><a href="https://github.com/bearsunday/BEAR.Resource/releases/tag/1.14.3">BEAR.Resource 1.14.3</a> 以降、<code>ResourceObject</code>で<code>declare(strict_types=1);</code>を宣言してもstring以外もタイプできます。
+ <code>php
+ public function onGet(int $num = 0)
+  {
+</code></p>
+
+<h2>BEAR.Skeletonの変更</h2>
+
+<p>新しいBEAR.PakcageのInjectorに対応したスケルトンを用意しました。加えてQAやテストのテンプレートを強化しました。</p>
+
+<h3>新しいテストスイート</h3>
+
+<p>新しいスケルトンは従来のリソースCRUDテストのテンプレートに加えて、ハイパーメディアとHTTPテストのテンプレートを付加しています。ハイパーメディアテストにはリンクを辿ったテストを記述することでユーザーのワークフローを表すことができます。</p>
+
+<p>ハイパーメディアのテストを継承したHTTPテストはハイパーメディアのテストを継承することでほとんど記述をする必要がありません。PHPビルトインサーバーがテスト実行中にのみ立ち上げられられます。そのテストの結果はログフォルダに<code>curl</code>のリクエストとレスポンスとして記録されます。この記録は実際に<code>HttpResourceCleint</code>で実行されたもので、複雑なクエリーやレスポンスの確認を仕様書以上に具体的なものとして確認することができます。クライアントサイドとサーバーサイドエンジニアのコミニケーションロスを減らす事ができるかもしれません。</p>
+
+<h3>QAの変更</h3>
+
+<ul>
+<li>従来のbootstrapスクリプトからBootstrapクラスに変更しました。</li>
+<li><code>phpmd.xml</code>をより厳しい値をデフォルトとして設定しました。</li>
+<li><code>php-cs-fixer</code>を外し<a href="https://github.com/doctrine/coding-standard">doctrine/conding-standard</a>をベースとしてsquizlabs/php_codesniffer(phpcs)のみにしました。<a href="https://www.php-fig.org/psr/psr-12/">PSR12</a>が適用されます。</li>
+<li>phpstan / psalmをより厳しいデフォルトにしました。</li>
+<li><a href="https://github.com/krakjoe/pcov">pcov</a>を使ったcoverageレポートを出力する<code>composer pcov</code>をcomposer.jsonに追加しました。</li>
+<li>静的解析を行う<code>composer qa</code>を追加しました。</li>
+</ul>
+
+
+<p>新しいphpcsのルールは単にシンタックスだけでなく、if文内の変数アサインや、ループ中のcount実行などコーディングスタンダードが避けるべきと考えるプラクティスもエラーとしてレポートします。</p>
+
+<h2>array shapes記法</h2>
+
+<p>Index.phpのサンプルを以下のように変更しました。</p>
+
+<ul>
+<li>strict_types=1に</li>
+<li>bodyの配列を方を表すarray shapes記法(Object-like arrays)に。</li>
+<li>return typeを<code>static</code>に</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&lt;?</span><span class="nx">php</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">declare</span><span class="p">(</span><span class="nx">strict_types</span><span class="o">=</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">namespace</span> <span class="nx">BEAR\Skeleton\Resource\Page</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">use</span> <span class="nx">BEAR\Resource\ResourceObject</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Index</span> <span class="k">extends</span> <span class="nx">ResourceObject</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="sd">/** @var array{greeting: string} */</span>
+</span><span class='line'>    <span class="k">public</span> <span class="nv">$body</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="sd">/** @return static */</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">function</span> <span class="nf">onGet</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span> <span class="o">=</span> <span class="s1">&#39;BEAR.Sunday&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">body</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>            <span class="s1">&#39;greeting&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Hello &#39;</span> <span class="o">.</span> <span class="nv">$name</span><span class="p">,</span>
+</span><span class='line'>        <span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">return</span> <span class="nv">$this</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>return staticはphp8で採用予定です。従来の<code>ResourceObject</code>リターンタイプより正確です。</p>
+
+<ul>
+<li><a href="https://wiki.php.net/rfc/static_return_type">https://wiki.php.net/rfc/static_return_type</a></li>
+</ul>
+
+
+<p>array-shapeはネイティブのPHPは理解しませんが、qaツール(phpstan/psalm)は理解し、配列キーのアクセスを検査し間違っていればエラーとして報告します。PhpStorm + <a href="https://plugins.jetbrains.com/plugin/9927-deep-assoc-completion">deep-assoc-completion
+klesun
+</a>では配列キーの補完もされます。</p>
+
+<p>既存のプロジェクトに新しい記法や新しいQA設定値を適用するかしないかは完全にユーザーの自由です。QAツールとBEAR.Packageに密結合はありません。コーディングルールだけなど、部分的に適用することもできます。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RESTの力、RESTの制約]]></title>
@@ -3174,156 +3336,6 @@ Dependency injection means giving an object its instance variables. Really. That
 
 <p>遠く大阪や岐阜から訪れてくれた人も「来たかいがあった」と満足して帰られたのではないでしょうか。Nateさんのサプライズもあったし会場も雰囲気も食事も全部良かった。良いmeetupになったと思ってます。緩く始まりドンドン濃くなっていって、最後にドーンとRichardさんとNateさんの花火のようなプレゼンテーションに達成感すら感じました。meetup最後の@haltさんのtweet「すごい密度で疲れたああああ！」..同意です。
 小さな集まりですが、質の高い時間を共有できるように私たちスタッフは力を尽くしました。<a href="https://twitter.com/kuma_nana">@kuma_nana</a> <a href="https://twitter.com/zingooo">@zingooo</a> <a href="https://twitter.com/zukimochi">@zukimochi</a> ありがとうありがとう。 トークをしてくれた 神宮君、Richardさん、Nateさん、それにLT&amp;参加してくれた全ての人、スポンサード頂いた<a href="http://hubtokyo.com/">HubTokyo</a>、<a href="http://webster.jp/">Webster</a>、LT「Tech for Social Good 」の明石君にも感謝です。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[TEDxTokyo 2013]]></title>
-    <link href="http://koriym.github.io/tedxtokyo2013"/>
-    <updated>2013-05-13T00:00:00+09:00</updated>
-    <id>http://koriym.github.io/tedxtokyo-2013</id>
-    <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/tedxtokyo2013">Tweet</a>
-</div>
-
-
-<h2>TED / TEDxとは?</h2>
-
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/d0NHOpeczUU "></iframe></div>
-
-
-<blockquote><p>TEDx（テデックス）は、TEDの精神である「広める価値のあるアイデア」を共有するために世界各地で生まれているコミュニティー。TEDxTokyo（テデックス・トーキョー）は、世界で2番目、米国以外では最初のTEDxとして、近年のTEDxムーブメントを先導してきました。</p></blockquote>
-
-<p>5/11に<a href="http://www.tedxtokyo.com/">TEDxTokyo</a>に参加しました。</p>
-
-<h2>今回の参加</h2>
-
-<p>TEDは以前からのファンで日本語が用意されていない頃から見ていました。そのTEDの精神を持ったTEDxの参加への興味は自然の事でしたが直接のきっかけは、初期の頃からボランティアとして参加していた<a href="https://twitter.com/remore">@remore (沢田さん)</a><sup><a href="#footnote_0_1880" id="identifier_0_1880" class="footnote-link footnote-identifier-link" title="PHPのイベントphpmatsuriで知り合いました">1</a></sup> にTEDxTokyoの事や参加のためのプロセスを伺った事でした。</p>
-
-<p>年7500ドル参加に別に2500ドルが必要な本家のTED<a href="http://www.ted.com/pages/tedconference">*</a>と違ってTEDxTokyoの参加に費用負担はありませんが、キュレーションが行われ参加には招待を受ける必要があります。締め切り間近の3/25にParticipant Application Formから申し込んで、幸運な事に直後に招待のメールを受け取ることができました。</p>
-
-<p>「本家TEDと同じく、全セッションおよびセッション間のインタラクティブな休憩時間すべてに参加することを前提にデザインされています」という事でセッションの全てとイーブニングセッションに参加すると確認の返信をして参加が決定しました。</p>
-
-<p>参加決定して助言も頂きました。</p>
-
-<blockquote><p>説明するまでもないかもしれませんが、TEDxTokyoは単なるプレゼンテーションイベントでもNetworkingイベントでもなく、ある一つのコミュニティです。参加者もスピーカーも、ファウンダーも、ボランティアスタッフも、idea-centeredでinspiringな空間が生まれるようにイベントを設計していきます。どうか当日は話を聞くだけでなく、他の方とのアイデアの交換や会話も含めて楽しんできてください＾＾</p></blockquote>
-
-<p>オーガナイザーのトッドさんやパトリックさんの話も知り、ますます盛り上がります。</p>
-
-<p><a href="http://www.shibuyabunka.com/keyperson/?id=109">http://www.shibuyabunka.com/keyperson/?id=109<br/>
-</a><br/>
-<a href="http://www.1101.com/patrick/index.html">http://www.1101.com/patrick/index.html</a></p>
-
-<h2>Discovery</h2>
-
-<p>僕はよく旅行に出かけます。旅の楽しみは色々ありますが、自分にとって最大の楽しみは「発見」です。その発見の中でも、エキサイティングなのは背景や価値観の違う人達と同じ時間、同じ空間を共有、交流する事で得られる発見です。モノやコトを違う角度で見て、違う解釈をする、しかし同時代に生きる同じヒトとの交流で得られる発見です。</p>
-
-<p>前日に再度 @remoreさんから再度アドバイスを受けます</p>
-
-<blockquote class="twitter-tweet" width="550" lang="ja">
-
-    @<a href="https://twitter.com/koriym">koriym</a> TEDxTokyoは1-day eventではなくてコミュニティ（eco system）なので（耳たこですね）、明日はもちろんこの先もアイデアを実現させるプラットフォームのように捉えて参加すると楽しめると思います！（長い
-
-  
-
-    &mdash; Kei Sawadaさん (@remore) <a href="https://twitter.com/remore/status/332876791486242816">2013年5月10日</a>
-
-</blockquote>
-
-
-<p>TEDxではどのような交流があって、どんな発見があるのか。初めての一人旅前日のような高揚感とワクワク感で当日を向かえました</p>
-
-<h2>TEDx Talks</h2>
-
-<p>当日は13時間の長丁場です。</p>
-
-<blockquote><p>スケジュール<br/>
-08:00 受付開始 （軽い朝食と交流会）<br/>
-08:40 ご着席<br/>
-09:00 セッション1<br/>
-10:30 休憩<br/>
-11:15 セッション2<br/>
-12:45 ご昼食<br/>
-14:15 セッション3<br/>
-16:00 休憩<br/>
-16:30 セッション4<br/>
-18:30 ディナーレセプション「TEDxTokyo祭り」開始<br/>
-21:30 ディナーレセプション「TEDxTokyo祭り」終了</p></blockquote>
-
-<p>全てのセッションはオンラインで中継されました。現在はほとんど全てのトークやパフォーマンスを<a href="http://www.youtube.com/playlist?list=PLsRNoUx8w3rPedoKDdqaRxtoOsuNqNPWq">TEDxチャンネル</a>で視聴する事ができます。</p>
-
-<p>中でも特に印象に残ったものを紹介します。</p>
-
-<p><strong>愛あるデザインの為に: 田子 學</strong></p>
-
-<p>自分のしてる事を常に問いかけ続ける姿勢に感銘しました。田子さんは最後にこう結びます。「シンプルに見返して、そして信念を見つける事、それを一つ一つ繋げて行く事」</p>
-
-<p><strong>星に届いた夢: 大平 貴之</strong></p>
-
-<p>メガスターは前からいつも一度見て見たいと思っていたのですが、制作者ご本人のユーモアに溢れたセッションを先に聞く事になりました。小さな頃の思いを抱き続けそれを形にして世に問い世界的な評価を手にした事はすごい事です。しかし本人の優しい語り口から、身近な話のように感じ自分自身の経験を重ねて聞いていました。</p>
-
-<p><strong>クモの糸で変わる世界: 関山 和秀</strong></p>
-
-<p>本当に驚きました。「初めはみんな不可能だと言いました」言うでしょう、言うと思います！しかしそれをやりとげ、自ら作った糸を右手で掲げ「私たちはそう思わない」&#8230;本当にかっこ良かったです。</p>
-
-<p><strong>社会の役に立たない建築家: 坂 茂</strong></p>
-
-<p>スピーカーの方が登場される前に、オーガナイザーであり進行であるパトリックさんがスピーカーの方を紹介するのですが、最も高揚して紹介されてると感じられたのが最後のスピーカーの坂さんでした。</p>
-
-<p>&#8220;権力者の誇示のための建築ではなく、社会のための紙建築&#8221;の話です。世界的に高名な建築家<sup><a href="#footnote_1_1880" id="identifier_1_1880" class="footnote-link footnote-identifier-link" title="最近話題になった成蹊大学情報図書館のも坂さんの作品ですね">2</a></sup> が「社会の役に立たない建築家」と題し「地震が人々を殺してるんではないのです、地震によって倒壊した建物が人々を殺してる」のですと話します。自身の取り組みを静かな熱意とユーモアで紹介します。</p>
-
-<p>ほかにも人間国宝の<a href="http://www.youtube.com/watch?v=tRsFL12DURw&amp;list=PLsRNoUx8w3rPedoKDdqaRxtoOsuNqNPWq">室瀬和美さんの漆の話</a>、<a href="http://www.youtube.com/watch?v=QIeSNitzd3k&amp;list=PLsRNoUx8w3rPedoKDdqaRxtoOsuNqNPWq">会田誠さんの&#8221;テキトー&#8221;</a>、<a href="http://www.youtube.com/watch?v=-40W_pnhlUs&amp;feature=share&amp;list=PLsRNoUx8w3rPedoKDdqaRxtoOsuNqNPWq">佐藤卓さんの「あ」モーメント</a>、発見のあるものばかりでした。</p>
-
-<h2>TEDx パフォーマンス</h2>
-
-<p><strong>江戸古典奇術『手妻』: 藤山 晃太郎</strong></p>
-
-<p>パフォーマンスも全て素晴らしかったのですが、朝一番に出演した手妻師の藤山晃太郎さんの操る蝶が見事でした。江戸時代にマジシャンが居たなんて初めて知りました。それを知った事も良かったです。</p>
-
-<p>YouTubeでは見る事ができませんが、舞踏家の<a href="http://www.kudo-taketeru.com">工藤丈輝</a>さんのパフォーマンスも強く心に残りました。</p>
-
-<h1>1+1=11</h1>
-
-<p>今回のテーマです。1+1=2は日常の世界、1+1=10はコンピューターの世界（二進数）、1+1=11は単純加算ができず、人(one)が並び合い、向かい合い化学反応を起こすTEDxの世界。今回のテーマをこのように解釈しました。</p>
-
-<p>感銘を受けたスピーカーの方に共通してたのは、常に自身や自身の行ってる事に問いかけ続ける姿勢を持っている事でした。語り口は静かですが情熱を持ち、自分のなすべき事に真摯に対峙してる方々の話です。「信念を見つける事、それを一つ一つ繋げて行く事」それを実践している人の話です。「伝える価値のあるアイデア」の元にある「伝える価値のある経験」を共有できた事が素晴らしかった。</p>
-
-<p>多くの方の思いと情熱で作られているTEDxTokyoに参加できて良かったです。</p>
-
-<p>これを何かの形で繋げていかねばなりません。</p>
-
-<p>「単なる1-day eventでは」&#8230; 一日が終わり、熱狂が良い感じで引いて来た頃に参加前に聞いた言葉を思い出しました。</p>
-
-<p>% img <a href="http://placekitten.com/890/280">http://placekitten.com/890/280</a> %}</p>
-
-<p><img src="http://koriym.github.io/wp-content/uploads/2013/05/IMG_6216.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/IMG_6210.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/IMG_6188.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/IMG_6198.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/IMG_6184.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_6178.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/IMG_6167.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_6162.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_6158.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_4073.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_4076.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_4071.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_4066.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_4064.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_4061.jpg">
-<img src="http://koriym.github.io/wp-content/uploads/2013/05/img_4060.jpg"></p>
-
-<ol class="footnotes">
-  <li id="footnote_0_1880" class="footnote">
-    PHPのイベントphpmatsuriで知り合いました [<a href="#identifier_0_1880" class="footnote-link footnote-back-link">&#8617;</a>]
-  </li>
-  <li id="footnote_1_1880" class="footnote">
-    最近話題になった成蹊大学情報図書館のも坂さんの作品ですね [<a href="#identifier_1_1880" class="footnote-link footnote-back-link">&#8617;</a>]
-  </li>
-</ol>
-
-
-
 ]]></content>
   </entry>
   

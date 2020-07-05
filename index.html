@@ -9,7 +9,8 @@
   <meta name="author" content="Akihito Koriyama">
 
   
-  <meta name="description" content="今年２つの講演 今年2019年は、3月にphperkaigi 2019でRESTの力、12月にはphpカンファレンスでRESTの制約の講演を行いました。 講演時間の短いRESTの力ではREST制約の中から一部を紹介して、「プレゼンテーションそのものがハイパーメディアであり、 &hellip;">
+  <meta name="description" content="BEAR.Package 1.10をリリースします。 新しいインジェクターにより開発時のパフォーマンスが大幅に改善し、コンパイラはより最適化されたautoload.phpやpreload.phpを出力します。
+最新の Ray.Aop/Di/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +79,191 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2020/07/06/bear-package-1-dot-10/">BEAR.Package 1.10</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2020-07-06T03:00:00+09:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2020</span></span> <span class='time'>3:00 am</span></time>
+        
+           | <a href="/blog/2020/07/06/bear-package-1-dot-10/#disqus_thread"
+             data-disqus-identifier="http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>BEAR.Package 1.10をリリースします。</p>
+
+<p>新しいインジェクターにより開発時のパフォーマンスが大幅に改善し、コンパイラはより最適化された<code>autoload.php</code>や<code>preload.php</code>を出力します。
+最新の Ray.Aop/Di/Compilerはオンデマンドコンパイルの耐障害性が向上しました。新しいスケルトンも用意しました。</p>
+
+<h2>後方互換性</h2>
+
+<p>マイナーバージョンアップなので後方互換性は維持されます。@deprecatedとマークされたクラスも引き続き使用可能で将来の廃止も予定にありません。</p>
+
+<h2>BEAR.Injector</h2>
+
+<p>インジェクターが改善され開発時に高速になりました。特に連続してインジェクターを使うテストで顕著です。</p>
+
+<p>シンプルになりました。ルートオブジェクトを取得する<code>Bootstrap</code>、アプリケーションが扱う任意の依存を取得する<code>AppInjector</code>
+が統合されBEAR.Injector (<code>BEAR\Package\Injector</code>)になりました。</p>
+
+<p>最適化され開発時にはコンパイルを行わないRay.Di Injector、プロダクションの時には従来と同じくPHPスクリプトをコンパイルする<code>ScriptInjector</code>とコンテキストに応じたインジェクターが用意されます。
+インジェクターはシングルトンで管理され、リクエストが異なる場合も再利用され高速です。開発時のパフォーマンスが大幅にアップします。</p>
+
+<p>複数のアプリケーションや複数のコンテキストのインジェクターは同一メモリ空間で共存できます。"admin"アプリで保存した記事を"client"アプリで確認するテストが連続して行えます。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$appInjecot</span> <span class="o">=</span> <span class="nx">Injector</span><span class="o">::</span><span class="na">getInstance</span><span class="p">(</span><span class="s1">&#39;app&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$htmlInjector</span> <span class="o">=</span>  <span class="nx">Injector</span><span class="o">::</span><span class="na">getInstance</span><span class="p">(</span><span class="s1">&#39;html-app&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>リクエストの度にDIコンテナの再初期化を行ません。リクエストを連続して行うユニットテストのパフォーマンスが大幅に向上します。各インスタンスはシングルトン管理されるので、連続したテストでDB接続が枯渇することもありません。</p>
+
+<p>従来の<code>Bootstrap</code>、<code>AppInjector</code> から新しいインジェクターに移行するガイドを用意しています。</p>
+
+<p><a href="http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.htm">http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.html</a></p>
+
+<h2>コンパイラ</h2>
+
+<p>コンパイラが改善され、<code>autoload.php</code>、<code>preload</code>がより正確に出力されオブジェクトグラフの描画出力(<code>module.dot</code>)も行われます。</p>
+
+<p>ファイルの上書きに気が付くように<code>(overwritten)</code>の表示が行われるようになりました。複数コンテキストのコンパイルを行うときにはファイルの対比が必要です。</p>
+
+<h2>prodキャッシュの変更</h2>
+
+<p><code>prod</code>コンテキストのキャッシュを従来の<code>apc + file</code>のチェーンキャッシュから、<code>PhpFileCache</code>に変更しました。速度はやや劣りますが、取り扱いが簡単になります
+。<code>PhpFileCache</code>はファイルとして保存されるキャッシュなので<code>/tmp/</code>を消せばキャッシュを消すことができます。(<code>opcache.validate_timestamps</code>=0の場合）
+一方PHPスクリプトなのでOPCodeにキャッシュされ、(<code>opcache.validate_timestamps</code>=1にした）プロダクションでファイルアクセスを無しにすることができます。</p>
+
+<h2>キャッシュクリア</h2>
+
+<p>新しいインジェクターでは、以前までの<code>src</code>のタイムスタンプをキャッシュキーに含める方法は廃止されました。これは元々、コンパイル環境とプロダクション環境が同一なことを前提として、APCのクリアもwebサーバーの再起動無しに行う、tmp削除の権限のないユーザーなどの理由で設置されたものですが、prodキャッシュの変更の変更によりより単純に開発時は<code>tmp/</code>を消去するというのがキャッシュクリアの方法になります。</p>
+
+<h2>BEAR.Resource</h2>
+
+<p><a href="https://github.com/bearsunday/BEAR.Resource/releases/tag/1.14.3">BEAR.Resource 1.14.3</a> 以降、<code>ResourceObject</code>で<code>declare(strict_types=1);</code>を宣言してもstring以外もタイプできます。
+ <code>php
+ public function onGet(int $num = 0)
+  {
+</code></p>
+
+<h2>BEAR.Skeletonの変更</h2>
+
+<p>新しいBEAR.PakcageのInjectorに対応したスケルトンを用意しました。加えてQAやテストのテンプレートを強化しました。</p>
+
+<h3>新しいテストスイート</h3>
+
+<p>新しいスケルトンは従来のリソースCRUDテストのテンプレートに加えて、ハイパーメディアとHTTPテストのテンプレートを付加しています。ハイパーメディアテストにはリンクを辿ったテストを記述することでユーザーのワークフローを表すことができます。</p>
+
+<p>ハイパーメディアのテストを継承したHTTPテストはハイパーメディアのテストを継承することでほとんど記述をする必要がありません。PHPビルトインサーバーがテスト実行中にのみ立ち上げられられます。そのテストの結果はログフォルダに<code>curl</code>のリクエストとレスポンスとして記録されます。この記録は実際に<code>HttpResourceCleint</code>で実行されたもので、複雑なクエリーやレスポンスの確認を仕様書以上に具体的なものとして確認することができます。クライアントサイドとサーバーサイドエンジニアのコミニケーションロスを減らす事ができるかもしれません。</p>
+
+<h3>QAの変更</h3>
+
+<ul>
+<li>従来のbootstrapスクリプトからBootstrapクラスに変更しました。</li>
+<li><code>phpmd.xml</code>をより厳しい値をデフォルトとして設定しました。</li>
+<li><code>php-cs-fixer</code>を外し<a href="https://github.com/doctrine/coding-standard">doctrine/conding-standard</a>をベースとしてsquizlabs/php_codesniffer(phpcs)のみにしました。<a href="https://www.php-fig.org/psr/psr-12/">PSR12</a>が適用されます。</li>
+<li>phpstan / psalmをより厳しいデフォルトにしました。</li>
+<li><a href="https://github.com/krakjoe/pcov">pcov</a>を使ったcoverageレポートを出力する<code>composer pcov</code>をcomposer.jsonに追加しました。</li>
+<li>静的解析を行う<code>composer qa</code>を追加しました。</li>
+</ul>
+
+
+<p>新しいphpcsのルールは単にシンタックスだけでなく、if文内の変数アサインや、ループ中のcount実行などコーディングスタンダードが避けるべきと考えるプラクティスもエラーとしてレポートします。</p>
+
+<h2>array shapes記法</h2>
+
+<p>Index.phpのサンプルを以下のように変更しました。</p>
+
+<ul>
+<li>strict_types=1に</li>
+<li>bodyの配列を方を表すarray shapes記法(Object-like arrays)に。</li>
+<li>return typeを<code>static</code>に</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&lt;?</span><span class="nx">php</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">declare</span><span class="p">(</span><span class="nx">strict_types</span><span class="o">=</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">namespace</span> <span class="nx">BEAR\Skeleton\Resource\Page</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">use</span> <span class="nx">BEAR\Resource\ResourceObject</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Index</span> <span class="k">extends</span> <span class="nx">ResourceObject</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="sd">/** @var array{greeting: string} */</span>
+</span><span class='line'>    <span class="k">public</span> <span class="nv">$body</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="sd">/** @return static */</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">function</span> <span class="nf">onGet</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span> <span class="o">=</span> <span class="s1">&#39;BEAR.Sunday&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">body</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>            <span class="s1">&#39;greeting&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Hello &#39;</span> <span class="o">.</span> <span class="nv">$name</span><span class="p">,</span>
+</span><span class='line'>        <span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">return</span> <span class="nv">$this</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>return staticはphp8で採用予定です。従来の<code>ResourceObject</code>リターンタイプより正確です。</p>
+
+<ul>
+<li><a href="https://wiki.php.net/rfc/static_return_type">https://wiki.php.net/rfc/static_return_type</a></li>
+</ul>
+
+
+<p>array-shapeはネイティブのPHPは理解しませんが、qaツール(phpstan/psalm)は理解し、配列キーのアクセスを検査し間違っていればエラーとして報告します。PhpStorm + <a href="https://plugins.jetbrains.com/plugin/9927-deep-assoc-completion">deep-assoc-completion
+klesun
+</a>では配列キーの補完もされます。</p>
+
+<p>既存のプロジェクトに新しい記法や新しいQA設定値を適用するかしないかは完全にユーザーの自由です。QAツールとBEAR.Packageに密結合はありません。コーディングルールだけなど、部分的に適用することもできます。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1310,189 +1496,6 @@ BEAR.Saturdayの時からずっとBEARのファンでいてくれる <a href="ht
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/06/22/phpnw2013-3-feedback/">PHPNW2013(3)-Feedback</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-06-22T11:14:00+09:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2014</span></span> <span class='time'>11:14 am</span></time>
-        
-           | <a href="/blog/2014/06/22/phpnw2013-3-feedback/#disqus_thread"
-             data-disqus-identifier="http://koriym.github.io/blog/2014/06/22/phpnw2013-3-feedback/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>フィードバック</h2>
-
-<h3>joind.in</h3>
-
-<p><a href="joind.in">joind.in</a>では人によるチェックで選ばれたカンファレンスが登録されていて、トークのフィードバックを得る事ができます。
-国内ではトーク後の聴衆からの反応はねぎらいの言葉や感謝の言葉が多く、もし不満足な場合でも特にそれを表明しない事が多いと思います。</p>
-
-<p>joind.inでは良いトークは賞賛される一方、良くないと評価されたものには（時に非常に）厳しい言葉が並び★評価が低いものになります。トークは「批評」されるのです。</p>
-
-<p>賞賛の言葉が並べば自分の訴えた事が伝わり肯定された事が分かるし、厳しい言葉が並んだとしてもそれを改善に活かす事ができます。
-★の数ではなく「何故聴衆はそう感じたか」を知る事ができるのは役に立ちます。</p>
-
-<p>自分のトークは「今求められているもの」ではなく新しいアイデアです。フィードバックをもらえる仕組みがあるというのは、批評される恐さがある一方でありがたい事だとも思いました。</p>
-
-<p>トーク終わった後、当日、次の日とポツポツとレビューがあがります。</p>
-
-<p><a href="https://joind.in/9302"><img src="/images/phpnw13/joindin.png"><br>
-<a href="https://joind.in/9302">https://joind.in/9302</a></a></p>
-
-<p>ネガティブな評価は言葉の事でした。しかし心配してた自分の英語ではなくて日本語＝英語の同時通訳を途中に入れた事でした。
-地元のユーザーグループとBBCと二回のリハーサルで問題ないとフィードバックをもらってたのでこれは意外な事でした。人によって感じ方がかなり違うのかもしれません。</p>
-
-<p>その点を除けばアイデアや問題解決のためのアプローチを肯定する良い評価が並びました。</p>
-
-<p><b>&ldquo;A novel presentation&rdquo;, &ldquo;Love the passion&rdquo;, &ldquo;A really inspiring&rdquo;, &ldquo;Mind-blowing bunch of ideas"。</b>最上級の言葉が並びました。
-プレゼンテーションは成功したのです！！</p>
-
-<h3>Twitter</h3>
-
-<p>Twitterでも頂きました。</p>
-
-<blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/koriym">@koriym</a> good talk today buddy and congratulations on the framework!</p>&mdash; John Crossley ∆ (@JonnoTheBonno) <a href="https://twitter.com/JonnoTheBonno/statuses/386174891222786048">2013, 10月 4</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>I&#39;ve learned about BEAR.Sunday . Very interesting. Session by <a href="https://twitter.com/koriym">@koriym</a> <a href="https://twitter.com/mackstar">@mackstar</a> at <a href="https://twitter.com/search?q=%23phpnw13&amp;src=hash">#phpnw13</a> <a href="http://t.co/9vvzUtwt3R">pic.twitter.com/9vvzUtwt3R</a></p>&mdash; Mark Szymik (@markszymik) <a href="https://twitter.com/markszymik/statuses/386502810051026944">2013, 10月 5</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>DIC = graph; app = root node; compile it once and cache - those are my learnings from BEAR.Sunday talk. It was <a href="https://twitter.com/search?q=%23outOfThisWorld&amp;src=hash">#outOfThisWorld</a> <a href="https://twitter.com/search?q=%23phpnw13&amp;src=hash">#phpnw13</a></p>&mdash; Marijus Kilmanas (@mkilmanas) <a href="https://twitter.com/mkilmanas/statuses/386509192670244864">2013, 10月 5</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>I think I’m going to use the time to read up on BEAR.sunday, it looks really interesting. /via <a href="https://twitter.com/mackstar">@mackstar</a> <a href="https://twitter.com/koriym">@koriym</a> <a href="https://twitter.com/search?q=%23phpnw13&amp;src=hash">#phpnw13</a></p>&mdash; Anthony Sterling (@anthonysterling) <a href="https://twitter.com/anthonysterling/statuses/386728438880813057">2013, 10月 6</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-<blockquote class="twitter-tweet" lang="ja"><p>New home for my Bear Sunday badge. /cc <a href="https://twitter.com/koriym">@koriym</a> <a href="https://twitter.com/mackstar">@mackstar</a> <a href="https://twitter.com/search?q=%23phpnw13&amp;src=hash">#phpnw13</a> <a href="http://t.co/UYYDmqEZej">pic.twitter.com/UYYDmqEZej</a></p>&mdash; Ryan Marshall (@rsmarshall) <a href="https://twitter.com/rsmarshall/statuses/386866175277551617">2013, 10月 6</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<p>中でも気に入ってるのはこの「looks crazy! 」です。</p>
-
-<blockquote class="twitter-tweet" data-cards="hidden" lang="ja"><p>BEAR.Sunday <a href="https://twitter.com/search?q=%23PHP&amp;src=hash">#PHP</a> 5.4 framework looks crazy! Resource oriented, REST hypermedia, DI and AOP: <a href="https://t.co/qqXAs2KPXz">https://t.co/qqXAs2KPXz</a></p>&mdash; Loïc Chardonnet (@epiloic) <a href="https://twitter.com/epiloic/statuses/386520372503257088">2013, 10月 5</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<h2>Blog</h2>
-
-<p>いくつかのブログでもフィードバックを頂けました。</p>
-
-<blockquote><p>it does show us how it is possible to think about the web service process and how we might approach it a little differently.</p></blockquote>
-
-<ul>
-<li><a href="http://techportal.inviqa.com/2013/10/08/phpnw-conference-2013/">http://techportal.inviqa.com/2013/10/08/phpnw-conference-2013/</a></li>
-</ul>
-
-
-<blockquote><p>I thought it was about something completely different. It introduced Aspect oriented programming (something I had only seen in other languages, and had not considered using with PHP). The speaker was from Japan and had a guy interpreting for him at times. It should have been a disaster, but was not. It was interesting.</p></blockquote>
-
-<ul>
-<li><a href="http://ampersandcommerce.com/hobgoblins-mindgasms-and-why-we-loved-phpnw13/">http://ampersandcommerce.com/hobgoblins-mindgasms-and-why-we-loved-phpnw13/</a></li>
-</ul>
-
-
-<blockquote><p>I spoke a lot to Akihito Koriyama, who wrote a framework called BEAR, which breaks a lot of the principles that the popular frameworks follow. It does this in a way that improves the object-oriented structure of the application from more traditional architectures.</p></blockquote>
-
-<ul>
-<li><a href="http://www.studio24.net/blog/php-north-west-conference-2013">http://www.studio24.net/blog/php-north-west-conference-2013</a></li>
-</ul>
-
-
-<blockquote><p>This talk introduced the “BEAR.Sunday” framework, which took a new, Eastern-thinking approach to PHP frameworks.</p></blockquote>
-
-<ul>
-<li><a href="http://martinbean.co.uk/blog/2013/10/09/php-north-west-2013-conference/">http://martinbean.co.uk/blog/2013/10/09/php-north-west-2013-conference/</a></li>
-</ul>
-
-
-<h3>Leeds</h3>
-
-<p>Leedsのときのもありました。</p>
-
-<blockquote class="twitter-tweet" lang="ja"><p>Wow! I think everyone would agree they have just been enlightened by <a href="https://twitter.com/koriym">@koriym</a> and BEAR.Sunday</p>&mdash; Leeds PHP User Group (@leedsphp) <a href="https://twitter.com/leedsphp/statuses/384767549382356992">2013, 9月 30</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<h2>直接のフィードバック</h2>
-
-<p>終わった直後やその後にも、多くの人が自分の元に来てくれ感想を伝えてくれたり、質問をくれました。中には自分がいつもブログを読んでる知っている方もいました。
-驚いたのは会場で話を聞いてなかった人まで来たことです。（トークは同時に３つあります）「聞き逃したんだけど友達からすごくインスパイアされたって聞いた。ちょっと聞かせてくれる？」こういう人が何人も現れました。
-phpnwは参加者同士が交流できる多くの時間が用意されています。</p>
-
-<h2>帰りの電車で</h2>
-
-<p>カンファレンスは３日間ありますが、外国から飛行機で来ている人もいてお昼には終わります。会場を後にし電車に乗っていると、向こうからこちらをチラチラ見てる人がいます。カンファレンスでスピーカーギフトとしてもらったトレーナーを来ていたのですが、それを見てたのです。
-「あなたもしかしてphpnwでフレームワークの話をした人？」ビックリしました！！彼の会社はカンファレンスの大手スポンサーだけど今年は自分はいけなかった。しかし同僚に話を聞いてたというのです。彼は興奮してましたが、僕はそれ以上。電車が目的地に着くまで話は尽きませんでした。</p>
-
-<h2>初めてのプレゼンテーションでした</h2>
-
-<p>meetupやSymfony勉強会で部分的な紹介をした事はありますが、BEAR.Sundayフレームワークの全体のプレゼンテーションを行ったのは国内含めてこれが初めてでした。
-「インスピレーションを与える」という目的は達成できました。フィードバックをもらえたおかげで、会場に大勢の人が集まったのも、大きな拍手をもらったのも、遠い国から来てプレゼンテーションをしている人への暖かい応援というだけではなくその内容が評価されたのだと思う事ができました。</p>
-
-<p>共同発表者のリチャードさんと相談を重ね、長い時間をかけ資料を準備しました。イギリスについてからも直前まで手直しを続けました。子供たちにもスピーチを聞いてもらって何度も練習を重ねました。
-そうやって準備や練習にもとてつもないエネルギーをそそいだ成果でした。</p>
-
-<p>リチャードさんありがとうございました。本当に面白かったです！</p>
-
-<p><img src="/images/phpnw13/w_richard.jpg"><img src="/images/phpnw13/dog.jpg"></p>
-
-<p>phpnw13 blog entries</p>
-
-<p><a href="http://www.boxuk.com/php-north-west-2013">http://www.boxuk.com/php-north-west-2013</a>
-<a href="http://www.labelmedia.co.uk/blog/phpnw13.html">http://www.labelmedia.co.uk/blog/phpnw13.html</a>
-<a href="http://blogs.edgehill.ac.uk/webservices/2008/11/30/php-north-west-conference-review/">http://blogs.edgehill.ac.uk/webservices/2008/11/30/php-north-west-conference-review/</a>
-<a href="http://www.justanothermark.co.uk/blog/2013/php-north-west-2013">http://www.justanothermark.co.uk/blog/2013/php-north-west-2013</a>
-<a href="http://www.ctidigital.com/blog/development/phpnw13-guzzle-coding-standards-dependency-injection">http://www.ctidigital.com/blog/development/phpnw13-guzzle-coding-standards-dependency-injection</a>
-<a href="http://www.hashbangcode.com/blog/phpnw13-review">http://www.hashbangcode.com/blog/phpnw13-review</a></p>
-
-<p>※ 来週末の6月28日（土）に<a href="http://conference.kphpug.jp/2014/">PHPカンファレンス関西</a>で「全てを結ぶ力」というタイトルで講演を行います。PHPカンファレンス関西はこれが初めてです。よろしくお願いいたします！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page2">&larr; Older</a>
@@ -1508,6 +1511,10 @@ phpnwは参加者同士が交流できる多くの時間が用意されていま
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2020/07/06/bear-package-1-dot-10/">BEAR.Package 1.10</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2019/12/30/the-power-of-rest/">RESTの力、RESTの制約</a>
       </li>
     
@@ -1521,10 +1528,6 @@ phpnwは参加者同士が交流できる多くの時間が用意されていま
     
       <li class="post">
         <a href="/blog/2017/07/28/an-interface-as-an-api/">An Interface as an API</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/12/04/php7-dot-0-0/">PHP7.0.0</a>
       </li>
     
   </ul>
@@ -1578,7 +1581,7 @@ phpnwは参加者同士が交流できる多くの時間が用意されていま
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2019 - Akihito Koriyama -
+  Copyright &copy; 2020 - Akihito Koriyama -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
