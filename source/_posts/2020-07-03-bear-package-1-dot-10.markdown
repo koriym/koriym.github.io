@@ -130,7 +130,11 @@ return staticはPHP8で採用予定です。従来の`ResourceObject`リター�
 * [https://wiki.php.net/rfc/static_return_type](https://wiki.php.net/rfc/static_return_type)
 
 array-shapeはネイティブのPHPは理解しませんが、qaツール(phpstan/psalm)は理解し、配列キーのアクセスを検査し間違っていればエラーとして報告します。PhpStorm + [deep-assoc-completion
-klesun
-](https://plugins.jetbrains.com/plugin/9927-deep-assoc-completion)では配列キーの補完もされます。
+klesun](https://plugins.jetbrains.com/plugin/9927-deep-assoc-completion)では配列キーの補完もされます。
 
 既存のプロジェクトに新しい記法や新しいQA設定値を適用するかしないかは完全にユーザーの自由です。QAツールとBEAR.Packageに密結合はありません。コーディングルールだけなど、部分的に適用することもできます。
+
+### マニュアル更新
+
+ * [タイプ](http://bearsunday.github.io/manuals/1.0/ja/types.html) - マニュアルに新しく**タイプ**を追加しました。
+ * [プロダクション](http://bearsunday.github.io/manuals/1.0/ja/production.html) - 新しいパッケージに対応しました。
