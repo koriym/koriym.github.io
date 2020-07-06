@@ -4,7 +4,7 @@
   <title><![CDATA[BEAR Blog]]></title>
   <link href="http://koriym.github.io/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-06T16:09:19+09:00</updated>
+  <updated>2020-07-06T18:41:22+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -78,11 +78,11 @@
 
 <h2>BEAR.Resource</h2>
 
-<p><a href="https://github.com/bearsunday/BEAR.Resource/releases/tag/1.14.3">BEAR.Resource 1.14.3</a> 以降、<code>ResourceObject</code>で<code>declare(strict_types=1);</code>を宣言してもstring以外もタイプできます。
- <code>php
- public function onGet(int $num = 0)
-  {
-</code></p>
+<p><a href="https://github.com/bearsunday/BEAR.Resource/releases/tag/1.14.3">BEAR.Resource 1.14.3</a> 以降、<code>ResourceObject</code>で<code>declare(strict_types=1);</code>を宣言してもstring以外もタイプできます。</p>
+
+<pre><code class="`php">public function onGet(int $num = 0)
+{
+</code></pre>
 
 <h2>BEAR.Skeletonの変更</h2>
 
