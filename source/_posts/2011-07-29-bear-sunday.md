@@ -5,7 +5,7 @@ layout: post
 permalink: /2011/07/bear-sunday/
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2011/07/bear-sunday/">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2011/07/bear-sunday/">Tweet</a>
 </div>
 
 <div style="width:425px" id="__ss_8720699">
@@ -26,7 +26,7 @@ PHP5.3+（またはPHP5.4）専用BEARのデザインメモをスライドとgis
 
 ### CQRS (コマンドクエリ責務分離)
 
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2011/07/cqrs_architecture-300x212.jpg" alt="" title="CQRS architecture" width="300" height="212" class="alignnone size-medium wp-image-616" />][3]  
+[<img src="/wp-content/uploads/2011/07/cqrs_architecture-300x212.jpg" alt="" title="CQRS architecture" width="300" height="212" class="alignnone size-medium wp-image-616" />][3]  
 CQRSとは「コマンドクエリ責務分離」といって簡単にいうと参照と更新では責任や仕組みを分離しましょうというアーキテクチャパターンです。
 
 [Greg Young流CQRS &#8211; Mark Nijhof][4]
@@ -88,6 +88,6 @@ DDD/CQRS  REST and CQRS  ">5</a></sup> 実装を知りません。
 </ol>
 
  [1]: https://gist.github.com/1111850
- [2]: http://www.bear-project.net/blog/2011/07/bear1-to-saturday/
- [3]: http://www.bear-project.net/blog/wp-content/uploads/2011/07/cqrs_architecture.jpg
+ [2]: /blog/2011/07/bear1-to-saturday/
+ [3]: /wp-content/uploads/2011/07/cqrs_architecture.jpg
  [4]: http://d.hatena.ne.jp/digitalsoul/20100712/1278886009

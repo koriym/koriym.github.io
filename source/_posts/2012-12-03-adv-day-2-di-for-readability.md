@@ -13,7 +13,7 @@ tags:
   - Dependency Injection
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv2">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv2">Tweet</a>
 </div>
 
 ## Dependency Injection Benefits
@@ -90,4 +90,4 @@ class A
 </ol>
 
  [1]: http://tutorials.jenkov.com/dependency-injection/dependency-injection-benefits.html
- [2]: http://www.bear-project.net/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/
+ [2]: /blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/

@@ -18,14 +18,14 @@ tags:
   - 関心事の分離
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2012/04/object-framework-ray-aop/">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/04/object-framework-ray-aop/">Tweet</a>
 </div>
 
 # Apect Oriented Design
 
 ## メソッド・インターセプター
 
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/rayaop011.png" alt="" title="rayaop011" class="alignnone size-full wp-image-1410" />][1]  
+[<img src="/wp-content/uploads/2012/04/rayaop011.png" alt="" title="rayaop011" class="alignnone size-full wp-image-1410" />][1]  
 例えばテスト用途にどんな引き数が渡されても特定の同じ値を返さなければならないとします。あるいはアジリティを重視した開発で、メソッド内のコードや利用データベースが用意できていない段階でも適当に用意した値を返す必要があるとします。
 
 このような場合、通常はテスティングフレームワークを使いモックオブジェクトを生成して利用します。BEAR.SundayのRay.Diのモジュールでモックオブジェクトを用意して差し替える事もできます。しかしRay.Aopの提供するメソッドインターセプターを使えば更に簡単です。
@@ -34,7 +34,7 @@ tags:
 
 まずは基本になるオリジナルのメソッド実行と同じ動作をするインタセプターのコードです。
 
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/rayaop.012.png" alt="" title="rayaop.012" class="alignnone size-full wp-image-1412" />][2]
+[<img src="/wp-content/uploads/2012/04/rayaop.012.png" alt="" title="rayaop.012" class="alignnone size-full wp-image-1412" />][2]
 
 <div class="codecolorer-container php blackboard" style="overflow:auto;white-space:nowrap;width:100%;">
   <div class="php codecolorer">
@@ -48,7 +48,7 @@ MethodInterceptorインターフェイスのinvoke（実行）というメソッ
 
 この実行の前後に処理を記述したりすることで元も処理をまたぐ事ができます。引き数を操作したり変更したりすることもできます。<sup><a href="#footnote_0_1373" id="identifier_0_1373" class="footnote-link footnote-identifier-link" title="BEAR.SaturdayではAroundアドバイスとして実装されていものと同様のものです。">1</a></sup>またインターセプターを同じメソッドに複数適用することもできます。
 
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.015.png" alt="" title="bear-sunday-tmp-111219033305-phpapp02-1.015" class="alignnone size-full wp-image-1418" />][3]
+[<img src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.015.png" alt="" title="bear-sunday-tmp-111219033305-phpapp02-1.015" class="alignnone size-full wp-image-1418" />][3]
 
 テスト用に常にここのメソッドが”HelloTest”を返す為には以下のように変更します。
 
@@ -253,7 +253,7 @@ $this->bindInterceptor(
 Ray.AopでのAOPはコンシュマーにもサービスにもAOPフレームワークの依存がなく利用するためのサービスクラスには、イベント通知などイベントハンドリングのための仕事をする必要はありません。Ray.Diで生成されるアスペクトが織り込まれるサービスクラスは、イベントハンドリングをするサービスに含まれた状態で渡されます。該当メソッドの適用インターセプター知識をそれぞれが保持していて、イベントハンドリングがそれぞれのサービス<sup><a href="#footnote_5_1373" id="identifier_5_1373" class="footnote-link footnote-identifier-link" title="詳しくはサービスを含んだプロキシー">6</a></sup>内で行われます。<sup><a href="#footnote_6_1373" id="identifier_6_1373" class="footnote-link footnote-identifier-link" title=" この仕組みはBEAR.Resourceでリソースそれぞれがレンダラーを持っているのと似ています。サービス（レンダラー、イベントハンドラー）にデータ（テンプレート、イベントシグナル）を渡すのではなく、オブジェクトがサービスを内包しているのです。 ">7</a></sup>
 Ray.Aopを使ったアプリケーションコントローラー<sup><a href="#footnote_7_1373" id="identifier_7_1373" class="footnote-link footnote-identifier-link" title="フォームや認証、セキュリティ、ログ">8</a></sup>
 フレームワークやアプリケーションがコンシュマーとサービスの利用の関係をダイナミックにします。これを完全に外側から構成できる拡張性、関心の分離の促進によるソフトウエア品質の向上には期待をしています。<sup><a href="#footnote_8_1373" id="identifier_8_1373" class="footnote-link footnote-identifier-link" title="一方このパターンを採用する事で発生するデメリットにも注意深く対処していかなければなりません。">9</a></sup>
-v0.1.0alphaリリースを機に<a href="http://www.bear-project.net/blog/2012/04/bear-resource/">BEAR.Resource</a>、<a href="http://www.bear-project.net/blog/2012/04/di/">Ray.Di</a>、Ray.AopとBEAR.Sundayのオブジェクトフレームワークというべきものについて記事を一つ一つかいてきました。Ray.Diはオブジェクトの生成を、Ray.Aopはそのオブジェクトのメソッドの利用にこれまでにない拡張性と機能性を与えます。そうやってできたオブジェクトにRESTという制約を被せ、オブジェクトの関係を（データではなく）DSLによって記述される関係性で結合しようとするのがBEAR.Resourceです。Ray.Diはオブジェクトグラフを、BEAR.Resourceはリソースグラフを構成しようとし、それぞれのリソースクラスは自らを構成しようとします。
+v0.1.0alphaリリースを機に<a href="/blog/2012/04/bear-resource/">BEAR.Resource</a>、<a href="/blog/2012/04/di/">Ray.Di</a>、Ray.AopとBEAR.Sundayのオブジェクトフレームワークというべきものについて記事を一つ一つかいてきました。Ray.Diはオブジェクトの生成を、Ray.Aopはそのオブジェクトのメソッドの利用にこれまでにない拡張性と機能性を与えます。そうやってできたオブジェクトにRESTという制約を被せ、オブジェクトの関係を（データではなく）DSLによって記述される関係性で結合しようとするのがBEAR.Resourceです。Ray.Diはオブジェクトグラフを、BEAR.Resourceはリソースグラフを構成しようとし、それぞれのリソースクラスは自らを構成しようとします。
 
                   
 <div class="wp_social_bookmarking_light">
@@ -264,7 +264,7 @@ v0.1.0alphaリリースを機に<a href="http://www.bear-project.net/blog/2012/0
 </div>
 
 <div>
-<a href="http://b.hatena.ne.jp/entry/http://www.bear-project.net/blog/2012/04/object-framework-ray-aop/" title="はてなブックマーク - Object Framework – Ray.Aop" rel="nofollow" class="wp_social_bookmarking_light_a" target="_blank"><img src="http://b.hatena.ne.jp/entry/image/http://www.bear-project.net/blog/2012/04/object-framework-ray-aop/" alt="はてなブックマーク - Object Framework – Ray.Aop" title="はてなブックマーク - Object Framework – Ray.Aop" class="wp_social_bookmarking_light_img" /></a>
+<a href="http://b.hatena.ne.jp/entry//blog/2012/04/object-framework-ray-aop/" title="はてなブックマーク - Object Framework – Ray.Aop" rel="nofollow" class="wp_social_bookmarking_light_a" target="_blank"><img src="http://b.hatena.ne.jp/entry/image//blog/2012/04/object-framework-ray-aop/" alt="はてなブックマーク - Object Framework – Ray.Aop" title="はてなブックマーク - Object Framework – Ray.Aop" class="wp_social_bookmarking_light_img" /></a>
 </div>
 
 <div>
@@ -308,6 +308,6 @@ PDOと違って組み込みオブジェクトではないので@Injectでコン�
 </li>
 </ol>
 
- [1]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/rayaop011.png
- [2]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/rayaop.012.png
- [3]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.015.png
+ [1]: /wp-content/uploads/2012/04/rayaop011.png
+ [2]: /wp-content/uploads/2012/04/rayaop.012.png
+ [3]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.015.png

@@ -5,7 +5,7 @@ layout: post
 permalink: /2011/10/ray-annotation-based-di-system-for-php/
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2011/10/ray-annotation-based-di-system-for-php/">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2011/10/ray-annotation-based-di-system-for-php/">Tweet</a>
 </div>
 
 # Ray.Di

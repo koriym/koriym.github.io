@@ -17,7 +17,7 @@ tags:
   - require
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv1">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv1">Tweet</a>
 </div>
 
 ## include
@@ -59,7 +59,7 @@ includeによるインスタンス取得は単純です。[DIP原則][1]にも�
 
 BEAR.Sundayでは開発当初から様々なフレームワークのbest practiceを取り込みたいと考えてますがinclude文によるインスタンスの取得、およびその位置の固定化(scripts/instance.php)もその一環です。
 
- [1]: http://www.bear-project.net/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/
+ [1]: /blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/
  [2]: http://auraphp.github.com/
  [3]: https://github.com/auraphp/Aura.Signal/blob/develop/scripts/instance.php
  [4]: https://github.com/auraphp/Aura.Filter/blob/develop/scripts/instance.php

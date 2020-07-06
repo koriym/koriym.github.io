@@ -11,7 +11,7 @@ categories:
   - PHP
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv9">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv9">Tweet</a>
 </div>
 
 ## 決定論
@@ -76,4 +76,4 @@ BEAR.Sundayではその特性を利用してオブジェクト生成の再利用
 この設計パターンはパフォーマンスの寄与と、より少ないコード実行を可能にしています。
 
  [1]: http://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%97%E3%83%A9%E3%82%B9%E3%81%AE%E6%82%AA%E9%AD%94
- [2]: http://www.bear-project.net/blog/2012/12/advent-day-6-di-soc/
+ [2]: /blog/2012/12/advent-day-6-di-soc/

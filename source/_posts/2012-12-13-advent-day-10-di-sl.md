@@ -14,7 +14,7 @@ tags:
   - Service Locater
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv10">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv10">Tweet</a>
 </div>
 
 ## 依存するから？
@@ -89,4 +89,4 @@ Slでは&#8221;foo&#8221;というサービスオブジェクトを取得して�
 
  [1]: http://youtu.be/KHKC470Gkic?t=11m22s
  [2]: http://blog.ploeh.dk/2010/02/03/ServiceLocatorIsAnAntiPattern.aspx
- [3]: http://www.bear-project.net/blog/2012/10/codeasdocumentation/
+ [3]: /blog/2012/10/codeasdocumentation/

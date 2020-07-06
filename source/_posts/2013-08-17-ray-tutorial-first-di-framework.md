@@ -8,7 +8,7 @@ custom_permalink:
 categories:
   - BEAR
 ---
-<div style="float: right; margin-left: 10px;"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/first-di-framework">Tweet</a></div>
+<div style="float: right; margin-left: 10px;"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/first-di-framework">Tweet</a></div>
 <h1>初めてのDIフレームワーク</h1>
 <h2>準備</h2>
  1. PHP5.4+で動作します。mysqlで予め<a href="https://github.com/koriym/Ray.Tutorial/blob/master/doc/todo.sql">テーブルを作成</a>しておきます。

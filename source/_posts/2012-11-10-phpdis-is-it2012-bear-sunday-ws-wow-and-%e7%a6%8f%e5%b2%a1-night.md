@@ -16,7 +16,7 @@ tags:
   - 九州
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/phpmatsuri2012">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/phpmatsuri2012">Tweet</a>
 </div>
 
 # PHP:Dis Is It(2012)
@@ -172,4 +172,4 @@ PHP5.4はどうか？という質問もありました。これは会場の多�
 </ol>
 
  [1]: http://www.phpmatsuri.net/2012/
- [2]: http://www.bear-project.net/blog/2011/12/php-dis-is-it/
+ [2]: /blog/2011/12/php-dis-is-it/

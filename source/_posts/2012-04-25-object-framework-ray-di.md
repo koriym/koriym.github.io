@@ -9,12 +9,12 @@ categories:
   - 未分類
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2012/04/di/">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/04/di/">Tweet</a>
 </div>
 
 ## Dependency Injection
 
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.0102.png" alt="" title="bear-sunday-tmp-111219033305-phpapp02-1.010" class="alignnone size-full wp-image-1368" />][1]  
+[<img src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.0102.png" alt="" title="bear-sunday-tmp-111219033305-phpapp02-1.010" class="alignnone size-full wp-image-1368" />][1]  
 BEAR.Sundayではオブジェクトが必要とするインスタンスを、自ら取得しないでインジェクターに代入してもらうことを期待します。
 
 コンストラクタやセッターメソッド経由で外部から代入されることをインジェクション（注入）、必要とするものをディペンデンシー（依存）と呼びます。ディペンデンシーを利用するクラスはコンシュマーと呼びます。
@@ -128,7 +128,7 @@ $user = new User(new Db($_ENV['master_db']));
 
 Userクラスを生成するときにRay.DiはそのクラスをつくるためにはDbオブジェクトが必要だと言う事を検知します。Dbオブジェクトを生成しようとしますが、ところがその生成にはDB接続情報が必要とも検知します。インジェクターがもつ構成知識でDB接続情報は得られます。得られた情報を使ってDBオブジェクトを生成します。そうやって依存の依存を順番に辿り依存性の解決（Dependency Resolution)を行い元のインスタンスを生成します。依存がツリー構造になっているこのオブジェクトをオブジェクトグラフと呼びます。
 
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.035.png" alt="" title="Object Graph" class="alignnone size-full wp-image-1370" />][2]
+[<img src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.035.png" alt="" title="Object Graph" class="alignnone size-full wp-image-1370" />][2]
 
 ## コンストラクションの再利用
 
@@ -145,7 +145,7 @@ BEAR.Sundayではプログラムの中でいつでもインジェクターを使
 
 ##### indexページ画面
 
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/77289491623cb7d47294d7b9e69ed064.png" alt="" title="Indexページ" class="alignnone size-full wp-image-1371" />][3]
+[<img src="/wp-content/uploads/2012/04/77289491623cb7d47294d7b9e69ed064.png" alt="" title="Indexページ" class="alignnone size-full wp-image-1371" />][3]
 
 ##### indexページリソーススクリプト
 
@@ -278,7 +278,7 @@ Ray.Diは<strong>可変点の明確化と最小化</strong>というBEAR.Sunday�
 </div>
 
 <div>
-<a href="http://b.hatena.ne.jp/entry/http://www.bear-project.net/blog/2012/04/di/" title="はてなブックマーク - Object Framework – Ray.Di" rel="nofollow" class="wp_social_bookmarking_light_a" target="_blank"><img src="http://b.hatena.ne.jp/entry/image/http://www.bear-project.net/blog/2012/04/di/" alt="はてなブックマーク - Object Framework – Ray.Di" title="はてなブックマーク - Object Framework – Ray.Di" class="wp_social_bookmarking_light_img" /></a>
+<a href="http://b.hatena.ne.jp/entry//blog/2012/04/di/" title="はてなブックマーク - Object Framework – Ray.Di" rel="nofollow" class="wp_social_bookmarking_light_a" target="_blank"><img src="http://b.hatena.ne.jp/entry/image//blog/2012/04/di/" alt="はてなブックマーク - Object Framework – Ray.Di" title="はてなブックマーク - Object Framework – Ray.Di" class="wp_social_bookmarking_light_img" /></a>
 </div>
 
 <div>
@@ -328,6 +328,6 @@ Ray.Diは<strong>可変点の明確化と最小化</strong>というBEAR.Sunday�
 </li>
 </ol>
 
- [1]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.0102.png
- [2]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.035.png
- [3]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/77289491623cb7d47294d7b9e69ed064.png
+ [1]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.0102.png
+ [2]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.035.png
+ [3]: /wp-content/uploads/2012/04/77289491623cb7d47294d7b9e69ed064.png

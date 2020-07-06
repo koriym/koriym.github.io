@@ -8,11 +8,11 @@ categories:
   - PHP
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2012/04/bear-resource/">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/04/bear-resource/">Tweet</a>
 </div>
 
 BEAR.Sundayは**DI**、**AOP**、**REST**、この３つの技術をコアにしたオブジェクトフレームワークをベースにしています。  
-[<img class="alignnone size-full wp-image-1257" title="2bear-sunday-tmp-111219033305-phpapp02.002-001" src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/2bear-sunday-tmp-111219033305-phpapp02.002-001.png" alt="" />][1]  
+[<img class="alignnone size-full wp-image-1257" title="2bear-sunday-tmp-111219033305-phpapp02.002-001" src="/wp-content/uploads/2012/04/2bear-sunday-tmp-111219033305-phpapp02.002-001.png" alt="" />][1]  
 このオブジェクトフレームワークがある程度完成したのを機に、今回v0.1.0alphaとして一旦まとめました。<sup><a href="#footnote_0_1178" id="identifier_0_1178" class="footnote-link footnote-identifier-link" title="HelloWorldしか出ない状態が長く続いたのにも関わらずソースをみたり関心を持ってもらった方がおられました。ありがとうございます">1</a></sup> まだ実用レベルではなくこれからこのオブジェクトフレームワークの上に、APIフレームワーク、webアプリケーションフレームワークと、フレームワークのレイヤーを重ねていく予定です。
 
 この記事では現在のv0.1.0alpha実装からBEAR.Sundayの特徴を紹介します。
@@ -23,7 +23,7 @@ BEAR.Sudayで中心になるのがリソースオブジェクトです。MVCで�
 
 それぞれのリソースはURIで表すことができ、スキーマに応じて処理の仕組みが変わります。最も標準的なものはリソースURIとPHPクラスがマップされるリソースオブジェクトです。HTTPのリクエストメソッドに準じたインターフェイスメソッドを持ち、リクエスト処理を記述します。役割に応じてpageリソースやappリソースとスキーマや呼び方は代わりますが基本的な仕組みは同じです。
 
-[<img class="alignnone size-full wp-image-1263" title="page resource" src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.005-001.png" alt="" />][2]
+[<img class="alignnone size-full wp-image-1263" title="page resource" src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.005-001.png" alt="" />][2]
 
 ウエブページのようなオブジェクトと思ってみてください。
 
@@ -70,7 +70,7 @@ class Hello extends Page
 
 ## レイヤード・リソース
 
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.005.jpg" alt="" title="Layerd Resource" class="alignnone size-full wp-image-1301" />][3]  
+[<img src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.005.jpg" alt="" title="Layerd Resource" class="alignnone size-full wp-image-1301" />][3]  
 pageリソースはwebクライアウントから最初にコールされるリソースレイヤーです。多くの場合、（更に関心を細分化した）appリソースをページからリクエストします。コントローラーがモデルをリクエストするようなもので、pageリソースは**pageコントローラー**、appリソースは**内部APIとして振る舞うモデル**として機能します。
 
 最初の例の単純な例のpageリソースはコントローラーとして機能するよりも、リソースコンテンツを変更することで自身を構成しています。自身がレスポンスオブジェクトのようですがこれは不作法なことではありません。リソースは関心に応じてレイヤリングしますが、単純なHelloページではそのページだけで完結する場合もあるでしょう。一方、appリソースでも必要があれば関心にレイヤリングを適用して、適切なネストのレイヤーを持つのが良いでしょう。
@@ -173,8 +173,8 @@ BEAR.Sundayではリソースからデータを受け取ってテンプレート
 
 図をご覧下さい。
 
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.008.jpg" alt="" title="Web MVC" class="alignnone size-full wp-image-1303" />][4]  
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.009.jpg" alt="" title="BEAR.Resource" class="alignnone size-full wp-image-1304" />][5]
+[<img src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.008.jpg" alt="" title="Web MVC" class="alignnone size-full wp-image-1303" />][4]  
+[<img src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.009.jpg" alt="" title="BEAR.Resource" class="alignnone size-full wp-image-1304" />][5]
 
 存在するリソースの１つ１つのオブジェクトがレンダラー（Viewオブジェクト）を保持します。<sup><a href="#footnote_3_1178" id="identifier_3_1178" class="footnote-link footnote-identifier-link" title="アプリケーションスコープでシングルトン">4</a></sup>　
 
@@ -228,7 +228,7 @@ $this['performance'] = $this
                        ->request();
 ```
 page / secで表示されている値がそうです。  
-[<img src="http://www.bear-project.net/blog/wp-content/uploads/2012/04/9bed6295cf4f6d5746d67365cba086de.png" alt="" title="スクリーンショット 2012-04-25 4.15.17" class="alignnone size-full wp-image-1358" />][6]
+[<img src="/wp-content/uploads/2012/04/9bed6295cf4f6d5746d67365cba086de.png" alt="" title="スクリーンショット 2012-04-25 4.15.17" class="alignnone size-full wp-image-1358" />][6]
 
 これはeagerが使われていないので、bodyのperformanceにapp://self/performanceへのGETリクエストがセットされたことになります。このリソースが実際に行われるのはコンパイル済みのテンプレートでこのリソースが出現するタイミングです。
 
@@ -264,9 +264,9 @@ smartyのコンパイル済みテンプレートではこの部分です。
 
 次回の記事はDIです。BEAR.SundayはRay.Diというディペンデンシーインジェクターを用いてオブジェクトのコンストラションおよびインジェクションを行います。Ray.DiはBEAR.Sundayのために開発したGoogle GuiceクローンのDIフレームワークです。アノテーションを用いつつサービスコンテナにも依存しないよりクリーンなDIが可能です。
 
- [1]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/2bear-sunday-tmp-111219033305-phpapp02.002-001.png
- [2]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.005-001.png
- [3]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.005.jpg
- [4]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.008.jpg
- [5]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.009.jpg
- [6]: http://www.bear-project.net/blog/wp-content/uploads/2012/04/9bed6295cf4f6d5746d67365cba086de.png
+ [1]: /wp-content/uploads/2012/04/2bear-sunday-tmp-111219033305-phpapp02.002-001.png
+ [2]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.005-001.png
+ [3]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.005.jpg
+ [4]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.008.jpg
+ [5]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02.009.jpg
+ [6]: /wp-content/uploads/2012/04/9bed6295cf4f6d5746d67365cba086de.png

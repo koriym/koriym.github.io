@@ -15,7 +15,7 @@ tags:
   - 抽象に依存せよ
 ---
 <div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/">Tweet</a>
 </div>
 
 Robert C. Martin氏による有名なオブジェクト指向設計（OOD）の原則**Principles of OOD**があります。そのうちDIP:依存逆転原則はクラス同士の結合度をいかに減らすか、またはどちらに依存すべきかを判定する原則です。
