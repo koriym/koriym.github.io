@@ -4,7 +4,7 @@
   <title><![CDATA[BEAR Blog]]></title>
   <link href="http://koriym.github.io/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-06T03:48:18+09:00</updated>
+  <updated>2020-07-06T10:18:10+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -56,7 +56,13 @@
 
 <p>コンパイラが改善され、<code>autoload.php</code>、<code>preload</code>がより正確に出力されオブジェクトグラフの描画出力(<code>module.dot</code>)も行われます。</p>
 
-<p>ファイルの上書きに気が付くように<code>(overwritten)</code>の表示が行われるようになりました。複数コンテキストのコンパイルを行うときにはファイルの対比が必要です。</p>
+<p>ファイルの上書きに気が付くように<code>(overwritten)</code>の表示が行われるようになりました。
+コンテントネゴシエーションを行う場合など(ex. api-app, html-app)1つのアプリケーションで複数コンテキストのコンパイルを行うときにはファイルの退避が必要です。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>mv autoload.php api.autoload.php
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h2>prodキャッシュの変更</h2>
 
@@ -66,7 +72,7 @@
 
 <h2>キャッシュクリア</h2>
 
-<p>新しいインジェクターでは、以前までの<code>src</code>のタイムスタンプをキャッシュキーに含める方法は廃止されました。これは元々、コンパイル環境とプロダクション環境が同一なことを前提として、APCのクリアもwebサーバーの再起動無しに行う、tmp削除の権限のないユーザーなどの理由で設置されたものですが、prodキャッシュの変更の変更によりより単純に開発時は<code>tmp/</code>を消去するというのがキャッシュクリアの方法になります。</p>
+<p>新しいインジェクターでは、以前までの<code>src</code>のタイムスタンプをキャッシュキーに含める方法は廃止されました。これは元々、コンパイル環境とプロダクション環境が同一なことを前提として、APCのクリアもwebサーバーの再起動無しに行う、tmp削除の権限のないユーザーなどの理由で設置されたものですが、prodキャッシュの変更により単純に開発時は<code>tmp/</code>を消去するというのがキャッシュクリアの方法になります。</p>
 
 <h2>BEAR.Resource</h2>
 
@@ -106,7 +112,7 @@
 
 <ul>
 <li>strict_types=1に</li>
-<li>bodyの配列を方を表すarray shapes記法(Object-like arrays)に。</li>
+<li>bodyの配列を型を表すarray shapes記法(Object-like arrays)に。</li>
 <li>return typeを<code>static</code>に</li>
 </ul>
 
@@ -160,7 +166,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>return staticはphp8で採用予定です。従来の<code>ResourceObject</code>リターンタイプより正確です。</p>
+<p>return staticはPHP8で採用予定です。従来の<code>ResourceObject</code>リターンタイプより正確です。</p>
 
 <ul>
 <li><a href="https://wiki.php.net/rfc/static_return_type">https://wiki.php.net/rfc/static_return_type</a></li>
