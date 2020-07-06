@@ -17,7 +17,7 @@ categories:
 
 WEB+DB PRESSの大人気連載「巨人の肩からPHP 先人たちに学ぶモダンプログラミング」の連載５回目にBEAR.Sundayをとりあげて頂きました。
 
-[<img src="/wp-content/uploads/2013/02/734505566.jpg" alt="734505566" class="aligncenter size-full wp-image-1676" />][1] 
+[<img src="/images/wp-content/uploads/2013/02/734505566.jpg" alt="734505566" class="aligncenter size-full wp-image-1676" />][1] 
 RESTやRESTとBEAR.Sundayの関わりに触れてから、実際のリソースやリソース実装がどのようなコードになるかを紹介してもらっています。限られたページの中でよくまとまっていると思います。執筆編集の方々、ありがとうございます。
 
 サンプルを雑誌に掲載されているようにSandboxアプリケーションでお試ししてもらっても全然問題ないのですが、雑誌掲載後にアプリケーションのスケルトンコードをcomposer create-projectで作成する機能がつきました。apps/ディレクトリで以下のようにアプリケーションディレクトリ名を指定してインストールします。
@@ -31,4 +31,4 @@ MyAppはアプリケーション名です。インストール直後にcomposer�
 
 BEAR.Sundayの総合パッケージであるBEAR.PackageのインストールしてからMyAppというアプリケーションを作成してます。作成した後にコンソールでHTMLの確認、built in web serverでそのwebサイトを確認しています。
 
- [1]: /wp-content/uploads/2013/02/734505566.jpg
+ [1]: /images/wp-content/uploads/2013/02/734505566.jpg

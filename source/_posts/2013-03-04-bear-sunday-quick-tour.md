@@ -143,7 +143,7 @@ php -S localhost:8088 web.php
 ```
 
 挨拶が表示されました。devモードではツールバーと共に表示されます。  
-[<img src="/wp-content/uploads/2013/03/1582b4c4f63329511aff544dd1ebef7e.png" alt="スクリーンショット 2013-03-04 21.53.49" class="alignleft size-full wp-image-1705" />][1]<br clear="all" />
+[<img src="/images/wp-content/uploads/2013/03/1582b4c4f63329511aff544dd1ebef7e.png" alt="スクリーンショット 2013-03-04 21.53.49" class="alignleft size-full wp-image-1705" />][1]<br clear="all" />
 
 この挨拶には<b class="button">page://self/index</b>という名前(URI)がついています。このURIのついた情報は「リソース」と呼ばれます。
 
@@ -152,7 +152,7 @@ php -S localhost:8088 web.php
 ## オンライン編集
 
 リソースのコードとビューテンプレートはwebブラウザ上で編集することができます。  
-[<img src="/wp-content/uploads/2013/03/fcb9351e421ea4a9831bb99e3340bc67.png" alt="スクリーンショット 2013-03-04 22.13.22" class="alignleft size-full wp-image-1714" />][2]<br clear="all" />  
+[<img src="/images/wp-content/uploads/2013/03/fcb9351e421ea4a9831bb99e3340bc67.png" alt="スクリーンショット 2013-03-04 22.13.22" class="alignleft size-full wp-image-1714" />][2]<br clear="all" />  
 保存にはショートカットキーも使えます。(⌘W / Ctl+W)
 
 ## シンタックスエラー
@@ -161,7 +161,7 @@ php -S localhost:8088 web.php
 
 ClassのCを誤って消してしまいました。シンタックスエラーになりますがエラーある状態でアプリケーションを実行するとエラーメッセージの表示されたエディターが表示されます。
 
-[<img src="/wp-content/uploads/2013/03/9f9ffde325710fd6e898bf8086c17f37.png" alt="スクリーンショット 2013-03-04 22.27.37" class="alignleft size-full wp-image-1716" />][3]<br clear="all" />  
+[<img src="/images/wp-content/uploads/2013/03/9f9ffde325710fd6e898bf8086c17f37.png" alt="スクリーンショット 2013-03-04 22.27.37" class="alignleft size-full wp-image-1716" />][3]<br clear="all" />  
 その場で修正して、「保存」「再読み込み」ですぐに復帰します。ケアレスミスによる思考の中断を最小限にします。
 
 ## クエリーを読む
@@ -189,7 +189,7 @@ public function onGet($name = 'BEAR.Sunday')
     }
 {% endcodeblock %}
 
-[<img src="/wp-content/uploads/2013/03/271d16f1b59a267b7e7b571c9ee77c84.png" alt="スクリーンショット 2013-03-04 22.43.18" class="alignleft size-full wp-image-1718" />][4]<br clear="all" />
+[<img src="/images/wp-content/uploads/2013/03/271d16f1b59a267b7e7b571c9ee77c84.png" alt="スクリーンショット 2013-03-04 22.43.18" class="alignleft size-full wp-image-1718" />][4]<br clear="all" />
 
 *メソッドは**$_GET**クエリーと同じく名前で指定されるので（名前付き引き数＝named parameter)通常のPHPの引き数のように引き数の順番では変数名で指定されます。（順番は関係ありません）$_GETのクエリーは取得するのではなく、PHPのメソッドと融合して与えられている事にも注目してください。*
 
@@ -199,7 +199,7 @@ public function onGet($name = 'BEAR.Sunday')
 
 リソースクラスファイルの拡張子をtplあるいはtwigに変えたものがそのリソースの表現に用いられるビューテンプレートになります。
 
-[<img src="/wp-content/uploads/2013/03/7aa52204264f594c4f4a7fdfb5fa4cca.png" alt="スクリーンショット 2013-03-04 22.55.42" class="alignleft size-full wp-image-1723" />][5]<br clear="all" />
+[<img src="/images/wp-content/uploads/2013/03/7aa52204264f594c4f4a7fdfb5fa4cca.png" alt="スクリーンショット 2013-03-04 22.55.42" class="alignleft size-full wp-image-1723" />][5]<br clear="all" />
 
 ## /dev/ツール
 
@@ -207,12 +207,12 @@ public function onGet($name = 'BEAR.Sunday')
 
 URLに/dev/と入力するとデバックツールが表示されます
 
-[<img src="/wp-content/uploads/2013/03/55d203fe83ff32fa33156f66650ac8e1.png" alt="スクリーンショット 2013-03-04 22.58.27" class="alignleft size-full wp-image-1724" />][6] 
+[<img src="/images/wp-content/uploads/2013/03/55d203fe83ff32fa33156f66650ac8e1.png" alt="スクリーンショット 2013-03-04 22.58.27" class="alignleft size-full wp-image-1724" />][6] 
 ### リソース一覧 
 
 /dev/resource/ ではリソースを一覧したり新規のリソースをつくることができます。
 
-[<img src="/wp-content/uploads/2013/03/e4249349b0ca4c6ad94182c21b6b6c69.png" alt="スクリーンショット 2013-03-04 22.59.31" class="alignleft size-full wp-image-1725" />][7]<br clear="all" />
+[<img src="/images/wp-content/uploads/2013/03/e4249349b0ca4c6ad94182c21b6b6c69.png" alt="スクリーンショット 2013-03-04 22.59.31" class="alignleft size-full wp-image-1725" />][7]<br clear="all" />
 
 つくったばかりのHelloアプリケーションは**page://self/index**というページリソースが１つ。利用可能なメソッドはGETだけという事が分かります。リソース（モデル）は、アプリケーションの核心です。アプリケーション管理者はそのアプリケーションにいくつ、どんなリソースがあるかをこのリソース画面で知る事ができます。
 
@@ -231,13 +231,13 @@ URLに/dev/と入力するとデバックツールが表示されます
   </li>
 </ol>
 
- [1]: /wp-content/uploads/2013/03/1582b4c4f63329511aff544dd1ebef7e.png
- [2]: /wp-content/uploads/2013/03/fcb9351e421ea4a9831bb99e3340bc67.png
- [3]: /wp-content/uploads/2013/03/9f9ffde325710fd6e898bf8086c17f37.png
- [4]: /wp-content/uploads/2013/03/271d16f1b59a267b7e7b571c9ee77c84.png
- [5]: /wp-content/uploads/2013/03/7aa52204264f594c4f4a7fdfb5fa4cca.png
- [6]: /wp-content/uploads/2013/03/55d203fe83ff32fa33156f66650ac8e1.png
- [7]: /wp-content/uploads/2013/03/e4249349b0ca4c6ad94182c21b6b6c69.png
+ [1]: /images/wp-content/uploads/2013/03/1582b4c4f63329511aff544dd1ebef7e.png
+ [2]: /images/wp-content/uploads/2013/03/fcb9351e421ea4a9831bb99e3340bc67.png
+ [3]: /images/wp-content/uploads/2013/03/9f9ffde325710fd6e898bf8086c17f37.png
+ [4]: /images/wp-content/uploads/2013/03/271d16f1b59a267b7e7b571c9ee77c84.png
+ [5]: /images/wp-content/uploads/2013/03/7aa52204264f594c4f4a7fdfb5fa4cca.png
+ [6]: /images/wp-content/uploads/2013/03/55d203fe83ff32fa33156f66650ac8e1.png
+ [7]: /images/wp-content/uploads/2013/03/e4249349b0ca4c6ad94182c21b6b6c69.png
  [8]: /blog/WEB-DB-PRESS-Vol73
  [9]: https://code.google.com/p/bearsunday/wiki/my_first_index
  [10]: https://code.google.com/p/bearsunday/wiki/blog

@@ -25,7 +25,7 @@ tags:
 
 ## メソッド・インターセプター
 
-[<img src="/wp-content/uploads/2012/04/rayaop011.png" alt="" title="rayaop011" class="alignnone size-full wp-image-1410" />][1]  
+[<img src="/images/wp-content/uploads/2012/04/rayaop011.png" alt="" title="rayaop011" class="alignnone size-full wp-image-1410" />][1]  
 例えばテスト用途にどんな引き数が渡されても特定の同じ値を返さなければならないとします。あるいはアジリティを重視した開発で、メソッド内のコードや利用データベースが用意できていない段階でも適当に用意した値を返す必要があるとします。
 
 このような場合、通常はテスティングフレームワークを使いモックオブジェクトを生成して利用します。BEAR.SundayのRay.Diのモジュールでモックオブジェクトを用意して差し替える事もできます。しかしRay.Aopの提供するメソッドインターセプターを使えば更に簡単です。
@@ -34,7 +34,7 @@ tags:
 
 まずは基本になるオリジナルのメソッド実行と同じ動作をするインタセプターのコードです。
 
-[<img src="/wp-content/uploads/2012/04/rayaop.012.png" alt="" title="rayaop.012" class="alignnone size-full wp-image-1412" />][2]
+[<img src="/images/wp-content/uploads/2012/04/rayaop.012.png" alt="" title="rayaop.012" class="alignnone size-full wp-image-1412" />][2]
 
 <div class="codecolorer-container php blackboard" style="overflow:auto;white-space:nowrap;width:100%;">
   <div class="php codecolorer">
@@ -48,7 +48,7 @@ MethodInterceptorインターフェイスのinvoke（実行）というメソッ
 
 この実行の前後に処理を記述したりすることで元も処理をまたぐ事ができます。引き数を操作したり変更したりすることもできます。<sup><a href="#footnote_0_1373" id="identifier_0_1373" class="footnote-link footnote-identifier-link" title="BEAR.SaturdayではAroundアドバイスとして実装されていものと同様のものです。">1</a></sup>またインターセプターを同じメソッドに複数適用することもできます。
 
-[<img src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.015.png" alt="" title="bear-sunday-tmp-111219033305-phpapp02-1.015" class="alignnone size-full wp-image-1418" />][3]
+[<img src="/images/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.015.png" alt="" title="bear-sunday-tmp-111219033305-phpapp02-1.015" class="alignnone size-full wp-image-1418" />][3]
 
 テスト用に常にここのメソッドが”HelloTest”を返す為には以下のように変更します。
 
@@ -308,6 +308,6 @@ PDOと違って組み込みオブジェクトではないので@Injectでコン�
 </li>
 </ol>
 
- [1]: /wp-content/uploads/2012/04/rayaop011.png
- [2]: /wp-content/uploads/2012/04/rayaop.012.png
- [3]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.015.png
+ [1]: /images/wp-content/uploads/2012/04/rayaop011.png
+ [2]: /images/wp-content/uploads/2012/04/rayaop.012.png
+ [3]: /images/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.015.png

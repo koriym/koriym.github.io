@@ -14,7 +14,7 @@ categories:
 
 ## Dependency Injection
 
-[<img src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.0102.png" alt="" title="bear-sunday-tmp-111219033305-phpapp02-1.010" class="alignnone size-full wp-image-1368" />][1]  
+[<img src="/images/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.0102.png" alt="" title="bear-sunday-tmp-111219033305-phpapp02-1.010" class="alignnone size-full wp-image-1368" />][1]  
 BEAR.Sundayではオブジェクトが必要とするインスタンスを、自ら取得しないでインジェクターに代入してもらうことを期待します。
 
 コンストラクタやセッターメソッド経由で外部から代入されることをインジェクション（注入）、必要とするものをディペンデンシー（依存）と呼びます。ディペンデンシーを利用するクラスはコンシュマーと呼びます。
@@ -128,7 +128,7 @@ $user = new User(new Db($_ENV['master_db']));
 
 Userクラスを生成するときにRay.DiはそのクラスをつくるためにはDbオブジェクトが必要だと言う事を検知します。Dbオブジェクトを生成しようとしますが、ところがその生成にはDB接続情報が必要とも検知します。インジェクターがもつ構成知識でDB接続情報は得られます。得られた情報を使ってDBオブジェクトを生成します。そうやって依存の依存を順番に辿り依存性の解決（Dependency Resolution)を行い元のインスタンスを生成します。依存がツリー構造になっているこのオブジェクトをオブジェクトグラフと呼びます。
 
-[<img src="/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.035.png" alt="" title="Object Graph" class="alignnone size-full wp-image-1370" />][2]
+[<img src="/images/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.035.png" alt="" title="Object Graph" class="alignnone size-full wp-image-1370" />][2]
 
 ## コンストラクションの再利用
 
@@ -145,7 +145,7 @@ BEAR.Sundayではプログラムの中でいつでもインジェクターを使
 
 ##### indexページ画面
 
-[<img src="/wp-content/uploads/2012/04/77289491623cb7d47294d7b9e69ed064.png" alt="" title="Indexページ" class="alignnone size-full wp-image-1371" />][3]
+[<img src="/images/wp-content/uploads/2012/04/77289491623cb7d47294d7b9e69ed064.png" alt="" title="Indexページ" class="alignnone size-full wp-image-1371" />][3]
 
 ##### indexページリソーススクリプト
 
@@ -328,6 +328,6 @@ Ray.Diは<strong>可変点の明確化と最小化</strong>というBEAR.Sunday�
 </li>
 </ol>
 
- [1]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.0102.png
- [2]: /wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.035.png
- [3]: /wp-content/uploads/2012/04/77289491623cb7d47294d7b9e69ed064.png
+ [1]: /images/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.0102.png
+ [2]: /images/wp-content/uploads/2012/04/bear-sunday-tmp-111219033305-phpapp02-1.035.png
+ [3]: /images/wp-content/uploads/2012/04/77289491623cb7d47294d7b9e69ed064.png

@@ -26,7 +26,7 @@ PHP5.3+（またはPHP5.4）専用BEARのデザインメモをスライドとgis
 
 ### CQRS (コマンドクエリ責務分離)
 
-[<img src="/wp-content/uploads/2011/07/cqrs_architecture-300x212.jpg" alt="" title="CQRS architecture" width="300" height="212" class="alignnone size-medium wp-image-616" />][3]  
+[<img src="/images/wp-content/uploads/2011/07/cqrs_architecture-300x212.jpg" alt="" title="CQRS architecture" width="300" height="212" class="alignnone size-medium wp-image-616" />][3]  
 CQRSとは「コマンドクエリ責務分離」といって簡単にいうと参照と更新では責任や仕組みを分離しましょうというアーキテクチャパターンです。
 
 [Greg Young流CQRS &#8211; Mark Nijhof][4]
@@ -89,5 +89,5 @@ DDD/CQRS  REST and CQRS  ">5</a></sup> 実装を知りません。
 
  [1]: https://gist.github.com/1111850
  [2]: /blog/2011/07/bear1-to-saturday/
- [3]: /wp-content/uploads/2011/07/cqrs_architecture.jpg
+ [3]: /images/wp-content/uploads/2011/07/cqrs_architecture.jpg
  [4]: http://d.hatena.ne.jp/digitalsoul/20100712/1278886009
