@@ -4,7 +4,7 @@
   <title><![CDATA[BEAR Blog]]></title>
   <link href="http://koriym.github.io/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-06T10:18:10+09:00</updated>
+  <updated>2020-07-06T15:27:01+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -18,10 +18,12 @@
     <link href="http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10/"/>
     <updated>2020-07-06T03:00:00+09:00</updated>
     <id>http://koriym.github.io/blog/2020/07/06/bear-package-1-dot-10</id>
-    <content type="html"><![CDATA[<p>BEAR.Package 1.10をリリースします。</p>
+    <content type="html"><![CDATA[<p>BEAR.Package 1.10をリリースしました。</p>
 
 <p>新しいインジェクターにより開発時のパフォーマンスが大幅に改善し、コンパイラはより最適化された<code>autoload.php</code>や<code>preload.php</code>を出力します。
-最新の Ray.Aop/Di/Compilerはオンデマンドコンパイルの耐障害性が向上しました。新しいスケルトンも用意しました。</p>
+最新の Ray.Aop/Di/Compilerはオンデマンドコンパイルの耐障害性が向上しました。</p>
+
+<p>用意された新しいスケルトン <a href="https://github.com/bearsunday/BEAR.Skeleton/releases/tag/1.8.0">BEAR.Skeleton 1.8</a>はハイパーメディアとHTTPテストが追加され、より厳しいQAツールの設定に変更されました。</p>
 
 <h2>後方互換性</h2>
 
