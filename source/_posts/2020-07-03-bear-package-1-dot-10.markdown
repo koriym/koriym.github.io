@@ -65,9 +65,10 @@ $ mv autoload.php api.autoload.php
 ## BEAR.Resource
 
 [BEAR.Resource 1.14.3](https://github.com/bearsunday/BEAR.Resource/releases/tag/1.14.3) 以降、`ResourceObject`で`declare(strict_types=1);`を宣言してもstring以外もタイプできます。
+
  ```php
- public function onGet(int $num = 0)
-  {
+public function onGet(int $num = 0)
+{
  ```
 
 ## BEAR.Skeletonの変更
