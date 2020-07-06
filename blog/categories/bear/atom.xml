@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bear | BEAR Blog]]></title>
   <link href="http://koriym.github.io/blog/categories/bear/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-06T18:41:22+09:00</updated>
+  <updated>2020-07-07T02:29:41+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -1190,7 +1190,7 @@ How do we look at the problem.</p>
     <updated>2013-08-25T00:00:00+09:00</updated>
     <id>http://koriym.github.io/pear</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/pear">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/pear">Tweet</a>
 </div>
 
 

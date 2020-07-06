@@ -102,7 +102,7 @@ Reduced &hellip;">
 
 
 <div class="entry-content"><div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv2">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv2">Tweet</a>
 </div>
 
 
@@ -179,7 +179,7 @@ Reduced &hellip;">
 
 <p>メソッドには<strong>@Inject</strong>がアノテートされ、外部からの注入が行われる事を示しています。これはコードを読むプログラマにとっても、注入ポイントを知る必要があるインジェクターにとっても文字通りアノテーション（注記）となっています。</p>
 
-<p>外部のインスタンスを取得方法は前回記事のincludeと同じく最小化されています。取得方法のコーディングが必要ないということは、依存の取得が容易であると同時に依存提供の方法や依存内容も変更可能だということを意味します。インターフェイスを通じて受け取る方法は<strong>「詳細ではなく抽象に依存せよ」</strong>という<a href="http://www.bear-project.net/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/">DIP原則</a>にも従っています。</p>
+<p>外部のインスタンスを取得方法は前回記事のincludeと同じく最小化されています。取得方法のコーディングが必要ないということは、依存の取得が容易であると同時に依存提供の方法や依存内容も変更可能だということを意味します。インターフェイスを通じて受け取る方法は<strong>「詳細ではなく抽象に依存せよ」</strong>という<a href="/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/">DIP原則</a>にも従っています。</p>
 
 <p>また依存の利用個所はクラス前半に記述してあるコンストラクタとセッターメソッドに集約されていてそのクラスがどの依存を利用するかをすぐに知るのは容易です。依存を知るためにコードの全てを見る必要がありません。依存は外部から代入され、ランタイム（実行時のコード途中で）で&#8221;PULL&#8221;されないためです。<sup><a href="#footnote_0_1259" id="identifier_0_1259" class="footnote-link footnote-identifier-link" title="この点はSLより優れています">1</a></sup></p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Test | BEAR Blog]]></title>
   <link href="http://koriym.github.io/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-06T18:41:22+09:00</updated>
+  <updated>2020-07-07T02:29:41+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -19,11 +19,11 @@
     <updated>2011-05-20T00:00:00+09:00</updated>
     <id>http://koriym.github.io/2011/05/php%e3%82%82%e3%82%84%e3%82%89%e3%81%aa%e3%81%8d%e3%82%83jenkins</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2011/05/php%e3%82%82%e3%82%84%e3%82%89%e3%81%aa%e3%81%8d%e3%82%83jenkins/">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2011/05/php%e3%82%82%e3%82%84%e3%82%89%e3%81%aa%e3%81%8d%e3%82%83jenkins/">Tweet</a>
 </div>
 
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2011/05/2793401dfcd60fa8778cab5a1524cd8f.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2011/05/2793401dfcd60fa8778cab5a1524cd8f.png" alt="" title="Jenkins" width="415" height="147" class="alignnone size-full wp-image-376" /></a>
+<p><a href="/images/wp-content/uploads/2011/05/2793401dfcd60fa8778cab5a1524cd8f.png"><img src="http://koriym.github.io/images/wp-content/uploads/2011/05/2793401dfcd60fa8778cab5a1524cd8f.png" alt="" title="Jenkins" width="415" height="147" class="alignnone size-full wp-image-376" /></a>
 改名なのかフォークなのか、とにかくHudsonプロジェクトはHudsonとJenkinsに分かれました。（開発者はフォークではなく改名と主張していて、この辺りの話はinfoQが詳しいようです。<a href="http://www.infoq.com/jp/hudson">http://www.infoq.com/jp/hudson</a> )<br/>
 ※前回の記事で紹介したphp-hudson-template はphp-jenkins-template に変わっています。</p>
 
@@ -110,7 +110,7 @@ buildがうまくできると、zf2/build/に出力結果が保存されます�
 <code>
 $ open build/code-browser/index.html
 </code><br/>
-<a href="http://www.bear-project.net/blog/wp-content/uploads/2011/05/0b7a8c9337217359309b72646469bd89.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2011/05/0b7a8c9337217359309b72646469bd89-300x83.png" alt="" title="CodeBrowser" width="300" height="83" class="alignnone size-medium wp-image-372" /></a><br/>
+<a href="/images/wp-content/uploads/2011/05/0b7a8c9337217359309b72646469bd89.png"><img src="http://koriym.github.io/images/wp-content/uploads/2011/05/0b7a8c9337217359309b72646469bd89-300x83.png" alt="" title="CodeBrowser" width="300" height="83" class="alignnone size-medium wp-image-372" /></a><br/>
 Jenkinsで試す前にまずantでbuildができるか試してみるのがいいと思います。</p>
 
 <h3>Jenkinsでプロジェクト作成</h3>
@@ -129,10 +129,10 @@ $ java -jar /Applications/Jenkins/jenkins-cli.jar -s http://localhost:8080 reloa
 
 <p>利用可能にしたプロジェクトテンプレートを指定して、新規プロジェクトを作成します。</p>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2011/05/70b01b700a5d3988c82ac32f33a03345.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2011/05/70b01b700a5d3988c82ac32f33a03345.png" alt="" title="新規プロジェクト" width="586" height="431" class="alignnone size-full wp-image-370" /></a>
+<p><a href="/images/wp-content/uploads/2011/05/70b01b700a5d3988c82ac32f33a03345.png"><img src="http://koriym.github.io/images/wp-content/uploads/2011/05/70b01b700a5d3988c82ac32f33a03345.png" alt="" title="新規プロジェクト" width="586" height="431" class="alignnone size-full wp-image-370" /></a>
 次の画面で、ビルド無効化 のチェックを外し、ソースコード管理システムを編集してソースコードレポジトリ情報を設定します。プロジェクト設定を保存し、ビルドを実行します。</p>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2011/05/40103152c2ea101b4041d7d00f05f97f.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2011/05/40103152c2ea101b4041d7d00f05f97f.png" alt="" title="新規プロジェクト" width="544" height="293" class="alignnone size-full wp-image-392" /></a></p>
+<p><a href="/images/wp-content/uploads/2011/05/40103152c2ea101b4041d7d00f05f97f.png"><img src="http://koriym.github.io/images/wp-content/uploads/2011/05/40103152c2ea101b4041d7d00f05f97f.png" alt="" title="新規プロジェクト" width="544" height="293" class="alignnone size-full wp-image-392" /></a></p>
 
 <h3>まとめ</h3>
 

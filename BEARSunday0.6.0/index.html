@@ -102,7 +102,7 @@ $ php composer.phar create-project -s dev --dev bear/ &hellip;">
 
 
 <div class="entry-content"><div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/BEARSunday0.6.0">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/BEARSunday0.6.0">Tweet</a>
 </div>
 
 
@@ -119,22 +119,22 @@ $ php composer.phar create-project -s dev --dev bear/package bear
 
 <h2>フレームワークの拡張を明確に</h2>
 
-<p><a href="http://www.bear-project.net/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/">DIP（依存関係逆転）原則</a>に忠実なBEAR.Sundayではフレームワーク機能の拡張性や変更に関して最大限の自由がありますが、それらを機能単位で明確にするためにExtentionインターフェイス／フォルダという仕組みを導入しました。</p>
+<p><a href="/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/">DIP（依存関係逆転）原則</a>に忠実なBEAR.Sundayではフレームワーク機能の拡張性や変更に関して最大限の自由がありますが、それらを機能単位で明確にするためにExtentionインターフェイス／フォルダという仕組みを導入しました。</p>
 
 <p>BEAR.SundayのExtensionフォルダ下にはフレームワークが提供する機能のインターフェイスが格納されています。</p>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2013/01/8ab81e13c40d193b0412d41a774dc80d.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/01/8ab81e13c40d193b0412d41a774dc80d.png" alt="スクリーンショット 2013-01-26 22.14.05" class="alignleft size-full wp-image-1549" /></a>
+<p><a href="/images/wp-content/uploads/2013/01/8ab81e13c40d193b0412d41a774dc80d.png"><img src="/images/wp-content/uploads/2013/01/8ab81e13c40d193b0412d41a774dc80d.png" alt="スクリーンショット 2013-01-26 22.14.05" class="alignleft size-full wp-image-1549" /></a>
 <br clear="all" /><br/>
 このインターフェイスを実装したものがBEAR.PackageのProvideフォルダです。</p>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2013/01/c542f470d9282c6051929d816d3db704.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/01/c542f470d9282c6051929d816d3db704.png" alt="スクリーンショット 2013-01-26 22.15.58" class="alignleft size-full wp-image-1551" /></a>
+<p><a href="/images/wp-content/uploads/2013/01/c542f470d9282c6051929d816d3db704.png"><img src="/images/wp-content/uploads/2013/01/c542f470d9282c6051929d816d3db704.png" alt="スクリーンショット 2013-01-26 22.15.58" class="alignleft size-full wp-image-1551" /></a>
 <br clear="all" /></p>
 
 <p>対応するProvideフォルダのクラスではExtensionで指定されたインターフェイスの実装をします。この実装を利用するためには用意されているモジュールをインストールします。</p>
 
 <p>例えば現在TemplateEngineに用意されているのはデフォルトでSmartyですがAppModule.phpでTwigModuleをインストールしてTwigを利用する事ができます。<sup><a href="#footnote_0_1548" id="identifier_0_1548" class="footnote-link footnote-identifier-link" title="このTwigモジュール実装はまだ実験的なものです。">1</a></sup></p>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2013/01/8dfd092d9c9a7e1e78976caf8500b985.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/01/8dfd092d9c9a7e1e78976caf8500b985.png" alt="スクリーンショット 2013-01-26 22.21.05" class="alignleft size-full wp-image-1552" /></a></p>
+<p><a href="/images/wp-content/uploads/2013/01/8dfd092d9c9a7e1e78976caf8500b985.png"><img src="/images/wp-content/uploads/2013/01/8dfd092d9c9a7e1e78976caf8500b985.png" alt="スクリーンショット 2013-01-26 22.21.05" class="alignleft size-full wp-image-1552" /></a></p>
 
 <h2>PSR compliance</h2>
 

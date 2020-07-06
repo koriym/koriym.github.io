@@ -4,7 +4,7 @@
   <title><![CDATA[Category: プログラム | BEAR Blog]]></title>
   <link href="http://koriym.github.io/blog/categories/puroguramu/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-06T18:41:22+09:00</updated>
+  <updated>2020-07-07T02:29:41+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -19,11 +19,11 @@
     <updated>2010-09-17T00:00:00+09:00</updated>
     <id>http://koriym.github.io/2010/09/gdd-2010-pacman%e5%95%8f%e9%a1%8c</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2010/09/gdd-2010-pacman%e5%95%8f%e9%a1%8c/">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2010/09/gdd-2010-pacman%e5%95%8f%e9%a1%8c/">Tweet</a>
 </div>
 
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2010/09/gddpacmanlv3.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2010/09/gddpacmanlv3-300x185.png" alt="GDD 2010 Pacman Lv.3" title="GDD 2010 Pacman Lv.3" width="300" height="185" class="size-medium wp-image-133" /></a></p>
+<p><a href="/images/wp-content/uploads/2010/09/gddpacmanlv3.png"><img src="http://koriym.github.io/images/wp-content/uploads/2010/09/gddpacmanlv3-300x185.png" alt="GDD 2010 Pacman Lv.3" title="GDD 2010 Pacman Lv.3" width="300" height="185" class="size-medium wp-image-133" /></a></p>
 
 <h3>GDD 2010 Dev Quiz</h3>
 
@@ -33,7 +33,7 @@
 
 <p>普段使っているPHPでコーディングしました。WebではなくCLIです。1ファイルでコンソールでアニメが表示されるようにしました。現在のコードでのハイスコアはLv1, Lv2, Lv3それぞれ、41, 210, 489です。これは人の手をともわなないAI探索のみでのスコアです。</p>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2010/09/pacman_lv3.mov">Pacman Lv.3 demo</a><sup><a href="#footnote_0_112" id="identifier_0_112" class="footnote-link footnote-identifier-link" title="この動画はAIによる移動です。再現プレイではありません。">1</a></sup></p>
+<p><a href="/images/wp-content/uploads/2010/09/pacman_lv3.mov">Pacman Lv.3 demo</a><sup><a href="#footnote_0_112" id="identifier_0_112" class="footnote-link footnote-identifier-link" title="この動画はAIによる移動です。再現プレイではありません。">1</a></sup></p>
 
 <h3>Pacman AI</h3>
 
@@ -297,7 +297,7 @@ hhl mark
 
 <p>ところがそんなに簡単ではありません。Lv1くらい無条件の全経路を調べられないかと思いましたが、やはり難しそうです。この動画が少し参考になるでしょうか。階乗の計算量は膨大です。</p>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2010/09/stack.mov">GDD Pacman LV.1 Deep-First Search</a></p>
+<p><a href="/images/wp-content/uploads/2010/09/stack.mov">GDD Pacman LV.1 Deep-First Search</a></p>
 
 <p>Lv2, Lv3では３つ以上の交差点でのみブランチをつくることにしました。また時間によるゲームオーバーからはスタックからゲームを取り出すことなしに、最初からやり直すのを繰り返す事にしました。<sup><a href="#footnote_9_112" id="identifier_9_112" class="footnote-link footnote-identifier-link" title="その方がスコアが良く、ランダムで繰り返しても同じゲームが再現することがほとんどありませんででした">10</a></sup> <sup><a href="#footnote_10_112" id="identifier_10_112" class="footnote-link footnote-identifier-link" title="ゲームオーバー時に積まれたゲームスタックを再評価し、10,000回に一回しか出ないような良いスコアの途中のゲーム状態から再開してみる..など色々やってみましたがあまりスコアアップに繋がりませんでした。オライリー本にもありますが&quot;大器晩成型&quot;のスコアがとであがってくるタイプのを消してしまうからではないかと思いました。">11</a></sup></p>
 
@@ -305,7 +305,7 @@ hhl mark
 
 <p>試してはいませんが、他の検索の紹介を。幅優先探索も同じ様に同じ状態を２度と訪問しないようにして、ゲーム状態を初期状態から近い順に評価します。深さ優先と違うのは、探索開始点から近いところから順に探索をしていくところです。深さ優先探索がスタックを使用するのに対して、幅優先探索はキューをする違いを理解すれば実装のイメージがわくのではないでしょうか。<sup><a href="#footnote_11_112" id="identifier_11_112" class="footnote-link footnote-identifier-link" title="これも膨大なメモリを要します。他にもいろいろな探索がオライリー本に紹介されてますがどれが一番向いてたのでしょうか">12</a></sup></p>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2010/09/300px-Breadth-first-tree.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2010/09/300px-Breadth-first-tree.png" alt="" title="Breadth-Frst-Tree" width="300" height="207" class="aligncenter size-full wp-image-191" /></a></p>
+<p><a href="/images/wp-content/uploads/2010/09/300px-Breadth-first-tree.png"><img src="http://koriym.github.io/images/wp-content/uploads/2010/09/300px-Breadth-first-tree.png" alt="" title="Breadth-Frst-Tree" width="300" height="207" class="aligncenter size-full wp-image-191" /></a></p>
 
 <h3>Lv.2, Lv.3の探索木</h3>
 
@@ -1518,7 +1518,7 @@ Score:135/147 Point:135 Game:300/300 Stacked Game:100
 </span><span class='line'>    <span class="nv">$p</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">$fileArray</span><span class="p">[</span><span class="nv">$line</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]);</span>
 </span><span class='line'>    <span class="nb">unset</span><span class="p">(</span><span class="nv">$fileArray</span><span class="p">);</span>
 </span><span class='line'>    <span class="nb">preg_match</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="o">/</span><span class="nx">p</span><span class="p">((</span><span class="o">.+</span><span class="p">)[</span><span class="nx">\s</span><span class="p">,)]</span><span class="o">/&amp;</span><span class="nx">rdquo</span><span class="p">;,</span> <span class="nv">$p</span><span class="p">,</span> <span class="nv">$matches</span><span class="p">);</span>
-</span><span class='line'>    <span class="nv">$varName</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$matches</span><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;http://www.bear-project.net/blog/wp-content/uploads/2010/09/gddpacmanlv3.png&quot;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="nx">a</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">?</span> <span class="nv">$matches</span><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;http://www.bear-project.net/blog/wp-content/uploads/2010/09/gddpacmanlv3.png&quot;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="nx">a</span><span class="o">&gt;</span> <span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;;</span>
+</span><span class='line'>    <span class="nv">$varName</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$matches</span><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;/images/wp-content/uploads/2010/09/gddpacmanlv3.png&quot;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="nx">a</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">?</span> <span class="nv">$matches</span><span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;/images/wp-content/uploads/2010/09/gddpacmanlv3.png&quot;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="nx">a</span><span class="o">&gt;</span> <span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;;</span>
 </span><span class='line'>    <span class="c1">//    $label = &amp;ldquo;$varName in {$file} on line {$line}$method&amp;rdquo;;</span>
 </span><span class='line'>    <span class="nv">$label</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">on</span> <span class="nx">line</span> <span class="p">{</span><span class="nv">$line</span><span class="p">}</span><span class="nv">$method</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;;</span>
 </span><span class='line'>    <span class="nv">$values</span> <span class="o">=</span> <span class="nb">is_bool</span><span class="p">(</span><span class="nv">$values</span><span class="p">)</span> <span class="o">?</span> <span class="p">(</span><span class="nv">$values</span> <span class="o">?</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="k">true</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">:</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="k">false</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;)</span> <span class="o">:</span> <span class="nv">$values</span><span class="p">;</span>

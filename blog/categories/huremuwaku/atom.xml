@@ -4,7 +4,7 @@
   <title><![CDATA[Category: フレームワーク | BEAR Blog]]></title>
   <link href="http://koriym.github.io/blog/categories/huremuwaku/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-06T18:41:22+09:00</updated>
+  <updated>2020-07-07T02:29:41+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -57,7 +57,7 @@ How do we look at the problem.</p>
     <updated>2013-04-01T00:00:00+09:00</updated>
     <id>http://koriym.github.io/2013/04/ray-1-0-0</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/2013/04/ray-1-0-0/">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2013/04/ray-1-0-0/">Tweet</a>
 </div>
 
 
@@ -182,7 +182,7 @@ How do we look at the problem.</p>
     <updated>2013-02-06T00:00:00+09:00</updated>
     <id>http://koriym.github.io/php-%e3%82%bd%e3%83%95%e3%83%88%e3%82%a6%e3%82%a7%e3%82%a2%e3%83%a1%e3%83%88%e3%83%aa%e3%83%83%e3%82%af</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/php-software-metric">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/php-software-metric">Tweet</a>
 </div>
 
 
@@ -214,7 +214,7 @@ How do we look at the problem.</p>
 
 <h2>Abstraction Instability Chart</h2>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/report-a-i-chart.png" alt="report-a-i-chart" class="aligncenter size-full wp-image-1607" />
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/report-a-i-chart.png" alt="report-a-i-chart" class="aligncenter size-full wp-image-1607" />
 Abstraction Instability Chartは横軸にA &#8211; abstraction（抽象化）、縦軸に I &#8211; Instabilityのグラフです。このAを理解するためにまず二つの数字を理解する必要があります。CaとCeです。</p>
 
 <p><strong>Ca &#8211; Afferent Couplings:</strong><br/>
@@ -223,7 +223,7 @@ Abstraction Instability Chartは横軸にA &#8211; abstraction（抽象化）、
 <p><strong>Ce &#8211; Efferent Couplings:</strong><br/>
 このパッケージが依存するパッケージはいくつあるかという数字です。高い数値は他のパッケージの影響を受けやすいということを表します。</p>
 
-<p><img style="display:block;" src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/CaCeIllustration.jpg" alt="CaCeIllustration" class="aligncenter size-full wp-image-1595" />
+<p><img style="display:block;" src="http://koriym.github.io/images/wp-content/uploads/2013/02/CaCeIllustration.jpg" alt="CaCeIllustration" class="aligncenter size-full wp-image-1595" />
 この２つの数字を使って次のIが求められます。</p>
 
 <p><strong>I -Instability </strong> &#8211; パッケージの不安定性を表します。Iは0～1をとり値が大きいほど不安定なパッケージとされ、この数値は(Ce / (Ce + Ca)) として求められます。</p>
@@ -244,50 +244,50 @@ Abstraction Instability Chartは横軸にA &#8211; abstraction（抽象化）、
 
 <h3>symfony</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/symfony-jdepend.svg" alt="symfony-jdepend" class="aligncenter size-full wp-image-1633" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/symfony-jdepend.svg" alt="symfony-jdepend" class="aligncenter size-full wp-image-1633" /></p>
 
 <h3>zf2</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/zf2-jdepend.svg" alt="zf2-jdepend" class="aligncenter size-full wp-image-1637" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/zf2-jdepend.svg" alt="zf2-jdepend" class="aligncenter size-full wp-image-1637" /></p>
 
 <h3>cakephp</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/cakephp-jdepend.svg" alt="cakephp-jdepend" class="aligncenter size-full" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/cakephp-jdepend.svg" alt="cakephp-jdepend" class="aligncenter size-full" /></p>
 
 <h3>CodeIgniter</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/CodeIgniter-jdepend.svg" alt="CodeIgniter-jdepend" class="aligncenter size-full wp-image-1625" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/CodeIgniter-jdepend.svg" alt="CodeIgniter-jdepend" class="aligncenter size-full wp-image-1625" /></p>
 
 <h3>fuel</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/fuel-jdepend.svg" alt="fuel-jdepend" class="aligncenter size-full wp-image-1627" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/fuel-jdepend.svg" alt="fuel-jdepend" class="aligncenter size-full wp-image-1627" /></p>
 
 <h3>laravel</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/laravel-jdepend.svg" alt="laravel-jdepend" class="aligncenter size-full wp-image-1629" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/laravel-jdepend.svg" alt="laravel-jdepend" class="aligncenter size-full wp-image-1629" /></p>
 
 <h3>Slim</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/Slim-jdepend.svg" alt="Slim-jdepend" class="aligncenter size-full wp-image-1631" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/Slim-jdepend.svg" alt="Slim-jdepend" class="aligncenter size-full wp-image-1631" /></p>
 
 <h3>yii</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/yii-jdepend.svg" alt="yii-jdepend" class="aligncenter size-full wp-image-1635" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/yii-jdepend.svg" alt="yii-jdepend" class="aligncenter size-full wp-image-1635" /></p>
 
 <h3>Silex</h3>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2013/02/Silex-jdepend.svg"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/Silex-jdepend.svg" alt="Silex-jdepend" class="aligncenter size-full wp-image-1644" /></a></p>
+<p><a href="/images/wp-content/uploads/2013/02/Silex-jdepend.svg"><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/Silex-jdepend.svg" alt="Silex-jdepend" class="aligncenter size-full wp-image-1644" /></a></p>
 
 <h3>BEAR.Sunday</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/bear-jdepend.svg" alt="bear-jdepend" class="aligncenter size-full wp-image-1621" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/bear-jdepend.svg" alt="bear-jdepend" class="aligncenter size-full wp-image-1621" /></p>
 
 <h2>Overview Pyramid</h2>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2013/02/bear-pyramid1.svg"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/bear-pyramid1.svg" alt="bear-pyramid" class="aligncenter size-full wp-image-1622" /></a><br/>
+<p><a href="/images/wp-content/uploads/2013/02/bear-pyramid1.svg"><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/bear-pyramid1.svg" alt="bear-pyramid" class="aligncenter size-full wp-image-1622" /></a><br/>
 この&#8221;ピラミッッド図&#8221;の見方ですが、まず３つの部分に分かれてる事を理解します。</p>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/logger.overview-pyramid-0.serendipityThumb.png" alt="logger.overview-pyramid-0.serendipityThumb" class="aligncenter size-full wp-image-1610" />
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/logger.overview-pyramid-0.serendipityThumb.png" alt="logger.overview-pyramid-0.serendipityThumb" class="aligncenter size-full wp-image-1610" />
 次にNOPやCALLなどまるでアセンブラのニーモニックのような謎の略語を理解します。</p>
 
 <p>Size and Complexity（サイズと複雑度）</p>
@@ -310,49 +310,49 @@ Abstraction Instability Chartは横軸にA &#8211; abstraction（抽象化）、
 
 <p>それらの値がピラミッドの中央に表示され、上段／下段の割合の数字が端に表示されます。</p>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2013/02/logger.overview-pyramid-31.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/logger.overview-pyramid-31.png" alt="logger.overview-pyramid-3" class="aligncenter size-full wp-image-1651" /></a>
+<p><a href="/images/wp-content/uploads/2013/02/logger.overview-pyramid-31.png"><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/logger.overview-pyramid-31.png" alt="logger.overview-pyramid-3" class="aligncenter size-full wp-image-1651" /></a>
 数字には色が付けられ基準となる値の範囲に入ってない事を知らせてくれます。<br/>
 これも同様に各フレームワークのチャートを用意しました。</p>
 
 <h3>Symfony</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/symfony-pyramid.svg" alt="symfony-pyramid" class="aligncenter size-full wp-image-1634" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/symfony-pyramid.svg" alt="symfony-pyramid" class="aligncenter size-full wp-image-1634" /></p>
 
 <h3>zf2</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/zf2-pyramid.svg" alt="zf2-pyramid" class="aligncenter size-full wp-image-1638" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/zf2-pyramid.svg" alt="zf2-pyramid" class="aligncenter size-full wp-image-1638" /></p>
 
 <h3>cakephp</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/cakephp-pyramid.svg" alt="cakephp-pyramid" class="aligncenter size-full wp-image-1624" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/cakephp-pyramid.svg" alt="cakephp-pyramid" class="aligncenter size-full wp-image-1624" /></p>
 
 <h3>CodeIgniter</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/CodeIgniter-pyramid.svg" alt="CodeIgniter-pyramid" class="aligncenter size-full wp-image-1626" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/CodeIgniter-pyramid.svg" alt="CodeIgniter-pyramid" class="aligncenter size-full wp-image-1626" /></p>
 
 <h3>fuel</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/fuel-pyramid.svg" alt="fuel-pyramid" class="aligncenter size-full wp-image-1628" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/fuel-pyramid.svg" alt="fuel-pyramid" class="aligncenter size-full wp-image-1628" /></p>
 
 <h3>Silex</h3>
 
-<p><a href="http://www.bear-project.net/blog/wp-content/uploads/2013/02/Silex-pyramid.svg"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/Silex-pyramid.svg" alt="Silex-pyramid" class="aligncenter size-full wp-image-1645" /></a></p>
+<p><a href="/images/wp-content/uploads/2013/02/Silex-pyramid.svg"><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/Silex-pyramid.svg" alt="Silex-pyramid" class="aligncenter size-full wp-image-1645" /></a></p>
 
 <h3>laravel</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/laravel-pyramid.svg" alt="laravel-pyramid" class="aligncenter size-full wp-image-1630" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/laravel-pyramid.svg" alt="laravel-pyramid" class="aligncenter size-full wp-image-1630" /></p>
 
 <h3>Yii</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/yii-pyramid.svg" alt="yii-pyramid" class="aligncenter size-full wp-image-1636" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/yii-pyramid.svg" alt="yii-pyramid" class="aligncenter size-full wp-image-1636" /></p>
 
 <h3>Slim</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/Slim-pyramid.svg" alt="Slim-pyramid" class="aligncenter size-full wp-image-1632" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/Slim-pyramid.svg" alt="Slim-pyramid" class="aligncenter size-full wp-image-1632" /></p>
 
 <h3>BEAR.Sunday</h3>
 
-<p><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/02/bear-pyramid1.svg" alt="bear-pyramid" class="aligncenter size-full wp-image-1622" /></p>
+<p><img src="http://koriym.github.io/images/wp-content/uploads/2013/02/bear-pyramid1.svg" alt="bear-pyramid" class="aligncenter size-full wp-image-1622" /></p>
 
 <h2>ソフトウエア品質はツールによって測定できるか</h2>
 
@@ -365,7 +365,7 @@ Abstraction Instability Chartは横軸にA &#8211; abstraction（抽象化）、
 </ul>
 
 
-<p>今回各フレームワークのチャート図を作ってみました。それぞれのフレームワークの傾向が出て面白いとも思うのですが<sup><a href="#footnote_0_1586" id="identifier_0_1586" class="footnote-link footnote-identifier-link" title="特にsymfony/zf2/cakephpのLOCが圧巻です">1</a></sup>、特に自分や自分のチームの開発しているソフトウエアに適用してその傾向や特徴を探る事も大事かと思います。ミニマムブートストラップを探る<a href="http://www.bear-project.net/blog/2011/08/php-hello-world%E3%82%B3%E3%83%BC%E3%83%AB%E3%82%B0%E3%83%A9%E3%83%952011/">HelloWorldベンチマーク</a>と同様です。</p>
+<p>今回各フレームワークのチャート図を作ってみました。それぞれのフレームワークの傾向が出て面白いとも思うのですが<sup><a href="#footnote_0_1586" id="identifier_0_1586" class="footnote-link footnote-identifier-link" title="特にsymfony/zf2/cakephpのLOCが圧巻です">1</a></sup>、特に自分や自分のチームの開発しているソフトウエアに適用してその傾向や特徴を探る事も大事かと思います。ミニマムブートストラップを探る<a href="/blog/2011/08/php-hello-world%E3%82%B3%E3%83%BC%E3%83%AB%E3%82%B0%E3%83%A9%E3%83%952011/">HelloWorldベンチマーク</a>と同様です。</p>
 
 <p>参考URL</p>
 
@@ -393,7 +393,7 @@ Abstraction Instability Chartは横軸にA &#8211; abstraction（抽象化）、
     <updated>2012-12-11T00:00:00+09:00</updated>
     <id>http://koriym.github.io/advent-day-7-ver-0-go-go</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv7">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv7">Tweet</a>
 </div>
 
 
@@ -441,7 +441,7 @@ Abstraction Instability Chartは横軸にA &#8211; abstraction（抽象化）、
     <updated>2012-11-17T00:00:00+09:00</updated>
     <id>http://koriym.github.io/%e6%97%a9%e6%9c%9f%e6%9d%9f%e7%b8%9b%e3%80%81%e9%81%85%e5%bb%b6%e6%9d%9f%e7%b8%9b</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/binding">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/binding">Tweet</a>
 </div>
 
 
@@ -804,7 +804,7 @@ AOPについての初歩的なことはマニュアルの<a href="http://code.go
 
 <h3>インターセプターで利用</h3>
 
-<p>これでインターセプターのセッターメソッドはロガーを受け取りました。この依存を受け取る方法は<a href="http://www.bear-project.net/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/">依存逆転原則</a>に従ってインターフェイスに依存しています。モジュールでの束縛を変更しても利用オブジェクトには変更がありません。</p>
+<p>これでインターセプターのセッターメソッドはロガーを受け取りました。この依存を受け取る方法は<a href="/blog/2012/05/dip%EF%BC%9Adependency-inversion-principle/">依存逆転原則</a>に従ってインターフェイスに依存しています。モジュールでの束縛を変更しても利用オブジェクトには変更がありません。</p>
 
 <p>利用コードではもしロガーがあればセットするというコードを記述しました。<br/>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

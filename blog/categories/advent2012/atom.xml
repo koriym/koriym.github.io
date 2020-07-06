@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Advent2012 | BEAR Blog]]></title>
   <link href="http://koriym.github.io/blog/categories/advent2012/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-06T18:41:22+09:00</updated>
+  <updated>2020-07-07T02:29:41+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -19,7 +19,7 @@
     <updated>2012-12-18T00:00:00+09:00</updated>
     <id>http://koriym.github.io/advent-day-12-debug-print</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv12">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv12">Tweet</a>
 </div>
 
 
@@ -33,7 +33,7 @@
 </span></code></pre></td></tr></table></div></figure></p>
 
 <p><strong>webでp()すると</strong><br/>
-<a href="http://www.bear-project.net/blog/adv12/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-12-17-23-31-50/" rel="attachment wp-att-1505"><img src="http://www.bear-project.net/blog/wp-content/uploads/2012/12/a0f4eafe84c70f36f0bb364cfbac6e9f.png" alt="スクリーンショット 2012-12-17 23.31.50" class="aligncenter size-full wp-image-1505" /></a></p>
+<a href="http://koriym.github.io/blog/adv12/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-12-17-23-31-50/" rel="attachment wp-att-1505"><img src="http://koriym.github.io/images/wp-content/uploads/2012/12/a0f4eafe84c70f36f0bb364cfbac6e9f.png" alt="スクリーンショット 2012-12-17 23.31.50" class="aligncenter size-full wp-image-1505" /></a></p>
 
 <p><strong>コンソールでp()すると</strong></p>
 
@@ -41,17 +41,17 @@
 </div>
 
 
-<p><a href="http://www.bear-project.net/blog/adv12/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-12-17-23-34-23/" rel="attachment wp-att-1507"><img src="http://www.bear-project.net/blog/wp-content/uploads/2012/12/35ee0b02f38504093b38b4eea755e8f3.png" alt="スクリーンショット 2012-12-17 23.34.23" class="aligncenter size-full wp-image-1507" /></a> <div>
+<p><a href="http://koriym.github.io/blog/adv12/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-12-17-23-34-23/" rel="attachment wp-att-1507"><img src="http://koriym.github.io/images/wp-content/uploads/2012/12/35ee0b02f38504093b38b4eea755e8f3.png" alt="スクリーンショット 2012-12-17 23.34.23" class="aligncenter size-full wp-image-1507" /></a> <div>
 </div></p>
 
 <p>引き数なしでp()すると(void)と表示されます。</p>
 
-<p><a href="http://www.bear-project.net/blog/adv12/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-12-18-0-26-19/" rel="attachment wp-att-1510"><img src="http://www.bear-project.net/blog/wp-content/uploads/2012/12/a6c3d84bee8a4d686cbadd8e643d9f43.png" alt="スクリーンショット 2012-12-18 0.26.19" class="aligncenter size-full wp-image-1510" /></a><br/>
+<p><a href="http://koriym.github.io/blog/adv12/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-12-18-0-26-19/" rel="attachment wp-att-1510"><img src="http://koriym.github.io/images/wp-content/uploads/2012/12/a6c3d84bee8a4d686cbadd8e643d9f43.png" alt="スクリーンショット 2012-12-18 0.26.19" class="aligncenter size-full wp-image-1510" /></a><br/>
 その場所を通ったかどうかの確認になります。</p>
 
 <p>表示されたファイル名はクリックしてweb上で編集できデバック表示したp()を消したり表示内容を変更したりできます。<br/>
-<a href="http://www.bear-project.net/blog/adv12/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-12-18-0-35-26/" rel="attachment wp-att-1522">
-  </a><a href="http://www.bear-project.net/blog/wp-content/uploads/2012/12/6cc52f92b203a81ef57231115a153620.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2012/12/6cc52f92b203a81ef57231115a153620.png" alt="スクリーンショット 2012-12-18 0.37.16" class="aligncenter size-full wp-image-1533" /></a></p>
+<a href="http://koriym.github.io/blog/adv12/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-12-18-0-35-26/" rel="attachment wp-att-1522">
+  </a><a href="http://koriym.github.io/images/wp-content/uploads/2012/12/6cc52f92b203a81ef57231115a153620.png"><img src="http://koriym.github.io/images/wp-content/uploads/2012/12/6cc52f92b203a81ef57231115a153620.png" alt="スクリーンショット 2012-12-18 0.37.16" class="aligncenter size-full wp-image-1533" /></a></p>
 
 <h2>
   デバック表示
@@ -72,7 +72,7 @@
     <updated>2012-12-13T00:00:00+09:00</updated>
     <id>http://koriym.github.io/advent-day-11-diwhy-not</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv11">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv11">Tweet</a>
 </div>
 
 
@@ -169,7 +169,7 @@
     <updated>2012-12-13T00:00:00+09:00</updated>
     <id>http://koriym.github.io/advent-day-10-di-sl</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv10">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv10">Tweet</a>
 </div>
 
 
@@ -253,7 +253,7 @@ SLをアンチパターンとするときに良く言われるのが、「コン
 
 <h2>CodeAsDocumentation</h2>
 
-<p>この記事はSLが駄目という記事ではなくて、SLは「コンテナに依存するから駄目なのだ」という意見のどの部分が駄目なのかを考察することで、依存性を自己記述的な<a href="http://www.bear-project.net/blog/2012/10/codeasdocumentation/">CodeAsDocumentation</a>として表すDIの性質を明らかにしようとしました。</p>
+<p>この記事はSLが駄目という記事ではなくて、SLは「コンテナに依存するから駄目なのだ」という意見のどの部分が駄目なのかを考察することで、依存性を自己記述的な<a href="/blog/2012/10/codeasdocumentation/">CodeAsDocumentation</a>として表すDIの性質を明らかにしようとしました。</p>
 
 <ol class="footnotes">
   <li id="footnote_0_1446" class="footnote">
@@ -272,7 +272,7 @@ SLをアンチパターンとするときに良く言われるのが、「コン
     <updated>2012-12-12T00:00:00+09:00</updated>
     <id>http://koriym.github.io/advent-day-9-compile-and-runtime</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv9">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv9">Tweet</a>
 </div>
 
 
@@ -296,7 +296,7 @@ SLをアンチパターンとするときに良く言われるのが、「コン
 
 <p>DIでは生成と利用を分離しますが、分離するのはコードだけではありません。その時間（タイミング）も分離されます。「生成」が終わってから「利用」になるためです。BEAR.Sundayではオブジェクトの生成時に依存の注入だけでなく、アスペクトの織り込みも行われます。これがオブジェクトをつくるコンパイル。その時間がコンパイルタイムです。</p>
 
-<p><a href="http://www.bear-project.net/blog/2012/12/advent-day-6-di-soc/">生成・使用分離の原則　DI 関心の分離</a>で[具象コード]と[抽象コード]の分離を示したようにするとこういう風になります。</p>
+<p><a href="/blog/2012/12/advent-day-6-di-soc/">生成・使用分離の原則　DI 関心の分離</a>で[具象コード]と[抽象コード]の分離を示したようにするとこういう風になります。</p>
 
 <p>生成と使用のタイミングが分離されていないパターン</p>
 
@@ -345,7 +345,7 @@ SLをアンチパターンとするときに良く言われるのが、「コン
     <updated>2012-12-12T00:00:00+09:00</updated>
     <id>http://koriym.github.io/advent-day-8-packagist</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/adv8">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv8">Tweet</a>
 </div>
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[BEAR Blog]]></title>
   <link href="http://koriym.github.io/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-06T18:41:22+09:00</updated>
+  <updated>2020-07-07T02:29:41+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -2465,7 +2465,7 @@ How do we look at the problem.</p>
     <updated>2013-08-25T00:00:00+09:00</updated>
     <id>http://koriym.github.io/pear</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/pear">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/pear">Tweet</a>
 </div>
 
 
@@ -2545,7 +2545,7 @@ How do we look at the problem.</p>
     <link href="http://koriym.github.io/first-di-framework"/>
     <updated>2013-08-17T00:00:00+09:00</updated>
     <id>http://koriym.github.io/ray-tutorial-first-di-framework</id>
-    <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/first-di-framework">Tweet</a></div>
+    <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/first-di-framework">Tweet</a></div>
 
 
 <h1>初めてのDIフレームワーク</h1>
@@ -2995,7 +2995,7 @@ DIフレームワークの使用がオーバーエンジアリングか、クラ
     <updated>2013-08-16T00:00:00+09:00</updated>
     <id>http://koriym.github.io/ray-tutorial1-introduction</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/ray-tutorial-introduction">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/ray-tutorial-introduction">Tweet</a>
 </div>
 
 
@@ -3313,15 +3313,15 @@ Dependency injection means giving an object its instance variables. Really. That
     <updated>2013-07-30T00:00:00+09:00</updated>
     <id>http://koriym.github.io/bear-sunday-meetup-2</id>
     <content type="html"><![CDATA[<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.bear-project.net/blog/bearsunday_meetup2">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/bearsunday_meetup2">Tweet</a>
 </div>
 
 
 
 
 <div>
-  <a href="http://www.bear-project.net/blog/wp-content/uploads/2013/07/723d615e8befaad76f94aebd6688651a.png"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/07/723d615e8befaad76f94aebd6688651a-1024x776.png" alt="BEAR.Sunday meetup #2 2013-07-28 3.06.12" class="size-large wp-image-1970" /></a>
-    <a href="http://www.bear-project.net/blog/wp-content/uploads/2013/07/IMG_8334.jpg"><img src="http://www.bear-project.net/blog/wp-content/uploads/2013/07/IMG_8334-1024x768.jpg" alt="IMG_8334" class="size-large wp-image-1976" /></a> </div>
+  <a href="http://koriym.github.io/images/wp-content/uploads/2013/07/723d615e8befaad76f94aebd6688651a.png"><img src="http://koriym.github.io/images/wp-content/uploads/2013/07/723d615e8befaad76f94aebd6688651a-1024x776.png" alt="BEAR.Sunday meetup #2 2013-07-28 3.06.12" class="size-large wp-image-1970" /></a>
+    <a href="http://koriym.github.io/images/wp-content/uploads/2013/07/IMG_8334.jpg"><img src="http://koriym.github.io/images/wp-content/uploads/2013/07/IMG_8334-1024x768.jpg" alt="IMG_8334" class="size-large wp-image-1976" /></a> </div>
 
 
 <pre><code>&gt;
