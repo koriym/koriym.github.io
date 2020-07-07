@@ -4,7 +4,7 @@
   <title><![CDATA[BEAR Blog]]></title>
   <link href="http://koriym.github.io/atom.xml" rel="self"/>
   <link href="http://koriym.github.io/"/>
-  <updated>2020-07-07T15:19:11+09:00</updated>
+  <updated>2020-07-07T15:21:57+09:00</updated>
   <id>http://koriym.github.io/</id>
   <author>
     <name><![CDATA[Akihito Koriyama]]></name>
@@ -52,7 +52,7 @@
 
 <p>従来の<code>Bootstrap</code>、<code>AppInjector</code> から新しいインジェクターに移行するガイドを用意しています。</p>
 
-<p><a href="http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.htm">http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.html</a></p>
+<p><a href="http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.html">http://bearsunday.github.io/manuals/1.0/ja/upgrade/injector.html</a></p>
 
 <h2>コンパイラ</h2>
 
