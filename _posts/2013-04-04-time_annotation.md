@@ -3,9 +3,9 @@ title: timeアノテーション
 author: admin
 layout: post
 permalink: /2013/04/time_annotation/
-categories:
-  - BEAR
+categories: articles
 tags:
+  - BEAR
   - AOP
   - DI
   - PHPメンターズ

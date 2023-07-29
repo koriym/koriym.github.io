@@ -3,7 +3,8 @@ title: リソースキャッシュ
 author: admin
 layout: post
 permalink: /2010/05/resource_cache/
-categories:
+categories: articles
+tags:
   - BEAR
 ---
 <div style="float: right; margin-left: 10px;">

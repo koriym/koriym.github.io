@@ -5,11 +5,11 @@ layout: post
 permalink: /adv11
 custom_permalink:
   - adv11
-categories:
+categories: articles
+tags:
   - Advent2012
   - BEAR
   - PHP
-tags:
   - アノテーション
   - ロボットの足問題
   - 設定ファイル

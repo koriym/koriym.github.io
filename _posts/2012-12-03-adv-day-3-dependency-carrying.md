@@ -5,10 +5,10 @@ layout: post
 permalink: /adv3
 custom_permalink:
   - adv3
-categories:
+categories: articles
+tags:
   - Advent2012
   - BEAR
-tags:
   - dependency
   - DI
   - object carrig

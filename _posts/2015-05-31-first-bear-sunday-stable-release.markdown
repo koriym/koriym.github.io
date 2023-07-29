@@ -3,7 +3,8 @@ layout: post
 title: "First BEAR.Sunday Stable Release !"
 date: 2015-05-31 18:50
 comments: true
-categories:
+categories: articles
+tags:
 ---
 
 BEAR.Sundayの初めてのstableバージョンを[リリース](https://github.com/bearsunday/BEAR.Sunday/releases/tag/1.0.0)しました。

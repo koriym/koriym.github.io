@@ -3,7 +3,8 @@ layout: post
 title: "An interface as an API"
 date: 2017-07-28 02:59:49 +0900
 comments: true
-categories:
+categories: articles
+tags:
 ---
 
 For extensions, I encourage you to copy entire class and modify it. Does this sound too wild ? Here are my thoughts.

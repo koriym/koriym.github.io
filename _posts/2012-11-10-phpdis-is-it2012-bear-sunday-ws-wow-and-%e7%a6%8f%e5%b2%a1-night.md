@@ -5,11 +5,11 @@ layout: post
 permalink: /phpmatsuri2012
 custom_permalink:
   - phpmatsuri2012
-categories:
+categories: articles
+tags:
   - BEAR
   - PHP
   - フレームワーク
-tags:
   - BEAR.Sunday
   - phpmatsuri
   - travel

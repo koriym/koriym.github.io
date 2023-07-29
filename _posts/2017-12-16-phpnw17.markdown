@@ -3,7 +3,8 @@ layout: post
 title: "PHPNW17"
 date: 2018-3-18 23:00:00 +0900
 comments: true
-categories:
+categories: articles
+tags:
 ---
 
 時間が経ってしまいましたが、2017年の秋にイギリスのリーズとマンチェスターで登壇した事を記事にします。

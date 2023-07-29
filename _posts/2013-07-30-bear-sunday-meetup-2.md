@@ -5,9 +5,9 @@ layout: post
 permalink: /bearsunday_meetup2
 custom_permalink:
   - bearsunday_meetup2
-categories:
-  - BEAR
+categories: articles
 tags:
+  - BEAR
   - hubtokyo
   - meetup
 ---

@@ -5,7 +5,8 @@ layout: post
 permalink: /ray-tutorial-introduction
 custom_permalink:
   - ray-tutorial-introduction
-categories:
+categories: articles
+tags:
   - BEAR
 ---
 <div style="float: right; margin-left: 10px;">

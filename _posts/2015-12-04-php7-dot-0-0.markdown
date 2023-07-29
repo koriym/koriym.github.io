@@ -3,7 +3,8 @@ layout: post
 title: "PHP7.0.0"
 date: 2015-12-04 11:00
 comments: true
-categories:
+categories: articles
+tags:
 ---
 
 # 2011年

@@ -3,7 +3,8 @@ layout: post
 title: "HaPHPy Birthday PHP"
 date: 2015-06-08 19:03
 comments: true
-categories: PHP
+categories: articles
+tags: PHP
 ---
 
 HaPHPy Birthday PHP, 20 years old today !

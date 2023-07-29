@@ -5,7 +5,8 @@ layout: post
 permalink: /adv5
 custom_permalink:
   - adv5
-categories:
+categories: articles
+tags:
   - Advent2012
   - BEAR
   - PHP

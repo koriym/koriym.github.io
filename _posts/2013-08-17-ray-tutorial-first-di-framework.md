@@ -5,7 +5,8 @@ layout: post
 permalink: /first-di-framework
 custom_permalink:
   - first-di-framework
-categories:
+categories: articles
+tags:
   - BEAR
 ---
 <div style="float: right; margin-left: 10px;"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/first-di-framework">Tweet</a></div>

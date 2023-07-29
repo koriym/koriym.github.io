@@ -3,7 +3,8 @@ layout: post
 title: "BEAR.Package 1.10"
 date: 2020-07-06 03:00:00 +0900
 comments: true
-categories:
+categories: articles
+tags:
 ---
 
 BEAR.Package 1.10をリリースしました。

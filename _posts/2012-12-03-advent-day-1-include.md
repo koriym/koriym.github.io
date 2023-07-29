@@ -5,11 +5,11 @@ layout: post
 permalink: /adv1
 custom_permalink:
   - adv1
-categories:
+categories: articles
+tags:
   - Advent2012
   - BEAR
   - PHP
-tags:
   - Aura
   - bootstrap
   - DI

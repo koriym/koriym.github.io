@@ -3,7 +3,8 @@ layout: post
 title: "TEDxTokyo 2014"
 date: 2014-06-10 02:34
 comments: true
-categories:
+categories: articles
+tags:
 ---
 
 ## Connecting the unconnected

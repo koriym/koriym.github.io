@@ -5,7 +5,8 @@ layout: post
 permalink: /2012/02/php-annotation/
 custom_permalink:
   - 2012/02/php-annotation/
-categories:
+categories: articles
+tags:
   - 未分類
 ---
 <div style="float: right; margin-left: 10px;">

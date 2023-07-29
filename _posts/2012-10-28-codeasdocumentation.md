@@ -3,11 +3,11 @@ title: CodeAsDocumentation
 author: admin
 layout: post
 permalink: /2012/10/codeasdocumentation/
-categories:
+categories: articles
+tags:
   - BEAR
   - PHP
   - フレームワーク
-tags:
   - clean code
   - CodeAsDocumentation
   - goto

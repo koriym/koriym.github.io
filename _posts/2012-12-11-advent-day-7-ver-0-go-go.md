@@ -5,7 +5,8 @@ layout: post
 permalink: /adv7
 custom_permalink:
   - adv7
-categories:
+categories: articles
+tags:
   - Advent2012
   - BEAR
   - フレームワーク

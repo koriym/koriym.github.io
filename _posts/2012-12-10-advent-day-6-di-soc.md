@@ -3,11 +3,11 @@ title: 'Advent Day 6: DI SoC'
 author: admin
 layout: post
 permalink: /2012/12/advent-day-6-di-soc/
-categories:
+categories: articles
+tags:
   - Advent2012
   - BEAR
   - PHP
-tags:
   - Art of UNIX Programming
   - DI
   - Eric Raymond

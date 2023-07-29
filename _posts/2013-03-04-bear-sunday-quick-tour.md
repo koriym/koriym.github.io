@@ -5,11 +5,10 @@ layout: post
 permalink: /bear-sunday-quick-tour
 custom_permalink:
   - bear-sunday-quick-tour
-categories:
-  - BEAR
-  - PHP
+categories: articles
 tags:
   - BEAR
+  - PHP
   - Install
   - php
   - QuickTour

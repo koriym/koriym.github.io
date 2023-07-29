@@ -3,7 +3,8 @@ title: Be the first one
 author: admin
 layout: post
 permalink: /2013/03/be-the-first-one/
-categories:
+categories: articles
+tags:
   - TED
 ---
 <div style="float: right; margin-left: 10px;">

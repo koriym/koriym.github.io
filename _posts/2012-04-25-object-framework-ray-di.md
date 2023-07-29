@@ -5,7 +5,8 @@ layout: post
 permalink: /2012/04/di/
 custom_permalink:
   - 2012/04/di/
-categories:
+categories: articles
+tags:
   - 未分類
 ---
 <div style="float: right; margin-left: 10px;">

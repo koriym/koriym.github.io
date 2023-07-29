@@ -5,7 +5,8 @@ layout: post
 permalink: /WEB-DB-PRESS-Vol73
 custom_permalink:
   - WEB-DB-PRESS-Vol73
-categories:
+categories: articles
+tags:
   - BEAR
   - PHP
 ---

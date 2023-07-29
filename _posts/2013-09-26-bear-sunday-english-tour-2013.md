@@ -5,7 +5,8 @@ layout: post
 permalink: /2013/09/bear-sunday-england-tour-2013/
 custom_permalink:
   - 2013/09/bear-sunday-england-tour-2013/
-categories:
+categories: articles
+tags:
   - BEAR
   - フレームワーク
 ---

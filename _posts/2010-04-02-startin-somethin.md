@@ -3,8 +3,7 @@ title: 'Startin&#039; Somethin&#039;'
 author: admin
 layout: post
 permalink: /2010/04/startin-somethin/
-categories:
-  - BEAR
+categories: articles
 tags:
   - BEAR
 ---

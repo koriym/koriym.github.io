@@ -5,11 +5,11 @@ layout: post
 permalink: /adv12
 custom_permalink:
   - adv12
-categories:
+categories: articles
+tags:
   - Advent2012
   - BEAR
   - PHP
-tags:
   - debug
 ---
 <div style="float: right; margin-left: 10px;">

@@ -5,11 +5,11 @@ layout: post
 permalink: /adv2
 custom_permalink:
   - adv2
-categories:
+categories: articles
+tags:
   - Advent2012
   - BEAR
   - PHP
-tags:
   - Dependency Injection
 ---
 <div style="float: right; margin-left: 10px;">

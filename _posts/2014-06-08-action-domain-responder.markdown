@@ -3,7 +3,8 @@ layout: post
 title: "Action-Domain-Responder"
 date: 2014-06-08 09:50
 comments: true
-categories:
+categories: articles
+tags:
 - PHP
 ---
 

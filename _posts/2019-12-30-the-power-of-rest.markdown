@@ -3,7 +3,8 @@ layout: post
 title: "RESTの力、RESTの制約"
 date: 2019-12-30 00:00:00 +0900
 comments: true
-categories:
+categories: articles
+tags:
 ---
 
 ## 今年２つの講演

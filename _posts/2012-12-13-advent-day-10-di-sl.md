@@ -5,11 +5,11 @@ layout: post
 permalink: /adv10
 custom_permalink:
   - adv10
-categories:
+categories: articles
+tags:
   - Advent2012
   - BEAR
   - PHP
-tags:
   - CodeAsDocumentation
   - Service Locater
 ---

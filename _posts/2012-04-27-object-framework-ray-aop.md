@@ -3,10 +3,10 @@ title: Object Framework – Ray.Aop
 author: admin
 layout: post
 permalink: /2012/04/object-framework-ray-aop/
-categories:
+categories: articles
+tags:
   - BEAR
   - PHP
-tags:
   - AOP
   - AOPアライアンス
   - アスペクト

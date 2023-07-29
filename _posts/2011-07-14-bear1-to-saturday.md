@@ -3,7 +3,8 @@ title: BEAR1 to Saturday (2003, 2011)
 author: admin
 layout: post
 permalink: /2011/07/bear1-to-saturday/
-categories:
+categories: articles
+tags:
   - BEAR
   - フレームワーク
 ---
