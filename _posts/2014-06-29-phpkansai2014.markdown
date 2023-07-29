@@ -15,60 +15,60 @@ PHPカンファレンス関西で基調講演の機会をいただく事がで�
 
 ## 2014/06/28 10:30 AM 大阪産業創造館
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.003.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.003.jpg 640">
 <p>最小のネットーワーク</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.005.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.005.jpg 640">
 <p>最大のネットワーク</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.007.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.007.jpg 640">
 <p>最初のウェブサイト</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.010.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.010.jpg 640">
 <p>最初のPHP</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.012.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.012.jpg 640">
 <p>最初のアプリケーションサーバー</p>
 <br>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.028.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.028.jpg 640">
 <p>最初のつぶやき</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.031.jpg 640 %}
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.032.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.031.jpg 640">
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.032.jpg 640">
 <p>決意</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.037.jpg 640 %}
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.038.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.037.jpg 640">
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.038.jpg 640">
 <p>インターネットの原則</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.044.jpg 640 %}
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.045.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.044.jpg 640">
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.045.jpg 640">
 <p>ソフトウエアの背後にいる人々</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.046.jpg 640 %}
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.057.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.046.jpg 640">
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.057.jpg 640">
 <p>私たち開発者</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.058.jpg 640 %}
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.059.jpg 640 %}
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.060.jpg 640 %}
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.061.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.058.jpg 640">
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.059.jpg 640">
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.060.jpg 640">
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.061.jpg 640">
 <p>メディアシフト</p>
 <br>
 
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.062.jpg 640 %}
-{% img /images/phpkansai2014/subete-wo-musubu-chikara.065.jpg 640 %}
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.062.jpg 640">
+<img src="/images/phpkansai2014/subete-wo-musubu-chikara.065.jpg 640">
 <p>エピローグ</p>
 
 >情報という宇宙でWebサイトという星を１つ作る。それは25年前に考えられたアルファベット最初の文字のタグで繋がれている。Webという力が世界の知識を結び、オープンソースやコミュニティが私たち開発者を結んでいる。またその私たちも技術を結び、Web創造の歴史に参加している。

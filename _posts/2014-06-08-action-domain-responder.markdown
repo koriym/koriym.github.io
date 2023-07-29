@@ -7,7 +7,7 @@ categories:
 - PHP
 ---
 
-{% img left  https://raw.githubusercontent.com/pmjones/mvc-refinement/master/adr.png %}
+<img src="left  https://raw.githubusercontent.com/pmjones/mvc-refinement/master/adr.png">
 <br clear=all>
 https://github.com/pmjones/mvc-refinement
 

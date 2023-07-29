@@ -13,7 +13,7 @@ categories:
 
 ## 20 June; CFP (Call for Paper)
 
-{% img /images/blog/phpnw13.30.jpg 800 PHPNW13 %}
+<img src="/images/blog/phpnw13.30.jpg 800 PHPNW13">
 
 phpnw(PHP North West)カンファレンスはイギリスのマンチェスターで2008年から毎年開催されている欧州でも有数の規模のPHPカンファレンスです。
 スピーカーとして参加する為には[CFP](http://conference.phpnw.org.uk/phpnw13/call-papers/)が必要で、単に「自分の興味ある技術的な話をします」ではなく“why we should accept your talk” （なぜ主催者達が自分の応募を採用するのか）という事を伝えなければなりません。
@@ -46,22 +46,22 @@ BEAR.Sunday is a REST-centric framework that makes you think totally different a
 どうせ渡英して話すならと地元の[leedsphpユーザーグループ](http://leedsphp.org/)のmeetupとリチャードさんが働くBBCでもセッションを持つ事になりました。いわば大舞台のphpnwのカンファレンスの練習です。
 日本の勉強会のようなものですが、流石イギリスというか、雰囲気のある場所です。
 
-{% img /images/blog/phpnw13.11.jpg 800 leedsphp %}
-{% img /images/blog/phpnw13.10.jpg 800 leedsphp %}
+<img src="/images/blog/phpnw13.11.jpg 800 leedsphp">
+<img src="/images/blog/phpnw13.10.jpg 800 leedsphp">
 
 手元の書類が見えにくいぐらい照明を落としたところで最初のスピーチをしました。
 機材トラブルもあり、スピーチそのものできはあまり良くなかったのですがかなりの熱を持って聞いてもらう事ができました。
 
-{% img /images/blog/phpnw13.08.jpg 800 leedsphp %}
+<img src="/images/blog/phpnw13.08.jpg 800 leedsphp">
 
 通常は（日本と違って）トークが終わると基本すぐに解散らしいのですが、終わった後もみなさんといつまでも色々な事を話ました。「こういう反応は今まで見た事がない」反応だったそうです。
 興味を持って質問を積極的にしてくれた方はSymfonyを使っている人が多くSensio Labsの方もいました。元々Symfonyユーザーは多いのでしょうが、日本のSymfonyユーザー会の人達の縁ある事もありなにか不思議な感じです。
 
 次はBBCです。ここでのセッションが一番緊張しました。
 
-{% img /images/blog/phpnw13.15.jpg 800 BBC %}
-{% img /images/blog/phpnw13.07.jpg 800 BBC %}
-{% img /images/blog/phpnw13.06.jpg 800 BBC %}
+<img src="/images/blog/phpnw13.15.jpg 800 BBC">
+<img src="/images/blog/phpnw13.07.jpg 800 BBC">
+<img src="/images/blog/phpnw13.06.jpg 800 BBC">
 
 BBCでの経験は驚きの連続です。世界最高のメディア企業でのWebプロダクト制作、その現場です。
 とにかくかっこよくて、詳しい事が書けないのは残念です。一日始業から終わりまでインターンのように過ごす機会にも恵まれその現場の空気やワークフローの実際に立ち会う事ができました。
@@ -69,19 +69,19 @@ BBCでの経験は驚きの連続です。世界最高のメディア企業で�
 質問が非常にシャープで的確です。「そのアーキテクチャのポイントを、ノンテクニカルな人に3分で伝えるとしたらどう話す？」等、こちらが試されるような質問の連続です。
 真剣な質問に真剣に答えます。手応えのあるやりとりは満足のできるものでした。
 
-{% img /images/blog/phpnw13.002.jpg 800 BBC %}
-{% img /images/blog/phpnw13.16.jpg 800 BBC %}
-{% img /images/blog/phpnw13.17.jpg 800 BBC %}
+<img src="/images/blog/phpnw13.002.jpg 800 BBC">
+<img src="/images/blog/phpnw13.16.jpg 800 BBC">
+<img src="/images/blog/phpnw13.17.jpg 800 BBC">
 
 とても緊張してプレゼンテーションを行いました。イギリスのバーの二階でやったleedsphpユーザーグループの時と違って、就業中に時間をさいて集まってくれたBBCのWebエンジニアの方々はとても真剣です。
 しかし内容を高く評価してもらいphpnwでの発表が少し安心できるものになりました。またアーキテクチャにとても関心が高い事の確信も得られました。
-{% img /images/blog/phpnw13.001.jpg 800 BBC %}
+<img src="/images/blog/phpnw13.001.jpg 800 BBC">
 （BBC Future Media SportsのSenior Technical Architectの[マシュー・クラーク](http://www.bbc.co.uk/blogs/internet/authors/Matthew_Clark)さんとリチャードさんの三人とBCの食堂でランチ。)
 ## phpnw13
 
 ### 02 Oct; Hackason
 
-{% img /images/blog/phpnw13.19.jpg 800 phpnw13 hackason %}
+<img src="/images/blog/phpnw13.19.jpg 800 phpnw13 hackason">
 
 カンファレンスの前日金曜は昼間はチュートリアル、夜はハッカソンがあります。ハッカソンと言っても日本のものと違って何かを個人で制作して発表するとかではありません。
 例えば「PHP-Excel」とか並んでいるテーブルにプレートがあるので、自分の協力したいオープンソースのテーブルに加わりコーディングしたりおしゃべりをしたりするのです。終わる時に特に発表もありません。
@@ -89,7 +89,7 @@ BBCでの経験は驚きの連続です。世界最高のメディア企業で�
 
 ### 05 Oct; 発表の日
 
-{% img /images/blog/phpnw13.31.jpg 800 phpnw13 %}
+<img src="/images/blog/phpnw13.31.jpg 800 phpnw13">
 
 セッションは土曜日から始まります。オープニングキーノートはLorna MitchellさんとIvo Janschさんの **[0x0F Ways to be a Better Developer](http://conference.phpnw.org.uk/phpnw13/schedule/lorna-mitchell-ivo-jansch/)**
 （より良いディベロッパーになる0x0Fの方法）。

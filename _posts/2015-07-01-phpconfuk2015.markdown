@@ -30,5 +30,5 @@ categories:
 最初の開催ということで大変なことも多かったと思いますが、スタッフの方たちの工夫や熱意が伝わりました。主催者、登壇者、聴衆、それぞれの参加者の距離が近く、皆で作りあげたカンファレンスだと感じました。
 PHPの生まれた1995年を懐かしいという人もいたし、PHPと自分は同い年だという人もいました。それだけ年齢が違う人々が集まり、多様な人たちが結ばれている場でした。「全てを結ぶ力」はここでも働いていたのです！
 
-[{% img /images/phpconfuk2015/kanpai0s.jpg %}](/images/phpconfuk2015/kanpai0.jpg)
-[{% img /images/phpconfuk2015/kanpai1s.jpg %}](/images/phpconfuk2015/kanpai1.jpg)
+[<img src="/images/phpconfuk2015/kanpai0s.jpg">](/images/phpconfuk2015/kanpai0.jpg)
+[<img src="/images/phpconfuk2015/kanpai1s.jpg">](/images/phpconfuk2015/kanpai1.jpg)

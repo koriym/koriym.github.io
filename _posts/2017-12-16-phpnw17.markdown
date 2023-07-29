@@ -24,7 +24,7 @@ categories:
 Sky Sportsというイギリスの衛星放送事業者でPrincipal Software Engineerの職につかれている[Richard McIntyre](https://www.linkedin.com/in/mackstar/)氏の招きで、リーズにあるSky Sportsで登壇する機会をいただきました。
 （Sky Sportsは（プレミアリーグの放映権を全て持っているぐらいの）世界でも最大級の放送事業者で、以前講演したBBC Sportsよりも規模の大きい放送事業者です。Skyはツールドフランスでも有名ですよね）
 
-{% img /images/phpnw17/sky.jpg %}
+<img src="/images/phpnw17/sky.jpg">
 
 [Sky Sports 2017](https://photos.google.com/share/AF1QipNCkT5ddXqOHKwY1tjUcuSl7frI_s8fnLsBjUktalTj7k7JTITYVfjrWtPBT9Y-xQ?key=ajM5Y2c1ckdBckUtVXphS1NzM1RmdWY5TkxGeFJB)
 
@@ -55,22 +55,22 @@ http://conference.phpnw.org.uk/phpnw17/extras/previous-conferences/
 
 そのうちカンファレンススピーカー枠で参加した[phpnw13](http://koriym.github.io/blog/2014/01/04/phpnw2013/) 、アンカンファレンス参加したphpnw15、phpnw17と3回参加しました。
 
-{% img /images/phpnw17/phpnw17.png %}
+<img src="/images/phpnw17/phpnw17.png">
 
 イベントは通常三日間行われます。最初はカンファレンスの前日にあるTUTORIAL DAYです。
 
-{% img /images/phpnw17/tutorail.png %}
+<img src="/images/phpnw17/tutorail.png">
 
 チュートリアルはカンファレンス料金とは別の代金が必要で1日で£250 (約37,000円)、半日で£145です。
 
 チュートリアルの費用を会社に出してもらってる開発者も多く、面白いのはそれをサポートする仕組みがあることです。
 
-{% img /images/phpnw17/ask_boss.png %}
+<img src="/images/phpnw17/ask_boss.png">
 
 カンファレンスやチュートリアルに参加することがどれだけ意義があってそれが費用に見合うものかというbossを説得するPDF資料が用意されています（！）
 
-{% img /images/phpnw17/ask_your_boss1.png %}
-{% img /images/phpnw17/ask_your_boss2.png %}
+<img src="/images/phpnw17/ask_your_boss1.png">
+<img src="/images/phpnw17/ask_your_boss2.png">
 
  1. 素晴らしい従業員を引き留めることができる
  2. あなたの"スーパースター"を育てることができる
@@ -86,30 +86,30 @@ http://conference.phpnw.org.uk/phpnw17/extras/previous-conferences/
 
 オープンソースのコントリビュートでカンファレンスを始める、そしてそのコントリビュートをソーシャルにする。素晴らしいと思います。
 
-{% img /images/phpnw17/hackason.jpg %}
+<img src="/images/phpnw17/hackason.jpg">
 (phpnw2013のハッカソン)
 
 特にハッカソンに参加せずに他の参加者とおしゃべりするだけでもOKです。写真中央のスクリーン前にいる人たちはゲームで遊んでます。（ハットをかぶってる人はスピーカーの[Ross Tuck](https://twitter.com/rosstuck)さん）
 
 カンファレンスセンターにはバーと中庭があってゆっくり過ごせます。
-{% img /images/phpnw17/bar.jpg %}
+<img src="/images/phpnw17/bar.jpg">
 
 夜になると夜食も出ます。スピーカーの人達は事前にスピーカーディナーで別になっててちょっとしたコース料理を楽しむことができます。。ベジタリアンメニューとかどいう食事をしたいか事前にwebで選択できます。
 
 今回初めて一人、地元の友人なしで行きました。食事の時間の時、BEAR.Sundayを使ってる[Kennyさん](https://twitter.com/kennybody)を見つけて一緒のテーブルに混ぜてもらいました。
 
-{% img /images/phpnw17/w_kieth_jake.jpg %}
+<img src="/images/phpnw17/w_kieth_jake.jpg">
 
 左の写真は[Jake](https://twitter.com/GroovyCarrot)さん、iOSの[NextGen UI](https://www.youtube.com/watch?v=uG5DXypCEsk)というUIで有名な開発者です。
 
 Kennyさんは翌日はphpnwで初めてというバンド演奏でドラムを叩いてました。かっこいい！
 （そのバンドのサイトをBEAR.Sundayで作りたいそうです）
 
-{% img /images/phpnw17/kieth.jpg %}
+<img src="/images/phpnw17/kieth.jpg">
 
 カンファレンスは二日あります。
 
-{% img /images/phpnw17/day1.png %}
+<img src="/images/phpnw17/day1.png">
 
 1日目は開会挨拶（10分）、スポンサー紹介（15分）の後にオープニングキーノート(50分）と続きます。
 
@@ -170,7 +170,7 @@ php7のアップグレードは地球を救うことになります！😅
 
 ちなみに日本のような参加者全員で聞く最後のLTはありません。スポンサーセッションと夕食、ソーシャルの時間に続いて1日目が終わります。
 
-{% img /images/phpnw17/day2.png %}
+<img src="/images/phpnw17/day2.png">
 
 二日目は半日で終わりますが、これは遠方から来てる人たちがその日に帰れる配慮です。
 １度だけ30分のBreakがありますが、半日しかないので1日目より速い進行です。
@@ -186,7 +186,7 @@ php7のアップグレードは地球を救うことになります！😅
 そのあとの終了の挨拶で「今年でphpnwの開催を最後にする」との突然の発表がありました。
 直後にどよめきがあり、その後に拍手に代わりそして長いスタンディングオベーションになりました。主催者のジェレミーさんも壇上で言葉に詰まっています。
 
-{% img /images/phpnw17/ending.jpg %}
+<img src="/images/phpnw17/ending.jpg">
 
 「ああ、それでキーノートがラスマスさんだったんだとか、迷ったけど今年来て良かったとか」とか様々な考えが頭に浮かびます。
 
@@ -200,7 +200,7 @@ php7のアップグレードは地球を救うことになります！😅
 
 知り合いも沢山できて「今年は来てないの？」と前年に言われ参加したのが最後のphpnw17でした。
 
-{% img /images/phpnw17/cup.jpg %}
+<img src="/images/phpnw17/cup.jpg">
 
 PHPNWとはどういうカンファレンスだったか改めて振り返ってみます。
 

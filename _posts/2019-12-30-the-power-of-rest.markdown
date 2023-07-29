@@ -21,7 +21,7 @@ categories:
 
 ## 最初のスライド
 
-{% img /images/phperkaigi2019/the-power-of-rest.001.jpeg %}
+<img src="/images/phperkaigi2019/the-power-of-rest.001.jpeg">
 
 私が他の講演でもたびたび使用しているこの画像はWikipediaの[ハイパーテキスト](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%91%E3%83%BC%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88)
 で公開されてる画像です。「Hypertext Editing System (HES) IBM 2250 ディスプレイ・コンソール – ブラウン大学、1969年」とキャプションにはあります。
@@ -58,12 +58,12 @@ GUIによるコンピューティングの予見もライトペンのような�
 
 ## ハイパーメディア
 
-{% img /images/phperkaigi2019/the-power-of-rest.004.jpeg %}
+<img src="/images/phperkaigi2019/the-power-of-rest.004.jpeg">
 
 普通のテキストは**順番**があります。
 ハイパーテキストは情報が**相互に結ばれ**、始まりも終わりもありません。
 
-{% img /images/phperkaigi2019/the-power-of-rest.005.jpeg %}
+<img src="/images/phperkaigi2019/the-power-of-rest.005.jpeg">
 
 ハイパーテキスト、ハイパーメディアという言葉を作ったのは「テッドネルソン」1965年の事です。
 情報の記録は紙がベースになってるという意識を壊したいと願ったイノベーターです。
@@ -88,7 +88,7 @@ GUIによるコンピューティングの予見もライトペンのような�
 
 ## 続く人々、繋がるアイデア
 
-{% img /images/phperkaigi2019/web_legends.jpeg %}
+<img src="/images/phperkaigi2019/web_legends.jpeg">
 
 コンピューターが単なる数値を処理する機械と見なされていたころに、対話型コンピュータとハイパーテキストを活用して、集団的知性の利用を実現することをライフワークとしたエンゲルバート。カードをメタファにしたリンクシステムで世界最初の商用ハイパーテキストシステムを作ったビルアトキンソン。
 

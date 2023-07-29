@@ -50,7 +50,7 @@ http://www.tedxtokyo.com/about-tedxtokyo/faq/#sthash.gIvI16UN.dpuf
 
 聞きながら'01年の[武尊祭](http://ja.wikipedia.org/wiki/%E6%AD%A6%E5%B0%8A%E7%A5%AD)を思い出し、あの頃のパーティーカルチャーもこのバーニングマンの十大原則のいくつかを共有してるのではと思いました。優れた原則や理念を持ったコミュニティは特別なコミニュケーションを生み出します。バーニングマン、TED、TEDx、独創的なオーガナイザーによって開かれた幾多のパーティー、みな共通するものがあるのではないでしょうか。
 
-{% img /images/tedxtokyo/burningman_principles.png %}
+<img src="/images/tedxtokyo/burningman_principles.png">
 
 ## 情熱
 
@@ -84,7 +84,7 @@ http://www.tedxtokyo.com/about-tedxtokyo/faq/#sthash.gIvI16UN.dpuf
 TEDxTokyo 2014 Photo Studio<br>
 https://www.facebook.com/media/set/?set=a.10152494229284859.1073741838.98089389858&type=3
 
-{% img /images/tedxtokyo/DSC01928.jpg %}
-{% img /images/tedxtokyo/DSC02020.jpg %}
+<img src="/images/tedxtokyo/DSC01928.jpg">
+<img src="/images/tedxtokyo/DSC02020.jpg">
 <br>
 田子さんありがとうございました！ / ボランティアの方達は本当に素晴らしいです。/ [Touchy](http://www.tedxtokyo.com/touchy-human-camera/)にも会えました。
