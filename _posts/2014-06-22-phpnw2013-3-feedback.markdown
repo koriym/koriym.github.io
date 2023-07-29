@@ -1,0 +1,125 @@
+---
+layout: post
+title: "PHPNW2013(3)-Feedback"
+date: 2014-06-22 11:14
+comments: true
+categories:
+---
+
+## フィードバック
+
+### joind.in
+
+<a href="joind.in">joind.in</a>では人によるチェックで選ばれたカンファレンスが登録されていて、トークのフィードバックを得る事ができます。
+国内ではトーク後の聴衆からの反応はねぎらいの言葉や感謝の言葉が多く、もし不満足な場合でも特にそれを表明しない事が多いと思います。
+
+joind.inでは良いトークは賞賛される一方、良くないと評価されたものには（時に非常に）厳しい言葉が並び★評価が低いものになります。トークは「批評」されるのです。
+
+賞賛の言葉が並べば自分の訴えた事が伝わり肯定された事が分かるし、厳しい言葉が並んだとしてもそれを改善に活かす事ができます。
+★の数ではなく「何故聴衆はそう感じたか」を知る事ができるのは役に立ちます。
+
+自分のトークは「今求められているもの」ではなく新しいアイデアです。フィードバックをもらえる仕組みがあるというのは、批評される恐さがある一方でありがたい事だとも思いました。
+
+トーク終わった後、当日、次の日とポツポツとレビューがあがります。
+
+<a href="https://joind.in/9302"><img src="/images/phpnw13/joindin.png"><br>
+https://joind.in/9302</a>
+
+ネガティブな評価は言葉の事でした。しかし心配してた自分の英語ではなくて日本語＝英語の同時通訳を途中に入れた事でした。
+地元のユーザーグループとBBCと二回のリハーサルで問題ないとフィードバックをもらってたのでこれは意外な事でした。人によって感じ方がかなり違うのかもしれません。
+
+その点を除けばアイデアや問題解決のためのアプローチを肯定する良い評価が並びました。
+
+<b>"A novel presentation", "Love the passion", "A really inspiring", "Mind-blowing bunch of ideas"。</b>最上級の言葉が並びました。
+プレゼンテーションは成功したのです！！
+
+
+### Twitter
+
+Twitterでも頂きました。
+
+
+<blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/koriym">@koriym</a> good talk today buddy and congratulations on the framework!</p>&mdash; John Crossley ∆ (@JonnoTheBonno) <a href="https://twitter.com/JonnoTheBonno/statuses/386174891222786048">2013, 10月 4</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>I&#39;ve learned about BEAR.Sunday . Very interesting. Session by <a href="https://twitter.com/koriym">@koriym</a> <a href="https://twitter.com/mackstar">@mackstar</a> at <a href="https://twitter.com/search?q=%23phpnw13&amp;src=hash">#phpnw13</a> <a href="http://t.co/9vvzUtwt3R">pic.twitter.com/9vvzUtwt3R</a></p>&mdash; Mark Szymik (@markszymik) <a href="https://twitter.com/markszymik/statuses/386502810051026944">2013, 10月 5</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>DIC = graph; app = root node; compile it once and cache - those are my learnings from BEAR.Sunday talk. It was <a href="https://twitter.com/search?q=%23outOfThisWorld&amp;src=hash">#outOfThisWorld</a> <a href="https://twitter.com/search?q=%23phpnw13&amp;src=hash">#phpnw13</a></p>&mdash; Marijus Kilmanas (@mkilmanas) <a href="https://twitter.com/mkilmanas/statuses/386509192670244864">2013, 10月 5</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>I think I’m going to use the time to read up on BEAR.sunday, it looks really interesting. /via <a href="https://twitter.com/mackstar">@mackstar</a> <a href="https://twitter.com/koriym">@koriym</a> <a href="https://twitter.com/search?q=%23phpnw13&amp;src=hash">#phpnw13</a></p>&mdash; Anthony Sterling (@anthonysterling) <a href="https://twitter.com/anthonysterling/statuses/386728438880813057">2013, 10月 6</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>New home for my Bear Sunday badge. /cc <a href="https://twitter.com/koriym">@koriym</a> <a href="https://twitter.com/mackstar">@mackstar</a> <a href="https://twitter.com/search?q=%23phpnw13&amp;src=hash">#phpnw13</a> <a href="http://t.co/UYYDmqEZej">pic.twitter.com/UYYDmqEZej</a></p>&mdash; Ryan Marshall (@rsmarshall) <a href="https://twitter.com/rsmarshall/statuses/386866175277551617">2013, 10月 6</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+中でも気に入ってるのはこの「looks crazy! 」です。
+
+<blockquote class="twitter-tweet" data-cards="hidden" lang="ja"><p>BEAR.Sunday <a href="https://twitter.com/search?q=%23PHP&amp;src=hash">#PHP</a> 5.4 framework looks crazy! Resource oriented, REST hypermedia, DI and AOP: <a href="https://t.co/qqXAs2KPXz">https://t.co/qqXAs2KPXz</a></p>&mdash; Loïc Chardonnet (@epiloic) <a href="https://twitter.com/epiloic/statuses/386520372503257088">2013, 10月 5</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Blog
+
+いくつかのブログでもフィードバックを頂けました。
+
+> it does show us how it is possible to think about the web service process and how we might approach it a little differently.
+
+- http://techportal.inviqa.com/2013/10/08/phpnw-conference-2013/
+
+
+> I thought it was about something completely different. It introduced Aspect oriented programming (something I had only seen in other languages, and had not considered using with PHP). The speaker was from Japan and had a guy interpreting for him at times. It should have been a disaster, but was not. It was interesting.
+
+- http://ampersandcommerce.com/hobgoblins-mindgasms-and-why-we-loved-phpnw13/
+
+> I spoke a lot to Akihito Koriyama, who wrote a framework called BEAR, which breaks a lot of the principles that the popular frameworks follow. It does this in a way that improves the object-oriented structure of the application from more traditional architectures.
+
+- http://www.studio24.net/blog/php-north-west-conference-2013
+
+> This talk introduced the “BEAR.Sunday” framework, which took a new, Eastern-thinking approach to PHP frameworks.
+
+- http://martinbean.co.uk/blog/2013/10/09/php-north-west-2013-conference/
+
+### Leeds
+
+Leedsのときのもありました。
+
+<blockquote class="twitter-tweet" lang="ja"><p>Wow! I think everyone would agree they have just been enlightened by <a href="https://twitter.com/koriym">@koriym</a> and BEAR.Sunday</p>&mdash; Leeds PHP User Group (@leedsphp) <a href="https://twitter.com/leedsphp/statuses/384767549382356992">2013, 9月 30</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+## 直接のフィードバック
+
+終わった直後やその後にも、多くの人が自分の元に来てくれ感想を伝えてくれたり、質問をくれました。中には自分がいつもブログを読んでる知っている方もいました。
+驚いたのは会場で話を聞いてなかった人まで来たことです。（トークは同時に３つあります）「聞き逃したんだけど友達からすごくインスパイアされたって聞いた。ちょっと聞かせてくれる？」こういう人が何人も現れました。
+phpnwは参加者同士が交流できる多くの時間が用意されています。
+
+## 帰りの電車で
+
+カンファレンスは３日間ありますが、外国から飛行機で来ている人もいてお昼には終わります。会場を後にし電車に乗っていると、向こうからこちらをチラチラ見てる人がいます。カンファレンスでスピーカーギフトとしてもらったトレーナーを来ていたのですが、それを見てたのです。
+「あなたもしかしてphpnwでフレームワークの話をした人？」ビックリしました！！彼の会社はカンファレンスの大手スポンサーだけど今年は自分はいけなかった。しかし同僚に話を聞いてたというのです。彼は興奮してましたが、僕はそれ以上。電車が目的地に着くまで話は尽きませんでした。
+
+## 初めてのプレゼンテーションでした
+
+meetupやSymfony勉強会で部分的な紹介をした事はありますが、BEAR.Sundayフレームワークの全体のプレゼンテーションを行ったのは国内含めてこれが初めてでした。
+「インスピレーションを与える」という目的は達成できました。フィードバックをもらえたおかげで、会場に大勢の人が集まったのも、大きな拍手をもらったのも、遠い国から来てプレゼンテーションをしている人への暖かい応援というだけではなくその内容が評価されたのだと思う事ができました。
+
+共同発表者のリチャードさんと相談を重ね、長い時間をかけ資料を準備しました。イギリスについてからも直前まで手直しを続けました。子供たちにもスピーチを聞いてもらって何度も練習を重ねました。
+そうやって準備や練習にもとてつもないエネルギーをそそいだ成果でした。
+
+リチャードさんありがとうございました。本当に面白かったです！
+
+<img src="/images/phpnw13/w_richard.jpg"><img src="/images/phpnw13/dog.jpg">
+
+
+phpnw13 blog entries
+
+http://www.boxuk.com/php-north-west-2013
+http://www.labelmedia.co.uk/blog/phpnw13.html
+http://blogs.edgehill.ac.uk/webservices/2008/11/30/php-north-west-conference-review/
+http://www.justanothermark.co.uk/blog/2013/php-north-west-2013
+http://www.ctidigital.com/blog/development/phpnw13-guzzle-coding-standards-dependency-injection
+http://www.hashbangcode.com/blog/phpnw13-review
+
+※ 来週末の6月28日（土）に<a href="http://conference.kphpug.jp/2014/">PHPカンファレンス関西</a>で「全てを結ぶ力」というタイトルで講演を行います。PHPカンファレンス関西はこれが初めてです。よろしくお願いいたします！

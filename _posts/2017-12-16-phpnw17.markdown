@@ -1,0 +1,245 @@
+---
+layout: post
+title: "PHPNW17"
+date: 2018-3-18 23:00:00 +0900
+comments: true
+categories:
+---
+
+時間が経ってしまいましたが、2017年の秋にイギリスのリーズとマンチェスターで登壇した事を記事にします。
+
+## トラブル発生
+
+行きの飛行のトランジットの時間がギリギリで、乗客は間に合ったのですが荷物の載せ替えが間に合わずスーツケースが未着、翌日宅配便で届くということになってしまいました。
+
+教訓）トランジットの短い便は、絶対に必要なものは手荷物にすべし。その日の着替え、プレゼンの時はPCは手持ちで！
+
+本番前日にスーツケースが届いたのですが開けるとなんとMacBookがありません！。盗難かと一瞬思いましたが「Mac を探す」アプリを起動すると9,294km離れたところで反応があるのが確認できました。つまり日本の家に単に忘れてただけ！😵... iCloudに助けられました。友人の奥さんにMacbook Airを借りて急場をしのぐことにします。
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Confirmed. My Macbook is 9294km away from me the day before the presentation. But the problem fixed thanks to <a href="https://twitter.com/mackstar?ref_src=twsrc%5Etfw">@mackstar</a> いつもすいません！&gt;&lt;</p>&mdash; Akihito Koriyama (@koriym) <a href="https://twitter.com/koriym/status/913478596219596806?ref_src=twsrc%5Etfw">2017年9月28日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+# Sky Sports
+
+Sky Sportsというイギリスの衛星放送事業者でPrincipal Software Engineerの職につかれている[Richard McIntyre](https://www.linkedin.com/in/mackstar/)氏の招きで、リーズにあるSky Sportsで登壇する機会をいただきました。
+（Sky Sportsは（プレミアリーグの放映権を全て持っているぐらいの）世界でも最大級の放送事業者で、以前講演したBBC Sportsよりも規模の大きい放送事業者です。Skyはツールドフランスでも有名ですよね）
+
+{% img /images/phpnw17/sky.jpg %}
+
+[Sky Sports 2017](https://photos.google.com/share/AF1QipNCkT5ddXqOHKwY1tjUcuSl7frI_s8fnLsBjUktalTj7k7JTITYVfjrWtPBT9Y-xQ?key=ajM5Y2c1ckdBckUtVXphS1NzM1RmdWY5TkxGeFJB)
+
+（Skyのカフェに小さなポスターが貼ってありました）
+
+"Crating rih universal React apps powered by RESTful PHP"と長くてかっこいいタイトルはRichardさんが考えてくれました。
+「"Hypermedia APIは自己記述的でヘッドレスアプリケーションとして機能する。それにSSRのReact UIを組み合わせるアーキテクチャ」というのを紹介しました。
+
+<script async class="speakerdeck-embed" data-id="e5b2e9053a9647fca02b6e626e5f91a3" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+以前Sky SportsでReactのSSRを検討した時にはパフォーマンスに問題があって一度断念しているという話を聞いていたのと、ヘッドレスCMSの人気が出て来ているという話を聞いてたので、その解決法と"ヘッドレス"を含んだプレゼンテーションにしました。自由参加だったのですがその部署のほとんどの人に参加していただいたようです。
+
+今回のチャレンジは「英語のスクリプトを用意しない。英語は下手でもいいから読まずに話す」でした。あらかじめ用意する英語よりも文章は下手になりますが、聞いてる方はトークを聞きに来ています。正しい英語を話す自信はありませんでしたが、これは弁論大会ではなくて技術トークなんだと、参加者は私の英語を採点するためではなく技術の話を「聞きに来ている」のだと自分を言い聞かせて臨みました。カフェのアットホームな雰囲気もあって、会議室のBBCの時ほどは緊張せずリラックスして話せてやっぱり読まずに話して良かったと思いました。
+
+このトークをこのSky Digital ContentのSenior Software Engineerの[Chris Bell](https://www.linkedin.com/in/chrisbelluk/)さんに記事にしてもらっています。
+
+[Akihito Koriyama visits Sky to talk React apps powered by RESTful PHP](https://www.linkedin.com/pulse/akihito-koriyama-visits-sky-talk-react-apps-powered-restful-bell/)
+
+終わったあとも質問が長く続き、良いコミニケーションが出来たと思います。
+
+同じトークをphpnwカンファレンスのunconfでしました。
+
+# PHPNW
+
+PHPNW(php north west)は2008年に始まり、今回参加した10回目の2017年phpnw17で幕を閉じました。
+
+http://conference.phpnw.org.uk/phpnw17/extras/previous-conferences/
+
+そのうちカンファレンススピーカー枠で参加した[phpnw13](http://koriym.github.io/blog/2014/01/04/phpnw2013/) 、アンカンファレンス参加したphpnw15、phpnw17と3回参加しました。
+
+{% img /images/phpnw17/phpnw17.png %}
+
+イベントは通常三日間行われます。最初はカンファレンスの前日にあるTUTORIAL DAYです。
+
+{% img /images/phpnw17/tutorail.png %}
+
+チュートリアルはカンファレンス料金とは別の代金が必要で1日で£250 (約37,000円)、半日で£145です。
+
+チュートリアルの費用を会社に出してもらってる開発者も多く、面白いのはそれをサポートする仕組みがあることです。
+
+{% img /images/phpnw17/ask_boss.png %}
+
+カンファレンスやチュートリアルに参加することがどれだけ意義があってそれが費用に見合うものかというbossを説得するPDF資料が用意されています（！）
+
+{% img /images/phpnw17/ask_your_boss1.png %}
+{% img /images/phpnw17/ask_your_boss2.png %}
+
+ 1. 素晴らしい従業員を引き留めることができる
+ 2. あなたの"スーパースター"を育てることができる
+ 3. 未来への展望
+
+会社がお金を出したくなるような言葉が並びます。
+他にも他の地方や外国から訪れている方のために、半日や一日観光などおすすめ観光情報も用意されていました。地元をプロモートしたいのだそうです。
+
+## ハッカソン
+
+チュートリアルデーの夜はハッカソンです。 ハッカソンと言ってもチームに分かれて何かを競うわけではなくて、ソーシャル（懇親）が目的です。
+「PHP-Excel」とか「Joind.in」とかプロダクト毎にテーブルが分かれていて、好きなテーブルに座りそれぞれのオープンソースのプロジェクトにコントリビュートします。
+
+オープンソースのコントリビュートでカンファレンスを始める、そしてそのコントリビュートをソーシャルにする。素晴らしいと思います。
+
+{% img /images/phpnw17/hackason.jpg %}
+(phpnw2013のハッカソン)
+
+特にハッカソンに参加せずに他の参加者とおしゃべりするだけでもOKです。写真中央のスクリーン前にいる人たちはゲームで遊んでます。（ハットをかぶってる人はスピーカーの[Ross Tuck](https://twitter.com/rosstuck)さん）
+
+カンファレンスセンターにはバーと中庭があってゆっくり過ごせます。
+{% img /images/phpnw17/bar.jpg %}
+
+夜になると夜食も出ます。スピーカーの人達は事前にスピーカーディナーで別になっててちょっとしたコース料理を楽しむことができます。。ベジタリアンメニューとかどいう食事をしたいか事前にwebで選択できます。
+
+今回初めて一人、地元の友人なしで行きました。食事の時間の時、BEAR.Sundayを使ってる[Kennyさん](https://twitter.com/kennybody)を見つけて一緒のテーブルに混ぜてもらいました。
+
+{% img /images/phpnw17/w_kieth_jake.jpg %}
+
+左の写真は[Jake](https://twitter.com/GroovyCarrot)さん、iOSの[NextGen UI](https://www.youtube.com/watch?v=uG5DXypCEsk)というUIで有名な開発者です。
+
+Kennyさんは翌日はphpnwで初めてというバンド演奏でドラムを叩いてました。かっこいい！
+（そのバンドのサイトをBEAR.Sundayで作りたいそうです）
+
+{% img /images/phpnw17/kieth.jpg %}
+
+カンファレンスは二日あります。
+
+{% img /images/phpnw17/day1.png %}
+
+1日目は開会挨拶（10分）、スポンサー紹介（15分）の後にオープニングキーノート(50分）と続きます。
+
+4つのセッションが３トラックで行われます。ルームサイズはそれぞれ大中小。1つのセッションはどれもQA含めて50分。
+
+* 50分のキーノート
+* 10分のインターバル
+* セッション（1）
+* ☕️ 25分のブレイク
+* セッション(2)
+* ☕️ 70分のランチ
+* セッション(3)
+* ☕️ 25分のブレイク
+* セッション(4)
+* 50分 Platium Sponsor & Prize
+* 50分のインターバル
+* 19:00 夕食＆ソーシャル - 深夜
+
+ブレイクの時間はカンファレンスルームをみんな離れてホールで過ごします。
+提供されたコーヒーやお菓子を手に、スポンサーブースを見たり聞いたばかりのセッションの感想を参加者同士で話し合ったりするソーシャルのための時間です。
+時間25分と長めで振り返ったりブースも見れたりできるので良かったです。
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fYTKm2oUzAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+（phpnw17でのキーノートの映像はまだ公開されていませんが同じ内容の映像がありました）
+
+PHPの歴史と進化の話でした。
+
+スライド http://talks.php.net/vienna17#/
+
+中でも印象的だったのがphp7の移行を呼びかけるところ。
+
+「世界には20億のサイトがあり、1000万台の物理サーバーが存在する。
+そのうちの少なくも半分はPHPサーバー、しかしphp7はまだphp全体の5%（約25万台）しか使われてない。
+しかしその5％でもサーバー使用料が$200M（210億円）、750MHの電力、375MkgのCO2がphp5に比べて節約できている。
+これがもし100%になると.. 使用電力も二酸化炭素排出も減り、世界をより良い場所にすることができる。php7への移行を！」
+
+php7のアップグレードは地球を救うことになります！😅
+
+他にはオペコードの最適化が進んで、未使用のコードや未使用変数のコンパイルを行わないなどダメなコードほど恩恵が受けられることなども説明していました。これは7.1、7.2とバージョンが進むほど効果があるそうです。参加者が「じゃあWordPressはすごく早くなるのか？」と途中で聞いたらラスマスさんは苦笑しながら「いやWordPressのコードはスタイルは古いけどそんなに悪くないんだ」と答え、しかし「プラグインのコード知らないでしょ？」（会場爆笑）というやりとりもありました。
+
+大規模CMSのアプリケーションアーキテクチャの話は印象に残りました。
+
+<script async class="speakerdeck-embed" data-id="f811eda608c44a57861094fd35a0cdbb" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+大規模というのは単に秒間リクエストの話だけはなく問題の複雑さの事で、それに対してどういうアーキテクチャやソフトウエア技術で解決するかというインスピレーションを得られる内容でした。ルーマニアのgeekを自称する方で、母でありアーキテクトであるというすごい方でした。
+
+２回目のunconfはskyでの45分のものを30分にするので少し駆け足になりましたが、良いトークになったと思います。
+ブログ記事やjoindinでのレビューもいただきました。
+
+[[PHP North West 2017] – Conference Review](https://codereviewvideos.com/blog/php-north-west-2017-conference-review/)
+
+> I really enjoyed this talk. I wish I had taken further notes around Akihito’s implementation of Server Side Rendering, which has become a problem for me in the time since attending PHPNW17.
+
+[joindin review](https://joind.in/event/phpnw17/creating-rich-universal-react-apps-powered-by-restful-php)
+> Short, but concise and inspired talk about aspect-oriented programming. Brilliant insights into building scalable, and future-proof application domain boundaries using BEAR.Sunday to generate HATEOAS compliant API's; with realtime synthesised documentation.
+
+ちなみに日本のような参加者全員で聞く最後のLTはありません。スポンサーセッションと夕食、ソーシャルの時間に続いて1日目が終わります。
+
+{% img /images/phpnw17/day2.png %}
+
+二日目は半日で終わりますが、これは遠方から来てる人たちがその日に帰れる配慮です。
+１度だけ30分のBreakがありますが、半日しかないので1日目より速い進行です。
+
+最後に25分のクロージングキーノートがあります。
+[For The Love Of Code](https://joind.in/event/phpnw17/for-the-love-of-code)というPHPコミュニティに関しての話でした。ちょっとハートフルな内容です。
+
+"The talk is centred around the idea of community. PHP has one of the best communities we know. Its people are passionate, enthusiastic, loyal, and smart. But, there is a problem. We somehow feel, whether we like to admit it or not, that for our community, our language, to be great, it must be at the cost of another community or another language. Perhaps a framework we don?t like so much, or another language that thinks is better than ours. We make little remarks, or take cheap shots at the ?competition?. But it doesn't have to be that way. When I started coding all those years ago I had no idea there would be hoards of other developers waiting to share ideas and pass on the knowledge - all for the love of code. Which is the real reason we?re all here. We all love code. The talk will revolve around the idea that all software-based communities have so much in common. That we all have a common purpose - to share and promote the thing we love. But we can promote our community without detracting from others. Using the philosophy of "Think Win-Win" from The 7 Habits of Highly Effective People, I will discuss how shift in attitude can means we can all promote our beloved language and promote others too, and still win."
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/MvBKuf22CHdgZz" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/johnnybifter/for-the-love-of-code-phpnw17" title="For the Love of Code - PHPNW17" target="_blank">For the Love of Code - PHPNW17</a> </strong> from <strong><a href="https://www.slideshare.net/johnnybifter" target="_blank">John Cleary</a></strong> </div>
+
+
+そのあとの終了の挨拶で「今年でphpnwの開催を最後にする」との突然の発表がありました。
+直後にどよめきがあり、その後に拍手に代わりそして長いスタンディングオベーションになりました。主催者のジェレミーさんも壇上で言葉に詰まっています。
+
+{% img /images/phpnw17/ending.jpg %}
+
+「ああ、それでキーノートがラスマスさんだったんだとか、迷ったけど今年来て良かったとか」とか様々な考えが頭に浮かびます。
+
+10年続いたPHPNWは終わりました。やはり毎年の開催は大変な苦労で、10年を区切りと考えたそうです。
+カンファレンス終わった後、一緒にクロージングキーノートを聞いてたJakeさんが彼のCIVICで空港まで送ってくれ、マンチェスターを後にしました。
+
+# PHPNW
+
+そもそも私がPHPNWに参加することになったのは地元のリチャードさんがBEAR.Sundayを気に入って彼が応募し採択され共同発表する事になったからです。
+その年のphpcon(東京)への応募は落選してて、初めてカンファレンスに登壇したのは日本ではなくPHPNWでした。
+
+知り合いも沢山できて「今年は来てないの？」と前年に言われ参加したのが最後のphpnw17でした。
+
+{% img /images/phpnw17/cup.jpg %}
+
+PHPNWとはどういうカンファレンスだったか改めて振り返ってみます。
+
+参加者、特にスピーカーにオープンソースの開発者が多かったです。XdebugのDerickさん、phpDoumentorのMikeさん、ReactPHPのCeesさん、ZF/SlimのRobさん、Silex/YoloのIgor さん、BeHatのEverzetさん、HHVMのSaraMGさん、あげればきりがないくらい沢山います。私が気が付いていない人もいたでしょう。しかし有名オープンソースの開発者が必ず登壇してるという風でもなく聴衆としても参加してます。他にはDDDやBDDのエバンジャリストや、コミュニティリーダー、アプリケーションアーキテクトとかそういう人が登壇してる感じでした。
+
+参加者のソーシャルを大事にするカンファレンスでした。ブレイクは25分と長く、スピーカーの話を聞く＆参加者とおしゃべりをするサイクルができています。スピーカー同士の交流が生まれやすいように、スピーカーディナーやランチなどスピーカー同士のソーシャルができる場も用意されていました。
+
+スピーカーに対する負担を少なくするため、スピーカー1人につき"shadow"と呼ばれるスピーカーをサポートする人が一人つきます。発表当日の朝、一人の人が現れ「僕は今日あなたのshadowを務めるものです。」と挨拶がありました。かっこいい（！）機材や進行の確認、色々な疑問はshadowに投げると答えてたりshadowが分からないことは
+他の人に訪ねてくれます。スピーカーがそれぞれの担当の人を探す必要がありません。
+
+オーガナイザーのジェレミーさんに聞くと「スピーカーの人にはこのカンファレンスで話して良かったと思ってもらいたいんだ。このマグカップのギフトもその工夫の１つなんだ」と教えてくれました。
+
+## unconf
+
+誰でも最初から流暢なトークができるわけではありません。人前で話すことに慣れてない方もいます。アンカフレンスはそういう方のためのものでもあります。トークの後にトークについてのレビューやアドバイスもしてくれます。私は最初にセッション枠で登壇して、次からunconfに参加で順番逆だと思うのですが、良い取り組みだと後で知りました。ちなみに担当の人によると、ほとんどのトーク初心者は緊張して喋りが早すぎてしまうという事でした。ゆっくり話しましょう。
+
+### どういうトークが採択されているか
+
+トーク応募の項目には発表の概要と共に「なぜ、聴衆は貴方の話を聞かなければならないのか？」という項目があります。聴衆が時間とお金を使って聞く価値があるものを応募してほしい、その視点が無いものは我々は採択しないというメッセージです。トークのゴールを明確にする事で、採択者への理解の助けにもなるでしょう。そして地元の参加者をエンカレッジするために地元の人が優先です。開発者なら誰でも知ってる外国の有名なフレームワーク開発者でも落選していました。採択率は15％程度で高くありません。採択者は4人いて、全員8/10以上のスコアのついたものでなければいけないです。
+
+トーク内容は、アーキテクチャ、エンジニアのキャリア、プログラミング、セキュリティ、CI、QA、API、パフォーマンスなどは多岐に渡ります。
+一方、特定のツールの使い方や最新情報、フルスタックのフレームワークの話などはあまりありません。
+
+### フレームワーク
+
+何人かに聞いた範囲ではUKではSymfonyが多そうでした。しかし事前にリチャードさんに聞いてた通りフレームワークへの関心は低くあまり話題になりません。結局、使用者がそれぞれの価値観で使ってる印象でフレームワーク特有の話がしたい人はLaraconやSymfony Liveに行ってるのだと思います。
+
+スピーカーに限るとアーキテクトの方が多くフルスタックフレームワークよりそれぞれの問題領域に合わせてコンポーネント志向のフレームワークやインハウスフレームワークを作成している方が多い印象がありました。価値観それぞれで、道具の選定に多様性を感じました。
+
+
+### Sayonara PHPNW
+
+
+アイデアやインスピレーションに繋がる話が好まれるとも聞きました。道具の作り方や問題の考え方、ソフトウエアパラダイム、コーディング技術、コミュニティやオープンソースへのコントリビュートのトークなどです。自身の取り組んだアプリケーション設計や、自らが参加しているオープンソースの話も少なくありませんでした。私は技術だけでなく、その人がどのように取り組んで来たかというストーリーのある話が好きで、PHPNWは正にその期待に答えてくれる場所でした。
+
+開発する人をインスパイアするためのカンファンレンスというものであったと思うし、unconf含め３回登壇した時もそのつもりで挑みました。
+
+思い出深いカンファレンスが無くなってしまったのは残念です。それがどういうものであったか国内のカンファレンスを運営してる人や参加者、これからコミニュティを運営しようとしている人にインスピレーションを与えることができたらと思い、また自分の記録としてこの記事を書きました。
+
+* [phpnw13](https://goo.gl/photos/BnwWuBtJYo6b77158)
+* [phpnw14](https://photos.app.goo.gl/Xuvk0y2dMPIIcwyj1)
+* [phpnw17](https://photos.app.goo.gl/FNkJXa14ZcCd5hoH2)

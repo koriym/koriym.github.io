@@ -1,0 +1,90 @@
+---
+layout: post
+title: "TEDxTokyo 2014"
+date: 2014-06-10 02:34
+comments: true
+categories:
+---
+
+## Connecting the unconnected
+
+2014 5/31 (土) 9:00 - 18:00
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/AxjuLiiX1mo?rel=0" frameborder="0" allowfullscreen></iframe>
+
+5月31日にヒカリエで開かれたTEDxTokyo 2014でオーディエンスとして参加する機会をいただきました。
+去年に続いて二度目です。
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/u8S2-H0E4Q8?rel=0" frameborder="0" allowfullscreen></iframe>
+
+> "25年以上前にカンファレンスとして始まりましたが、素晴らしい考えやアイデアを識別し広める幅広いプラットフォームへと進化しました。"
+
+ビデオにあるように「素晴らしい考えやアイデアを識別し広める幅広いプラットフォーム」それがTEDです。
+TEDxTokyoはその精神を引き継いだ米国以外では初めてのTEDxイベントです。
+
+"様々な分野で活躍する参加者が招待され一日かけて各々の考えを他の参加者と共有します。また、その中の一部の人たちは講演を行うことにもなっています。...主なTEDカンファレンスと同じく、講演者と参加者の区別はほとんどありません。"
+
+http://www.tedxtokyo.com/about-tedxtokyo/faq/#sthash.gIvI16UN.dpuf
+
+参加者は単にプレゼンテーションを生で観られるというだけではありません。分野の違う人達が集まり、素晴らしい考えやアイデア (Ideas worth spreading)を共有するのです。
+
+セッションは4つに分かれます。Unconnected、Making Patters、Seeking Synchronicityそれに Connnectedとそれぞれ名付けられたセッションは6-8つのプレゼンテーションを持ちます。最大18分の凝縮されたプレゼンテーションはそのうちの１つだけを見ても強く印象に残るものですがそれが30近くもあるのです！まさに[知の渦にダイブ](https://twitter.com/MTDO_ch/status/472526122417008640)です。
+
+## 結
+
+一番最初のプレゼンテーションは米国で活動する書家アーティストの[山口 碧生](http://www.shift.jp.org/ja/archives/2011/06/aoi_yamaguchi.html)さん、今年のテーマ「Connecting the Unconnected」その「結」を特大の筆で書き上げ、それを壁に掲げます。パフォーマンスと音楽を融合した彼女の"書"は迫力のあるものです。
+
+しかし同時に自分たち＝ここに集まった大勢の人が見ているのは「文字を一文字書く」それだけの事という事にも気付きます。それが百の言葉より説得力を持ち、力となり、見ている人達の熱狂を誘うのです。今年のTEDxTokyoのテーマを１文字で書き上げる素晴らしいオープニングになったと感じました。
+
+去年最初のパフォーマンスは手妻師の藤山晃太郎さんの江戸古典奇術の「手妻」でまるで何かの魔法を見てるようでしたが、今年も違った魔法が最初のプレゼンテーションとなりました。
+
+## マリアン・グッデル
+
+「バーニングマン」は8月１週間だけネバダの砂漠に都市「ブラック・ロック・シティ」が現れる奇跡のようなイベントです。数年前に参加した友人の写真で度肝を抜かれました。
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/IP1fh9iO5yo?rel=0" frameborder="0" allowfullscreen></iframe>
+
+そのバーニングマンのオーガナイザー、マリアン・グッデルが次のプレゼンテーションを行いました。
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/DXbd2h_cNJI?list=PLsRNoUx8w3rMPnRKHwjijK_kz26T9IAH2" frameborder="0" allowfullscreen></iframe>
+
+聞きながら'01年の[武尊祭](http://ja.wikipedia.org/wiki/%E6%AD%A6%E5%B0%8A%E7%A5%AD)を思い出し、あの頃のパーティーカルチャーもこのバーニングマンの十大原則のいくつかを共有してるのではと思いました。優れた原則や理念を持ったコミュニティは特別なコミニュケーションを生み出します。バーニングマン、TED、TEDx、独創的なオーガナイザーによって開かれた幾多のパーティー、みな共通するものがあるのではないでしょうか。
+
+{% img /images/tedxtokyo/burningman_principles.png %}
+
+## 情熱
+
+多くのプレゼンテーションの中でも特に印象に残ったのがこの２つです。
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/-uTRVcvEUMY?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/q84-jGZO3Rg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+経営学者の[石倉 洋子](http://www.tedxtokyo.com/talk/yoko-ishikura/)さんのスピーチは非常にパーソナルな内容で、自分の半生をカイトに見立て、時に舞い上がり、時に逆風にさらされる様を静かに熱く語ります。
+
+フォトグラファーの[レスリー・キー](http://www.tedxtokyo.com/talk/leslie-kee/)さんは世界的名声を得た今も青年の時の気持ちをずっと胸にいだき、それを大切にしてきたか、それが伝わる情熱に満ちたものでした。
+
+そうなのです、”知の渦にダイブ"のTEDxで強く心に残るのは、自らが求める課題に対峙するその真摯な姿勢なのです。
+語られる「広める価値のある」優れたアイデアは頭に脳に強く作用するのですが、それを語る人達の精神性や人間性に心が打たれるのです。
+
+前回は特に[田子 學](http://www.tedxtokyo.com/talk/manabu/)さんと[坂 茂](http://www.tedxtokyo.com/talk/ban/)さんのスピーチがそうでした。田子さんは今回オーディエンスとして参加されていて、去年のスピーチの感想や印象を伝える事ができました。嬉しくて「講演者と参加者の区別はほとんどありません」のTEDxの理念はどこかに飛んでいきスターにあったファンのように興奮し（コーヒーをこぼすぐらい！）田子さんのスピーチがいかにその後に影響を与え、ずっと印象に残ってるかを話しました。
+
+ケンジ・ウイリアムズさんの最後のスピーチは特別なものでした。スピーカーとオーディエンスという形で再会でき、彼のバイオリンを8年振りに聞く事ができたのです。演じた「Bella Gaia」の一部は音楽と地球規模のデータの融合し、見ている人の意識に作用する素晴らしいパーフォマンスでした。アフターパーティーではBella Gaiaの方と意見交換する事もできました。
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/RCV0vOrABTw?rel=0" frameborder="0" allowfullscreen></iframe>
+
+## 熱狂の一日
+
+イタリア人画家のマッテーオさんと会って色々な話を出来た事も大きな刺激でした。絵画が好きなのですが、職業画家の方と話しができたのは初めてです。彼はTEDxTokyo 2005の[スピーカー](https://www.youtube.com/watch?v=eONkG8fhrf8)でもあり、話題にした美術や芸術の話は興味深い事ばかりでした。
+
+可能な限り人に話しかけ各分野の興味深い話を聞きたいと思うのですが、プレゼンテーションは沢山ありこれ以上濃くする事ができないくらい濃密な時間はあっという間に過ぎて行きます。
+
+二年目の参加で少しは落ち着いていられるかと思ったのですが、さらにエキサイトして頭に心に全身に作用した熱狂の一日となりました。主催のパトリックさん、トッドさん、ボランティア、チームの方々、スピーカーの方々、そしてパートナーの方々、この素晴らしい一日をつくりあげた方々に感謝します！
+
+TEDxTokyo 2014 Photo Studio<br>
+https://www.facebook.com/media/set/?set=a.10152494229284859.1073741838.98089389858&type=3
+
+{% img /images/tedxtokyo/DSC01928.jpg %}
+{% img /images/tedxtokyo/DSC02020.jpg %}
+<br>
+田子さんありがとうございました！ / ボランティアの方達は本当に素晴らしいです。/ [Touchy](http://www.tedxtokyo.com/touchy-human-camera/)にも会えました。

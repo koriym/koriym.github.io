@@ -1,0 +1,767 @@
+---
+layout: post
+title: "PHPNW 2013(2) - Presentation"
+date: 2014-01-10 19:53
+comments: true
+categories:
+categories:
+- BEAR
+- PHP
+---
+
+_※ [PHPNW 2013(1)](/blog/2014/01/04/phpnw2013/) からの続きです_
+
+
+"何のためにイギリスまで行って話をするのか"-この問いに対して高い目標を持っていました。
+
+「世界レベルのプロのエンジニア/アーキテクトの人達をインスパイアさせたい」
+
+単に自分のソフトウェアの紹介や、便利な使い方を紹介するだけで終わるつもりはありませんでした。
+持ち時間は50分。終わりにQ&Aを考えると40分前後が実質のプレゼンテーションの時間です。自己紹介、DIは自分で、AOPをリチャードさん、そしてRESTを通訳、最後にまとめを自分がするというハイブリッドなプレゼンテーションにしました。
+
+無名のフレームワークの話をどれだけの人が聞きに来るか、想像も付きませんでしたが立ち見は出ないまでもほぼ満席です。知った顔も見えます。（leedsphpでのセッションの人達がまた聞きに来てくれてました。）
+多くのボランティアスタッフがphpnwカンファレンスの運営を支えてますが、撮影スタッフはプロです。会場の一番奥にいる2人組の撮影クルーのとなりの壁掛けデジタル時計が15:00:00を指したらプレゼンテーションスタートです。
+
+撮影されたビデオはいまだに公開されていないので、発表ノートと共に全てのスライド77枚を紹介します。
+
+{% img /images/blog/phpnw13-slide/bear-sunday.002.jpg BEAR.Sunday@PHPNW13 %}
+
+## Introduction
+
+(after self introduction)
+
+{% img /images/blog/phpnw13-slide/bear-sunday.005.jpg BEAR.Sunday@PHPNW13 %}
+
+I was really surprised when BEAR.Sunday was chosen for this great conference session.
+
+I am very happy be here as a speaker.
+
+But, some of you guys may wonder (or may have doubts) about an unknown person talking about an unknown framework.
+ But I’m not here to teach you how to use my framework. No.
+ I’m here to share a new way of thinking, a new way of solving web problems.
+
+How do we look at these problems. Yes, It’s about outlook.
+
+Ok let’s start.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.006.jpg BEAR.Sunday@PHPNW13 %}
+
+BEAR.Sunday offers no libraries of its own.
+
+PHP namespaces, PSR, a new coding github culture, unit testing, a new trend of library oriented frameworks... these have all happened recently and push us to a more library oriented way of thinking.
+
+So BEAR.Sunday chooses not to have it’s own components, It uses others from aura, symfony and zend etc.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.007.jpg BEAR.Sunday@PHPNW13 %}
+No libraries, instead, BEAR.Sunday offers three object frameworks.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.008.jpg BEAR.Sunday@PHPNW13 %}
+
+What is the framework, by the way ?
+
+---
+{% img /images/blog/phpnw13-slide/bear-sunday.009.jpg BEAR.Sunday@PHPNW13 %}
+
+My friend told me like that.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.013.jpg BEAR.Sunday@PHPNW13 %}
+
+Dependency Injection framework,
+Aspect Oriented Framework,
+and Hypermedia framework for object as a service.
+... these technology are centered but also widely used in BEAR.Sunday framework.
+
+Let’s take a look one by one.  So which one attracts you ?
+let’s start DI.
+
+# DI Framework
+
+{% img /images/blog/phpnw13-slide/bear-sunday.014.jpg BEAR.Sunday@PHPNW13 %}
+
+DI ... in many case, People said DI is good tool for testing.
+Well, it is true...but  Is it really core value for DI pattern ? 
+We will see some another benefit, mainly these two. 
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.015.jpg BEAR.Sunday@PHPNW13 %}
+
+DIP, Dependency Inversion Principle.
+
+"How many of you know this principle ?"
+
+(around 70%)
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.016.jpg BEAR.Sunday@PHPNW13 %}
+
+Robert C. Martin says the following.
+
+So I decided that we should take this seriously.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.017.jpg BEAR.Sunday@PHPNW13 %}
+Let’s take look at the code.
+
+BEAR.Sunday uses Ray.Di which is a subset of Google Guice for PHP.
+
+It uses a binding DSL in PHP.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.018.jpg BEAR.Sunday@PHPNW13 %}
+
+This class needs renderer as a dependency,
+We annotate it with an injection point. 
+You can also annotate setter methods with @Inject.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.019.jpg BEAR.Sunday@PHPNW13 %}
+
+You then bind the interface to an instance provider.
+Concrete class, factory or an instance.
+
+This is binding an abstraction to a concretion.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.020.jpg BEAR.Sunday@PHPNW13 %}
+
+Now the module knows about all of the bindings.
+
+With this module, You can create an injector.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.021.jpg BEAR.Sunday@PHPNW13 %}
+
+Then, We can pull an instance with bound dependencies using an interface.*
+We do this with the injector that knows all bindings in the application.*
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.022.jpg BEAR.Sunday@PHPNW13 %}
+
+You can change an object graph depending on context.
+
+Its not uncommon to see the code like the above.
+The state is passed in the application logic.
+ Then the behavior of the application is changed by the state.
+Even though we use objects, this is more like procedural programing.
+
+Also concrete class names have been used. to have instantiate objects that are needed.  For better flexibility and simplicity. The code can be changed like below. This code does not need to changed even if we use another renderer.
+
+We should code a structure, not as a procedure.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.023.jpg BEAR.Sunday@PHPNW13 %}
+
+In BEAR.Sunday there is a clear distinction between compilation and runtime.
+
+Concrete class names should only appear at compile time.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.024.jpg BEAR.Sunday@PHPNW13 %}
+
+Then at runtime it looks like this.
+
+Never use concrete class names.
+Instead use an “Abstraction” or “Plug Consent” that I mentioned earlier.
+Which is an interface or an abstract class.
+
+When type hinting a concrete class name should never be used.
+
+This is *not* just for the sake of assertion or error checking,
+it is here to describe the **applications design**.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.025.jpg BEAR.Sunday@PHPNW13 %}
+
+Best practice says you should have only one root object in your bootstrap.
+
+This seems very different what we see in other PHP DI containers ?
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.026.jpg BEAR.Sunday@PHPNW13 %}
+
+It might sound crazy,
+but we follow this practice.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.027.jpg BEAR.Sunday@PHPNW13 %}
+
+The role of application object in BEAR.Sunday is very simple.
+It holds the services that we use in the application script. That’s all.
+
+This application class has no functionality or behavior.
+Also you will notice that the application holds no mode or any context.
+There is no global state like for example a globally defined DEBUG or ENVIRONMENT constant.
+
+The context is used how to bind dependencies, not a how to behave in runtime as we saw.
+That kind of state information has permanently disappeared after injection. We don’t need it.
+
+The dependencies have already been injected.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.028.jpg BEAR.Sunday@PHPNW13 %}
+
+Let’s take a look at a BEAR.Sunday application object graph.
+
+You can access it via the development tools.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.029.jpg BEAR.Sunday@PHPNW13 %}
+
+The AppModule knows all of bindings and their abstractions.
+The injection is then made to get the root object using these binding rules.
+The injector now can grab the application object.
+
+Lets see how dependencies are resolved.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.030.jpg BEAR.Sunday@PHPNW13 %}
+
+A Router, web response, resource client and dependency injector.
+
+These are all the dependencies that are needed by the application object.
+
+In the application script, we can configure the application with these services.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.031.jpg BEAR.Sunday@PHPNW13 %}
+
+The Application script is a simple script which shows its own structure.
+
+Don’t be surprised for goto statement or global variable.
+This is pre-”separation of concerns”
+ It is a meeting point between the http web world and with PHP object oriented world.  This script tells whole top level application sequence
+
+Feel free to edit it as you like.   Ok let’s get back to application graph building... 
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.032.jpg BEAR.Sunday@PHPNW13 %}
+
+The services in the application script may also need dependencies recursively. 
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.033.jpg BEAR.Sunday@PHPNW13 %}
+
+Finally we can get one single object graph. Which is huge. Even my 27 monitor can’t show all the objects at once.
+
+That is why I made this graph visualizer. 
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.034.jpg BEAR.Sunday@PHPNW13 %}
+
+This also another principle of BEAR.Sunday.
+
+It has a unique Runtime DRY*. Don’t repeat the same procedure again and again.
+
+the whole application object graph can be serialized and stored in memory. It is not recreated on each request. All dependency are injected and initialized. *  Super fast.
+
+By this I mean that the whole application object graph can be serialized and stored in memory. It is not recreated on each request.
+
+We can serialize whole application which all dependency are injected and initialized.  This means a huge boost in performance.
+Super fast.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.035.jpg BEAR.Sunday@PHPNW13 %}
+
+Have you got it ?  BEAR.Sunday’s application object is build in the correct way, with DI best practices and performance.
+ DI is not only a convenient tool for testability*. That is just one part of the power of DI.  By following DIP completely it can lead us to proper application architecture.
+ DI is not a magic wand which automatically upgrades our code.
+
+But if you want to follow OOP principles and write clean code with ease, Its definitely worth it.
+
+Runtime code can be simpler, faster, more flexibility and easy to read.  That is the 1st framework. let’s go to the 2nd !
+
+# AOP Framework
+
+{% img /images/blog/phpnw13-slide/bear-sunday.036.jpg BEAR.Sunday@PHPNW13 %}
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.037.jpg BEAR.Sunday@PHPNW13 %}
+
+Who of you know about AOP?
+
+Have used it?
+
+This is a definition....
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.038.jpg BEAR.Sunday@PHPNW13 %}
+
+* Have you seen code like in RED? Mixture of business & app logic?
+
+* It runs fine but....
+
+* Not good separation of concerns
+
+* Problems with testing, readability and refactoring.
+
+* Notice how clean this could be in green...
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.039.jpg BEAR.Sunday@PHPNW13 %}
+
+The Aspect Orientated Framework that BEAR.Sunday uses,
+implements AOP using what is called method interception.
+
+Let’s look at a simple example.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.040.jpg BEAR.Sunday@PHPNW13 %}
+
+* Consumer and method stay exactly the same
+
+* We don’t need to change them
+
+* There is no base class
+
+* There is no special way of writing these classes or calling them
+
+The magic I will show you later.
+
+Upon execution the interceptor does not need to be registered.
+The interception is registered upon binding.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.041.jpg BEAR.Sunday@PHPNW13 %}
+
+
+* Lets Break up the concerns
+
+* Pull out the logging etc - this is not business logic, they are app logic
+
+An aspect
+
+* cross-cuts a method
+* is readable
+* testable
+* completely re-usable and can be re-applied.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.042.jpg BEAR.Sunday@PHPNW13 %}
+
+Imagine a Rock Concert
+
+* Band - single concern - business logic
+* Security barrier and guards are an aspect
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.043.jpg BEAR.Sunday@PHPNW13 %}
+
+This is how we use the interceptor in BEAR.Sunday. The interceptor is simple.
+
+* We invoke the source method as defined
+* Then we retrieve the source object
+* And arguments as needed.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.044.jpg BEAR.Sunday@PHPNW13 %}
+
+Here is an example of how to use a transaction in AOP.
+
+As you can see the invocation object has been injected using DI.
+
+We can then act upon that wrapping it in a transaction, which rolls back when needed.
+
+Note the $invocation->proceed() method.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.045.jpg BEAR.Sunday@PHPNW13 %}
+
+A Simple cache interceptor.
+
+* You can add fancy rules too - this is simple
+* Is the cache there - yes? Just return it, no? Use invocation->proceed
+
+Get the result and warm cache
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.046.jpg BEAR.Sunday@PHPNW13 %}
+
+Create bindings with annotations
+
+* This shows @db annotation binding
+* @api  annotation - JSON would be this implementation.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.047.jpg BEAR.Sunday@PHPNW13 %}
+
+* Is MVC enough?
+* Sometimes stuck where to put things?
+
+Much WEB FRAMEWORK functionality is CROSS CUTTING concerns.
+
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.048.jpg BEAR.Sunday@PHPNW13 %}
+
+An API will often need to change its processing order.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.049.jpg BEAR.Sunday@PHPNW13 %}
+
+For example:
+
+* Need AUTHENTICATION when being accessed REMOTELY
+* NOT through the LOCAL app.
+
+* Some API’s might need Validation or LOGGING.
+
+* IMAGINE boss asks you to log each DELETE? EASY?
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.050.jpg BEAR.Sunday@PHPNW13 %}
+
+In BEAR these cross-cutting concerns can be registered using
+
+ANNOTATIONS,
+URI
+method names.
+
+CROSS-CUTTING CONCERNS
+attached + detached DEPENDING on context.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.051.jpg BEAR.Sunday@PHPNW13 %}
+
+* Model interacted with differently depending on CONTEXT
+
+* Example FORMS
+
+* BEAR Sunday Forms are an ASPECTS
+
+* Can decouple validation
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.052.jpg BEAR.Sunday@PHPNW13 %}
+
+This is the magic
+
+* It is ugly
+* It is created for you
+* NOT weaver model, AOP Compiler model
+* For Type Safety - For Dependency Injection - Super fast!
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.053.jpg BEAR.Sunday@PHPNW13 %}
+
+INJECTION BY ASPECT
+
+* MASTER/SLAVE DB
+* master on WRITE
+* slave on READ
+
+The CORE CONCERN is it uses a DB.
+
+The CROSS CUTTING concern is the LOGIC that decides what  DB.
+
+* Extremely testable.
+* Because CORE CONCERN LOGIC does not change.
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.054.jpg BEAR.Sunday@PHPNW13 %}
+
+To wrap UP
+
+The AOP spec in BEAR.Sunday follows the AOP ALLIANCE standard which is common in the JAVA world.
+
+LAYERING of aspects can be freely adjusted DEPENDING on the CONTEXT and environment.
+
+It is TYPE SAFE meaning full dependency injection and seem-less integration with the BEAR compiling step. This is by no means slow!
+
+At runtime necessary components can injected based on look up methods and arguments.
+
+# Hypermedia Framework
+
+{% img /images/blog/phpnw13-slide/bear-sunday.055.jpg BEAR.Sunday@PHPNW13 %}
+
+
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.056.jpg BEAR.Sunday@PHPNW13 %}
+HyperMedia Framework 、それはオブジェクトをWebサービスのように扱うという試みです。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.057.jpg BEAR.Sunday@PHPNW13 %}
+これがリソースオブジェクトです。URIがクラスにマップされます。
+
+publicプロパティとリクエストインターフェイスがあり、リクエストはステートレスに行われます
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.058.jpg BEAR.Sunday@PHPNW13 %}
+
+リクエストには専用のクライアントが必要です。リクエストを受け取ったリソースは自分の値を決定します。
+
+リソースはまた、他のリソースを必要とするかもしれません。
+
+値がビューコンポーネントに渡され、レンダリングが行われるのではなく
+
+ビューはそれぞれのリソースにインジェクトされ、__toStringメソッドとコンテキストによって出力されます。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.059.jpg BEAR.Sunday@PHPNW13 %}
+
+HATEOASという言葉を聞いた事あるでしょうか。
+
+アプリケーションのステートをハイパーメディアでドライブします。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.060.jpg BEAR.Sunday@PHPNW13 %}
+
+@LinkアノテーションとURIテンプレートを使って、リソースをリンクします。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.061.jpg BEAR.Sunday@PHPNW13 %}
+
+ハイパーメディアAPIはAPIとAPIを繋げ、本当の意味のRESTにします。
+
+Webのように、リソース間の関係をクライアントではなくサービスが持つのです。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.062.jpg BEAR.Sunday@PHPNW13 %}
+
+world wide webが成功した理由。
+
+それをアプリケーションアーキテクチャの中心にします。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.063.jpg BEAR.Sunday@PHPNW13 %}
+
+REST、つまりAPI開発を開発の中心にしているです。
+
+かつてはDBはエンタープライズのコアバリューでした。FWや言語が変わってもDBがあれば良かったのです。
+
+今APIがコアバリューです。
+
+APIはハブです。複数のクライアントとストレージ、あるいは他のサービスと接続します。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.064.jpg BEAR.Sunday@PHPNW13 %}
+
+アンクルBobのClean Architecture、この図を見た事あるでしょう。
+
+(around 50%)
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.065.jpg BEAR.Sunday@PHPNW13 %}
+
+BEAR.Sundayのリソースは同じようにレイヤリングされています。RESTのネイチャーです。
+
+アプリケーションスクリプトがページリソースにリクエストし、ページリソースはアプリケーションリソースをリクエストします。
+
+webページの後ろに何が有るのが露出(expose)していないように、背後のリソースが隠れるのです。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.066.jpg BEAR.Sunday@PHPNW13 %}
+
+実際のリソースをみてみましょう。
+
+緑のラインがページリソース、それは赤いラインのアプリケーションリソースで構成されています。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.067.jpg BEAR.Sunday@PHPNW13 %}
+
+開発画面ではURIとそのバウンダリー、そして開発ツールが表示されています。
+
+リソースのロジックとビューはオンラインで編集可能です。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.068.jpg BEAR.Sunday@PHPNW13 %}
+
+ページリソースはwebページの役割をし、HTTPのメソッドに対応したリクエストメソッドを持ちます。
+
+パラメーターを見て下さい。フォームとPHPのメソッドは統合され同じパラメーターをもっています。   手続きではなくて契約を表しているのです。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.069.jpg BEAR.Sunday@PHPNW13 %}
+
+リソース中心、のBEAR.Sundayではこのような一覧表示は自然なことです。 
+メソッドをクリックしたらフォームが表示されそれぞれのテストができるようになる...のは少しお待ちください。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.070.jpg BEAR.Sunday@PHPNW13 %}
+
+アノテーションやDI、これらの言葉はパフォーマンスLoverにとって悪夢に聞こえないでしょうか？
+
+実際は構成済み(configured by context)のオブジェクトが再利用されるので、これらのコストは０になるのです。
+
+フレームワークとしての最大限の柔軟性を持ちながら、パフォーマンスは非常に良好です。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.071.jpg BEAR.Sunday@PHPNW13 %}
+
+リソースの指定にはクラス名ではなくてURIを使います。
+
+Facebookが開発したThriftを使えば、高速なJavaプログラムを同じURIでコールする事ができます。
+
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.072.jpg BEAR.Sunday@PHPNW13 %}
+
+プログラムは変わりやすいところと変わりにくいところがあります。
+我々はそれぞれハードスポット、ソフトスポットと呼んでいます。
+
+システム毎に決まる変更点はハードスポット、一旦構成されればリクエストの度には変わりません。 例えばDBのIDや利用するテンプレートエンジンの種類です。
+
+アスペクトはソフトスポットを取り扱います。例えばメソッドによって接続DBを変えます。
+
+# What is BEAR.Sunday ?
+
+{% img /images/blog/phpnw13-slide/bear-sunday.073.jpg BEAR.Sunday@PHPNW13 %}
+
+BEAR.Sundayは接続フレームワークです。
+ DIはオブジェクトとオブジェクトを依存性によって接続します。アプリケーションはオブジェクトグラフとして表されます。
+
+同じインターフェイスしかし違う実装でオブジェクトを繋ぐ事で、HTML表現の普通のアプリなのか、それともモバイルアプリケーションのためのAPIアプリケーションなのかを決定するのです。
+
+AOPはドメインロジックとアプリケーションロジックをつなぎます。メソッドインターセプションは驚くべき簡単な仕組みで、本質的関心と横断的関心を繋ぎます。
+
+AOPプログラミングに行ったん慣れてしまうと、一体以前はどこにログやトランザクション、認証やバリデーションを置く事ができたのか不思議に思うでしょう。
+
+REST - Hypermediaは情報と情報、リソースとリソースを接続します。リソースは意味によって繋がれ、そのリンクはサービスサイドで変更可能です。
+
+情報に真の意味での価値を与えるのはその繋がりです。APIをハブに、RESTを中心にしたロングタームのアーキテクチャをするのです。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.074.jpg BEAR.Sunday@PHPNW13 %}
+
+BEAR.SUndayはアブストラクションフレームワークです。
+
+抽象化のためのテクノロジーを最大限使用しています。
+
+実装を直接表すのではなく、抽象化された意図(intention)を表します。
+
+アノテーションでアプリケーションロジックを、ハイパーリンクでリソースとリソースの関係を表すのです。手続きではなく、関係性を記述するのです。
+
+コンテキストと束縛によって、その意図に実装(implementation)が与えられます。
+
+@Transactionalとアノテートしたメソッドにはトランザクションコードがラップされ、URIには全く別の言語の別のメソッドをマップする事が原理的に可能なのです。
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.075.jpg BEAR.Sunday@PHPNW13 %}
+
+We had a lot of technical talks.
+
+3 frameworks in one session ?  You must be tired.
+
+Lets take a break with this beautiful English garden.
+
+It is full of flowers, trees, fountains. It seems to offer everything.
+ Each garden has its own style but fundamentally has a similar design.
+
+They certainly seem joyful and certainly contain many great features and are welcoming.
+
+Visitors can enjoy the garden as the gardener intended them to. 
+
+For me, many frameworks look like this English garden.
+ 
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.076.jpg BEAR.Sunday@PHPNW13 %}
+
+Now, Look at a Zen garden.
+
+No water, No trees or flowers.
+
+There is nothing here that's common in western gardens.
+
+But you will notice after some time,
+it offers nothing but **perfect harmony**.
+
+This garden has only abstraction. Your imagination and your mind can reflect on this garden (when it's ready.)
+
+Minimalism. Look at this garden, what can I remove? Nothing, it's impossible! 
+The opposite way of thinking is more common.
+You add more elements and functions until you can’t add anymore, then you will think. “oh now it is complete.”
+ When I built this framework, I thought:
+ ‘How can I reduce the rules or code base? without loosing any functionality by design’
+
+To provide the best tools, I decided not to try and develop them myself. It's impossible. A lot smarter people can make better tools.
+
+Instead, I decided to provide the maximum freedom you can then choose the best tools with proper constraints.
+
+Freedom doesn’t meant,  You can chose anything for any part. You can’t wear jeans under a kimono. 
+
+You need harmony, you need good constraints.
+
+BEAR.Sunday wants to be your zen garden, zen framework.
+
+I hope your imagination, your creativity can be maximized through this connecting framework, a harmony framework.
+
+Lastly, don’t put 'd' after 'n', That’s another framework. Thank you very much.
+
+
+---
+
+{% img /images/blog/phpnw13-slide/bear-sunday.077.jpg BEAR.Sunday@PHPNW13 %}
+
+Do-mo, Arigato.
+
+
+力を尽くし臨んだプレゼンテーションは、次の人が「ちょっとやりにくい」と言ってくれたぐらい大きな拍手で終了しました。
+
+（続く）

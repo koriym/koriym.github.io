@@ -1,0 +1,120 @@
+---
+layout: post
+title: "PHPNW 2013 (1)"
+date: 2014-01-04 22:30
+comments: true
+categories:
+- BEAR
+- PHP
+---
+
+2014年、あけましておめでとうございます。
+年が変わってしまいましたが、2013年のBEAR.Sundayにとって最大のイベントphpnw13に参加した事を記事にします。
+
+## 20 June; CFP (Call for Paper)
+
+{% img /images/blog/phpnw13.30.jpg 800 PHPNW13 %}
+
+phpnw(PHP North West)カンファレンスはイギリスのマンチェスターで2008年から毎年開催されている欧州でも有数の規模のPHPカンファレンスです。
+スピーカーとして参加する為には[CFP](http://conference.phpnw.org.uk/phpnw13/call-papers/)が必要で、単に「自分の興味ある技術的な話をします」ではなく“why we should accept your talk” （なぜ主催者達が自分の応募を採用するのか）という事を伝えなければなりません。
+以下のようにタイトルを３つ考えました。
+
+ * API driven development for API driven World
+ * Think differently, REST centric approach solve REST problem effectively.
+ * A resource orientated framework using the DI /AOP/REST Triangle
+
+採用されたのは３つ目です。そのタイトルに沿った詳細な紹介文を通訳兼共同発表者のリチャード（[@mackstar](https://twitter.com/mackstar)）さんに用意してもらって応募しました。
+
+> Many web developers have a REST or API part of their app when offering it as a service. In this session I will show you how in making REST a central part of your design you can have a huge amount of consistency at the core of how you code. REST gives us much of the power we need in development and is not just for API's. This session will completely change the way you think about REST.
+BEAR.Sunday is a REST-centric framework that makes you think totally different about how to go about architecting web-apps and platforms to the maximum potential with elegance.
+
+## 03 July; 採用
+
+採用の返事が来たのは7月4日。夏期休暇でスイスを友人とレンタカーでドライブをしてた時に連絡がありました。
+
+> We were delighted to hear from you and we would love to extend an invitation for you to give your talk "A resource orientated framework using the DI /AOP/REST Triangle" at our conference.
+
+採用された事に驚きました。そして今スイスにいるのにまた三ヶ月後にイギリスに返るのかとも思いましたが、友人は「行くしか無い、他の選択肢はない」とはっきり言い切ります。
+英語のプレゼンも、舞台の大きさも、完全に自分のキャパシティを超えてましたが腹を決め渡英するとの連絡をしました。
+
+採用のプロセスは厳しくキュレーターが４人全ての人の採点が10点中の9か10が必要です。200以上の応募があり採用率は15%以下。
+技術レベルは三段階の最上位での応募でした。「基本的にみんなフレームワーク選択の話にあまり興味はない」との事で応募はかなり無謀だったのですが、一緒に発表をするリチャードさんのクレジットもあり採用されました。
+３つのトラックが同時進行して、ホールは大中小の大きさがあります。選ばれたのは定員100人程度の真ん中の大きさのホールでした。
+
+## 28 Sep; @leedsphp ユーザーグループとBBC
+
+どうせ渡英して話すならと地元の[leedsphpユーザーグループ](http://leedsphp.org/)のmeetupとリチャードさんが働くBBCでもセッションを持つ事になりました。いわば大舞台のphpnwのカンファレンスの練習です。
+日本の勉強会のようなものですが、流石イギリスというか、雰囲気のある場所です。
+
+{% img /images/blog/phpnw13.11.jpg 800 leedsphp %}
+{% img /images/blog/phpnw13.10.jpg 800 leedsphp %}
+
+手元の書類が見えにくいぐらい照明を落としたところで最初のスピーチをしました。
+機材トラブルもあり、スピーチそのものできはあまり良くなかったのですがかなりの熱を持って聞いてもらう事ができました。
+
+{% img /images/blog/phpnw13.08.jpg 800 leedsphp %}
+
+通常は（日本と違って）トークが終わると基本すぐに解散らしいのですが、終わった後もみなさんといつまでも色々な事を話ました。「こういう反応は今まで見た事がない」反応だったそうです。
+興味を持って質問を積極的にしてくれた方はSymfonyを使っている人が多くSensio Labsの方もいました。元々Symfonyユーザーは多いのでしょうが、日本のSymfonyユーザー会の人達の縁ある事もありなにか不思議な感じです。
+
+次はBBCです。ここでのセッションが一番緊張しました。
+
+{% img /images/blog/phpnw13.15.jpg 800 BBC %}
+{% img /images/blog/phpnw13.07.jpg 800 BBC %}
+{% img /images/blog/phpnw13.06.jpg 800 BBC %}
+
+BBCでの経験は驚きの連続です。世界最高のメディア企業でのWebプロダクト制作、その現場です。
+とにかくかっこよくて、詳しい事が書けないのは残念です。一日始業から終わりまでインターンのように過ごす機会にも恵まれその現場の空気やワークフローの実際に立ち会う事ができました。
+シニアアーキテクトのマシューさんとのランチの機会も頂きました。「軽いおしゃべり」という予定だったのですが、ほとんどの時間はBEAR.Sundayについての質問とその答えというやり取りになりました。
+質問が非常にシャープで的確です。「そのアーキテクチャのポイントを、ノンテクニカルな人に3分で伝えるとしたらどう話す？」等、こちらが試されるような質問の連続です。
+真剣な質問に真剣に答えます。手応えのあるやりとりは満足のできるものでした。
+
+{% img /images/blog/phpnw13.002.jpg 800 BBC %}
+{% img /images/blog/phpnw13.16.jpg 800 BBC %}
+{% img /images/blog/phpnw13.17.jpg 800 BBC %}
+
+とても緊張してプレゼンテーションを行いました。イギリスのバーの二階でやったleedsphpユーザーグループの時と違って、就業中に時間をさいて集まってくれたBBCのWebエンジニアの方々はとても真剣です。
+しかし内容を高く評価してもらいphpnwでの発表が少し安心できるものになりました。またアーキテクチャにとても関心が高い事の確信も得られました。
+{% img /images/blog/phpnw13.001.jpg 800 BBC %}
+（BBC Future Media SportsのSenior Technical Architectの[マシュー・クラーク](http://www.bbc.co.uk/blogs/internet/authors/Matthew_Clark)さんとリチャードさんの三人とBCの食堂でランチ。)
+## phpnw13
+
+### 02 Oct; Hackason
+
+{% img /images/blog/phpnw13.19.jpg 800 phpnw13 hackason %}
+
+カンファレンスの前日金曜は昼間はチュートリアル、夜はハッカソンがあります。ハッカソンと言っても日本のものと違って何かを個人で制作して発表するとかではありません。
+例えば「PHP-Excel」とか並んでいるテーブルにプレートがあるので、自分の協力したいオープンソースのテーブルに加わりコーディングしたりおしゃべりをしたりするのです。終わる時に特に発表もありません。
+カンファレンスの前日のソーシャルな時間とも思えました。[@leedsphp](http://leedsphp.org/)で知り合った人達にも会え、色々話す事ができました。
+
+### 05 Oct; 発表の日
+
+{% img /images/blog/phpnw13.31.jpg 800 phpnw13 %}
+
+セッションは土曜日から始まります。オープニングキーノートはLorna MitchellさんとIvo Janschさんの **[0x0F Ways to be a Better Developer](http://conference.phpnw.org.uk/phpnw13/schedule/lorna-mitchell-ivo-jansch/)**
+（より良いディベロッパーになる0x0Fの方法）。
+<script async class="speakerdeck-embed" data-id="2a6e79d01160013121333e135808c36d" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+会場は２つに別れていて、二人のスピーカーを映像で繋げそれぞれ交互に変わりながらプレゼンテーションを行うといった凝った仕掛けです。キーノートのテーマがPHPの進化や特定技術ではなくて「より良い開発者になる」というのは印象的でした。
+例えば*"Get Out of Your Comfort Zone"* 「普段の安全で良く知った自分のフィールドから飛び出し、リスクをとって"Enjoy the unknown"しましょう」という事ですが、
+「今回マンチェスターで自作のフレームワークのプレゼンテーションを行うのは充分`Get Out`してますしてます。`the unknown`を楽しんでます！」と頷きながら聞いてました。
+
+自分達の発表の練習や最後の準備もしなければなりませんが、聞きたいセッションも沢山あります。プレンゼンテーションの内容は非常に充実していて、スピーカーも普段もネットで目にするような有名な人ばかりです。
+
+phpnw13  Schedule
+http://conference.phpnw.org.uk/phpnw13/schedule/
+
+「speaker shadowです」１人のスタッフが現れました。どうもスピーカーの世話をする人の事をspeaker shadowというようです。かっこいい言い方するんだなあとか思いながら、装備するワイヤレスマイクや接続するMacの手順などの打ち合わせをします。
+
+スピーカーに対するケアがとても手厚いのです。phpnwは有料カンファレンスで、チケットは£135.00（現在12/31のレートで23,430円）します。
+スピーカーに報酬はありませんが、滞在中の食事や宿泊費は全て賄われます。ホテルの部屋にはエッセンシャルキットと言って、ミネラルウォーターや洗面道具のキットのwelcomeセットのようなものが部屋に用意されています。
+スピーカーだけにトレーナーやギフトもありました。食事は例えば、スピーカーディナーはコース料理なのですがそのメニューは事前にwebで注文しておく事ができ、例えばベジタリアンの人などへの配慮もあります。
+スピーカー同士の交流が図られるという事が大事です。食事の度に顔を合わせて一緒に話したりするので自然と交流が持て色々な話が聞けます。
+
+
+いよいよ、時間が近づいてきました。
+前のセッションはDrupal。世界のPHP開発者の誰もが知るプロダクトでスピーカーはその開発者、立ち見がでるくらい満員です。
+
+その次が自分達の番、誰も知らないフレームワークの発表です。
+
+（続く）

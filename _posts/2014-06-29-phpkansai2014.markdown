@@ -1,0 +1,82 @@
+---
+layout: post
+title: "基調講演「全てを結ぶ力」"
+date: 2014-06-29 08:59
+comments: true
+categories:
+- PHP
+---
+
+PHPカンファレンス関西で基調講演の機会をいただく事ができました。私のタイトルは「全てを結ぶ力」というもので、結ぶ（ハイパーリンク）という原則を持つWWWとそれに関わる技術や私たち開発者の話しをしました。
+
+国内外含めてカンファレンスに登壇するのはこれが二度目です。最初のカンファレンスは世界レベルのエンジニア達をインスパイアさせたいという
+夢を持ち、最上級のカテゴリで応募しました。二回目の今回は基調講演として聴衆者を限定しないで多くの人々に話がしたいと思いました。
+
+
+## 2014/06/28 10:30 AM 大阪産業創造館
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.003.jpg 640 %}
+<p>最小のネットーワーク</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.005.jpg 640 %}
+<p>最大のネットワーク</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.007.jpg 640 %}
+<p>最初のウェブサイト</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.010.jpg 640 %}
+<p>最初のPHP</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.012.jpg 640 %}
+<p>最初のアプリケーションサーバー</p>
+<br>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.028.jpg 640 %}
+<p>最初のつぶやき</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.031.jpg 640 %}
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.032.jpg 640 %}
+<p>決意</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.037.jpg 640 %}
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.038.jpg 640 %}
+<p>インターネットの原則</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.044.jpg 640 %}
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.045.jpg 640 %}
+<p>ソフトウエアの背後にいる人々</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.046.jpg 640 %}
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.057.jpg 640 %}
+<p>私たち開発者</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.058.jpg 640 %}
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.059.jpg 640 %}
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.060.jpg 640 %}
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.061.jpg 640 %}
+<p>メディアシフト</p>
+<br>
+
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.062.jpg 640 %}
+{% img /images/phpkansai2014/subete-wo-musubu-chikara.065.jpg 640 %}
+<p>エピローグ</p>
+
+>情報という宇宙でWebサイトという星を１つ作る。それは25年前に考えられたアルファベット最初の文字のタグで繋がれている。Webという力が世界の知識を結び、オープンソースやコミュニティが私たち開発者を結んでいる。またその私たちも技術を結び、Web創造の歴史に参加している。
+
+## 謝辞
+
+４度をリハーサルを行いました。協力してくれたビットノーツ、エキサイト、HubTokyoのメンバー、その他の方々ありがとうございました。
+タイトルをぎりぎりまで決める事が出来ず、PHPカンファレンス関西の運営の方々にも心配かけました。色々お世話になりました。
+
+講演も無事終わりほっとしてます。Twitterでも多くの方が講演に関してつぶやいてくれてるのを見ました。
+聞いてくださったみなさん、本当にありがとうございました。
