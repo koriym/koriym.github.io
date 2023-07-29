@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Kenneth Kufluk 2008/09/10 -->
+  <title>Sandbox\Resource\App\First\HyperMedia\Payment</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <base href="http://koriym.github.com/print_o/assets/">
+  <link href="//twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" />
+  <link href="debuglib.css" rel="stylesheet" />
+  <link href="mindmap.css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js" type="text/javascript"></script>
+  <!-- Raphael for SVG support (won't work on android) -->
+  <script type="text/javascript" src="raphael-min.js"></script>
+  <script type="text/javascript" src="mindmap.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+        $("#js-mindmap").mindmap({"assetsPath":"http:\/\/koriym.github.com\/print_o\/assets\/","showProgressive":true,"showSublines":false,"canvasError":"alert","mapArea":{"x":-1,"y":-1}});
+    });
+	</script>
+</head>
+<body>
+<p style="opacity:0.75;" id="show-var"></p>
+<p class="credit"></p>
+	<div id="js-mindmap">
+	<ul id="navigation">
+<li>Sandbox\Resource\App\First\HyperMedia\Payment<ul><li id="587659b869d6b57fc8e12f18cde6396b">(string) uri
+<li id="25f4276f5379a4293cb8237c53b84412">(integer) code
+<li id="18c3ec9033a71af6416060a7c73d329b">(array) headers
+<li id="04a01bc90fd31480c67a325ce4faa01b">(NULL) view
+<li id="09710d3d5d4e144fba2c054462f69b01">(array) links
+<li id="b49ded89f56063789eb64e1d9ea9aac7">(NULL) body
+<li id="fee9a63769fd9fdf3ce4cf9c57529476"  type="object">(BEAR\Package\Provide\ResourceView\TemplateEngineRenderer) renderer<ul><li id="6d277dd7f4a06c35d109086690212278"  type="object">(BEAR\Package\Provide\TemplateEngine\Smarty\SmartyAdapter) templateEngineAdapter<ul><li id="63d233aa09e8275bb2384140fd8066d1"  type="object">(Smarty) smarty<ul><li id="ab42039bd19cde937b78d0088513c0b0">(array) global_tpl_vars
+<li id="36da172795aef3be18d5c58a9495e3f7">(NULL) _previous_error_handler
+<li id="a79b06df4ab76b33a66ddaec5b8973f1">(array) _muted_directories
+<li id="051f8e7e169b58111650db2767bced56">(boolean) _MBSTRING
+<li id="e4ea65073d7302cc4902a72ae6b3c3a1">(string) _CHARSET
+<li id="117a481821e3adf2579c0774dd837bb1">(string) _DATE_FORMAT
+<li id="b83dd312a05349a271b0c2542e515d9f">(string) _UTF8_MODIFIER
+<li id="71b0361a23bf49f12edb2eee18fa8161">(boolean) _IS_WINDOWS
+<li id="bdf918e4b2fc35ce4c9130c8c795d24f">(boolean) auto_literal
+<li id="6abd06fef76b9bf4526c4951840e586c">(boolean) error_unassigned
+<li id="b893c5920ff58595803afd43f73ea5c5">(boolean) use_include_path
+<li id="7a425c0ee79e0f0ed77b182e340b27ec">(array) template_dir
+<li id="d957ca2e07903f331d5d2bb3d48cd45c">(string) joined_template_dir
+<li id="1fba0f7f85fc542d8c91bec9103fc7d3">(string) joined_config_dir
+<li id="237bb5e567add47d2e16ebe1c386ea7e">(NULL) default_template_handler_func
+<li id="4b5ec83f18e1cb7c9faa9134e98b44c3">(NULL) default_config_handler_func
+<li id="1a87d096b95fbf5f7ac1ca3b032145ce">(NULL) default_plugin_handler_func
+<li id="1d5694f4c188bfeef6f273f9b2518651">(string) compile_dir
+<li id="155f0efc9f7b036a6dadfe8af92e23b8">(array) plugins_dir
+<li id="21b03c8a1693316a6e0bd27f7e745d7f">(string) cache_dir
+<li id="aad218cc2204360a6c94f9fec1c03b85">(array) config_dir
+<li id="b207c8a163e750043cb908609cddb5e4">(boolean) force_compile
+<li id="efe41b3181caef2b5ebb9e0299f8f665">(boolean) compile_check
+<li id="6cc32978037ca7f772d4f2e626dc1707">(boolean) use_sub_dirs
+<li id="e6da433b91b93e5c70f6d985c0713a6c">(boolean) allow_ambiguous_resources
+<li id="09843b7302ae8df7153c9a336d0d3d1d">(boolean) caching
+<li id="92bc1ace59b297e9059ff2bf73dda7fd">(boolean) merge_compiled_includes
+<li id="e0baf98b196f8dc776ae7c31d1acd636">(integer) cache_lifetime
+<li id="59102d85b63f9f38d6fbb3673f1b9a3a">(boolean) force_cache
+<li id="e95d5200338d3c1338180e7ffb5419ed">(NULL) cache_id
+<li id="e8626509bc8847d3bed6ad1241e93947">(NULL) compile_id
+<li id="8b95933aab0d9c6442d36e6c71a9237c">(string) left_delimiter
+<li id="a7e8745fe6dbd1d4c6a979bbbbef6cfb">(string) right_delimiter
+<li id="b08e38782dba326fb8b5b77b89935bf3">(string) security_class
+<li id="141dc52d150202256573c00197882088">(NULL) security_policy
+<li id="709ac1b0bc0fb0f0ffe8fabc4ec5b7ff">(integer) php_handling
+<li id="37fd6861a99609edaab3b00f79577e97">(boolean) allow_php_templates
+<li id="44f46ade6bde1fb7e1bbb42ce6b26b70">(boolean) direct_access_security
+<li id="2a8ff03a27b10ca0d4f0e455788454fb">(boolean) debugging
+<li id="be1a1bd827e0e68edcc41ff9aaf45940">(string) debugging_ctrl
+<li id="7a08bd437e61626fa2085bed9d0ca129">(string) smarty_debug_id
+<li id="08f8b972240c0c5f013153f8ee5dbeb4">(string) debug_tpl
+<li id="3420ca6d7de041c1e0aed764eb841cd3">(NULL) error_reporting
+<li id="400b0f236efd58b4bd36336fee764a70">(boolean) get_used_tags
+<li id="444afd2e6a44a1ad856c8df7d5af3013">(boolean) config_overwrite
+<li id="0640b82c8388294eb0107ba93b67b84f">(boolean) config_booleanize
+<li id="659912a55e08dba84ef22da96d68c1d7">(boolean) config_read_hidden
+<li id="31ac2ae9d56ea56c8196ac499f7ddb1f">(boolean) compile_locking
+<li id="10fd8636dfcfba8a977c025a0272e2b4">(boolean) cache_locking
+<li id="259fb19f2a58d7616a88d6d629f5e805">(integer) locking_timeout
+<li id="8b6ccfc39b4d5a274a1cb232ee554c07">(array) template_functions
+<li id="7f2b51b2c0a35d667f3fa846d593fd96">(string) default_resource_type
+<li id="4868bd272417c1d2ec8dbe2a7b3faf92">(string) caching_type
+<li id="7d44452d5a16723a25b6b9a8dc577194">(array) properties
+<li id="0ee07d433deffd820c4bb1e54a61e541">(string) default_config_type
+<li id="bc6ff590cc880c93a52d403ca3b10767">(array) template_objects
+<li id="8bdfeeddd4cb57be2a0c34cc63b86e56">(boolean) cache_modified_check
+<li id="64fc5b6f14fc7367f04f3b3fd6ea9b18">(array) registered_plugins
+<li id="f1e12dc049a4d7cd37540bb3c09605aa">(array) plugin_search_order
+<li id="9f1cbfc942c4981a925450623e3c6d69">(array) registered_objects
+<li id="66f53a5e150b6c0b7c4c3b289597cb37">(array) registered_classes
+<li id="8331562d105e6b80dd70100aeeecae89">(array) registered_filters
+<li id="f73ba4a3ce795528797bcca99557b9d2">(array) registered_resources
+<li id="ff28e7781184f2379e73261696c762e0">(array) _resource_handlers
+<li id="ed83326f9a22d120b69b610e84ebd746">(array) registered_cache_resources
+<li id="e47a472c975cfe8b7e3393e270256a80">(array) _cacheresource_handlers
+<li id="c00c4aa87c70f9135ee0713efa51bffa">(array) autoload_filters
+<li id="9909ea69582cd6b378907a583fd2855d">(array) default_modifiers
+<li id="e676da0b48898fe92c139aaa3ce52d4f">(boolean) escape_html
+<li id="b606a8a610655f11f6c823b83b1869bf">(array) _smarty_vars
+<li id="1cca7e0d0c992cb0700ee0e646be7231">(double) start_time
+<li id="0efc23b38b22e29b76bddc8b8ab67d29">(integer) _file_perms
+<li id="d6c0e67a49ff343c70a80e6c544e8c38">(integer) _dir_perms
+<li id="69ac83a62d7daf75d889de8881bcdfcb">(array) _tag_stack
+<li id="47ba638905c4a93c783aea227e54599c">@smarty
+<li id="4e8d1299007621db0b63acf699a5b7a3">(NULL) _current_file
+<li id="b91065f24f1a4ff1fc1abb519aab559a">(boolean) _parserdebug
+<li id="db2c08ba32627afdcb88d638588d46ff">(array) merged_templates_func
+<li id="57fe11052ba5b0b62b2dc5b341c49af2">(string) template_class
+<li id="dfb9e1d70ff63f4489f0ea58d38dfe61">(array) tpl_vars
+<li id="e06f6bd1378dcdb90d3cf1cb11e936ef">(NULL) parent
+<li id="b95f672e6a12ecdf3a7fa6877ca8f7a0">(array) config_vars
+</ul></li><li id="3c3f7e6aabf99b219dc919a377be26f6">(NULL) template
+<li id="f0241ef1247ecd21f7d1703935588677">(boolean) isProd
+</ul></li></ul></li></ul></li><span style="visibility:hidden;"><div id="data_587659b869d6b57fc8e12f18cde6396b"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">app://self/first/hypermedia/payment</td></tr></table></div></pre></div><div id="data_25f4276f5379a4293cb8237c53b84412"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="integer">(integer)</th><td class="value value_integer">200</td></tr></table></div></pre></div><div id="data_18c3ec9033a71af6416060a7c73d329b"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_04a01bc90fd31480c67a325ce4faa01b"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_09710d3d5d4e144fba2c054462f69b01"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_b49ded89f56063789eb64e1d9ea9aac7"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_fee9a63769fd9fdf3ce4cf9c57529476"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>BEAR\Package\Provide\ResourceView\TemplateEngineRenderer</i>)[<i>290</i>]
+  <i>private</i> 'templateEngineAdapter' <font color='#888a85'>=&gt;</font> 
+    <b>object</b>(<i>BEAR\Package\Provide\TemplateEngine\Smarty\SmartyAdapter</i>)[<i>291</i>]
+      <i>private</i> 'smarty' <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>Smarty</i>)[<i>292</i>]
+          ...
+      <i>private</i> 'template' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>private</i> 'isProd' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+</pre></pre></div><div id="data_6d277dd7f4a06c35d109086690212278"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>BEAR\Package\Provide\TemplateEngine\Smarty\SmartyAdapter</i>)[<i>291</i>]
+  <i>private</i> 'smarty' <font color='#888a85'>=&gt;</font> 
+    <b>object</b>(<i>Smarty</i>)[<i>292</i>]
+      <i>public</i> 'auto_literal' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+      <i>public</i> 'error_unassigned' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'use_include_path' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>private</i> 'template_dir' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=1)</i>
+          ...
+      <i>public</i> 'joined_template_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/Resource/View/'</font> <i>(length=59)</i>
+      <i>public</i> 'joined_config_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'./configs/'</font> <i>(length=10)</i>
+      <i>public</i> 'default_template_handler_func' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>public</i> 'default_config_handler_func' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>public</i> 'default_plugin_handler_func' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>private</i> 'compile_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/data/tmp/smarty/template_c/'</font> <i>(length=72)</i>
+      <i>private</i> 'plugins_dir' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=3)</i>
+          ...
+      <i>private</i> 'cache_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/data/tmp/smarty/cache/'</font> <i>(length=67)</i>
+      <i>private</i> 'config_dir' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=1)</i>
+          ...
+      <i>public</i> 'force_compile' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'compile_check' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+      <i>public</i> 'use_sub_dirs' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'allow_ambiguous_resources' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'caching' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'merge_compiled_includes' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'cache_lifetime' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>3600</font>
+      <i>public</i> 'force_cache' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'cache_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>public</i> 'compile_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>public</i> 'left_delimiter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'{'</font> <i>(length=1)</i>
+      <i>public</i> 'right_delimiter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'}'</font> <i>(length=1)</i>
+      <i>public</i> 'security_class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Smarty_Security'</font> <i>(length=15)</i>
+      <i>public</i> 'security_policy' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>public</i> 'php_handling' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'allow_php_templates' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'direct_access_security' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+      <i>public</i> 'debugging' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'debugging_ctrl' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'NONE'</font> <i>(length=4)</i>
+      <i>public</i> 'smarty_debug_id' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'SMARTY_DEBUG'</font> <i>(length=12)</i>
+      <i>public</i> 'debug_tpl' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file:/Users/akihito/git/BEAR.Package/vendor/smarty/smarty/distribution/libs/debug.tpl'</font> <i>(length=85)</i>
+      <i>public</i> 'error_reporting' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>public</i> 'get_used_tags' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'config_overwrite' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+      <i>public</i> 'config_booleanize' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+      <i>public</i> 'config_read_hidden' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'compile_locking' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+      <i>public</i> 'cache_locking' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'locking_timeout' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>10</font>
+      <i>public</i> 'template_functions' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'default_resource_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file'</font> <i>(length=4)</i>
+      <i>public</i> 'caching_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file'</font> <i>(length=4)</i>
+      <i>public</i> 'properties' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'default_config_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file'</font> <i>(length=4)</i>
+      <i>public</i> 'template_objects' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'cache_modified_check' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'registered_plugins' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'plugin_search_order' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=4)</i>
+          ...
+      <i>public</i> 'registered_objects' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'registered_classes' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'registered_filters' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'registered_resources' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> '_resource_handlers' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'registered_cache_resources' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> '_cacheresource_handlers' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'autoload_filters' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'default_modifiers' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'escape_html' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'start_time' <font color='#888a85'>=&gt;</font> <small>float</small> <font color='#f57900'>1360068154.2929</font>
+      <i>public</i> '_file_perms' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>420</font>
+      <i>public</i> '_dir_perms' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>505</font>
+      <i>public</i> '_tag_stack' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'smarty' <font color='#888a85'>=&gt;</font> 
+        <i>&</i><b>object</b>(<i>Smarty</i>)[<i>292</i>]
+      <i>public</i> '_current_file' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>public</i> '_parserdebug' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>public</i> 'merged_templates_func' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'template_class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Smarty_Internal_Template'</font> <i>(length=24)</i>
+      <i>public</i> 'tpl_vars' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+      <i>public</i> 'parent' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>public</i> 'config_vars' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          ...
+  <i>private</i> 'template' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>private</i> 'isProd' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+</pre></pre></div><div id="data_63d233aa09e8275bb2384140fd8066d1"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>Smarty</i>)[<i>292</i>]
+  <i>public</i> 'auto_literal' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'error_unassigned' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'use_include_path' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>private</i> 'template_dir' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=1)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/Resource/View/'</font> <i>(length=59)</i>
+  <i>public</i> 'joined_template_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/Resource/View/'</font> <i>(length=59)</i>
+  <i>public</i> 'joined_config_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'./configs/'</font> <i>(length=10)</i>
+  <i>public</i> 'default_template_handler_func' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'default_config_handler_func' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'default_plugin_handler_func' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>private</i> 'compile_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/data/tmp/smarty/template_c/'</font> <i>(length=72)</i>
+  <i>private</i> 'plugins_dir' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=3)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/vendor/smarty/smarty/distribution/libs/plugins/'</font> <i>(length=79)</i>
+      1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/vendor/libs/smarty/plugin/'</font> <i>(length=71)</i>
+      2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/src/BEAR/Package/Provide/TemplateEngine/Smarty/plugin/'</font> <i>(length=86)</i>
+  <i>private</i> 'cache_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/data/tmp/smarty/cache/'</font> <i>(length=67)</i>
+  <i>private</i> 'config_dir' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=1)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'./configs/'</font> <i>(length=10)</i>
+  <i>public</i> 'force_compile' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'compile_check' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'use_sub_dirs' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'allow_ambiguous_resources' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'caching' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'merge_compiled_includes' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'cache_lifetime' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>3600</font>
+  <i>public</i> 'force_cache' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'cache_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'compile_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'left_delimiter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'{'</font> <i>(length=1)</i>
+  <i>public</i> 'right_delimiter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'}'</font> <i>(length=1)</i>
+  <i>public</i> 'security_class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Smarty_Security'</font> <i>(length=15)</i>
+  <i>public</i> 'security_policy' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'php_handling' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+  <i>public</i> 'allow_php_templates' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'direct_access_security' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'debugging' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'debugging_ctrl' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'NONE'</font> <i>(length=4)</i>
+  <i>public</i> 'smarty_debug_id' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'SMARTY_DEBUG'</font> <i>(length=12)</i>
+  <i>public</i> 'debug_tpl' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file:/Users/akihito/git/BEAR.Package/vendor/smarty/smarty/distribution/libs/debug.tpl'</font> <i>(length=85)</i>
+  <i>public</i> 'error_reporting' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'get_used_tags' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'config_overwrite' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'config_booleanize' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'config_read_hidden' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'compile_locking' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'cache_locking' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'locking_timeout' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>10</font>
+  <i>public</i> 'template_functions' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'default_resource_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file'</font> <i>(length=4)</i>
+  <i>public</i> 'caching_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file'</font> <i>(length=4)</i>
+  <i>public</i> 'properties' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'default_config_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file'</font> <i>(length=4)</i>
+  <i>public</i> 'template_objects' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'cache_modified_check' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'registered_plugins' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'plugin_search_order' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'function'</font> <i>(length=8)</i>
+      1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'block'</font> <i>(length=5)</i>
+      2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'compiler'</font> <i>(length=8)</i>
+      3 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'class'</font> <i>(length=5)</i>
+  <i>public</i> 'registered_objects' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'registered_classes' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'registered_filters' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'registered_resources' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> '_resource_handlers' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'registered_cache_resources' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> '_cacheresource_handlers' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'autoload_filters' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'default_modifiers' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'escape_html' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'start_time' <font color='#888a85'>=&gt;</font> <small>float</small> <font color='#f57900'>1360068154.2929</font>
+  <i>public</i> '_file_perms' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>420</font>
+  <i>public</i> '_dir_perms' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>505</font>
+  <i>public</i> '_tag_stack' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'smarty' <font color='#888a85'>=&gt;</font> 
+    <i>&</i><b>object</b>(<i>Smarty</i>)[<i>292</i>]
+  <i>public</i> '_current_file' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> '_parserdebug' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'merged_templates_func' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'template_class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Smarty_Internal_Template'</font> <i>(length=24)</i>
+  <i>public</i> 'tpl_vars' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'parent' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'config_vars' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_ab42039bd19cde937b78d0088513c0b0"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_36da172795aef3be18d5c58a9495e3f7"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_a79b06df4ab76b33a66ddaec5b8973f1"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_051f8e7e169b58111650db2767bced56"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_true">TRUE</td></tr></table></div></pre></div><div id="data_e4ea65073d7302cc4902a72ae6b3c3a1"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">UTF-8</td></tr></table></div></pre></div><div id="data_117a481821e3adf2579c0774dd837bb1"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">%b %e, %Y</td></tr></table></div></pre></div><div id="data_b83dd312a05349a271b0c2542e515d9f"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">u</td></tr></table></div></pre></div><div id="data_71b0361a23bf49f12edb2eee18fa8161"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_bdf918e4b2fc35ce4c9130c8c795d24f"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_true">TRUE</td></tr></table></div></pre></div><div id="data_6abd06fef76b9bf4526c4951840e586c"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_b893c5920ff58595803afd43f73ea5c5"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_7a425c0ee79e0f0ed77b182e340b27ec"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=1)</i>
+  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/Resource/View/'</font> <i>(length=59)</i>
+</pre></pre></div><div id="data_d957ca2e07903f331d5d2bb3d48cd45c"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">/Users/akihito/git/BEAR.Package/apps/Sandbox/Resource/View/</td></tr></table></div></pre></div><div id="data_1fba0f7f85fc542d8c91bec9103fc7d3"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">./configs/</td></tr></table></div></pre></div><div id="data_237bb5e567add47d2e16ebe1c386ea7e"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_4b5ec83f18e1cb7c9faa9134e98b44c3"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_1a87d096b95fbf5f7ac1ca3b032145ce"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_1d5694f4c188bfeef6f273f9b2518651"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">/Users/akihito/git/BEAR.Package/apps/Sandbox/data/tmp/smarty/template_c/</td></tr></table></div></pre></div><div id="data_155f0efc9f7b036a6dadfe8af92e23b8"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/vendor/smarty/smarty/distribution/libs/plugins/'</font> <i>(length=79)</i>
+  1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/vendor/libs/smarty/plugin/'</font> <i>(length=71)</i>
+  2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/src/BEAR/Package/Provide/TemplateEngine/Smarty/plugin/'</font> <i>(length=86)</i>
+</pre></pre></div><div id="data_21b03c8a1693316a6e0bd27f7e745d7f"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">/Users/akihito/git/BEAR.Package/apps/Sandbox/data/tmp/smarty/cache/</td></tr></table></div></pre></div><div id="data_aad218cc2204360a6c94f9fec1c03b85"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=1)</i>
+  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'./configs/'</font> <i>(length=10)</i>
+</pre></pre></div><div id="data_b207c8a163e750043cb908609cddb5e4"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_efe41b3181caef2b5ebb9e0299f8f665"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_true">TRUE</td></tr></table></div></pre></div><div id="data_6cc32978037ca7f772d4f2e626dc1707"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_e6da433b91b93e5c70f6d985c0713a6c"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_09843b7302ae8df7153c9a336d0d3d1d"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_92bc1ace59b297e9059ff2bf73dda7fd"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_e0baf98b196f8dc776ae7c31d1acd636"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="integer">(integer)</th><td class="value value_integer">3600</td></tr></table></div></pre></div><div id="data_59102d85b63f9f38d6fbb3673f1b9a3a"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_e95d5200338d3c1338180e7ffb5419ed"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_e8626509bc8847d3bed6ad1241e93947"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_8b95933aab0d9c6442d36e6c71a9237c"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">{</td></tr></table></div></pre></div><div id="data_a7e8745fe6dbd1d4c6a979bbbbef6cfb"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">}</td></tr></table></div></pre></div><div id="data_b08e38782dba326fb8b5b77b89935bf3"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">Smarty_Security</td></tr></table></div></pre></div><div id="data_141dc52d150202256573c00197882088"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_709ac1b0bc0fb0f0ffe8fabc4ec5b7ff"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="integer">(integer)</th><td class="value value_integer">0</td></tr></table></div></pre></div><div id="data_37fd6861a99609edaab3b00f79577e97"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_44f46ade6bde1fb7e1bbb42ce6b26b70"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_true">TRUE</td></tr></table></div></pre></div><div id="data_2a8ff03a27b10ca0d4f0e455788454fb"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_be1a1bd827e0e68edcc41ff9aaf45940"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">NONE</td></tr></table></div></pre></div><div id="data_7a08bd437e61626fa2085bed9d0ca129"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">SMARTY_DEBUG</td></tr></table></div></pre></div><div id="data_08f8b972240c0c5f013153f8ee5dbeb4"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">file:/Users/akihito/git/BEAR.Package/vendor/smarty/smarty/distribution/libs/debug.tpl</td></tr></table></div></pre></div><div id="data_3420ca6d7de041c1e0aed764eb841cd3"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_400b0f236efd58b4bd36336fee764a70"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_444afd2e6a44a1ad856c8df7d5af3013"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_true">TRUE</td></tr></table></div></pre></div><div id="data_0640b82c8388294eb0107ba93b67b84f"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_true">TRUE</td></tr></table></div></pre></div><div id="data_659912a55e08dba84ef22da96d68c1d7"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_31ac2ae9d56ea56c8196ac499f7ddb1f"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_true">TRUE</td></tr></table></div></pre></div><div id="data_10fd8636dfcfba8a977c025a0272e2b4"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_259fb19f2a58d7616a88d6d629f5e805"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="integer">(integer)</th><td class="value value_integer">10</td></tr></table></div></pre></div><div id="data_8b6ccfc39b4d5a274a1cb232ee554c07"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_7f2b51b2c0a35d667f3fa846d593fd96"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">file</td></tr></table></div></pre></div><div id="data_4868bd272417c1d2ec8dbe2a7b3faf92"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">file</td></tr></table></div></pre></div><div id="data_7d44452d5a16723a25b6b9a8dc577194"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_0ee07d433deffd820c4bb1e54a61e541"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">file</td></tr></table></div></pre></div><div id="data_bc6ff590cc880c93a52d403ca3b10767"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_8bdfeeddd4cb57be2a0c34cc63b86e56"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_64fc5b6f14fc7367f04f3b3fd6ea9b18"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_f1e12dc049a4d7cd37540bb3c09605aa"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=4)</i>
+  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'function'</font> <i>(length=8)</i>
+  1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'block'</font> <i>(length=5)</i>
+  2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'compiler'</font> <i>(length=8)</i>
+  3 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'class'</font> <i>(length=5)</i>
+</pre></pre></div><div id="data_9f1cbfc942c4981a925450623e3c6d69"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_66f53a5e150b6c0b7c4c3b289597cb37"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_8331562d105e6b80dd70100aeeecae89"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_f73ba4a3ce795528797bcca99557b9d2"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_ff28e7781184f2379e73261696c762e0"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_ed83326f9a22d120b69b610e84ebd746"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_e47a472c975cfe8b7e3393e270256a80"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_c00c4aa87c70f9135ee0713efa51bffa"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_9909ea69582cd6b378907a583fd2855d"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_e676da0b48898fe92c139aaa3ce52d4f"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_b606a8a610655f11f6c823b83b1869bf"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_1cca7e0d0c992cb0700ee0e646be7231"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="double">(double)</th><td class="value value_double">1360068154.2929</td></tr></table></div></pre></div><div id="data_0efc23b38b22e29b76bddc8b8ab67d29"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="integer">(integer)</th><td class="value value_integer">420</td></tr></table></div></pre></div><div id="data_d6c0e67a49ff343c70a80e6c544e8c38"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="integer">(integer)</th><td class="value value_integer">505</td></tr></table></div></pre></div><div id="data_69ac83a62d7daf75d889de8881bcdfcb"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_47ba638905c4a93c783aea227e54599c"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>Smarty</i>)[<i>292</i>]
+  <i>public</i> 'auto_literal' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'error_unassigned' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'use_include_path' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>private</i> 'template_dir' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=1)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/Resource/View/'</font> <i>(length=59)</i>
+  <i>public</i> 'joined_template_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/Resource/View/'</font> <i>(length=59)</i>
+  <i>public</i> 'joined_config_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'./configs/'</font> <i>(length=10)</i>
+  <i>public</i> 'default_template_handler_func' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'default_config_handler_func' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'default_plugin_handler_func' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>private</i> 'compile_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/data/tmp/smarty/template_c/'</font> <i>(length=72)</i>
+  <i>private</i> 'plugins_dir' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=3)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/vendor/smarty/smarty/distribution/libs/plugins/'</font> <i>(length=79)</i>
+      1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/vendor/libs/smarty/plugin/'</font> <i>(length=71)</i>
+      2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/src/BEAR/Package/Provide/TemplateEngine/Smarty/plugin/'</font> <i>(length=86)</i>
+  <i>private</i> 'cache_dir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/Users/akihito/git/BEAR.Package/apps/Sandbox/data/tmp/smarty/cache/'</font> <i>(length=67)</i>
+  <i>private</i> 'config_dir' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=1)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'./configs/'</font> <i>(length=10)</i>
+  <i>public</i> 'force_compile' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'compile_check' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'use_sub_dirs' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'allow_ambiguous_resources' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'caching' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'merge_compiled_includes' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'cache_lifetime' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>3600</font>
+  <i>public</i> 'force_cache' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'cache_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'compile_id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'left_delimiter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'{'</font> <i>(length=1)</i>
+  <i>public</i> 'right_delimiter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'}'</font> <i>(length=1)</i>
+  <i>public</i> 'security_class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Smarty_Security'</font> <i>(length=15)</i>
+  <i>public</i> 'security_policy' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'php_handling' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+  <i>public</i> 'allow_php_templates' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'direct_access_security' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'debugging' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'debugging_ctrl' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'NONE'</font> <i>(length=4)</i>
+  <i>public</i> 'smarty_debug_id' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'SMARTY_DEBUG'</font> <i>(length=12)</i>
+  <i>public</i> 'debug_tpl' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file:/Users/akihito/git/BEAR.Package/vendor/smarty/smarty/distribution/libs/debug.tpl'</font> <i>(length=85)</i>
+  <i>public</i> 'error_reporting' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'get_used_tags' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'config_overwrite' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'config_booleanize' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'config_read_hidden' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'compile_locking' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+  <i>public</i> 'cache_locking' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'locking_timeout' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>10</font>
+  <i>public</i> 'template_functions' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'default_resource_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file'</font> <i>(length=4)</i>
+  <i>public</i> 'caching_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file'</font> <i>(length=4)</i>
+  <i>public</i> 'properties' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'default_config_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'file'</font> <i>(length=4)</i>
+  <i>public</i> 'template_objects' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'cache_modified_check' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'registered_plugins' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'plugin_search_order' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'function'</font> <i>(length=8)</i>
+      1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'block'</font> <i>(length=5)</i>
+      2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'compiler'</font> <i>(length=8)</i>
+      3 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'class'</font> <i>(length=5)</i>
+  <i>public</i> 'registered_objects' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'registered_classes' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'registered_filters' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'registered_resources' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> '_resource_handlers' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'registered_cache_resources' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> '_cacheresource_handlers' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'autoload_filters' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'default_modifiers' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'escape_html' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'start_time' <font color='#888a85'>=&gt;</font> <small>float</small> <font color='#f57900'>1360068154.2929</font>
+  <i>public</i> '_file_perms' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>420</font>
+  <i>public</i> '_dir_perms' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>505</font>
+  <i>public</i> '_tag_stack' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'smarty' <font color='#888a85'>=&gt;</font> 
+    <i>&</i><b>object</b>(<i>Smarty</i>)[<i>292</i>]
+  <i>public</i> '_current_file' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> '_parserdebug' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  <i>public</i> 'merged_templates_func' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'template_class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Smarty_Internal_Template'</font> <i>(length=24)</i>
+  <i>public</i> 'tpl_vars' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+  <i>public</i> 'parent' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'config_vars' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=0)</i>
+      <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_4e8d1299007621db0b63acf699a5b7a3"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_b91065f24f1a4ff1fc1abb519aab559a"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div><div id="data_db2c08ba32627afdcb88d638588d46ff"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_57fe11052ba5b0b62b2dc5b341c49af2"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="string">(string)</th><td class="value value_string">Smarty_Internal_Template</td></tr></table></div></pre></div><div id="data_dfb9e1d70ff63f4489f0ea58d38dfe61"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_e06f6bd1378dcdb90d3cf1cb11e936ef"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_b95f672e6a12ecdf3a7fa6877ca8f7a0"><pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=0)</i>
+  <i><font color='#888a85'>empty</font></i>
+</pre></pre></div><div id="data_3c3f7e6aabf99b219dc919a377be26f6"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="NULL">(NULL)</th><td class="value value_null">NULL</td></tr></table></div></pre></div><div id="data_f0241ef1247ecd21f7d1703935588677"><pre><div class="DbugL"><table title="(168) /Users/akihito/git/BEAR.Package/vendor/printo/printo/src/Printo/Printo.php"  cellpadding="0" cellspacing="1" class="DbugL"><tr><th class=" key_single_value" style="background:#0A4F74" title="boolean">(boolean)</th><td class="value value_bool_false">FALSE</td></tr></table></div></pre></div></span>
+</body>
+</html>
