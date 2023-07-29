@@ -9,7 +9,7 @@ categories:
   - BEAR
   - フレームワーク
 ---
-{% facebook_embedded_post https://www.facebook.com/permalink.php?id=110116939178462&story_fbid=168349486688540 %}
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FBEARSundayProject%2Fposts%2F168349486688540&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 <br clear="all" />  
 無名の個人が作った無名のフレームワークをこれだけの規模のカンファレンスで発表するというのを聞いた事がありません。そもそも「誰も新しいフレームワークに興味が無い」というこで、新しいどころか世界の誰もが知っているフレームワークが200を超えるCfPの中で落選してる事も知りました。

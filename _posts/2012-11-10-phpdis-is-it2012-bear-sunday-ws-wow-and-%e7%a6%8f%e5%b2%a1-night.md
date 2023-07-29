@@ -144,8 +144,8 @@ PHP5.4はどうか？という質問もありました。これは会場の多�
 
 楽しかったです。みなさんありがとうございました！
 
-{% youtube WL5dfOC8kfA %}
-{% youtube -kH-Ie-oB84 %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WL5dfOC8kfA" <iframe width="560" height="315" src="https://www.youtube.com/embed/3eHNuS_ma94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=-kH-Ie-oB84">
 
 <ol class="footnotes">
   <li id="footnote_0_1109" class="footnote">
