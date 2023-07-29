@@ -18,7 +18,7 @@ Ray.Di は DI (Dependency Injection: 依存性注入) のためのフレーム�
 
 インジェクト対象となるメソッドに**@Inject**とマークします。**@PostConstuct**はインスタンスコンストラクトされ後の初期化メソッドを表します。@Transactional, @Templateはユーザーが定義した[アスペクト指向プログラミング][3]のためのアノテーションで、**@Aspect**と共に用い、そのメソッドが[インターセプト][4]される事を指定します。
 
-{% codeblock lang:php %}
+{% highlight php %}
 /**
  * @Aspect
  */
@@ -59,13 +59,13 @@ class User
         return $result;
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ## モジュール
 
 モジュールではインターフェイスと実クラスやインスタンス、ファクトリを紐づけるコードを記述します。ユーザー定義の[アノテーション][5]はインターセプターと紐づけます。インターセプターはネスト可能でこの例では@TransactionalとマークされたメソッドはTimerとTransactionの機能がネストされて適用されます。
 
-{% codeblock lang:php %}
+{% highlight php %}
 class UserModule extends AbstractModule
 {
     protected function configure()
@@ -76,7 +76,7 @@ class UserModule extends AbstractModule
         $this->registerInterceptAnnotation('Template', array(new Template));
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ## インターセプター
 
@@ -90,7 +90,7 @@ class UserModule extends AbstractModule
 
 #### タイマーインターセプター
 
-{% codeblock lang:php %}
+{% highlight php %}
 /**
  * Timer interceptor
  */
@@ -105,13 +105,13 @@ class Timer implements MethodInterceptor
         echo "Timer stop:[" . sprintf('%01.7f', $time) . "] sec\n\n";
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 #### トランザクションインターセプター
 
 リフレクションを使い元オブジェクトのプライベートプロパティのPDOオブジェクトを操作してトランザクションを実現しています。
 
-{% codeblock lang:php %}
+{% highlight php %}
 /**
  * Transaction interceptor
  */
@@ -134,12 +134,12 @@ class Transaction implements MethodInterceptor
         }
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 #### テンプレートインターセプター
 
 連想配列をフォーマットされた文字列に変換しています。  
-{% codeblock lang:php %}
+{% highlight php %}
 /**
 * Template interceptor
 */
@@ -155,7 +155,7 @@ class Template implements MethodInterceptor
         return $view;
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ### インジェクター
 
@@ -163,7 +163,7 @@ class Template implements MethodInterceptor
 
 モジュールは通常のwebアプリケーションならbootstrapで１回だけ作成します。**@Aspect**とマークされメソッドインターセプトされるオブジェクトは、**Weaveオブジェクト**というメソッドがインターセプトされ代理実行されるプロキシーオブジェクトに変わります。元のオブジェクトのメソッドを受付け、元のオブジェクトのように振る舞う代理オブジェクトです。
 
-{% codeblock lang:php %}
+{% highlight php %}
 $injector = include 'path/to/scripts/instance.php';
 $injector->setModule(new UserModule);
 $user = $injector->getInstance('Ray\Di\Sample\User');
@@ -173,7 +173,7 @@ $user->createUser('Bear', rand(18,35));
 $user->createUser('Yoshi', rand(18,35));
 $users = $user->readUsers();
 var_export($users);
-{% endcodeblock %}
+{% endhighlight %}
 
 #### 実行結果
 
@@ -198,7 +198,7 @@ Name:Yoshi Age:18
 #### オリジナル実行
 
 オリジナルのメソッドをそのまま実行した場合する場合のコードと結果です。ターゲットクラスに依存技術がなく、プレーンな形で実行とテストが可能です。  
-{% codeblock lang:php %}
+{% highlight php %}
 $pdo = new \PDO('sqlite::memory:', null, null);
 $user = new \Ray\Di\Sample\User($pdo);
 $user->init();
@@ -224,7 +224,7 @@ array (
     'Age' => '27',
   ),
 )
-{% endcodeblock %}
+{% endhighlight %}
 
 ### Conclusion
 

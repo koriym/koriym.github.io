@@ -20,17 +20,17 @@ BEAR.PackageをPackagistに登録しました。
 composerのcreate-projectでインストールできるようになりました。
 
 composerインストール  
-{% codeblock lang:bash %}$ wget http://getcomposer.org/composer.phar{% endcodeblock %}
+{% highlight bash %}$ wget http://getcomposer.org/composer.phar{% endhighlight %}
 または  
-{% codeblock lang:bash %}$ curl -s https://getcomposer.org/installer | php{% endcodeblock %}
+{% highlight bash %}$ curl -s https://getcomposer.org/installer | php{% endhighlight %}
 
 composerでBEAR.Sunday sandboxアプリケーションインストールします。
 
-{% codeblock lang:bash %}$ php composer.phar create-project -s dev bear/package /tmp/mysunday{% endcodeblock %}
+{% highlight bash %}$ php composer.phar create-project -s dev bear/package /tmp/mysunday{% endhighlight %}
 
 BEAR.Packageとその依存のBEAR.Sundayが指定したバージョンでインストールされます。<sup><a href="#footnote_0_1385" id="identifier_0_1385" class="footnote-link footnote-identifier-link" title=" インストールスクリプトはまだ用意できていないのでパーミッションの設定が現在必要です">1</a></sup> その後PHP5.4のbuilt-in web serverを立ち上げます。
 
-{% codeblock lang:bash %}
+{% highlight bash %}
 $ composer.phar create-project -s dev bear/package /tmp/mysunday
 Installing bear/package (dev-master bbc42caf8ed71e56c4f72f7270db012dc4b40d39)
   - Installing bear/package (dev-master master)
@@ -98,7 +98,7 @@ PHP 5.4.9 Development Server started at Wed Dec 12 13:11:37 2012
 Listening on http://localhost:8088
 Document root is /private/tmp/mysunday/apps/Sandbox/public
 Press Ctrl-C to quit.
-{% endcodeblock %}
+{% endhighlight %}
 
 <ol class="footnotes">
   <li id="footnote_0_1385" class="footnote">

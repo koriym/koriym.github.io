@@ -20,22 +20,22 @@ Ray.Diは基本的にはアノテーションベースのDIコンテナですが
 
 Containerクラスのインスタンスと、インターフェイスとクラスを紐付けるモジュールの二つを引き数に取ります。ContainerクラスにはForge、ForgeにはConfig、ConfigにはAnnotationインスタンスが必要です。
 
-{% codeblock lang:php %}
+{% highlight php %}
 $di = new Injector(new Container(new Forge(new Config(new Annotation))), new AppModule);
-{% endcodeblock %}
+{% endhighlight %}
 あるいは、
 
 instance.php  
-{% codeblock lang:php %}
+{% highlight php %}
 require_once  '/path/to/Ray.Di/src.php';
 return new Injector(new Container(new Forge(new Config(new Annotation))), new AppModule);
-{% endcodeblock %}
+{% endhighlight %}
 
 このようにincludeを使って
 
-{% codeblock lang:php %}
+{% highlight php %}
 $di = include '/path/to/scripts/instance.php';
-{% endcodeblock %}
+{% endhighlight %}
 
 インスタンスをスクリプトから代入します。
 
@@ -50,7 +50,7 @@ Ray.Diはコンストラクターインジェクションとセッターイン�
 ### ターゲットクラス
 
 ターゲットになるクラスです。ListerクラスのコンストラクタにFindインターフェイスを実装したインスタンス（Finder)を渡す必要があります。  
-{% codeblock lang:php %}
+{% highlight php %}
 namespace MovieApp {
     class Lister {
         public $finder;
@@ -61,31 +61,31 @@ namespace MovieApp {
     class Finder implements Find {}
     interface Find{}
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ### アノテーションを使わないコンストラクタ・インジェクション
 
 #### イーガーセット
 
-{% codeblock lang:php %}
+{% highlight php %}
     $di = include __DIR__ . '/scripts/instance.php';
     $di->getContainer()->params['MovieApp\Lister'] = array(
        'finder' => new MovieApp\Finder
     );
     $lister = $di->getInstance('MovieApp\Lister');
-{% endcodeblock %}
+{% endhighlight %}
 
 params[クラス名]として、ネームドパラメーター<sup><a href="#footnote_2_950" id="identifier_2_950" class="footnote-link footnote-identifier-link" title="引き数を順番ではなく変数名で指定">3</a></sup> で引き数を指定します。この準備は通常アプリケーションのブート時等に1度だけ行います。getInstance()時にはコンストラクタ引き数を指定していませんが、&#8221;予約&#8221;した方法で引き数が渡されインスタンスが生成されます。
 
 #### レイジーセット
 
-{% codeblock lang:php %}
+{% highlight php %}
     $di = include __DIR__ . '/scripts/instance.php';
     $di->getContainer()->params['MovieApp\Lister'] = array(
         'finder' => $di->getContainer()->lazyNew('MovieApp\Finder')
     );
     $lister = $di->getInstance('MovieApp\Lister');
-{% endcodeblock %}
+{% endhighlight %}
 イーガーセットでは準備の段階で引き数に必要なインスタンスを生成しましたが、もしかしたら使わないかも、あるいは準備時にはまだインスタンスが確定できないものはlazyNewというメソッドを使ったレイジーセットが行えます。インスタンスの代わりにインスタンスの生成方法をセットしておいてgetInstance()時に遅延実行されコンストラクタ引き数として渡されます。引き数１つめにクラス名、２つ目に引き数をネームドパラメーターで指定します。
 
 クラス同様、コンストラクタインジェクションの**設定も親クラスから小クラスに継承されます**。つまり、Finderクラスを継承した子クラスの取得時にも適用されます。またgetInstance()の第二引き数でインスタンス取得時に、設定した引き数を指定したパラメーターだけ上書きすることができます。<sup><a href="#footnote_3_950" id="identifier_3_950" class="footnote-link footnote-identifier-link" title="$host, $id, $passを引き数に取るようなコンストラクタでgetInstance($class, array(&lsquo;host&rsquo; => $host);と指定すると$id, $passはデフォルトの値で$hostだけを指定できます。">4</a></sup>
@@ -93,7 +93,7 @@ params[クラス名]として、ネームドパラメーター<sup><a href="#foo
 ### アノテーションを使うコンストラクタ・インジェクション
 
 ターゲットのメソッドに**@Inject**アノテーションでマークします。Ray.Diにインスタンスを代入しなければならない事が伝わります。  
-{% codeblock lang:php %}
+{% highlight php %}
 namespace MovieApp {
     class Lister {
         public $finder;
@@ -107,10 +107,10 @@ namespace MovieApp {
     class Finder implements Find {}
     interface Find{}
 }
-{% endcodeblock %}
+{% endhighlight %}
 AbstractModuleを継承したモジュールのconfigureメソッド内でインターフェイスと実クラスを指定します。AbstractModuleにはインターフェイスとクラスを結ぶ様々なメソッドがあり、英語表現のようなDSL<sup><a href="#footnote_4_950" id="identifier_4_950" class="footnote-link footnote-identifier-link" title="Guiceでこのように表現されてました">5</a></sup> でインターフェイスとクラスを紐づけます。
 
-{% codeblock lang:php %}
+{% highlight php %}
     class Module extends \Ray\Di\AbstractModule
     {
         public function configure()
@@ -118,12 +118,12 @@ AbstractModuleを継承したモジュールのconfigureメソッド内でイン
             $this->bind('MovieApp\Find)->to('MovieApp\Finder')->in(Scope::SINGLETON);
         }
     }
-{% endcodeblock %}
+{% endhighlight %}
 前回の記事ではインスタンスを直接してしましたが、この例では実クラスを指定してin()でそのクラスはシングルトンスコープで利用されるように指定しています。二回目以降の注入には同じインスタンスが再利用されます。  
-{% codeblock lang:php %}
+{% highlight php %}
     $di->setModule(new Module);
     $lister = $di->getInstance('MovieApp\Lister');
-{% endcodeblock %}
+{% endhighlight %}
 そのモジュールをセットしたインジェクターでインスタンスを取得します。
 
 ### Conclusion

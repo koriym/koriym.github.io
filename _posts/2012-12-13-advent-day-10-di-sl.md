@@ -27,7 +27,7 @@ SLをアンチパターンとするときに良く言われるのが、「コン
 
 ## new, SL and DI
 
-{% codeblock lang:php %}
+{% highlight php %}
 class Conventional
 {
     public function __construct()
@@ -35,8 +35,8 @@ class Conventional
         $this->foo = new Foo;
     }
 }
-{% endcodeblock %}
-{% codeblock lang:php %}
+{% endhighlight %}
+{% highlight php %}
 class Di
 {
     public function __construct(FooInterfeace $foo)
@@ -44,8 +44,8 @@ class Di
         $this->foo = $foo;
     }
 }
-{% endcodeblock %}
-{% codeblock lang:php %}
+{% endhighlight %}
+{% highlight php %}
 class Sl
 {
     public function __construct(Container $container)
@@ -53,7 +53,7 @@ class Sl
         $this->foo = $container->get('foo');
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 オブジェクトを取得する３つのコードです。
 

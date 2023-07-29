@@ -18,7 +18,7 @@ BEAR.SundayのDIとAOP(Ray.Di)を理解するためのチュートリアルで�
 
 最初に題材としてTodoクラスを作りました。$todo文字列を受け取ってデータベースに格納するだけのクラスです。
 
-{% codeblock lang:php %}
+{% highlight php %}
 <?php
 class Todo
 {
@@ -35,7 +35,7 @@ class Todo
 }
 $todo = new Todo;
 $todo->add('Pay bills');
-{% endcodeblock %}
+{% endhighlight %}
 
 ## システムの可変点
 
@@ -49,15 +49,15 @@ $todo->add('Pay bills');
 
 初期のシステムではこのようなシステムで変更部分のある情報を定数を使う事で解決していました。プログラムの初期化(bootstrap)ではdefineが並んだファイルを読み込みます。
 
-{% codeblock lang:php %}
+{% highlight php %}
 define('PDO_DSN', 'mysql:dbname=test;host=localhost');
-{% endcodeblock %}
+{% endhighlight %}
 
 利用部分ではその情報を使います。
 
-{% codeblock lang:php %}
+{% highlight php %}
 $pdo = new PDO(PDO_DSN);
-{% endcodeblock %}
+{% endhighlight %}
 
 ハードコーディングされていた箇所は取り除かれ、コードはよりクリーンになりました！
 
@@ -71,10 +71,10 @@ $pdo = new PDO(PDO_DSN);
 
 Configureクラスは設定値の入れ物（コンテナ）を用意します。bootstrapでプログラムに必要な設定情報を設定ファイル(ini/yaml/php配列)を読み込んだりコードで直接代入したりして準備しておきます。
 
-{% codeblock lang:php %}
+{% highlight php %}
 $connection = Configure::read('pdo');
 $pdo = new PDO($connection['dsn'], $connection['user'], $connection['password']);
-{% endcodeblock %}
+{% endhighlight %}
 
 利用するときにはそのConfigureクラスとセットに使ったキーを使ってその値を取り出します。これで設定に配列も扱えるようになりました。設定の代入も多様な方法で行えます。
 
@@ -82,10 +82,10 @@ $pdo = new PDO($connection['dsn'], $connection['user'], $connection['password'])
 
 ### グローバル変数$_GLOBALSを使う
 
-{% codeblock lang:php %}
+{% highlight php %}
 $connection = $_GLOBAL['MYAPP']['pdo'];
 $pdo = new PDO($connection['dsn'], $connection['user'], $connection['password']);
-{% endcodeblock %}
+{% endhighlight %}
 
 グローバル変数に抵抗がありますか？ グローバルスコープでどこからも参照できる変数という意味では、グローバル変数もConfigureクラスもあまり変わりません。実際CakePHPではこのような注意書きがあります。
 
@@ -105,7 +105,7 @@ $pdo = new PDO($connection['dsn'], $connection['user'], $connection['password'])
 
 そこで、メソッドの生成・管理をメソッドに任せる事にします。「シングルトン」です。
 
-{% codeblock lang:php %}
+{% highlight php %}
     private $instance;
 
     public static function getInstance()
@@ -115,13 +115,13 @@ $pdo = new PDO($connection['dsn'], $connection['user'], $connection['password'])
         }
         return self::$instance;
     }
-{% endcodeblock %}
+{% endhighlight %}
 
 このようメソッドを各クラスに持って以下のように取得します。
 
-{% codeblock lang:php %}
+{% highlight php %}
 $pdo = Db::getInstance();
-{% endcodeblock %}
+{% endhighlight %}
 newでインスタンス生成が行われるのは一度だけで、次回以降は生成済みのインスタンスが渡されるだけです。
 
 しかし、このようなシングルトンのコードはテストに向かない保守性の低いコードになってしまいます。**コード中のどこからでも同一のインスタンスにアクセスするグローバルスコープのオブジェクト**になっているからです。
@@ -129,13 +129,13 @@ newでインスタンス生成が行われるのは一度だけで、次回以�
 オブジェクトの生成・管理がまとまった仕事であるなら、専用のクラスを持つのは自然な話です。<sup><a href="#footnote_0_2022" id="identifier_0_2022" class="footnote-link footnote-identifier-link" title="BEAR.Saturdayでは BEAR::Dependency">1</a></sup>  
 例えばその専用クラスは以下のように使われます。
 
-{% codeblock lang:php %}
+{% highlight php %}
 // Global registry
 $pdo = ServiceContainer::get('pdo');
 ...
 // Contextual dependency lookup (CDL)
 $pdo = $this->app['pdo'];
-{% endcodeblock %}
+{% endhighlight %}
 
 bootstrapでは何らかの方法でオブジェクトの生成の準備を完了させておき、取り出し&#8217;キー&#8217;と共にオブジェクトが取り出せる準備をしておきます。
 
@@ -153,7 +153,7 @@ bootstrapでは何らかの方法でオブジェクトの生成の準備を完�
 
 これまで、オブジェクトをどうやって作り、どうやって管理するか、というオブジェクトの生成と管理の視点でコードを見て来ました。様々なやり方を検討してきましが、いずれの方法も **オブジェクトを生成するか、または他のクラスを使って取得**していました。(Dependency Lookup) これから見るのは依存性の注入と呼ばれるパターンで、依存オブジェクトの取得は完全に受け身になります。
 
-{% codeblock lang:php %}
+{% highlight php %}
 <?php
 class Todo
 {
@@ -183,7 +183,7 @@ class Todo
 $pdo = new PDO('mysql:dbname=test;host=localhost');
 $todo = new Todo($pdo);
 $todo->add('Get laundry');
-{% endcodeblock %}
+{% endhighlight %}
 
 内部で必要なオブジェクトを**ハードコード**して生成/取得するのではなくて、クラスの外から依存が代入されています。**DBオブジェクトがDBの接続情報文字列を可変点と考えたように、DBオブジェクト利用クラスにとってDBオブジェクトが可変点**と考えます。
 
@@ -216,12 +216,12 @@ $todo->add('Get laundry');
 
 同じオブジェクトを再利用するシングルトンもやってみましょう。
 
-{% codeblock lang:php %}
+{% highlight php %}
 $pdo = new PDO('mysql:dbname=test;host=localhost');
 $todo1 = new Todo($pdo);
 $todo2 = new Todo($pdo);
 ...
-{% endcodeblock %}
+{% endhighlight %}
 
 同じオブジェクトを渡す事で、それぞれ別の利用クラスが同じ依存インスタンス($pdo)を使っています。依存クラスは利用クラスの外側で集中して管理されていて、PDOインスタンスの生成は一度だけです！
 

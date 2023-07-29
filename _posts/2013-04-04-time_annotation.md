@@ -25,7 +25,7 @@ PHPメンターズのブログで[時計オブジェクト（ドメインクロ�
 
 現在時刻文字列を扱いたいクラスにはpublicのtimeプロパティを追加しメソッドに**BEAR\Sunday\Annotation\Time**アノテーションを注記（アノテート）します。
 
-{% codeblock lang:php %}
+{% highlight php %}
 use BEAR\Sunday\Annotation\Time;
     /**
      * Current time string
@@ -40,16 +40,16 @@ use BEAR\Sunday\Annotation\Time;
     {
         $this->time; // 2013-04-03 19:37:40
     }
-{% endcodeblock %}
+{% endhighlight %}
 
 すると**このメソッドがコールされたタイミングで**timeプロパティに現在時刻が代入されるようになます。メソッド内ではそのプロパティを利用するだけです。
 
 テストコードでは以下のようにpublicプロパティに値を代入します。<sup><a href="#footnote_0_1834" id="identifier_0_1834" class="footnote-link footnote-identifier-link" title="セッターメソッドを用意してもいいでしょう">1</a></sup> テストは容易に行う事ができます。
 
-{% codeblock lang:php %}
+{% highlight php %}
  $user = new User;
  $user->time = "2013-04-03 19:37:40";
-{% endcodeblock %}
+{% endhighlight %}
 
 ## DI ? AOP ?
 
@@ -59,24 +59,24 @@ use BEAR\Sunday\Annotation\Time;
 
 BEAR\Package\Module\Database\Dbal\DbalModuleモジュールでDoctrin DBALモジュールを利用するためにDIとAOPの設定を行っていますが、このモジュール内で@Timeとアノテートされたメソッドと現在時刻を代入するインターセプターが束縛されています。
 
-{% codeblock lang:php %}
+{% highlight php %}
 $this->bindInterceptor(
     $this->matcher->any(), // どのクラスでも
     $this->matcher->annotatedWith('BEAR\Sunday\Annotation\Time'), //@Timeとアノテートされてるメソッドに
     [new TimeStamper] // TimeStamperを束縛
 );
-{% endcodeblock %}
+{% endhighlight %}
 
 TimeStamperは元メソッドのtimeプロパティに現在時刻をセットするだけの単純なインターセプターです。
 
-{% codeblock lang:php %}
+{% highlight php %}
 public function invoke(MethodInvocation $invocation)
 {
     $object = $invocation->getThis(); // 元オブジェクト
     $object->time = date("Y-m-d H:i:s", time());  // 現在時刻代入
     return $invocation->proceed(); // 元メソッド実行して返す
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ## おわりに
 

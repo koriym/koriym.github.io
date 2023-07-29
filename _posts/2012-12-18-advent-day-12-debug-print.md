@@ -21,9 +21,9 @@ tags:
 BEAR.Sundayは前バージョンからの伝統(?)のデバック出力**p();**があります。  
 表示はxdebugのvar_dump()と同じですが加えて、変数名とp()した場所が表示されます。
 
-{% codeblock lang:php %}
+{% highlight php %}
 p($a);
-{% endcodeblock %}
+{% endhighlight %}
 
 **webでp()すると**  
 <a href="/blog/adv12/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88-2012-12-17-23-31-50/" rel="attachment wp-att-1505"><img src="/images/wp-content/uploads/2012/12/a0f4eafe84c70f36f0bb364cfbac6e9f.png" alt="スクリーンショット 2012-12-17 23.31.50" class="aligncenter size-full wp-image-1505" /></a>

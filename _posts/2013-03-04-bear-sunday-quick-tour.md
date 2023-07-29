@@ -78,7 +78,7 @@ $ php web.php get /
 ```
 php web.php get / prod
 ```  
-{% codeblock lang:php %}
+{% highlight php %}
 200 OK
 cache-control: ["no-cache"]
 date: ["Mon, 04 Mar 2013 12:29:49 GMT"]
@@ -92,14 +92,14 @@ date: ["Mon, 04 Mar 2013 12:29:49 GMT"]
 </div>
 </body>
 </html>
-{% endcodeblock %}
+{% endhighlight %}
 
 API  
 ```
 php web.php get / api
 ```
 
-{% codeblock lang:php %}
+{% highlight php %}
 200 OK
 content-type: ["application\/hal+json; charset=UTF-8"]
 cache-control: ["no-cache"]
@@ -113,13 +113,13 @@ date: ["Mon, 04 Mar 2013 12:31:17 GMT"]
         }
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 利用できないメソッドには405(Method Not Allowed)が返って来ます。  
 ```
 php web.php delete /
 ```  
-{% codeblock lang:php %}
+{% highlight php %}
 405 Method Not Allowed
 x-exception-class: ["BEAR\\Resource\\Exception\\MethodNotAllowed"]
 x-exception-message: ["Hello\\Resource\\Page\\Index::onDelete()"]
@@ -132,7 +132,7 @@ date: ["Mon, 04 Mar 2013 12:47:11 GMT"]
 [BODY]
 The requested method is not allowed for this URI.
 KumaAir:public akihito$
-{% endcodeblock %}
+{% endhighlight %}
 404も試してみましょう。
 
 ## Webでのアプリケーション実行 (5 min)
@@ -169,9 +169,9 @@ ClassのCを誤って消してしまいました。シンタックスエラー�
 <i class="icon-time"></i> 5 min
 
 HTTPのGETメソッドではonGetメソッドがアクセスされます。  
-{% codeblock lang:php %}
+{% highlight php %}
 public function onGet($name = 'BEAR.Sunday')
-{% endcodeblock %}
+{% endhighlight %}
 
 このメソッドは 
 <pre>$_GET</pre>
@@ -181,13 +181,13 @@ public function onGet($name = 'BEAR.Sunday')
 
 としてアクセスしてみたり、以下のようにyearクエリーも受け取ってみましょう
 
-{% codeblock lang:php %}
+{% highlight php %}
     public function onGet($name = 'BEAR.Sunday', $year=2013)
     {
         $this['greeting'] = 'Hello ' . $name . ", It's {$year}";
         return $this;
     }
-{% endcodeblock %}
+{% endhighlight %}
 
 [<img src="/images/wp-content/uploads/2013/03/271d16f1b59a267b7e7b571c9ee77c84.png" alt="スクリーンショット 2013-03-04 22.43.18" class="alignleft size-full wp-image-1718" />][4]<br clear="all" />
 

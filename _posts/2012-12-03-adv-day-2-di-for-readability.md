@@ -32,7 +32,7 @@ BEAR.Sundayではインターフェイスを通してオブジェクトを受け
 
 ### コンストラクタインジェクション
 
-{% codeblock lang:php %}
+{% highlight php %}
     /**
      * Set resource
      *
@@ -44,11 +44,11 @@ BEAR.Sundayではインターフェイスを通してオブジェクトを受け
     {
         $this->resource = $resource;
     }
-{% endcodeblock %}
+{% endhighlight %}
 
 ### セッターインジェクション
 
-{% codeblock lang:php %}
+{% highlight php %}
     /**
      * Set resource
      *
@@ -60,7 +60,7 @@ BEAR.Sundayではインターフェイスを通してオブジェクトを受け
     {
         $this->resource = $resource;
     }
-{% endcodeblock %}
+{% endhighlight %}
 
 メソッドには**@Inject**がアノテートされ、外部からの注入が行われる事を示しています。これはコードを読むプログラマにとっても、注入ポイントを知る必要があるインジェクターにとっても文字通りアノテーション（注記）となっています。
 
@@ -72,13 +72,13 @@ BEAR.Sundayではインターフェイスを通してオブジェクトを受け
 
 PHP5.4では横断的に利用するメソッドをtraitで集約できます。BEAR.SundayではこれをDIのボイラープレート削減のために使用することができます。これを利用したクラスはこのようになります。
 
-{% codeblock lang:php %}
+{% highlight php %}
 class A
 {
     use ResourceInject;
     use LoggerInject;
     use WebContextInject;
-{% endcodeblock %}
+{% endhighlight %}
 一つの依存が一行で表さ集約されました。コンパクトになりクラスの依存が簡潔に表現されています。
 
 一方、そのインターフェイスはtraitファイルを見なければならなくなりました。この点はSLと同じと割り切るか、出現頻度の高いオブジェクトに限るなどの工夫をするのが良いかも知れません。

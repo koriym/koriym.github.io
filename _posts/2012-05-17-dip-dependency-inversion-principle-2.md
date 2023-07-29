@@ -58,16 +58,16 @@ BEAR.Sundayのクラスでは、以下のように依存は原則全て注入し
 
 ### 直接生成する
 
-{% codeblock lang:php %}
+{% highlight php %}
 $service = new MyService;
-{% endcodeblock %}
+{% endhighlight %}
 $serviceがMyServiceのインスタンスであると[静的束縛][8]されています。
 
 ### スタティックコール
 
-{% codeblock lang:php %}
+{% highlight php %}
 MyService::doSomething();
-{% endcodeblock %}
+{% endhighlight %}
 これも実装に依存しています。
 
 ### コンテナに依存する

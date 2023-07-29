@@ -34,7 +34,7 @@ tags:
 BEAR.Sundayではこのシーケンスをアプリケーションの構成だと考え、完全にアプリケーションドメインのものにならないかと考えました。基本シークエンスをスクリプトにより簡潔に表現し可読性を高め、自由に編集できるようにします。特定の処理を追加したり、割込ませるためにはそのスクリプトを直接編集します。<sup><a href="#footnote_2_1035" id="identifier_2_1035" class="footnote-link footnote-identifier-link" title="CakePHP のシーケンス図を作ってみたという記事を読みました。CakePHP2のアプリケーション／フレームワークのシーケンスが分かるという記事なのですが、面白いと思ったと同時に現在のフレームワークのシーケンスの分かりにくさを表している事でもないかと考えました。
 ">3</a></sup>
 
-{% codeblock lang:php %}
+{% highlight php %}
 /** @global $mode application configuration mode */
 // Clear
 require dirname(__DIR__) . '/scripts/clear.php';
@@ -73,7 +73,7 @@ ERROR: {
     require dirname(__DIR__) . "/http/{$code}.php";
     exit(1);
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 これがアプリケーションスクリプトです。通常のOOPを使ったオブジェクトの世界ではなく、シェルスクリプトのように処理手順が記述してあるスクリプトの世界です。
 
@@ -85,7 +85,7 @@ ERROR: {
 
 ページリソースは自らをページとして構成するのが役割ですが、**その構成意図はコードで表されます。**
 
-{% codeblock lang:php %}
+{% highlight php %}
 class Posts extends Page
 {
     use ResourceInject;
@@ -105,7 +105,7 @@ class Posts extends Page
         return $this;
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ### セットすべきコンテンツ
 
@@ -128,7 +128,7 @@ app://self/blog/postsが何を示すのかはこのコードには現れてな�
 ### フォームの仕様
 
 以下はPOSTメソッドはフォームからPOSTサブミットのリクエストインターフェイスです。  
-{% codeblock lang:php %}
+{% highlight php %}
     public function onPost(
         $name,
         $gender,
@@ -136,26 +136,26 @@ app://self/blog/postsが何を示すのかはこのコードには現れてな�
         $hobby = null,
         $lang = 'PHP'
     ) {
-{% endcodeblock %}
+{% endhighlight %}
 ここではPOSTメソッドでサブミットされるフォームに対してのリクエストインターフェイスがメソッドシグネチャーで表されています。$nameと$genderは入力必須、その他はオプションで$langを入力しなければ&#8221;PHP&#8221;になります。
 
 リクエストサービスオブジェクトから値を取り出す方法と比べて、PHPのメソッドとHTTPリクエストがシームレスに統合され、**コードがPOSTフォームのドキュメンテーションになっています。**<sup><a href="#footnote_4_1035" id="identifier_4_1035" class="footnote-link footnote-identifier-link" title="webに&rdquo;型&rdquo;がないようにweb言語であるPHPにスカラータイプヒントがありません">5</a></sup>
 
 ### リソースのリンク
 
-{% codeblock lang:php %}
+{% highlight php %}
     public $links = [
         'payment' => [
             Link::HREF => 'app://self/restbucks/payment{?id}',
             Link::TEMPLATED => true
         ],
     ];
-{% endcodeblock %}
+{% endhighlight %}
 リソースの関係はAPIドキュメント内だけにあるのではなく、コードにも存在しています。この例では注文IDと支払URIの関係がリンクで表されています。
 
 ### アプリケーションリソース
 
-{% codeblock lang:php %}
+{% highlight php %}
     /**
      * @Time
      * @Transactional
@@ -176,7 +176,7 @@ app://self/blog/postsが何を示すのかはこのコードには現れてな�
         $this->links['page_new_post'] = [Link::HREF => "page://self/blog/posts/post?id={$lastId}"];
         return $this;
     }
-{% endcodeblock %}
+{% endhighlight %}
 
 このアプリケーションリソースメソッドではデータベースオブジェクトを利用してSQLを発行しますが、ここではアノテーションが実装意図を表すドキュメンテーションになっています。
 
@@ -194,7 +194,7 @@ app://self/blog/postsが何を示すのかはこのコードには現れてな�
 
 アプリケーションという[オブジェクトグラフ][1]の頂点になるこのインスタンスはアプリケーションスクリプトが使う全てのサービス（オブジェクト）を保持するのがその最大責務です。
 
-{% codeblock lang:php %}
+{% highlight php %}
 final class App implements Context
 {
     /** application dir path @var string */
@@ -237,7 +237,7 @@ final class App implements Context
         $this->globals = $globals;
     }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 オブジェクトの生成と実行が完全に分離されたDIシステムを持つBEAR.Sundayでは、アプリケーションスクリプトが利用するサービスの全ては、このアプリケーションのコードで表されます。
 

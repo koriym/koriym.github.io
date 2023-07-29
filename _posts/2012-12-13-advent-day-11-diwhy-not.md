@@ -45,7 +45,7 @@ DIの利点や理解を促進する記事は多いですが、ここではまず
 
 一旦アプリケーション・アーキテクトがまとめ上げた制約は再利用が可能です。BEAR.SundayのDIはオブジェクトを利用するのに最低限の記述しか必要としません。
 
-{% codeblock lang:php %}
+{% highlight php %}
 // トレイトで
 use LogInject;
 use TmpDirInject;
@@ -57,7 +57,7 @@ public function setLog(LogInterface $log)
 {
     $this->log = $log;
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 特定の抽象に束縛済みの依存があるなら再利用可能です。同じ依存がある新しいクラスを書くときにコンパイルに関わる記述の必要はありません。use文か、インターフェイスに@Injectアノテーションを打つと依存を受け取ることができます。
 

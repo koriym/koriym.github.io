@@ -56,7 +56,7 @@ tags:
 &#8230;考えてみました。  
 例えばfactory名をinjectするというのはどうでしょうか？
 
-{% codeblock lang:php %}
+{% highlight php %}
 function setConfig(ConfigInterface $config)
 {
     $this->config = $config;
@@ -65,21 +65,21 @@ function __construct($configFactory = 'ConfigFactory')
 {
     $this->setConfig((new $configFactory)->get());
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 利用コードはクラス名を渡すのと同様です  
-{% codeblock lang:php %}
+{% highlight php %}
 $c = new C('MockConfigFactory');
-{% endcodeblock %}
+{% endhighlight %}
 
 型の保証が必要でないならsetterメソッドを除去して直接代入します。
 
 また、以下のようなインスタンス生成スクリプトで渡す方法も考えてみました。<sup><a href="#footnote_0_1288" id="identifier_0_1288" class="footnote-link footnote-identifier-link" title="factoryの方が良さそうですね&hellip;">1</a></sup>  
-{% codeblock lang:php %}
+{% highlight php %}
 function __construct($configFactoryScript = 'ConfigFactoryScript') {
     $this->config = include INSTANCE_DIR . $configFactoryScript;
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 これらの方法は懸念された問題のうちいくつかを解決しています。factoryによる自由な生成と呼び出しコードの簡素化、必要個数のランタイムでの取得も可能になります。
 
@@ -89,7 +89,7 @@ function __construct($configFactoryScript = 'ConfigFactoryScript') {
 
 以下はBEAR.Sundayのリソースクライアントの生成コードです。
 
-{% codeblock lang:php %}
+{% highlight php %}
 $config = new Config(new Annotation(new Definition, new Reader));
 $injector = new Injector(new Container(new Forge($config)));
 $injector->setModule(new TestModule);
@@ -112,7 +112,7 @@ $resource = new Resource(
     $new Factory($scheme),
     $invoker, new Request($invoker)
 );
-{% endcodeblock %}
+{% endhighlight %}
 
 こんな複雑なオブジェクトの生成をコンストラクタで毎回記述するわけにもいきません。factoryを利用することになりますが、ではこれらの生成のうち一部だけを違うものに差し替えたりするのはどうしたらいいでしょうか？実際にBEAR.SundayではDevモードの時はInvokerはDevInvokerに変わっています。ContainerもPersistentContainerに変更したいと思っています。
 

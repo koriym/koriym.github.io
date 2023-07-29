@@ -61,19 +61,19 @@ Dependency Lookupは２つに分かれるそうです。
 ## Dependency Pull
 
 &#8220;中央&#8221;にある依存管理コンテナなどに問い合わせて依存を取得します。  
-{% codeblock lang:php %}
+{% highlight php %}
 $foo = Service::get('foo');
-{% endcodeblock %}
+{% endhighlight %}
 
 ## Contextualized Dependency Lookup (CDL)
 
 &#8220;渡された&#8221;コンテナから取得します。  
-{% codeblock lang:php %}
+{% highlight php %}
 public function do(ConteinerInterface $container)
 {
     $this->foo = $container->get('foo');
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ## Global Registry
 
@@ -85,12 +85,12 @@ Dependency Lookupと[同じ（？）][2]、他にObject Factory, Component Broke
 
 ## Dependency Injection (DI)
 
-{% codeblock lang:php %}
+{% highlight php %}
 public function do(FooInterface $foo)
 {
     $this->foo = $foo;
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ## 感想、ちょっと一言
 
