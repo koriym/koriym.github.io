@@ -7,11 +7,8 @@ categories: articles
 tags:
   - PHP
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2011/12/php-dis-is-it/">Tweet</a>
-</div>
 
-http://www.slideshare.net/slideshow/embed_code/10628706
+<http://www.slideshare.net/slideshow/embed_code/10628706>
 
 昨日2011.12.17にPHP Apocalypse というイベントで”PHP: Dis Is It”と題した発表をしました。PHP DisをそのDisそのものよりDisのありようやDis周辺つまり”Meta Dis”視点で考察を行い、PHPという言語のネイチャーを探ろうとしました。
 

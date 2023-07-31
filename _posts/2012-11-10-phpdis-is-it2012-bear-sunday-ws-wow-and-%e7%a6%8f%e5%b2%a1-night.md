@@ -15,9 +15,6 @@ tags:
   - travel
   - 九州
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/phpmatsuri2012">Tweet</a>
-</div>
 
 # PHP:Dis Is It(2012)
 
@@ -144,8 +141,9 @@ PHP5.4はどうか？という質問もありました。これは会場の多�
 
 楽しかったです。みなさんありがとうございました！
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WL5dfOC8kfA" <iframe width="560" height="315" src="https://www.youtube.com/embed/3eHNuS_ma94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<a href="https://www.youtube.com/watch?v=-kH-Ie-oB84">
+<https://www.youtube.com/embed/WL5dfOC8kfA>
+
+---
 
 <ol class="footnotes">
   <li id="footnote_0_1109" class="footnote">

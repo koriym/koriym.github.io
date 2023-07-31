@@ -17,9 +17,6 @@ tags:
   - リンク
   - 自己記述的
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/10/codeasdocumentation/">Tweet</a>
-</div>
 
 ## コードがドキュメントだ
 

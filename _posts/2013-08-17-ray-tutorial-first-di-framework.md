@@ -1,5 +1,5 @@
 ---
-title: 'Ray.Tutorial &#8211; First DI framework'
+title: 'Ray.Tutorial - First DI framework'
 author: admin
 layout: post
 permalink: /first-di-framework
@@ -9,7 +9,6 @@ categories: articles
 tags:
   - BEAR
 ---
-<div style="float: right; margin-left: 10px;"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/first-di-framework">Tweet</a></div>
 <h1>初めてのDIフレームワーク</h1>
 <h2>準備</h2>
  1. PHP5.4+で動作します。mysqlで予め<a href="https://github.com/koriym/Ray.Tutorial/blob/master/doc/todo.sql">テーブルを作成</a>しておきます。

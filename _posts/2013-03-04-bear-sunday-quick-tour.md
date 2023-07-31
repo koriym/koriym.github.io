@@ -14,9 +14,6 @@ tags:
   - QuickTour
   - スケルトン
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/bear-sunday-quick-tour">Tweet</a>
-</div>
 
 簡単にBEAR.Sundayを体験できるチュートリアルを用意しました。それぞれのセクションの目安の時間も記してみました。良かったら手を動かしてお付き合いください。
 

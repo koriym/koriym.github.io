@@ -15,8 +15,8 @@ tags:
 
 9ヶ月後の講演では、残り9つを含めた全ての制約を紹介して「表現に含まれるハイパーメディアコントロールでアプリケーション状態をコントロール」するRESTをより深く理解するための説明をしました。
 
-* RESTの力 (30 min) https://fortee.jp/phperkaigi-2019/proposal/777a19ee-2d1a-483d-a457-f72ef0bf5fbe
-* RESTの制約 (60 min) https://fortee.jp/phpcon-2019/proposal/9fa39956-77db-4a1d-a5b9-db7bf608ae55
+* [RESTの力 (30 min)](https://fortee.jp/phperkaigi-2019/proposal/777a19ee-2d1a-483d-a457-f72ef0bf5fbe)
+* [RESTの制約 (60 min)](https://fortee.jp/phpcon-2019/proposal/9fa39956-77db-4a1d-a5b9-db7bf608ae55)
 
 この記事ではそれぞれの講演の振り返りではなく、テーマの背景を記してみたいと思います。
 
@@ -101,7 +101,7 @@ GUIによるコンピューティングの予見もライトペンのような�
 
 これで「"全ての力"トリロジー」は一旦終了です。5年に渡って大勢の方に講演を聞いていただきました。ありがとうございました。
 
- * 2014 全てを結ぶ力 https://www.youtube.com/watch?v=wMYW-ox3BIg
- * 2015 全てを結ぶ力(2015) https://speakerdeck.com/koriym/the-power-of-connecting-everything-together
- * 2019 RESTの力 https://www.youtube.com/watch?v=970PiIJqhwQ
- * 2019 RESTの制約 https://www.youtube.com/watch?v=MPZTfJ9Kpo8
+ * 2014 [全てを結ぶ力](https://www.youtube.com/watch?v=wMYW-ox3BIg)
+ * 2015 [全てを結ぶ力(2015)](https://speakerdeck.com/koriym/the-power-of-connecting-everything-together)
+ * 2019 [RESTの力](https://www.youtube.com/watch?v=970PiIJqhwQ)
+ * 2019 [RESTの制約](https://www.youtube.com/watch?v=MPZTfJ9Kpo8)

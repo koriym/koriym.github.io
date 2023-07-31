@@ -8,8 +8,8 @@ tags:
 - PHP
 ---
 
-<img src="left  https://raw.githubusercontent.com/pmjones/mvc-refinement/master/adr.png">
-<br clear=all>
+<img src="https://raw.githubusercontent.com/pmjones/mvc-refinement/master/adr.png">
+
 https://github.com/pmjones/mvc-refinement
 
 Here is my random thought about [ADR](https://github.com/pmjones/mvc-refinement).

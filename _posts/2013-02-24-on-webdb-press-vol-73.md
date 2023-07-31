@@ -10,9 +10,6 @@ tags:
   - BEAR
   - PHP
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/WEB-DB-PRESS-Vol73">Tweet</a>
-</div>
 
 ## BEAR.SundayでRESTfulなシステム開発
 

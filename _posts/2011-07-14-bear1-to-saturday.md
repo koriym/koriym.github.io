@@ -8,9 +8,6 @@ tags:
   - BEAR
   - フレームワーク
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2011/07/bear1-to-saturday/">Tweet</a>
-</div>
 
 ### Sundayへ 
 
@@ -159,7 +156,7 @@ BEARで様々につかわれてるDTO（データー転送用オブジェクト�
   </li>
 </ol>
 
- [1]: http://yohei-y.blogspot.com/2005/04/rest_23.html
- [2]: http://en.wikipedia.org/wiki/Resource-oriented_architecture
- [3]: http://capsctrl.que.jp/kdmsnr/wiki/PofEAA/?TwoStepView
- [4]: http://solarphp.org/manual:solar:dependency_injection
+ [1]: <http://yohei-y.blogspot.com/2005/04/rest_23.html>
+ [2]: <http://en.wikipedia.org/wiki/Resource-oriented_architecture>
+ [3]: <http://capsctrl.que.jp/kdmsnr/wiki/PofEAA/?TwoStepView>
+ [4]: <http://solarphp.org/manual>:solar:dependency_injection

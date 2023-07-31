@@ -8,9 +8,6 @@ tags:
   - BEAR
   - PHP
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/04/bear-resource/">Tweet</a>
-</div>
 
 BEAR.Sundayは**DI**、**AOP**、**REST**、この３つの技術をコアにしたオブジェクトフレームワークをベースにしています。  
 [<img class="alignnone size-full wp-image-1257" title="2bear-sunday-tmp-111219033305-phpapp02.002-001" src="/images/wp-content/uploads/2012/04/2bear-sunday-tmp-111219033305-phpapp02.002-001.png" alt="" />][1]  

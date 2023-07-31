@@ -1,5 +1,5 @@
 ---
-title: 'Object Framework &#8211; Ray.Di'
+title: 'Object Framework - Ray.Di'
 author: admin
 layout: post
 permalink: /2012/04/di/
@@ -9,9 +9,6 @@ categories: articles
 tags:
   - 未分類
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/04/di/">Tweet</a>
-</div>
 
 ## Dependency Injection
 

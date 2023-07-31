@@ -13,9 +13,6 @@ tags:
   - ビルディングブロック
   - ランタイムインジェクション
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2013/04/time%e3%82%a2%e3%83%8e%e3%83%86%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3/">Tweet</a>
-</div>
 
 PHPメンターズのブログで[時計オブジェクト（ドメインクロック）を導入してテスト容易性と意図性を高める][1]という記事が掲載されました。
 
@@ -95,4 +92,4 @@ public function invoke(MethodInvocation $invocation)
   </li>
 </ol>
 
- [1]: http://phpmentors.jp/post/46982737824
+ [1]: <http://phpmentors.jp/post/46982737824>

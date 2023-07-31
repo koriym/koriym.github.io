@@ -7,9 +7,6 @@ categories: articles
 tags:
   - BEAR
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2010/05/resource_cache/">Tweet</a>
-</div>
 
 ### BEAR 0.8.x
 

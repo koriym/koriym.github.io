@@ -11,9 +11,6 @@ tags:
   - hubtokyo
   - meetup
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/bearsunday_meetup2">Tweet</a>
-</div>
 
 <div>
   <a href="/images/wp-content/uploads/2013/07/723d615e8befaad76f94aebd6688651a.png"><img src="/images/wp-content/uploads/2013/07/723d615e8befaad76f94aebd6688651a-1024x776.png" alt="BEAR.Sunday meetup #2 2013-07-28 3.06.12" class="size-large wp-image-1970" /></a>

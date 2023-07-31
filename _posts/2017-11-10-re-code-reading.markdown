@@ -23,7 +23,10 @@ OTOBANK Engineering Blogの[BEAR.Sundayをコードリーディングしたの�
 
 条件を指定することもできます。例えばURIが`/api/`で始まるパスの時にはAPIとしてJSONを返し、その他はHTMLで返すサービスの時はこのようにします。
 
-```php Webコンテキストによるアプリケーションコンテキストの変更
+Webコンテキストによるアプリケーションコンテキストの変更
+
+
+```php
 $context = strpos($_SERVER['REQUEST_URI'], '/api/') !== false ? 'hal-api-app' : 'html-app';
 ```
 
@@ -32,7 +35,9 @@ $context = strpos($_SERVER['REQUEST_URI'], '/api/') !== false ? 'hal-api-app' : 
 
 解説されてるようにスクリプト全体を記述しています。さらに短く記述するとこのようになります。
 
-```php bootstrap.php
+bootstrap.php
+
+```php 
 $context = PHP_SAPI === 'cli' ? 'cli-hal-app' : 'hal-app';
 
 $app = (new Bootstrap)->getApp('MyVendor\MyApp', $context);
@@ -52,7 +57,9 @@ try {
 
 バッチ処理ならルーターも不要なのでこのようになります。
 
-```php ミニマムなブートストラップコード
+ミニマムなブートストラップコード
+
+```php 
 try {
     (new Bootstrap)->getApp('MyVendor\MyApp', 'prod-cli')
         ->resource
@@ -68,7 +75,9 @@ try {
 
 さらに短く。単にコンソールでechoする出力で例外処理も不要なら一行になります。
 
-```php 一行ブートストラップコード
+一行ブートストラップコード
+
+```php
 echo (new Bootstrap)
 ->getApp('MyVendor\MyApp', 'prod-cli')
 ->resource
@@ -78,7 +87,9 @@ echo (new Bootstrap)
 
 複数のアプリを組み合わせた出力を得たい場合には以下のようにできます。
 
-```php 複数アプリを統合
+複数アプリを統合
+
+```php
 $name = (new Bootstrap)->getApp('MyVendor\MyApp1', 'prod-cli')->resource->get->uri('/user')('id' => 'bear')['name'];
 $role = (new Bootstrap)->getApp('MyVendor\MyApp2', 'prod-cli')->resource->get->uri('/role')('id' => 'bear')['role'];
 
@@ -124,8 +135,9 @@ BEAR.Sundayでは複数のアプリケーションがそれぞれ名前空間を
 
 無名クラスを使って以下のように、モックやスタブを束縛することができます。
 
+無名クラスで上書き束縛
 
-```php 無名クラスで上書き束縛
+```php 
 public function testAnonymousClassBinding()
     $injector = new AppInjector('FakeVendor\HelloWorld', 'hal-app');
     $module = new class extends AbstractModule {

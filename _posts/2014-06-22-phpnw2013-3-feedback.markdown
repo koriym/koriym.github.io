@@ -116,11 +116,11 @@ meetupやSymfony勉強会で部分的な紹介をした事はありますが、B
 
 phpnw13 blog entries
 
-http://www.boxuk.com/php-north-west-2013
-http://www.labelmedia.co.uk/blog/phpnw13.html
-http://blogs.edgehill.ac.uk/webservices/2008/11/30/php-north-west-conference-review/
-http://www.justanothermark.co.uk/blog/2013/php-north-west-2013
-http://www.ctidigital.com/blog/development/phpnw13-guzzle-coding-standards-dependency-injection
-http://www.hashbangcode.com/blog/phpnw13-review
+* <http://www.boxuk.com/php-north-west-2013>
+* <http://www.labelmedia.co.uk/blog/phpnw13.html>
+* <http://blogs.edgehill.ac.uk/webservices/2008/11/30/php-north-west-conference-review/>
+* <http://www.justanothermark.co.uk/blog/2013/php-north-west-2013>
+* <http://www.ctidigital.com/blog/development/phpnw13-guzzle-coding-standards-dependency-injection>
+* <http://www.hashbangcode.com/blog/phpnw13-review>
 
 ※ 来週末の6月28日（土）に<a href="http://conference.kphpug.jp/2014/">PHPカンファレンス関西</a>で「全てを結ぶ力」というタイトルで講演を行います。PHPカンファレンス関西はこれが初めてです。よろしくお願いいたします！

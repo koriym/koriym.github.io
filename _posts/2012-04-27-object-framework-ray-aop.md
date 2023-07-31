@@ -17,9 +17,6 @@ tags:
   - 遅延束縛
   - 関心事の分離
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/04/object-framework-ray-aop/">Tweet</a>
-</div>
 
 # Apect Oriented Design
 

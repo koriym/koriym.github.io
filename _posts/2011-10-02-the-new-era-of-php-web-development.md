@@ -4,10 +4,6 @@ author: admin
 layout: post
 permalink: /2011/10/the-new-era-of-php-web-development/
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2011/10/the-new-era-of-php-web-development/">Tweet</a>
-</div>
-
 <div style="width:595px" id="__ss_9506430">
   <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/akihito.koriyama/the-new-era-of-php-web-development" title="The new era of PHP web development." target="_blank">The new era of PHP web development.</a></strong> <div style="padding:5px 0 12px">
     View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/akihito.koriyama" target="_blank">BEAR-project</a>

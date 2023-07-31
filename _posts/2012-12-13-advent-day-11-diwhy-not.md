@@ -14,9 +14,6 @@ tags:
   - ロボットの足問題
   - 設定ファイル
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv11">Tweet</a>
-</div>
 
 ## ミッション
 

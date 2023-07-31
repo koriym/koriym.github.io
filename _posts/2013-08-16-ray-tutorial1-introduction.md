@@ -1,5 +1,5 @@
 ---
-title: 'Ray.Tutorial &#8211; introduction'
+title: 'Ray.Tutorial - Introduction'
 author: admin
 layout: post
 permalink: /ray-tutorial-introduction
@@ -9,9 +9,6 @@ categories: articles
 tags:
   - BEAR
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/ray-tutorial-introduction">Tweet</a>
-</div>
 
 # Introduction
 

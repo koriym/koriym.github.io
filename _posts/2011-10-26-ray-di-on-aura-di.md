@@ -4,9 +4,6 @@ author: admin
 layout: post
 permalink: /2011/10/ray-di-on-aura-di/
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2011/10/ray-di-on-aura-di/">Tweet</a>
-</div>
 
 ## Aura.Di
 

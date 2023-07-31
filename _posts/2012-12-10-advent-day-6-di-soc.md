@@ -14,9 +14,6 @@ tags:
   - IoC
   - 生成・使用分離の原則
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/12/advent-day-6-di-soc/">Tweet</a>
-</div>
 
 ## 関心の分離としてのDI
 

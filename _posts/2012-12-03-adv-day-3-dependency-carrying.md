@@ -13,9 +13,6 @@ tags:
   - DI
   - object carrig
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/adv3">Tweet</a>
-</div>
 
 ## Dependency Carrying
 

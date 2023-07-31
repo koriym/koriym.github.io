@@ -11,14 +11,14 @@ tags:
 
 今から４年前の2011年12月17日(土)に東京で「PHP Apocalypse」なるイベントが開催されました。
 
-http://labs.gree.jp/blog/2011/12/4367/
+<http://labs.gree.jp/blog/2011/12/4367/>
 
 タイトルが示すようにちょっと変わったイベントでした。
 冒頭のセッションで「PHPに未来を感じるか？」という問いがあり、周りを見回すと参加者で手をあげてるのはなんと自分一人。
 その時のエントリーがあります。
 
 PHP: Dis Is It.
-http://koriym.github.io/2011/12/php-dis-is-it/
+<http://koriym.github.io/2011/12/php-dis-is-it/>
 
 PHPはカリスマがいない。特定のイデオロギーを持たず、変化に躊躇がない。
 漸進的な進化を継続可能でそれを実践するものには未来がある。そう考えたのです。
@@ -44,7 +44,8 @@ composerの登場もありました。言語もPHPコミュニティもエコシ
 そして以前アンドロイドの[Adキャンペーン](https://www.android.com/intl/ja_jp/be-together-not-the-same/)で使われていた言葉を紹介します。
 
 ”Be together, Not the same"
-https://www.youtube.com/watch?v=vnVuqfXohxc
+
+<https://www.youtube.com/watch?v=vnVuqfXohxc>
 
 皆が同じになる必要はない。それぞれが違うアイデンティティを誇り、尊重しあい、しかし一緒に進もう。
 多様性を乱立と呼び問題視するのではなく、相互に影響しあってコミュニティ全体を前進させるための仕組みと考えましょうと。

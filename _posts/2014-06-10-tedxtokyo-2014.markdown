@@ -4,14 +4,13 @@ title: "TEDxTokyo 2014"
 date: 2014-06-10 02:34
 comments: true
 categories: articles
-tags:
 ---
 
 ## Connecting the unconnected
 
 2014 5/31 (土) 9:00 - 18:00
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/AxjuLiiX1mo?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AxjuLiiX1mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 5月31日にヒカリエで開かれたTEDxTokyo 2014でオーディエンスとして参加する機会をいただきました。
 去年に続いて二度目です。

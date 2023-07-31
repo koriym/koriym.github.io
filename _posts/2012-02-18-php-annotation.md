@@ -9,15 +9,11 @@ categories: articles
 tags:
   - 未分類
 ---
-<div style="float: right; margin-left: 10px;">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="/blog/2012/02/php%E3%81%A7%E3%82%A2%E3%83%8E%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/">Tweet</a>
-</div>
 
 ## アノテーションとは
 
 > プログラミングでは、コード中に登場する要素(クラス、メソッドなど)に対して、それ自体に関する情報(メタデータ)を注記できる仕組みのことをアノテーションという。「このメソッドはテスト用である」「ここでコンパイラは警告を出してはならない」「このメソッドはオーバーライドである」などの情報を付記し、コンパイル時や実行時に参照させることができる。
 
-<p style="text-align: right;">
   <a href="http://e-words.jp/w/E382A2E3838EE38386E383BCE382B7E383A7E383B3.html">IT用語辞典</a>
 
 
@@ -104,7 +100,6 @@ PHPの言語としてのサポートにが無いのにも関わらず、現在�
 > ### <a id="why_do_we_need_class_metadata" name="why_do_we_need_class_metadata">Why do we need Class Metadata?</a>
 
 
-<quote>
     Frameworks in general rely on metadata information in order to correctly work. They can use it for many purposes:
 
         phpUnit Providing meta functionality for test cases, examples: @dataProvider for test data iteration, @expectedException for catching exceptions, etc.
@@ -123,7 +118,7 @@ PHPの言語としてのサポートにが無いのにも関わらず、現在�
     It's important to note that annotations exist in java and .net but many strong use cases exist in these languages to provide hints to the compiler (@NotNull).
 
     These types of use cases (hints to the Zend lexer/parser or other PHP implementations) are not presented in this RFC.
-</quote>
+
 
 他に自分が知ってる範囲では、Java Beanの影響を強く受けた[DIng][8]やRESTful PHP frameworkの[Recess][9] や[Zend Framwork2のDi][10]でもアノテーションが使われています。
 
@@ -225,20 +220,20 @@ Fabienさんの記事で、@masakielasticさん翻訳の記事です [<a href="#
 </li>
 </ol>
 
- [1]: http://www.atmarkit.co.jp/fjava/kaisetsu/j2eewatch02/j2eewatch02.html
- [2]: http://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9%E3%83%BB%E3%83%98%E3%83%AB%E3%82%B9%E3%83%90%E3%83%BC%E3%82%B0
- [3]: http://www.atmarkit.co.jp/fdotnet/insiderseye/20060215cscommunity/cscommunity_01.html
- [4]: http://msdn.microsoft.com/ja-jp/library/z0w1kczw.aspx
- [5]: http://java.sun.com/j2se/1.5.0/ja/docs/ja/guide/language/annotations.html
- [6]: https://wiki.php.net/rfc/annotations-in-docblock
- [7]: https://wiki.php.net/rfc/annotations
- [8]: http://marcelog.github.com/Ding/
- [9]: http://www.recessframework.org/
- [10]: https://github.com/ralphschindler/zf2-di-use-cases/blob/master/09-runtime-setter-injection-with-annotation.php
- [11]: https://github.com/koriym/Ray.Di
- [12]: http://www.doctrine-project.org/projects/common
- [13]: http://docs.doctrine-project.org/projects/doctrine-common/en/latest/reference/annotations.html
- [14]: http://www.symfony.gr.jp/blog/20110523-symfony2-annotations-gets-better
- [15]: http://code.google.com/p/addendum/
- [16]: http://code.google.com/p/php-annotations/
- [17]: http://willcode4beer.com/design.jsp?set=annotations_gotchas_best_practices
+ [1]: <http://www.atmarkit.co.jp/fjava/kaisetsu/j2eewatch02/j2eewatch02.html>
+ [2]: <http://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9%E3%83%BB%E3%83%98%E3%83%AB%E3%82%B9%E3%83%90%E3%83%BC%E3%82%B0>
+ [3]: <http://www.atmarkit.co.jp/fdotnet/insiderseye/20060215cscommunity/cscommunity_01.html>
+ [4]: <http://msdn.microsoft.com/ja-jp/library/z0w1kczw.aspx>
+ [5]: <http://java.sun.com/j2se/1.5.0/ja/docs/ja/guide/language/annotations.html>
+ [6]: <https://wiki.php.net/rfc/annotations-in-docblock>
+ [7]: <https://wiki.php.net/rfc/annotations>
+ [8]: <http://marcelog.github.com/Ding/>
+ [9]: <http://www.recessframework.org/>
+ [10]: <https://github.com/ralphschindler/zf2-di-use-cases/blob/master/09-runtime-setter-injection-with-annotation.php>
+ [11]: <https://github.com/koriym/Ray.Di>
+ [12]: <http://www.doctrine-project.org/projects/common>
+ [13]: <http://docs.doctrine-project.org/projects/doctrine-common/en/latest/reference/annotations.html>
+ [14]: <http://www.symfony.gr.jp/blog/20110523-symfony2-annotations-gets-better>
+ [15]: <http://code.google.com/p/addendum/>
+ [16]: <http://code.google.com/p/php-annotations/>
+ [17]: <http://willcode4beer.com/design.jsp?set=annotations_gotchas_best_practices>
