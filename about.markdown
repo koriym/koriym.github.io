@@ -82,5 +82,4 @@ permalink: /about/
 
 ## Contact
 
-* akihito.koriyama@gmail.com
-* http://www.kumasystem.com/
+* [akihito.koriyama@gmail.com](mailto:akihito.koriyama@gmail.com)
