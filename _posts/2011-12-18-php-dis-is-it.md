@@ -3,7 +3,7 @@ title: 'PHP: Dis Is It.'
 author: admin
 layout: post
 permalink: /2011/12/php-dis-is-it/
-categories: articles
+categories: blog
 tags:
   - PHP
 ---

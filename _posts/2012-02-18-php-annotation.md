@@ -5,7 +5,7 @@ layout: post
 permalink: /2012/02/php-annotation/
 custom_permalink:
   - 2012/02/php-annotation/
-categories: articles
+categories: blog
 tags:
   - 未分類
 ---

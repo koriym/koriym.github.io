@@ -3,7 +3,7 @@ layout: post
 title: "基調講演「全てを結ぶ力」"
 date: 2014-06-29 08:59
 comments: true
-categories: articles
+categories: blog
 tags:
 - PHP
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "HaPHPy Birthday PHP"
 date: 2015-06-08 19:03
 comments: true
-categories: articles
+categories: blog
 tags: PHP
 ---
 

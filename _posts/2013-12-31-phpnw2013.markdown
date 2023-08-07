@@ -3,7 +3,7 @@ layout: post
 title: "PHPNW 2013 (1)"
 date: 2014-01-04 22:30
 comments: true
-categories: articles
+categories: blog
 tags:
 - BEAR
 - PHP

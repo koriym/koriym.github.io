@@ -3,7 +3,7 @@ layout: post
 title: "PHPNW 2013(2) - Presentation"
 date: 2014-01-10 19:53
 comments: true
-categories: articles
+categories: blog
 tags:
 - BEAR
 - PHP

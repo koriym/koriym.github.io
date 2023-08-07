@@ -3,7 +3,7 @@ title: timeアノテーション
 author: admin
 layout: post
 permalink: /2013/04/time_annotation/
-categories: articles
+categories: blog
 tags:
   - BEAR
   - AOP

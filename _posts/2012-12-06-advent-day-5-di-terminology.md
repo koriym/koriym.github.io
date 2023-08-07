@@ -5,7 +5,7 @@ layout: post
 permalink: /adv5
 custom_permalink:
   - adv5
-categories: articles
+categories: blog
 tags:
   - Advent2012
   - BEAR

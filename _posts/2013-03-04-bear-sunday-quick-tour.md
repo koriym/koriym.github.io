@@ -5,7 +5,7 @@ layout: post
 permalink: /bear-sunday-quick-tour
 custom_permalink:
   - bear-sunday-quick-tour
-categories: articles
+categories: blog
 tags:
   - BEAR
   - PHP

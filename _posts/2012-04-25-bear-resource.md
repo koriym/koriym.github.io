@@ -3,7 +3,7 @@ title: BEAR.Resource
 author: admin
 layout: post
 permalink: /2012/04/bear-resource/
-categories: articles
+categories: blog
 tags:
   - BEAR
   - PHP

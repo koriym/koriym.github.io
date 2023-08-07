@@ -3,7 +3,7 @@ layout: post
 title: "Re: BEAR.Sundayをコードリーディングしたのでメモ程度にアウトプットする"
 date: 2017-11-10 11:30:28 +0900
 comments: true
-categories: articles
+categories: blog
 tags: BEAR
 ---
 
