@@ -103,7 +103,7 @@ BBCでの経験は驚きの連続です。世界最高のメディア企業で�
 自分達の発表の練習や最後の準備もしなければなりませんが、聞きたいセッションも沢山あります。プレンゼンテーションの内容は非常に充実していて、スピーカーも普段もネットで目にするような有名な人ばかりです。
 
 phpnw13  Schedule
-http://conference.phpnw.org.uk/phpnw13/schedule/
+<http://conference.phpnw.org.uk/phpnw13/schedule/>
 
 「speaker shadowです」１人のスタッフが現れました。どうもスピーカーの世話をする人の事をspeaker shadowというようです。かっこいい言い方するんだなあとか思いながら、装備するワイヤレスマイクや接続するMacの手順などの打ち合わせをします。
 
