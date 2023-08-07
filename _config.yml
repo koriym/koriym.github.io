@@ -23,7 +23,7 @@ email: akihito.koriyama@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Beacause everything is a resource.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://koriym.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: koriym
 github_username:  koriym
 
@@ -52,6 +52,24 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+default_ogp_image: http://bearsunday.github.io/images/icon/favicon-144.png
+
 highlighter: rouge
 permalink: ":categories/:year/:month/:day/:title/"
+
+# Google Analytics
+google_analytics: UA-6074569-2
+
+# Disqus Comments
+disqus_short_name: koriym
+disqus_show_comment_count: true
+
+# Facebook Like
+facebook_like: true
+facebook_app_id: 516362398477090
+facebook_locale: ja_JP
+
+# Twitter
+twitter_user: "koriym"
+twitter_tweet_button: true
 
