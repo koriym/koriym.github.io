@@ -1,0 +1,48 @@
+---
+layout: post
+title: "PHPerKaigi 2023"
+date: 2023-03-28 00:00:00 +0900
+comments: true
+categories: blog
+tags:
+---
+
+2023 3/23-3/25に開催されたPHPerKaigi 2023に参加しました。
+
+## Day 1 Unconfトーク
+
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/koriym/20230328/20230328015850.png" width=600>
+
+Day.1 ではDevelopers Updateと題したアンカファレンストークをしました。アプリケーションの依存をアップデートするにはcomposer updateとコマンド入力するだけですが、では私たち自身のupdateはどうやって行うか？という内容でした。
+
+写真ですが元は映画監督の小津安二郎の言葉です。「どうでもよいことは流行に従い、 重大なことは道徳に従い、 芸術のことは自分に従う」価値判断のバランスを問う言葉ですが、最初の言葉は強烈です。時折流行に過剰に飛びつく私たちの業界に強く響きます。
+
+## Day 2 #D
+
+
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/koriym/20230328/20230328015624.png">
+
+
+Day2. はルーム#D で40分間「IA駆動開発」の話を弁コムの土屋さんとしました。
+
+冒頭では「今のWebサービス開発では、出来上がったWebページイメージを基に開発していませんか？つまり、家の写真を参考に家を建てるようなアプローチを取っているのでは？」ということを問いかけました。
+
+ビジネスレイヤーとテクノロジーレイヤーを直結するのではなく、その間にインフォメーションレイヤーを設けて情報設計を行い共有理解(shared understanding)を促進します。それを実践者としてだけでなく、発案者、開発者としても「弁護士ドットコム」で行っています。成果だけでなく取り組みへの熱意も伝えたいと考えました。
+
+満員で入れなくなるほど会場は混雑していて、ほとんどの人が床に座り、立ち見も多くいました。その[熱気と雰囲気](https://twitter.com/o0h_/status/1640499258431533058)は素晴らしかったです。最後の質疑応答の時間に、手を挙げて質問をしてくれたのは集まった聴衆の人ではありませんでした。奥のスポンサーブースの人が机ごしに質問してくれたのです（！）熱意は伝わりました。
+
+
+....
+
+聴衆にアイデアを直接話しかけることの力と魅力を再認識した久しぶりの機会でした。同じ場所と時間を共有してくれた皆さんに感謝します。また、運営に携わった方々もお疲れ様でした。またお会いしましょう。
+
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/koriym/20230328/20230328022926.jpg">
+
+追記：
+
+Day 2の技術はRESTの世界的権威、マイクアムンゼン氏の技術をベースにしたものですがその氏がこの記事にメンションしてくれました。
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-theme="light"><p lang="en" dir="ltr">&quot;Follow fashion for trivial matters, follow morality for important matters, and follow yourself for art.&#39;&#39;<br><br>thanks to <a href="https://twitter.com/koriym?ref_src=twsrc%5Etfw">@koriym</a> for sharing this valuable quote.</p>&mdash; Mike Amundsen @mamund@mastodon.social (@mamund) <a href="https://twitter.com/mamund/status/1640512167945355264?ref_src=twsrc%5Etfw">March 28, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+※ この記事は[はてなブログ](https://koriym.hatenablog.com/entry/2023/03/28/030141)からの転載です。
+<https://b.hatena.ne.jp/entry/s/koriym.hatenablog.com/entry/2023/03/28/030141>
