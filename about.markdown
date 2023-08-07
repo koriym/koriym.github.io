@@ -12,6 +12,11 @@ permalink: /about/
 
 * [BEAR.Sunday](http://bearsunday.github.io/) - A resource oriented framework
 * [Ray.Di](https://github.com/ray-di/Ray.Di) - Guice style DI and AOP framework
+* [Aura PHP](https://auraphp.com/) - Independent library packages
+
+## IA Project
+
+* [ALPS-ASD](https://alps-asd.github.io/) - Application state diagram for REST application
 
 ## Web presence
 
@@ -74,6 +79,12 @@ permalink: /about/
 * [South Island, NZ 2016](https://goo.gl/photos/pMbVehnNar5HTeFY6)
 * [Cuba 2016-2017](https://goo.gl/photos/jFq8XuE9z2kqAap38)
 * [Romania 2017](https://goo.gl/photos/LRtqqtXzf4mVnzYr7)
+
+## Aerial drone footage
+
+* [Kirigamine](https://www.youtube.com/watch?v=PZEYDTzf4cU)
+* [Okhotsk](https://www.youtube.com/watch?v=omsptNdffVU)
+* [Rebunto island (silent)](https://www.youtube.com/watch?v=YpBV9QJyzC)
 
 ## Travel Movie
 
