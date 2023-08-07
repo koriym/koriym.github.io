@@ -27,6 +27,9 @@ url: "http://koriym.github.io" # the base hostname & protocol for your site, e.g
 twitter_username: koriym
 github_username:  koriym
 
+# Lang
+lang: "ja"
+
 # Build settings
 theme: minima
 plugins:
