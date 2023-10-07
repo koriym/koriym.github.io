@@ -1,0 +1,29 @@
+---
+layout: post
+title: "A Tribute to Bob Lee"
+date: 2023-10-07 13:00:00 +0900
+comments: true
+categories: blog
+tags:
+  - BEAR
+---
+
+Guiceの作者、Bob Lee氏への敬意と追悼の意を込めて
+
+Guiceの最初のリリースは2007年で、一方Ray.Diの最初のコミットは2011年2月に行われました。 BEAR.Sundayアプリケーションフレームワークの開発を開始した当初、私はそのコアとして堅牢なDIフレームワークが必要だと考えました。Guiceを最も優れたDIシステムと判断し、その概念や哲学をPHPに実現するためにRay.Diを開発しました。
+
+Ray.Diは、数多く存在するPHPのDIシステムの中でも際立った存在です。私自身がRay.Diの開発と利用を通じて、オブジェクト指向、制約から生まれる創造性、持続可能性、拡張性、そしてシンプルさという価値を深く学びました。この全てが、Guiceの精神の影響を強く受けています。
+
+去年は多くの皆さんにGuiceの素晴らしい概念や哲学をよりアクセスしやすく、理解しやすい形で提供したいと考え、Guiceのマニュアルをほぼ移植して日本語化する試みを行いました。（このプロジェクトに協力していただいた皆さん、ありがとうございました）
+
+[https://ray-di.github.io/](https://ray-di.github.io/)
+
+BEAR.Sundayの開発に際して多くの判断が求められましたが、その中で最も価値ある決断の1つは、BEAR.SundayのコアとしてRay.DiをGuiceの設計に基づいて開発したことです。その設計哲学は10年以上にわたり、継続的に私にインスピレーションを与え続けてくれました。
+
+Bob Lee氏とGuiceに対する感謝の気持ちを、今一度表します。
+
+ありがとうCrazyBob!
+
+[<img src="https://pbs.twimg.com/media/F7zYalybAAAEDbU?format=png&name=900x900" width="300px">](https://en.wikipedia.org/wiki/Bob_Lee_(businessman))
+
+
