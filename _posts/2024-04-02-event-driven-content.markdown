@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "不易の力 PHPerKaigi 2024"
+title: "イベント駆動コンテンツ"
 date: 2024-04-03 02:30:00 +0900
 comments: true
 categories: blog
 tags:
   - BEAR
 ---
+## Webアプリケーションの効率を再定義するBEAR.Sundayの分散キャッシングフレームワーク
+
 2024/3/9にPHPerKaigi 2024 で[イベント駆動コンテンツ（Webアプリケーションの効率を再定義するBEAR.Sundayの分散キャッシングフレームワーク）](https://fortee.jp/phperkaigi-2024/proposal/92f5690d-2136-4237-9a4f-371edf188f36)という40分のトークを行いました。
 
 ## 最初のスライド
