@@ -3,7 +3,7 @@ title: リソースキャッシュ
 author: admin
 layout: post
 permalink: /2010/05/resource_cache/
-categories: blog
+categories: ["blog"]
 tags:
   - BEAR
 ---

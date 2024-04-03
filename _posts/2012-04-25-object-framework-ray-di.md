@@ -5,7 +5,7 @@ layout: post
 permalink: /2012/04/di/
 custom_permalink:
   - 2012/04/di/
-categories: blog
+categories: ["blog"]
 tags:
   - 未分類
 ---

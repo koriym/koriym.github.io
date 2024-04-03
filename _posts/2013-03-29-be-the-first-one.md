@@ -3,7 +3,7 @@ title: Be the first one
 author: admin
 layout: post
 permalink: /2013/03/be-the-first-one/
-categories: blog
+categories: ["blog"]
 tags:
   - TED
 ---

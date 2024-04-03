@@ -5,7 +5,7 @@ layout: post
 permalink: /ray-tutorial-introduction
 custom_permalink:
   - ray-tutorial-introduction
-categories: blog
+categories: ["blog"]
 tags:
   - BEAR
 ---

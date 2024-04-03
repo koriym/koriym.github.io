@@ -3,7 +3,7 @@ layout: post
 title: "An interface as an API"
 date: 2017-07-28 02:59:49 +0900
 comments: true
-categories: blog
+categories: ["blog"]
 tags:
 ---
 

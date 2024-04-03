@@ -5,7 +5,7 @@ layout: post
 permalink: /phpmatsuri2012
 custom_permalink:
   - phpmatsuri2012
-categories: blog
+categories: ["blog"]
 tags:
   - BEAR
   - PHP

@@ -5,7 +5,7 @@ layout: post
 permalink: /first-di-framework
 custom_permalink:
   - first-di-framework
-categories: blog
+categories: ["blog"]
 tags:
   - BEAR
 ---

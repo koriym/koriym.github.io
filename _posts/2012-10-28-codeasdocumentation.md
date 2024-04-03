@@ -3,7 +3,7 @@ title: CodeAsDocumentation
 author: admin
 layout: post
 permalink: /2012/10/codeasdocumentation/
-categories: blog
+categories: ["blog"]
 tags:
   - BEAR
   - PHP

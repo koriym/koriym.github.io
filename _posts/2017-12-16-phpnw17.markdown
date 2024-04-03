@@ -3,7 +3,7 @@ layout: post
 title: "PHPNW17"
 date: 2018-3-18 23:00:00 +0900
 comments: true
-categories: blog
+categories: ["blog"]
 tags:
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "April Fool 2024"
 date: 2024-04-01 19:00:00 +0900
 comments: true
-categories: blog
+categories: ["blog"]
 tags:
   - BEAR
 ---

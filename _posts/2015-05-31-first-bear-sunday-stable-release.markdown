@@ -3,7 +3,7 @@ layout: post
 title: "First BEAR.Sunday Stable Release !"
 date: 2015-05-31 18:50
 comments: true
-categories: blog
+categories: ["blog"]
 tags:
 ---
 

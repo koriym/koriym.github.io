@@ -5,7 +5,7 @@ layout: post
 permalink: /2012/05/dip-dependency-inversion-principle/
 custom_permalink:
   - 2012/05/dip-dependency-inversion-principle/
-categories: blog
+categories: ["blog"]
 tags:
   - BEAR
   - PHP
