@@ -140,7 +140,8 @@ A3. ユーザー数が極めて限られているフレームワークを開発�
 
 ## スライド
 
-AI時代になり初めてのトークということでスライドの挿絵に[DALL·E](https://openai.com/dall-e-3)で生成した画像を使いました。抽象的な概念を具体的に表現する能力には驚くばかりで、「再起を表してください」のプロンプトで合わせ鏡の中に立つクマが出てきた時は脱帽でした。
+スライドの挿絵に[DALL·E](https://openai.com/dall-e-3)で生成した画像を使いました。AIが抽象的な概念を具体的に表現する能力には驚くばかりです（「再起を表してください」のプロンプトで合わせ鏡の中に立つクマが出てきた時は脱帽しました)
+また、スライドのデザイン調整には弁護士ドットコムのデザイナーの鈴木さんにご協力いただきました。ありがとうございました。
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/47c5a27b4ecc4397bdf0fd58b0cc75fc" title="イベント駆動コンテンツ (a.k.a Webアプリケーションの効率を再定義するBEAR.Sundayの分散キャッシングフレームワーク)" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 
