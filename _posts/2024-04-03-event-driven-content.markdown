@@ -185,6 +185,7 @@ Keynoteで録画した映像があります。
 * [https://x.com/Hiroshi_mars/status/1766303589482504505](https://x.com/Hiroshi_mars/status/1766303589482504505)
 * [https://x.com/h13web/status/1766297770284237260](https://x.com/h13web/status/1766297770284237260)
 * [https://x.com/TSUCHIYA_Naoki/status/1766294125337538775](https://x.com/TSUCHIYA_Naoki/status/1766294125337538775)
+* [AIによる感想](/2024/04/03/toughts-by-ai/)
 
 その他に主催者経由で熱のあるフィードバックを多数いただきました。聴く人をドライブしたいという思いが伝わったようで、とても嬉しいです。
 ありがとうございました。
