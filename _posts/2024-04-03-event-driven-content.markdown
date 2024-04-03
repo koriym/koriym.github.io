@@ -165,3 +165,23 @@ Keynoteで録画した映像があります。
 そこに新しいものは1つもありません。Webが最初から持っていた優れた制約へのリスペクトと、それがいかに私たちが抱える問題を解決するのかを示したかったのです。これこそが不易です。
 
 技術的な解決策ではなく問題の捉え方や定義にこそ決定的な解決力があること、開発者の都合ではなくユーザーの本当の望みに焦点を当てること、不易を重ねることの強さ。それらを伝えたかったのです。
+
+## 感想
+
+* [https://oo00hh.notion.site/Web-BEAR-Sunday-010334eb5573481480e0099ecb3a0e79?pvs=25](https://oo00hh.notion.site/Web-BEAR-Sunday-010334eb5573481480e0099ecb3a0e79?pvs=25)
+* [https://no-hack-no.life/post/2024-03-10-PHPerKaigi-2024-Feedbacks/](https://no-hack-no.life/post/2024-03-10-PHPerKaigi-2024-Feedbacks/)
+* [https://blog.seike460.com/posts/phperkaigi2024/](https://blog.seike460.com/posts/phperkaigi2024/)
+* [https://note.com/happy_imafuku/n/nbae68f8171e7](https://note.com/happy_imafuku/n/nbae68f8171e7)
+* [https://tech-blog.rakus.co.jp/entry/20240315/phperkaigi2024](https://tech-blog.rakus.co.jp/entry/20240315/phperkaigi2024)
+* [https://tech.excite.co.jp/entry/2024/03/14/112102](https://tech.excite.co.jp/entry/2024/03/14/112102)
+* [https://x.com/smeghead/status/1768220001084084609](https://x.com/smeghead/status/1768220001084084609)
+* [https://x.com/yuuri_oo00/status/1766297280880214250](https://x.com/yuuri_oo00/status/1766297280880214250)
+* [https://x.com/usuyuki26/status/1766295854468755906](https://x.com/usuyuki26/status/1766295854468755906)
+* [https://x.com/koyhoge/status/1766296123227165086](https://x.com/koyhoge/status/1766296123227165086)
+* [https://x.com/hiro_y/status/1766289619757539735](https://x.com/hiro_y/status/1766289619757539735)
+* [https://x.com/toru_kita/status/1766300003734335548](https://x.com/toru_kita/status/1766300003734335548)
+* [https://x.com/uzulla/status/1766305235117780999](https://x.com/uzulla/status/1766305235117780999)
+* [https://x.com/TSUCHIYA_Naoki/status/1766294125337538775](https://x.com/TSUCHIYA_Naoki/status/1766294125337538775)
+
+その他に主催者経由で熱のあるフィードバックを多数いただきました。聴く人をドライブしたいという思いが伝わったようで、とても嬉しいです。
+ありがとうございました。
