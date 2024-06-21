@@ -45,6 +45,7 @@ permalink: /about/
 
 * [Code camp](https://blog.codecamp.jp/akihito_koriyama) (as an interviewee)
 * [The father of PHP, Rasmus Lerdorf](http://gihyo.jp/news/report/2015/12/1401) / [Q17](https://www.nintendo.co.jp/ir/stock/meeting/140627qa/04.html) (as an interviewer)
+* [Q17](https://www.nintendo.co.jp/ir/stock/meeting/140627qa/04.html) (as an interviewer)
 
 ## Conference / Event
 
