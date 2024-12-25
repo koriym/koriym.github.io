@@ -7,7 +7,8 @@ categories: ["blog"]
 tags:
   - BEAR
 ---
-# 哲学とソフトウェア開発：世界理解の方法として
+
+# 世界理解
 
 [BEAR.Sunday Advent Calendar 2024](https://qiita.com/advent-calendar/2024/bear-sunday)として西洋哲学と現代のソフトウエアの関わりの記事を4本、東洋思想との関わりの記事を1本書きました。これで総括めいた事を書くのは時期尚早です。しかし今はっきりと自覚している事を今の時点で書き残したいと思って記事にしています。
 
