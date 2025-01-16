@@ -8,9 +8,12 @@ tags:
 - AI
 ---
 
-Until 2023, whenever I wrote an English document, I would always have it reviewed by a native speaker or a friend with strong English skills. But now, that’s almost unnecessary. AI-powered translation has surpassed a certain quality threshold and has become sufficiently usable.
+A few years ago, whenever I needed to create an English document, I would always ask a native speaker or a friend fluent in English to review it. But now, the necessity for that has almost disappeared. AI-based translation has surpassed a certain quality threshold and reached a practically usable level.
 
-A few years ago, very few people could have truly predicted such a shift. And now, our primary work—converting requirements into computer languages—finds itself at the entrance to a similar transformation. While it may not be happening right this moment or even this year, the idea that “most code will be written by AI” has become so tangible that it’s difficult to believe it *won’t* happen.
+If “translating from one language to another” is slowly being replaced by AI, then perhaps the same is about to happen for our core task as developers: “translating specifications into computer languages.” We might be standing at the threshold of a similar shift.
+
+The future in which “most of our code is written by AI” might not be here yet—it might not even come this year. But it’s already beginning to feel so real that it’s hard to imagine such change not taking place.
+
 
 ## Beyond the Framework Era
 
