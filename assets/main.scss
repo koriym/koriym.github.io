@@ -1,0 +1,51 @@
+---
+# これは Jekyll がこのファイルをビルド対象にするためのフロントマターです
+---
+
+// minimaテーマのCSSをインポート
+@import "minima";
+
+/* 全体を少しゆったりさせる（例: 全体行間、文字感覚） */
+body {
+  /* 既定の line-height が 1.5 前後なので、ちょっと高めに */
+  line-height: 1.7;
+  letter-spacing: normal; /* 日本語なら "normal" 推奨 */
+}
+
+/* 見出し設定 */
+h1 {
+  font-size: 2.2em;  /* 例えば本文の約2.2倍 */
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  letter-spacing: normal;
+}
+
+h2 {
+  font-size: 1.8em;  /* 少し控えめに */
+  line-height: 1.3;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
+  letter-spacing: normal;
+}
+
+h3 {
+  font-size: 1.4em;
+  line-height: 1.3;
+  margin-top: 0.9em;
+  margin-bottom: 0.5em;
+  letter-spacing: normal;
+}
+
+/* 段落（p要素）をさらにゆったり見せたい場合 */
+p {
+  margin-bottom: 1.4em;
+  /* minima のデフォルト margin-bottom が小さいと感じたら調整 */
+}
+
+blockquote {
+  font-style: normal;     /* イタリックを使いたいなら残す */
+  font-size: 1.02em; /* あるいは 0.9em など */
+  color: #666;
+  letter-spacing: normal; /* -1px 等はやめて normal に */
+  line-height: 1.6;       /* 必要に応じて行間を広げてもOK */
+}
