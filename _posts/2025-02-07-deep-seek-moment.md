@@ -14,7 +14,7 @@ tags:
 
 Lex Fridman氏がホストするポッドキャスト、[DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters - LexFridman Podcast #459](https://youtu.be/_1f-o0nqpEI?si=_N93BXUfVMfaXmKC) における対談は約5時間超(!)にわたる大作で、AIの最新動向について類を見ない圧倒的なスケールです。咀嚼するため、聞き取りと翻訳を行い記事にまとめました。
 
-ポッドキャストでは何度も今この時を「DeepSeek Moment」と称して、世界のAI業界が劇的変化を遂げている転換点を描き出す、非常に濃厚な内容でした。DeepSeekの革新、メガクラスターの台頭、米中AI競争、電力インフラの限界や半導体覇権の綱引き...。技術と地政学が交差する歴史的瞬間を捉えた対談です。
+ポッドキャストは何度も今この時を「DeepSeek Moment」と称して、世界のAI業界が劇的変化を遂げている転換点を描き出す、非常に濃厚な内容でした。DeepSeekの革新、メガクラスターの台頭、米中AI競争、電力インフラの限界や半導体覇権の綱引き...。技術と地政学が交差する歴史的瞬間を捉えた対談です。
 
 ## 目次
 
