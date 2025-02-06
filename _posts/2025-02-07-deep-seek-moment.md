@@ -8,7 +8,7 @@ tags:
 - AI
 ---
 
-# DeepSeek Moment - Lex Fridman #459
+## DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters - LexFridman Podcast #459
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_1f-o0nqpEI?si=EEDkYxiOdlCWEdEy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
