@@ -6,6 +6,7 @@ comments: true
 categories: ["blog"]
 tags:
   - BEAR
+comments: false
 ---
 
 【速報】政府、大規模CMS運営者の非効率的なWeb配信に関する聞き取り調査を開始

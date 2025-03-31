@@ -6,6 +6,7 @@ comments: true
 categories: ["blog"]
 tags:
 - AI
+comments: false
 ---
 
 A few years ago, whenever I needed to create an English document, I would always ask a native speaker or a friend fluent in English to review it. But now, the necessity for that has almost disappeared. AI-based translation has surpassed a certain quality threshold and reached a practically usable level.

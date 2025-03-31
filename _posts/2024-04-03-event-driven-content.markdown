@@ -6,6 +6,7 @@ comments: true
 categories: ["blog"]
 tags:
   - BEAR
+comments: false
 ---
 ## Webアプリケーションの効率を再定義するBEAR.Sundayの分散キャッシングフレームワーク
 

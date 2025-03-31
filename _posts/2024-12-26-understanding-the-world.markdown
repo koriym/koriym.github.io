@@ -6,6 +6,7 @@ comments: true
 categories: ["blog"]
 tags:
   - BEAR
+comments: false
 ---
 
 # 世界理解

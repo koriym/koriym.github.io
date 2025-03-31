@@ -7,6 +7,7 @@ categories: ["blog"]
 tags:
 - API
 image: /images/2025-03-31-cubist-coding/violin-and-candlestick.jpg
+comments: false
 ---
 
 ## Cubist Coding

@@ -6,6 +6,7 @@ comments: true
 categories: ["blog"]
 tags:
 - AI
+comments: false
 ---
 
 ## DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters - LexFridman Podcast #459
