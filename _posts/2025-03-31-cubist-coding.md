@@ -26,6 +26,16 @@ Similarly, today's software architecture stands at a turning point. Beyond tradi
 
 ## The Cubist Revolution in Art
 
+<figure class="image" style="display: inline-block;">
+  <a href="https://www.georgesbraque.org/violin-and-candlestick.jsp" target="_blank">
+    <img src="/images/2025-03-31-cubist-coding/violin-and-candlestick.jpg"
+         alt="Violin and Candlestick by Georges Braque (c. 1910)" width="400px">
+  </a>
+  <figcaption style="text-align: center;">
+    Georges Braque, "Violin and Candlestick" (c. 1910).
+  </figcaption>
+</figure>
+
 Cubism arose from a simple yet profound insight: a single viewpoint cannot capture the totality of an object. By fragmenting forms, presenting multiple perspectives simultaneously, and reducing objects to essential geometric elements, Cubists revealed deep truths about their subjects that traditional representational art could never uncover.
 
 The philosopher Maurice Merleau-Ponty's theory of perception offers a deeper understanding of this Cubist challenge. Merleau-Ponty conceived human perception not as a passive, camera-like process, but as an active, integrative experience through the body. According to him, when we see the world, our gaze constantly moves, connecting with touch and bodily sensations to grasp objects. This perceptual process, which Merleau-Ponty called "lived perspective," is precisely the "way we actually perceive" that the Cubists attempted to express.
