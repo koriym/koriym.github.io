@@ -7,6 +7,7 @@ categories: ["blog"]
 tags:
   - BEAR
 image: /images/2025-04-01-april-fool/april-fool.png
+list_title: false
 ---
 
 
