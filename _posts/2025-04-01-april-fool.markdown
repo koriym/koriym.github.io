@@ -58,7 +58,7 @@ image: /images/2025-04-01-april-fool/april-fool.png
 
 ## 終わらない破壊、終われない業界
 
-<img src="/images/2025-04-01-april-fool/april-fool.png" alt="april-fool" style="width: 250px;">
+<img src="/images/2025-04-01-april-fool/april-fool.png" alt="april-fool" style="width: 300px;">
 
 規制に対する業界の対応は、すでに始まっている。
 「『互換性維持義務化』対策セミナー」が水面下で企画されているが、その実態は“新方針をいかにうまく回避するか”に近い。
