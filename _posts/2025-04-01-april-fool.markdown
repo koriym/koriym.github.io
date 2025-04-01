@@ -6,6 +6,7 @@ comments: false
 categories: ["blog"]
 tags:
   - BEAR
+image: /images/2025-04-01-april-fool/april-fool.png
 ---
 
 # 【独占】デジタル庁、『フレームワーク互換性維持義務化』検討へ
