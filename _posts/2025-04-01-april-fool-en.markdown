@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2025 April Fool (en)
+title: April Fool 2025 (en)
 date: 2025-04-01 12:00:00 +0900
 comments: false
 categories: ["blog"]
