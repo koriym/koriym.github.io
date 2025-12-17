@@ -11,7 +11,7 @@ permalink: /about/
 ## PHP Projects
 
 * [BEAR.Sunday](http://bearsunday.github.io/) - A resource oriented framework
-* [Ray.Di](https://github.com/ray-di/Ray.Di) - Guice style DI and AOP framework
+* [Ray.Di](https://ray-di.github.io/) - Guice style DI and AOP framework
 * [Aura PHP](https://auraphp.com/) - Independent library packages
 
 ## IA Project
