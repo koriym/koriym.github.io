@@ -13,7 +13,7 @@ permalink: /about/
 * [BEAR.Sunday](http://bearsunday.github.io/) - A resource oriented framework
 * [Ray.Di](https://ray-di.github.io/) - Guice style DI and AOP framework
 * [Aura PHP](https://auraphp.com/) - Independent library packages
-* [Be Framework](https://be-framework.github.io/) - Ontrogical Programming Framework
+* [Be](https://be-framework.github.io/) - Ontrogical Programming Framework
 
 ## IA Project
 
@@ -21,11 +21,12 @@ permalink: /about/
 
 ## Web presence
 
-* [Twitter](https://twitter.com/koriym)
+* [X](https://twitter.com/koriym)
 * [Github](https://github.com/koriym)
 * [Instagram](https://www.instagram.com/koriym/)
 * [LinkedIn](https://www.linkedin.com/in/koriym/)
 * [joind.in](https://joind.in/user/view/21191)
+* [MobyGames](https://www.mobygames.com/person/253420/akihito-koriyama/)
 
 ## Speaking
 
@@ -40,7 +41,11 @@ permalink: /about/
 * 2017 Creating rich universal React apps powered by RESTful PHP [slide](https://speakerdeck.com/koriym/creating-rich-universal-react-apps-powered-by-restful-php)
     * Sky Sports [blog](https://www.linkedin.com/pulse/akihito-koriyama-visits-sky-talk-react-apps-powered-restful-bell/) / [photo](https://photos.app.goo.gl/HWNlxg82HrsVi3Jg1) / [program](https://www.linkedin.com/pulse/akihito-koriyama-visits-sky-talk-react-apps-powered-restful-bell/)
     * PHPNW17 unconf [blog](https://codereviewvideos.com/blog/tag/phpnw17/) / [photo](https://photos.app.goo.gl/FNkJXa14ZcCd5hoH2) / [review](https://joind.in/event/phpnw17/creating-rich-universal-react-apps-powered-by-restful-php)
-* 2018 [PHPerKaigi](https://phperkaigi.jp/2018/proposal/e2848389-75d3-45e2-9106-85be29f17a87) / [slide](https://speakerdeck.com/koriym/bear-dot-sunday-2018)
+* 2018 [PHPerKaigi BEAR.Sunday](https://phperkaigi.jp/2018/proposal/e2848389-75d3-45e2-9106-85be29f17a87) / [slide](https://speakerdeck.com/koriym/bear-dot-sunday-2018)
+* 2019 [PHPerKaigi RESTの力](https://koriym.github.io/blog/2019/12/30/the-power-of-rest/) / [slide](https://speakerdeck.com/koriym/dependency-injection-and-aop-in-modern-php)
+* 2019 [PHP Conference REST 6+4の制約 ](https://fortee.jp/phpcon-2019/proposal/9fa39956-77db-4a1d-a5b9-db7bf608ae55) 
+* 2024 [PHPerKaigi イベンド駆動コンテンツ](https://koriym.github.io/blog/2024/04/03/event-driven-content/)
+* 2024 [BEAR.Sunday LeedsPHP by Richard McIntyre](https://www.youtube.com/watch?v=QdEnKpDoQeY)
 
 ## Interview
 
@@ -59,7 +64,6 @@ permalink: /about/
 * 1989 NES [Quinty](http://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%86%E3%82%A3) / [Mendel Palace](http://en.wikipedia.org/wiki/Mendel_Palace)
 * 1991 NES,GameBoy [Yoshi no tamago (JP)](http://ja.wikipedia.org/wiki/%E3%83%A8%E3%83%83%E3%82%B7%E3%83%BC%E3%81%AE%E3%81%9F%E3%81%BE%E3%81%94)  / [Yoshi (US) / Yoshi and Mario (EU)](http://en.wikipedia.org/wiki/Yoshi_\(video_game\))
 * 1994 3DO [Starblade](http://en.wikipedia.org/wiki/Starblade)
-* [Moby Games](http://www.mobygames.com/developer/sheet/view/developerId,253420/)
 
 ## Travel
 
