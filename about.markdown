@@ -17,7 +17,7 @@ permalink: /about/
 
 ## IA Project
 
-* [ALPS-ASD](https://alps-asd.github.io/) - Application state diagram for REST application
+* [app-state-diagram](https://alps-asd.github.io/) - Application state diagram for REST application
 
 ## Web presence
 
