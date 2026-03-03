@@ -5,42 +5,51 @@
 // minimaテーマのCSSをインポート
 @import "minima";
 
-/* 全体を少しゆったりさせる（例: 全体行間、文字感覚） */
+/* コンテンツ幅を広げる */
+.wrapper {
+  max-width: 860px;
+}
+
+/* Typora GitHub テーマに近づける */
 body {
-  /* 既定の line-height が 1.5 前後なので、ちょっと高めに */
-  line-height: 1.7;
-  letter-spacing: normal; /* 日本語なら "normal" 推奨 */
+  line-height: 1.6;
+  letter-spacing: normal;
+  font-size: 17px;
+  color: #333;
 }
 
 /* 見出し設定 */
 h1 {
-  font-size: 2.2em;  /* 例えば本文の約2.2倍 */
+  font-size: 2.25em;
+  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0.5em;
   letter-spacing: normal;
 }
 
-h2 {
-  font-size: 1.8em;  /* 少し控えめに */
-  line-height: 1.3;
-  margin-top: 1em;
+.post-content h2 {
+  font-size: 1.75em;
+  line-height: 1.225;
+  margin-top: 1.8em;
   margin-bottom: 0.6em;
   letter-spacing: normal;
   font-weight: bold;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eee;
 }
 
-h3 {
-  font-size: 1.4em;
-  line-height: 1.3;
-  margin-top: 0.9em;
+.post-content h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.43;
+  margin-top: 1.5em;
   margin-bottom: 0.5em;
   letter-spacing: normal;
 }
 
-/* 段落（p要素）をさらにゆったり見せたい場合 */
+/* 段落 */
 p {
-  margin-bottom: 1.4em;
-  /* minima のデフォルト margin-bottom が小さいと感じたら調整 */
+  margin: 0.8em 0;
 }
 
 blockquote {
@@ -49,6 +58,23 @@ blockquote {
   color: #666;
   letter-spacing: normal; /* -1px 等はやめて normal に */
   line-height: 1.6;       /* 必要に応じて行間を広げてもOK */
+}
+
+/* 著者肖像 */
+.post-content figure.author-portrait {
+  display: inline-block;
+  margin: 1.5em 0;
+}
+
+.post-content figure.author-portrait img {
+  max-width: 320px;
+}
+
+.post-content figure.author-portrait figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 0.4em;
 }
 
 .highlighter-rouge .highlight,
