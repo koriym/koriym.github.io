@@ -2,7 +2,7 @@
 layout: post
 title: "RESTはどのようにバズワード化したか"
 date: 2026-03-03 12:00:00 +0900
-comments: true
+comments: false
 categories: ["blog"]
 tags:
   - REST
