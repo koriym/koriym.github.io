@@ -10,9 +10,9 @@ permalink: /blog/2026/03/03/rest-how-it-became-buzzword
 image: /images/2026-03-03-rest-how-it-became-buzzword/roy-t-fielding.jpg
 ---
 
-<figure style="display: inline-block; margin: 1.5em 0">
-<img src="/images/2026-03-03-rest-how-it-became-buzzword/roy-t-fielding.jpg" alt="Roy T. Fielding" style="max-width: 320px">
-<figcaption style="text-align: center; font-size: 0.9em; color: #666; margin-top: 0.4em">Roy T. Fielding</figcaption>
+<figure class="author-portrait">
+<img src="/images/2026-03-03-rest-how-it-became-buzzword/roy-t-fielding.jpg" alt="Roy T. Fielding">
+<figcaption>Roy T. Fielding</figcaption>
 </figure>
 
 REST APIは一般に、`GET /users/123` のようなリソース指向のURL設計とHTTPメソッドによるCRUD操作のスタイルだと思われていますが、本来はサーバーのレスポンスに含まれるリンクを辿ってアプリケーション状態を遷移させる、ハイパーメディアを基本としたスタイルです。このことは広く誤解されています。

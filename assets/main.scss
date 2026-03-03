@@ -60,6 +60,23 @@ blockquote {
   line-height: 1.6;       /* 必要に応じて行間を広げてもOK */
 }
 
+/* 著者肖像 */
+.post-content figure.author-portrait {
+  display: inline-block;
+  margin: 1.5em 0;
+}
+
+.post-content figure.author-portrait img {
+  max-width: 320px;
+}
+
+.post-content figure.author-portrait figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 0.4em;
+}
+
 .highlighter-rouge .highlight,
 .highlighter-rouge .highlight pre.highlight,
 .highlighter-rouge .highlight pre.highlight code,
