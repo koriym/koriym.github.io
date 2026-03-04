@@ -47,6 +47,7 @@ Themes that ["How REST Became a Buzzword"](/blog/2026/03/03/rest-how-it-became-b
 - They dropped self-descriptive messages and built OpenAPI as an external specification instead, then erected an entire ecosystem—Swagger UI, code generators, mock servers—to manage that specification. An ecosystem built on top of a dropped constraint, to compensate for the dropped constraint
 - The pain is not recognized as pain. For developers who know nothing but CRUD-over-HTTP, artificial problems look like "the natural cost of API development." If you have never seen the real thing, you cannot see the pain. But the real thing's name has been taken
 - Living with misuse distorts decisions downstream. People who say "we tried REST and it didn't work, so let's move on" never tried REST. They walked with the wrong map and reported "there's a cliff ahead on this map." The map is wrong
+- During the HTTP/1.1 design process, Fielding deliberately rejected the proposed MGET method—batch retrieval of multiple resources—on the grounds that it would compromise proxyability and cacheability. The "why" behind this decision was never transmitted. The inability to fetch multiple resources at once came to look like "a limitation of REST." GraphQL "solved" it—"GraphQL surpasses REST!" What Fielding intentionally excluded, people who never knew the intent mistook for a defect and reinvented at the application layer—sacrificing proxyability and cacheability in the process. Exactly the outcome Fielding had foreseen
 
 ## Structural Tragedy
 
@@ -54,6 +55,11 @@ Themes that ["How REST Became a Buzzword"](/blog/2026/03/03/rest-how-it-became-b
 - Fielding's self-blame—"I was the one who decided that wasn't my audience at the time." Because he wrote it as an academic dissertation, it never reached practitioners. Intermediaries (DHH, Richardson, Apigee) filled the gap. But what the intermediaries passed along was a diluted copy
 - The Richardson Maturity Model granted an indulgence: "Level 2 is RESTful enough." A maturity model that justifies stopping at immaturity
 - Twenty-five years of collective engineering effort have been spent solving artificial problems (versioning, status code debates, OpenAPI maintenance). What would the Web look like if the industry had truly understood and applied hypermedia? We will never know
+
+## Meta
+
+- The article itself demonstrates the opposite of what it criticizes. It goes back to primary sources rather than copying copies. As methodology, it is the prescription for the disease it diagnoses
+- The opening three paragraphs form a funnel of solitude. "Widely misunderstood" → "even those who know this" → "rarer still." With each sentence, the circle of understanding narrows
 
 ---
 
