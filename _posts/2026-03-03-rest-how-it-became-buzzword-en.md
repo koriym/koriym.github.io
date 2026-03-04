@@ -253,4 +253,4 @@ In 2021, prompted by the TwoBitHistory article on REST, Fielding posted a Twitte
 - 2020: TwoBitHistory, [Roy Fielding's Misappropriated REST Dissertation](https://twobithistory.org/2020/06/28/rest.html)
 - 2021: Roy Fielding, [Twitter](https://x.com/fielding/status/1458499369204785152)
 
-<p style="color: #666; font-size: 0.8em; margin-top: 3em;">What this article did not say: <a href="/blog/2026/03/03/rest-how-it-became-buzzword-unwritten-en" style="color: #777;">the unwritten</a></p>
+<p style="font-size: 0.85em; margin-top: 3em;">What this article did not say: <a href="/blog/2026/03/03/rest-how-it-became-buzzword-unwritten-en">the unwritten</a></p>

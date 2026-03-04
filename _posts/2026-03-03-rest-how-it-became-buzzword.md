@@ -266,4 +266,4 @@ Fieldingの論文に忠実であろうとする人々を「RESTifarian」（REST
 - 2020: TwoBitHistory, [Roy Fielding's Misappropriated REST Dissertation](https://twobithistory.org/2020/06/28/rest.html)
 - 2021: Roy Fielding, [Twitter](https://x.com/fielding/status/1458499369204785152)
 
-<p style="color: #666; font-size: 0.8em; margin-top: 3em;">この記事が語らなかったことについて: <a href="/blog/2026/03/03/rest-how-it-became-buzzword-unwritten" style="color: #777;">書かれていないこと</a></p>
+<p style="font-size: 0.85em; margin-top: 3em;">この記事が語らなかったことについて: <a href="/blog/2026/03/03/rest-how-it-became-buzzword-unwritten">書かれていないこと</a></p>
