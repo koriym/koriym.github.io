@@ -252,3 +252,5 @@ In 2021, prompted by the TwoBitHistory article on REST, Fielding posted a Twitte
 - 2017: Roy Fielding et al., [Reflections on the REST Architectural Style](https://dl.acm.org/doi/10.1145/3106237.3121282) ESEC/FSE ([slides](https://roy.gbiv.com/talks/201709_Fielding_REST.pdf))
 - 2020: TwoBitHistory, [Roy Fielding's Misappropriated REST Dissertation](https://twobithistory.org/2020/06/28/rest.html)
 - 2021: Roy Fielding, [Twitter](https://x.com/fielding/status/1458499369204785152)
+
+<p style="color: #aaa; font-size: 0.75em; margin-top: 3em;">What this article did not say: <a href="/blog/2026/03/03/rest-how-it-became-buzzword-unwritten-en" style="color: #bbb;">the unwritten</a></p>
