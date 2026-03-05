@@ -64,5 +64,5 @@ permalink: /blog/2026/03/03/rest-how-it-became-buzzword-unwritten
 ---
 
 <p style="color: #999; font-size: 0.8em; margin-top: 3em;">
-この文書は著者とAIの対話から生成されました。
+元記事は歴史的経緯を明らかにするために事実を列挙しました。筆者の意見や考察を加えることによって焦点がぼやけないようにするためです。この記事は事実の記述に対する構造の分析です。
 </p>

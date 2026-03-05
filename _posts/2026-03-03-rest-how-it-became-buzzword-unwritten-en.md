@@ -64,5 +64,5 @@ Themes that ["How REST Became a Buzzword"](/blog/2026/03/03/rest-how-it-became-b
 ---
 
 <p style="color: #999; font-size: 0.8em; margin-top: 3em;">
-This document was generated from a dialogue between the author and AI.
+The original article listed facts to illuminate the historical trajectory. Opinion and analysis were withheld to keep the focus sharp. This document is a structural analysis of those facts.
 </p>
