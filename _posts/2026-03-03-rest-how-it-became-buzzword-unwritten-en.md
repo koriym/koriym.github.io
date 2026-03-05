@@ -24,8 +24,9 @@ Themes that ["How REST Became a Buzzword"](/blog/2026/03/03/rest-how-it-became-b
 
 ## Destruction of a Concept
 
-- If FIOH had been called "HTTP API," Fielding's "REST" could have survived as a separate concept. By taking the name, the real thing became unsearchable. Misuse kills concepts
+- If FIOH had been called "HTTP API," Fielding's "REST" could have survived as a separate concept. By taking the name, the real thing became unsearchable. Deliberate misuse killed a concept
 - The "State Transfer" in "Representational State Transfer" does not mean "transferring resource state over the network." It means "transitioning application state by following hyperlinks." Even the meaning of the name itself has settled into an understanding that diverges from the original
+- Apigee sells endpoint management, versioning, and API documentation tools. CRUD over HTTP was their inevitability—but taking the name was not
 - SOAP vs REST was a false dichotomy. REST did not defeat SOAP. FIOH won and put on REST's uniform. A match where the victor stole the loser's name
 
 ## Logic Traps

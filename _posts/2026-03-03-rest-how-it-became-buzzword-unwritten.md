@@ -24,8 +24,9 @@ permalink: /blog/2026/03/03/rest-how-it-became-buzzword-unwritten
 
 ## 概念の破壊
 
-- FIOHを「HTTP API」と呼んでいれば、Fieldingの「REST」は別の概念として生き残れた。名前を奪ったことで、本物が検索不能になった。誤用は概念を殺す
+- FIOHを「HTTP API」と呼んでいれば、Fieldingの「REST」は別の概念として生き残れた。名前を奪ったことで、本物が検索不能になった。意図的誤用は概念を殺した
 - "Representational State Transfer"の"State Transfer"は「リソースの状態をネットワーク越しに転送する」ことではない。「ハイパーリンクを辿ってアプリケーションの状態を遷移する」こと。名前の意味すら原典と違う理解が定着している
+- Apigeeはエンドポイント管理、バージョニング、APIドキュメンテーションのツールを売っている。CRUD over HTTPは彼らの必然だったが、名前を奪う必然はなかった
 - SOAP vs RESTは偽の二項対立だった。SOAPに勝ったのはRESTではない。FIOHが勝ってRESTのユニフォームを着た。勝者が敗者の名前を奪った試合
 
 ## 論理の罠
