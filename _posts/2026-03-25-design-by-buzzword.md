@@ -197,7 +197,7 @@ FieldingはREST論文の最初に警告を書いた。その警告、**REST**は
 - [建築家のスケッチ - Monty Python's Flying Circus](https://youtu.be/ByzFlH2e2Js?si=3sOIpZ71pZ9DSBID)
 - [アジャイルソフトウェア開発宣言](https://agilemanifesto.org/iso/ja/manifesto.html)
 - [CQRSをめぐる二つの世界観](https://qiita.com/koriym/items/4e52758d5327447fed13)
-- [Roy Fielding, Twitter thread, 2021](https://twitter.com/fielding/status/1452666606036959234)
+- [Roy Fielding, Twitter thread, 2021](https://x.com/fielding/status/1458499370672791565)
 
 ### 創始者たちの嘆き
 

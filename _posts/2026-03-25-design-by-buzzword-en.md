@@ -193,7 +193,7 @@ The industry is waiting for the next buzzword.
 - [The Architects Sketch - Monty Python's Flying Circus](https://youtu.be/ByzFlH2e2Js?si=3sOIpZ71pZ9DSBID)
 - [Manifesto for Agile Software Development](https://agilemanifesto.org/)
 - [Two Worldviews on CQRS](https://qiita.com/koriym/items/4e52758d5327447fed13) (Japanese)
-- [Roy Fielding, Twitter thread, 2021](https://twitter.com/fielding/status/1452666606036959234)
+- [Roy Fielding, Twitter thread, 2021](https://x.com/fielding/status/1458499370672791565)
 
 ### The Laments of the Originators
 
