@@ -73,7 +73,7 @@ The division into three components was not for organizing code. It was a structu
 
 But as MVC spread through the web, the question disappeared. It became a classification problem: "Which of three layers does this code go in?" Model became the place for database access, Controller became the place for handling HTTP requests, View became the place for outputting HTML. The concept of the user's mental model vanished from every textbook.
 
-The Fat Controller debate and the Fat Model debate began. Different frameworks gave different answers to "where should logic go?" Web MVC and GUI MVC were different things called by the same name, and MVP, MVVM, and MVI emerged in the quest for the "true MVC." Having stolen the name, a war over the name began. A kind of comedy—since the original "true" was already different.
+The Fat Controller debate and the Fat Model debate began. Different frameworks gave different answers to "where should logic go?" Web MVC and GUI MVC were different things called by the same name, and MVP, MVVM, and MVI emerged from entirely different contexts. Only the name was shared; the substance was different.
 
 The question Reenskaug asked—"Are we capturing the user's mental model?"—no one cares about anymore. Twenty-five years later, Evans would pose the same question from a different angle.
 
@@ -87,7 +87,7 @@ But as DDD spread, the strategic patterns disappeared. Tactical patterns were co
 
 With the thinking of drawing boundaries through Bounded Context stripped away, systems without boundaries proliferated. Frustration accumulated: "DDD just adds more code," "It's over-engineering."
 
-Evans later said: "I should have made strategic design more prominent." The microservices story proves his regret was justified.
+Evans later said: "I should have made strategic design more prominent." The microservices story demonstrates this.
 
 ## Agile
 
