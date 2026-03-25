@@ -131,7 +131,7 @@ But as the name "microservices" spread, the organizational design question disap
 
 Services were split, but boundaries were arbitrary. With the question of Bounded Context dropped, Service A knew the internal implementation of Service B. Deploys were supposed to be independent, yet changing one broke others. Tight coupling over the network—a "Distributed Monolith" emerged. The worst of both worlds: the complexity of a monolith and the operational cost of microservices.
 
-The "solution" that appeared was "Modular Monolith." A monolith with proper boundaries. Isn't that a reinvention of "Bounded Context," which Evans wrote about in 2003?
+The "solution" that appeared was "Modular Monolith." A monolith with proper boundaries—the importance of boundaries was something Evans had already written about in 2003.
 
 After twenty years and one massive failure, we returned to the starting point.
 
