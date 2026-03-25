@@ -13,7 +13,7 @@ image: /images/2026-03-25-design-by-buzzword/software_legends.jpg
 
 <figure style="margin-bottom: 2.5em">
 <img src="/images/2026-03-25-design-by-buzzword/software_legends.jpg" alt="問いを立てたものたち">
-<figcaption><em>問いを立てたものたち — OOP (Allan Kay), MVC (Trygve Reenskaug), DDD (Eric Evans), Agile, DRY (Dave Thomas), CQRS (Greg Young), DevOps (Patrick Debois)</em></figcaption>
+<figcaption><em>問いを立てたものたち — OOP (Alan Kay), MVC (Trygve Reenskaug), DDD (Eric Evans), Agile, DRY (Dave Thomas), CQRS (Greg Young), DevOps (Patrick Debois)</em></figcaption>
 </figure>
 
 2000年、Roy T. Fieldingはカリフォルニア大学アーバイン校に博士論文を提出しました。RESTの原典となったこの論文の第1章、読者が最初に目にするページに、Monty Pythonの『建築家のスケッチ』が引用されています。
