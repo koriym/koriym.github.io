@@ -55,7 +55,7 @@ At the heart of Kay's question was message passing. Just as cells communicate by
 
 But as "object-oriented" spread, message passing disappeared. Classes and inheritance were promoted to "the three pillars of OOP," and three words—encapsulation, inheritance, polymorphism—lined up in textbooks. The concept Kay valued most became the most overlooked premise.
 
-What happened as a result? Deep inheritance hierarchies, god classes, tight coupling. Frustration accumulated that "OOP is too complex," and functional programming appeared as having "surpassed OOP." But the communication network of autonomous agents that Kay had tried to build in Smalltalk was reinvented as the actor model in the functional context. Erlang in 1986, Akka in 2009. What Kay had intentionally placed at the center was reimplemented under a different name.
+What happened as a result? Deep inheritance hierarchies, god classes, tight coupling. Frustration accumulated that "OOP is too complex," and functional programming gained attention as an alternative where those problems didn't arise. But the communication network of autonomous agents that Kay had tried to build in Smalltalk was reinvented as the actor model in the functional context. Erlang in 1986, Akka in 2009. What Kay had intentionally placed at the center was reimplemented under a different name.
 
 Kay wrote in a 1998 [email](https://lists.squeakfoundation.org/pipermail/squeak-dev/1998-October/017019.html):
 
