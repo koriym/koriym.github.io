@@ -65,5 +65,5 @@ permalink: /blog/2026/03/03/rest-how-it-became-buzzword-unwritten
 ---
 
 <p style="color: #999; font-size: 0.8em; margin-top: 3em;">
-元記事は歴史的経緯を明らかにするために事実の列挙に留め、筆者の考察や抽象化を控えました。この記事は事実の記述に対する構造の分析です。
+元記事は歴史的経緯を明らかにするために事実の列挙に留め、筆者の考察や抽象化を控えました。この記事は事実の記述に対する構造の分析です。続編：「<a href="/blog/2026/03/25/design-by-buzzword">Buzzwordによる設計</a>」
 </p>
