@@ -81,3 +81,117 @@ http://bearsunday.github.io/
 [<img alt="bar" src="https://avatars.githubusercontent.com/u/88155?v=3&s=117" width="117">](https://github.com/bar)
 [<img alt="atakig" src="https://avatars.githubusercontent.com/u/552033?v=3&s=117" width="117">](https://github.com/atakig)
 [<img alt="77web" src="https://avatars.githubusercontent.com/u/296615?v=3&s=117" width="117">](https://github.com/77web)
+
+## コメント
+
+![Disqusコメントのアーカイブ](/images/2015/disqus-comments-2015-stable-release.png){:width="720px"}
+
+<!-- Disqus comments archived 2026-04-10 -->
+<!-- Source: https://koriym.github.io/blog/2015/05/31/first-bear-sunday-stable-release/ -->
+<!-- Comment count: 35 -->
+<!--
+[ryo88c] Monday, June 1, 2015 11:11 PM (+60)
+おめでとうございます！BEAR.Saturday の時と同様、ビジネスユース勢として応援してます！
+
+  [Akihito Koriyama] Friday, December 4, 2015 1:39 PM
+  ありがとうございます!
+
+  [Akihito Koriyama] Monday, June 1, 2015 11:41 PM
+  林さんの熱い応援、力になりましたよ！ありがとうございます。
+
+[NEKOGET] Tuesday, June 2, 2015 10:29 AM (+33)
+リリースおめでとうございます !!
+
+  [Akihito Koriyama] Friday, December 4, 2015 1:40 PM
+  ありがとうございますー!
+
+  [Akihito Koriyama] Tuesday, June 2, 2015 12:43 PM
+  ありがとうございます!
+
+[hidenorigoto] Monday, June 1, 2015 10:09 PM (+32)
+BEAR.Sundayにこれまでチョコチョコと関わりを持ってきた身として、とても嬉しいです！BEAR.Sundayの開発を支える温泉へご一緒したのが、つい昨日のようです。またどこかでゆっくりお話したいです！
+
+  [Akihito Koriyama] Monday, June 1, 2015 10:16 PM (+1)
+  「何してるんですか？」と何も宣伝してないリポジトリを見つけて声をかけてくれたのが後藤さんです。それから沢山のことがありました。また今度たっぷり話しましょう！
+
+[madapaja] Monday, June 1, 2015 10:47 PM (+19)
+おめでとうございます！私も微力ながら関われたことがうれしいです！これからも継続的に関われられればと思いますので宜しくお願いします！！
+
+  [Akihito Koriyama] Monday, June 1, 2015 11:41 PM
+  ありがとうございます。音楽を奏でるように新しいものを作っていきましょう！
+
+[77web] Monday, June 1, 2015 8:42 PM (+19)
+おめでとうございます！
+
+  [Akihito Koriyama] Monday, June 1, 2015 9:46 PM
+  ありがとうございます！
+
+[Hisateru Tanaka] Monday, June 1, 2015 7:46 PM (+19)
+Congrats!
+
+  [Akihito Koriyama] Monday, June 1, 2015 9:46 PM
+  Thanks !
+
+[OGAWA Katsuhiro] Tuesday, June 2, 2015 12:49 AM (+18)
+リリースおめでとうございます。コードなど参考にさせてもらう一方で、全然お力になれてないなあと反省していますが、何か貢献できるよう、今後ともよろしくお願いします。
+
+[tadaaki] Tuesday, June 2, 2015 2:52 PM (+1)
+stableリリースおめでとうございます！！
+
+  [Akihito Koriyama] Tuesday, June 2, 2015 7:36 PM
+  ありがとうございます！
+
+[Yoshitaka Jingu] Tuesday, June 2, 2015 11:03 AM (+1)
+Stableおめでとうございます！Saturdayの頃からですが、頻繁にコンセプトやアイディア、幾つもの課題と課題へのアプローチを間近で話を聞けたのはとてもラッキーだったと思います。現在も絶賛業務で利用中ですので、そこからもっとプロジェクトにフィードバックをしていけたらと思っています。これからもよろしくお願いします！
+
+  [Akihito Koriyama] Tuesday, June 2, 2015 12:42 PM
+  神宮君、ありがとう。これからもよろしくね！
+
+[shishi] Tuesday, June 2, 2015 1:44 AM (+1)
+特に貢献しないでアレでしたがおめでとうございます！
+
+  [Akihito Koriyama] Tuesday, June 2, 2015 2:20 AM
+  ありがとうございますー
+
+[zukimochi] Monday, June 1, 2015 11:29 PM (+1)
+stableリリースおめでとうございます。ランチに行っていろんなアイデアを聞いたり、どんどんいいプロダクトになってゆく様子を近くでを見たりと素晴らしい経験になりました。ありがとうございました！
+
+  [Akihito Koriyama] Monday, June 1, 2015 11:39 PM
+  変化を間近で見てくれて話も聞いて頂きました。ありがとうございました！
+
+[おかぽん] Monday, June 1, 2015 10:46 PM (+1)
+本当におめでとうございます！！
+
+  [Akihito Koriyama] Monday, June 1, 2015 11:38 PM
+  ありがとうございます。Symfonyユーザー会ではお世話になりました！
+
+[kawanamiyuu] Monday, June 1, 2015 10:38 PM (+1)
+おめでとうございます！こんな素晴らしい瞬間に関わらせて頂くことができて本当に嬉しいです！
+
+  [Akihito Koriyama] Monday, June 1, 2015 10:51 PM
+  ありがとうございます!こちらも沢山のコントリビュート感謝です。
+
+[Issei_M] Monday, June 1, 2015 10:13 PM (+1)
+おめでとうございます！！！！
+
+  [Akihito Koriyama] Monday, June 1, 2015 10:23 PM
+  ありがとうございます。CakePHP+Ray.Diの時もありがとうございました！
+
+[Kei Sawada] Monday, June 1, 2015 8:21 PM (+1)
+Finally! Congratulations!
+
+  [Akihito Koriyama] Monday, June 1, 2015 9:46 PM
+  Yay ! Thanks :)
+
+[Takashi Kanemoto] Monday, June 1, 2015 7:49 PM (+1)
+おめでとうございます！！これからも微力ながら貢献していきたいと思います！
+
+  [Akihito Koriyama] Monday, June 1, 2015 9:46 PM
+  ありがとうございます！
+
+[Hari K T] Monday, June 1, 2015 7:02 PM (+1)
+Yey :) .Congrats! . And always good to see Bear moving to 1.0 stable. Really happy to see the release.Enjoy!
+
+  [Akihito Koriyama] Monday, June 1, 2015 7:12 PM
+  Thanks Hari !
+-->
