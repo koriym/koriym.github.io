@@ -15,6 +15,7 @@ gem "minima", "~> 2.5"
 # gem "github-pages", group: :jekyll_plugins
 # gem "github-pages", ">= 231", group: :jekyll_plugins
 gem "webrick"
+gem "sass-embedded", "1.77.1"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
