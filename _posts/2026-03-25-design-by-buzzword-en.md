@@ -11,6 +11,8 @@ tags:
 image: /images/2026-03-25-design-by-buzzword/software_legends.jpg
 ---
 
+<p><a href="/blog/2026/03/25/design-by-buzzword/">日本語版はこちら</a></p>
+
 <figure style="margin-bottom: 2.5em">
 <img src="/images/2026-03-25-design-by-buzzword/software_legends.jpg" alt="Those who posed the questions">
 <figcaption><em>Those who posed the questions — OOP (Alan Kay), MVC (Trygve Reenskaug), DDD (Eric Evans), Agile, DRY (Dave Thomas), CQRS (Greg Young), DevOps (Patrick Debois)</em></figcaption>
