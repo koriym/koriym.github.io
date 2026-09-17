@@ -192,7 +192,7 @@ The industry is waiting for the next buzzword.
 ## References
 
 - [Roy T. Fielding, "Architectural Styles and the Design of Network-based Software Architectures", Chapter 1](https://roy.gbiv.com/pubs/dissertation/introduction.htm)
-- [The Architects Sketch - Monty Python's Flying Circus](https://youtu.be/ByzFlH2e2Js?si=3sOIpZ71pZ9DSBID)
+- [The Architects Sketch - Monty Python's Flying Circus](https://www.youtube.com/watch?v=ZhZ9i6to2rU)
 - [Manifesto for Agile Software Development](https://agilemanifesto.org/)
 - [Two Worldviews on CQRS](https://qiita.com/koriym/items/4e52758d5327447fed13) (Japanese)
 - [Roy Fielding, Twitter thread, 2021](https://x.com/fielding/status/1458499370672791565)

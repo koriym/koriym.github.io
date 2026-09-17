@@ -194,7 +194,7 @@ FieldingはREST論文の最初に警告を書いた。その警告、**REST**は
 ## 参照
 
 - [Roy T. Fielding, "Architectural Styles and the Design of Network-based Software Architectures", Chapter 1](https://roy.gbiv.com/pubs/dissertation/introduction.htm)
-- [建築家のスケッチ - Monty Python's Flying Circus](https://youtu.be/ByzFlH2e2Js?si=3sOIpZ71pZ9DSBID)
+- [建築家のスケッチ - Monty Python's Flying Circus](https://www.youtube.com/watch?v=ZhZ9i6to2rU)
 - [アジャイルソフトウェア開発宣言](https://agilemanifesto.org/iso/ja/manifesto.html)
 - [CQRSをめぐる二つの世界観](https://qiita.com/koriym/items/4e52758d5327447fed13)
 - [Roy Fielding, Twitter thread, 2021](https://x.com/fielding/status/1458499370672791565)
