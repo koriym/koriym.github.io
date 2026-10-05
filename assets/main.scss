@@ -5,16 +5,22 @@
 // minimaテーマのCSSをインポート
 @import "minima";
 
-/* コンテンツ幅を広げる */
 .wrapper {
-  max-width: 860px;
+  max-width: 620px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @media (max-width: 800px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* Typora GitHub テーマに近づける */
 body {
-  line-height: 1.6;
+  line-height: 2;
   letter-spacing: normal;
-  font-size: 17px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -27,8 +33,20 @@ h1 {
   letter-spacing: normal;
 }
 
-.post-content h2 {
+.post-title {
   font-size: 1.75em;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.3;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+.post-content h2 {
+  font-size: 1.4em;
   line-height: 1.225;
   margin-top: 1.8em;
   margin-bottom: 0.6em;
@@ -39,7 +57,7 @@ h1 {
 }
 
 .post-content h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   line-height: 1.43;
   margin-top: 1.5em;
@@ -47,17 +65,50 @@ h1 {
   letter-spacing: normal;
 }
 
+.post-content h4 {
+  font-weight: bold;
+}
+
 /* 段落 */
 p {
   margin: 0.8em 0;
 }
 
+.post-content p {
+  margin: 2em 0;
+}
+
+.post-content li > p {
+  margin: 0.5em 0;
+}
+
+.post-content blockquote > :first-child {
+  margin-top: 0;
+}
+
+.post-content p,
+.post-content li,
+.post-content blockquote {
+  line-break: strict;
+  text-wrap: pretty;
+}
+
 blockquote {
   font-style: normal;     /* イタリックを使いたいなら残す */
-  font-size: 1.02em; /* あるいは 0.9em など */
+  font-size: 0.95em;
   color: #666;
   letter-spacing: normal; /* -1px 等はやめて normal に */
-  line-height: 1.6;       /* 必要に応じて行間を広げてもOK */
+  line-height: inherit;
+}
+
+pre,
+code {
+  line-height: 1.5;
+}
+
+td,
+th {
+  line-height: 1.6;
 }
 
 /* 著者肖像 */
