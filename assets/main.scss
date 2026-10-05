@@ -8,13 +8,15 @@
 /* コンテンツ幅を広げる */
 .wrapper {
   max-width: 860px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* Typora GitHub テーマに近づける */
 body {
-  line-height: 1.6;
+  line-height: 2;
   letter-spacing: normal;
-  font-size: 17px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -25,6 +27,18 @@ h1 {
   line-height: 1.2;
   margin-bottom: 0.5em;
   letter-spacing: normal;
+}
+
+.post-title {
+  font-size: 1.75em;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.3;
+}
+
+strong,
+b {
+  font-weight: 600;
 }
 
 .post-content h2 {
@@ -52,12 +66,27 @@ p {
   margin: 0.8em 0;
 }
 
+.post-content p {
+  margin: 2em 0;
+}
+
+.post-content blockquote > :first-child {
+  margin-top: 0;
+}
+
+.post-content p,
+.post-content li,
+.post-content blockquote {
+  line-break: strict;
+  text-wrap: pretty;
+}
+
 blockquote {
   font-style: normal;     /* イタリックを使いたいなら残す */
-  font-size: 1.02em; /* あるいは 0.9em など */
+  font-size: 0.95em;
   color: #666;
   letter-spacing: normal; /* -1px 等はやめて normal に */
-  line-height: 1.6;       /* 必要に応じて行間を広げてもOK */
+  line-height: inherit;
 }
 
 /* 著者肖像 */
