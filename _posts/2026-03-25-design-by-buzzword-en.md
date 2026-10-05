@@ -31,7 +31,7 @@ I didn't understand this reference for a long time. Why would a REST dissertatio
 
 An architect who has only ever designed slaughterhouses is commissioned to design an apartment block. He designs it as a slaughterhouse. He proudly walks the tenants through rooms fitted with rotating knives.
 
-I came to understand this as a warning against applying software architectural approaches without regard for the problem at hand. (Does "microservices" come to mind?)
+I came to understand this as a warning against applying software architectural approaches without regard for the problem at hand.
 
 And right after the sketch, Fielding writes: "design-by-buzzword is a common occurrence."
 
