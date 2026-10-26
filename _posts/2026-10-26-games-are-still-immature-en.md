@@ -26,7 +26,7 @@ On June 27, 2014, I was at Nintendo's 74th Annual General Meeting of Shareholder
 
 I had an odd premonition. If I raised my hand, I would surely be called on. I kept wondering why I would think such a thing, but the proceedings moved along, and it came to the last question. Telling myself that the point of coming to a shareholder meeting is to try to ask a question, I raised my hand, once, at the very end, slowly and timidly. … "Yes, you there, in the blue shirt."
 
-I asked my question. The first to answer was the chairman, Genyo Takeda — Nintendo's legendary first game designer, who led hardware development from the Nintendo 64 through the Switch, and who sits at the very core of Nintendo's hardware making.
+I asked my question. The first to answer was the chair of the meeting, Genyo Takeda — Nintendo's legendary first game designer, who led hardware development from the Nintendo 64 through the Switch, and who sits at the very core of Nintendo's hardware making.
 
 Nintendo was in a painful stretch then. It had posted operating losses for three consecutive fiscal years, and the previous term's Wii U sales had stalled at 2.72 million units, one third of what had been projected. President Satoru Iwata was absent from the meeting for health reasons.
 
@@ -64,7 +64,7 @@ The film industry did not decline because the quality of its works fell, nor was
 
 ## Takeda's Answer
 
-The chairman, Takeda, answered first. It is recorded like this.
+Takeda, who was chairing the meeting, answered first. It is recorded like this.
 
 > I recognize that this is a challenging issue, for which there will not be any easy solution. I believe what we are experiencing is a part of a large fluctuation. We, the management, will continue discussions from various perspectives in order to find a solution.
 >
@@ -100,7 +100,7 @@ Miyamoto did not say "immature" out of modesty. He was saying that we are still 
 
 ## What Followed
 
-In March of the following year, 2015, Nintendo partnered with DeNA and entered smartphone games. At the same announcement, President Iwata revealed that a new dedicated console, codenamed "NX," was in development. They would put games on phones, but they would not quit the dedicated console. Smartphone games never became the center of Nintendo's business. In July of that same year, President Iwata died at 55, and the representative directors became the two who had answered that day, Takeda and Miyamoto. The Nintendo Switch, released in March 2017, overtook the DS at the end of 2025 to become the best-selling console in Nintendo's history.
+In March of the following year, 2015, Nintendo partnered with DeNA and entered smartphone games. At the same announcement, President Iwata revealed that a new dedicated console, codenamed "NX," was in development. They would put games on phones, but they would not quit the dedicated console. Smartphone games never became the center of Nintendo's business. In July of that same year, President Iwata died at 55, and the company's two remaining representative directors were the two who had answered that day, Takeda and Miyamoto. The Nintendo Switch, released in March 2017, overtook the DS at the end of 2025 to become the best-selling console in Nintendo's history.
 
 In 2023, *The Super Mario Bros. Movie* became the first film that year to pass one billion dollars in worldwide box office. Nintendo itself had put into practice, from the film side, what Takeda and Miyamoto spoke of in 2014: learning from the media that came before. And on October 23, 2026, the government decided to award Miyamoto the Order of Culture. The first such honor ever to come from the world of games.
 
