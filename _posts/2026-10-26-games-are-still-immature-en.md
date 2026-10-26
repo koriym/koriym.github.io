@@ -18,7 +18,7 @@ description: "A record of the question at Nintendo's June 2014 shareholder meeti
 <figcaption>Shigeru Miyamoto (line drawing based on a <a href="https://commons.wikimedia.org/wiki/File:Shigeru_Miyamoto_20150610_(cropped).jpg">photograph published by the Ministry of Education, Culture, Sports, Science and Technology (MEXT)</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</figcaption>
 </figure>
 
-Shigeru Miyamoto, that god of creativity, said it: "I believe this is a revelation of creative immaturity on our part as creators in the video game industry." The man who has made games more deeply than anyone said that games were still only partway there.
+Shigeru Miyamoto, of all people, said it: "I believe this is a revelation of creative immaturity on our part as creators in the video game industry." The man who has made more great games than anyone said that games were still only partway there.
 
 ## The Shareholder Meeting, June 2014
 
@@ -92,11 +92,11 @@ And his answer was a remarkable one.
 >
 > Also, some may think it is fair to compete with others on the same hardware platform, but it is always challenging to become the one strong existence among so many companies, and to Nintendo, it is more advantageous to create and propose to consumers a brand new framework that includes hardware as part of the structure. We would like to continuously develop something unique by not abandoning this strength of our company. I ask for your continued support.
 
-Shigeru Miyamoto, that god of creativity, said it: "I believe this is a revelation of creative immaturity on our part as creators in the video game industry." The man who has made games more deeply than anyone said that games were still only partway there.
+Shigeru Miyamoto, of all people, said it: "I believe this is a revelation of creative immaturity on our part as creators in the video game industry." The man who has made more great games than anyone said that games were still only partway there.
 
 My heart was full. (So much so that I thought I might as well forget tomorrow's keynote and go straight back to Tokyo.)
 
-Miyamoto did not say "immature" out of modesty. He was saying that we are still in a transitional period and will eventually step up into the phases where we expand and enrich the substance of our creativity — that there was still more that could be done. It was a declaration of faith in the future and the possibilities of games. While every analyst laid the predicament at the feet of external factors, Miyamoto said there were still things they had not done, turned the problem inward rather than outward, and questioned their own immaturity and their own creativity.
+Miyamoto did not say "immature" out of modesty. He was saying that we are still in a transitional period and will eventually step up into the phases where we expand and enrich the substance of our creativity — that there was still more that could be done. It was a declaration of faith in the future and the possibilities of games. While the analysts laid the predicament at the feet of external factors, Miyamoto said there were still things they had not done, turned the problem inward rather than outward, and questioned their own immaturity and their own creativity.
 
 ## What Followed
 
