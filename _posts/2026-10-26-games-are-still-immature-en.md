@@ -60,7 +60,7 @@ I wanted to ask head-on, without making some odd proposal of my own. My question
 >
 > Regarding the current situation surrounding Nintendo and its console game business, some are expressing their opinions by saying that it has been caused by smartphones, but I have not been able to find any advice from them that, if executed by Nintendo, would likely make Nintendo a better company. What is Nintendo's view on these points?
 
-The film industry did not decline because the quality of its works fell, nor was it a passing up-and-down. The spread of television, a "rival you could watch for free," crashed the industry. Nintendo, I assumed, was thinking within that same large context, and I wanted to ask head-on for the answer that the questions so far had not drawn out.
+The film industry's golden age did not end because the quality of its works fell, nor was it a passing up-and-down. The spread of television in the home, a "rival you could watch for free," crashed the industry. Nintendo, I assumed, was thinking within that same large context, and I wanted to ask head-on for the answer that the questions so far had not drawn out.
 
 ## Takeda's Answer
 
