@@ -10,7 +10,7 @@ tags:
  - creativity
 permalink: /blog/2026/10/26/games-are-still-immature-en
 image:
-  path: /images/2026-10-26-games-are-still-immature/shigeru-miyamoto-og.jpg
+  path: /images/2026-10-26-games-are-still-immature/shigeru-miyamoto-card.jpg
   width: 1200
   height: 630
 lang: en_US

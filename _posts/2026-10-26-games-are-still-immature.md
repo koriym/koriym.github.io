@@ -9,7 +9,7 @@ tags:
  - nintendo
  - creativity
 image:
-  path: /images/2026-10-26-games-are-still-immature/shigeru-miyamoto-og.jpg
+  path: /images/2026-10-26-games-are-still-immature/shigeru-miyamoto-card.jpg
   width: 1200
   height: 630
 description: "2014年6月、任天堂株主総会で宮本茂さんに「ゲーム業界のクリエイティブはまだ未熟だ」と言わしめた質問の記録と、その後の12年。"
