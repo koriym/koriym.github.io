@@ -9,7 +9,11 @@ tags:
  - nintendo
  - creativity
 permalink: /blog/2026/10/26/games-are-still-immature-en
-image: /images/2026-10-26-games-are-still-immature/shigeru-miyamoto.jpg
+image:
+  path: /images/2026-10-26-games-are-still-immature/shigeru-miyamoto-og.jpg
+  width: 1200
+  height: 630
+lang: en_US
 description: "A record of the question at Nintendo's June 2014 shareholder meeting that led Shigeru Miyamoto to say the game industry's creativity was still immature, and of the twelve years since."
 ---
 
