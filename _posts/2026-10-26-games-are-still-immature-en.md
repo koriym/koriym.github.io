@@ -24,7 +24,7 @@ Shigeru Miyamoto, of all people, said it: "I believe this is a revelation of cre
 
 On June 27, 2014, I was at Nintendo's 74th Annual General Meeting of Shareholders. I had left Tokyo a day early, ahead of a conference keynote in Osaka the next day, to attend the meeting, which was being held in Kyoto. It had already begun by the time I arrived, but I found an empty seat near the front and sat down.
 
-I had an odd premonition. If I raised my hand, I would surely be called on. I kept wondering why I would think such a thing, but the proceedings moved along, and it came to the last question. Telling myself that the point of coming to a shareholder meeting is to try to ask a question, I raised my hand, once, at the very end, slowly and timidly. … "Yes, you there, in the blue shirt."
+I had an odd premonition. If I raised my hand, I would surely be called on. I kept wondering why I would think such a thing while the proceedings moved along, and it came to the last question. Telling myself that the point of coming to a shareholder meeting is to try to ask a question, I raised my hand, once, at the very end, slowly and timidly. … "Yes, you there, in the blue shirt."
 
 I asked my question. The first to answer was the chair of the meeting, Genyo Takeda — Nintendo's legendary first game designer, who led hardware development from the Nintendo 64 through the Switch, and who sits at the very core of Nintendo's hardware making.
 
