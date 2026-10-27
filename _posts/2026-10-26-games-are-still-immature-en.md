@@ -106,7 +106,7 @@ Miyamoto did not say "immature" out of modesty. He was saying that we are still 
 
 In March of the following year, 2015, Nintendo partnered with DeNA and entered smartphone games. At the same announcement, President Iwata revealed that a new dedicated console, codenamed "NX," was in development. They would put games on phones, but they would not quit the dedicated console. Smartphone games never became the center of Nintendo's business. In July of that same year, President Iwata died at 55, and the company's two remaining representative directors were the two who had answered that day, Takeda and Miyamoto. The Nintendo Switch, released in March 2017, overtook the DS at the end of 2025 to become the best-selling console in Nintendo's history.
 
-In 2023, *The Super Mario Bros. Movie* became the first film that year to pass one billion dollars in worldwide box office. Nintendo itself had put into practice, from the film side, what Takeda and Miyamoto spoke of in 2014: learning from the media that came before. And on October 23, 2026, the government decided to award Miyamoto the Order of Culture. The first such honor ever to come from the world of games.
+In 2023, *The Super Mario Bros. Movie* became the first film that year to pass one billion dollars in worldwide box office. On that day, film was a medium to learn from. Now Nintendo was standing inside it. And on October 23, 2026, the government decided to award Miyamoto the Order of Culture. The first such honor ever to come from the world of games.
 
 The Miyamoto who said in 2014 that creativity was still immature, that there must still be more that could be done, has done exactly that ever since, and I believe he is doing it still.
 
