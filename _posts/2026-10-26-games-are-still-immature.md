@@ -17,7 +17,7 @@ description: "2014年6月、任天堂株主総会で宮本茂さんに「ゲー�
 
 <figure class="author-portrait">
 <img src="/images/2026-10-26-games-are-still-immature/shigeru-miyamoto.jpg" alt="宮本茂">
-<figcaption>宮本茂（<a href="https://commons.wikimedia.org/wiki/File:Shigeru_Miyamoto_20150610_(cropped).jpg">文部科学省ホームページの写真</a>をもとに線画化、<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>）</figcaption>
+<figcaption>Shigeru Miyamoto (line drawing based on a <a href="https://commons.wikimedia.org/wiki/File:Shigeru_Miyamoto_20150610_(cropped).jpg">photograph published by the Ministry of Education, Culture, Sports, Science and Technology (MEXT)</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</figcaption>
 </figure>
 
 あのクリエイティブの神様、宮本茂さんが「我々ゲーム業界のクリエーターたちのクリエイティブの未熟さの表れではないかと思います」と言ったのです。ゲームを誰よりも深く作ってきた人が、ゲームはまだ途中だと言いました。
@@ -26,7 +26,7 @@ description: "2014年6月、任天堂株主総会で宮本茂さんに「ゲー�
 
 2014年6月27日、任天堂の第74期定時株主総会に私は参加していました。翌日大阪で行われるカンファレンスの基調講演より、1日早く東京をでて京都で行われていた株主総会に出席したのです。到着したときにはもう始まっていたのですが、前方に空席を見つけて着席しました。
 
-妙な予感がありました。挙手をすると必ず当てられるだろうと。なぜそんなことを思うんだろうと思っていましたが、進行が進み最後の質問になりました。総会に参加するのは、質問をしようとすることに意味があると自分に言い聞かせ、最後に一回だけ恐る恐るゆっくり挙手をしました。……「はい、そこの青いシャツの方」
+妙な予感がありました。挙手をすると必ず当てられるだろうと。なぜそんなことを思うんだろうと思いながら、進行が進み、最後の質問になりました。総会に参加するのは、質問をしようとすることに意味があると自分に言い聞かせ、最後に一回だけ恐る恐るゆっくり挙手をしました。……「はい、そこの青いシャツの方」
 
 質問をしました。最初に答えたのは議長の竹田玄洋さん。伝説的な任天堂最初のゲームデザイナー、64からSwitchまで開発責任者を担当した任天堂のハードウェア製作の中核を担うレジェンドです。
 
